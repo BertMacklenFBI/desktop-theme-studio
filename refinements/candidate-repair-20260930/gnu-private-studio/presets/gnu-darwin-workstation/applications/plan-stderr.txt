@@ -1,0 +1,74 @@
+
+(process:7): dconf-CRITICAL **: 05:47:59.954: unable to create file '/run/user/1000/dconf/user': Read-only file system.  dconf will not work properly.
+
+(process:7): dconf-CRITICAL **: 05:47:59.955: unable to create file '/run/user/1000/dconf/user': Read-only file system.  dconf will not work properly.
+
+(process:7): dconf-CRITICAL **: 05:47:59.956: unable to create file '/run/user/1000/dconf/user': Read-only file system.  dconf will not work properly.
+
+(process:7): dconf-CRITICAL **: 05:47:59.956: unable to create file '/run/user/1000/dconf/user': Read-only file system.  dconf will not work properly.
+
+(process:7): dconf-CRITICAL **: 05:47:59.956: unable to create file '/run/user/1000/dconf/user': Read-only file system.  dconf will not work properly.
+
+(process:7): dconf-CRITICAL **: 05:47:59.956: unable to create file '/run/user/1000/dconf/user': Read-only file system.  dconf will not work properly.
+
+(process:7): dconf-CRITICAL **: 05:47:59.956: unable to create file '/run/user/1000/dconf/user': Read-only file system.  dconf will not work properly.
+
+(process:7): dconf-CRITICAL **: 05:47:59.956: unable to create file '/run/user/1000/dconf/user': Read-only file system.  dconf will not work properly.
+
+(process:7): dconf-CRITICAL **: 05:47:59.957: unable to create file '/run/user/1000/dconf/user': Read-only file system.  dconf will not work properly.
+
+(process:7): dconf-CRITICAL **: 05:47:59.957: unable to create file '/run/user/1000/dconf/user': Read-only file system.  dconf will not work properly.
+
+(process:7): dconf-CRITICAL **: 05:47:59.957: unable to create file '/run/user/1000/dconf/user': Read-only file system.  dconf will not work properly.
+
+(process:7): dconf-CRITICAL **: 05:47:59.957: unable to create file '/run/user/1000/dconf/user': Read-only file system.  dconf will not work properly.
+
+(process:7): dconf-CRITICAL **: 05:47:59.957: unable to create file '/run/user/1000/dconf/user': Read-only file system.  dconf will not work properly.
+
+(process:7): dconf-CRITICAL **: 05:47:59.957: unable to create file '/run/user/1000/dconf/user': Read-only file system.  dconf will not work properly.
+
+(process:7): dconf-CRITICAL **: 05:47:59.958: unable to create file '/run/user/1000/dconf/user': Read-only file system.  dconf will not work properly.
+
+(process:7): dconf-CRITICAL **: 05:47:59.958: unable to create file '/run/user/1000/dconf/user': Read-only file system.  dconf will not work properly.
+
+(process:7): dconf-CRITICAL **: 05:47:59.959: unable to create file '/run/user/1000/dconf/user': Read-only file system.  dconf will not work properly.
+
+(process:7): dconf-CRITICAL **: 05:47:59.959: unable to create file '/run/user/1000/dconf/user': Read-only file system.  dconf will not work properly.
+
+(process:7): dconf-CRITICAL **: 05:47:59.959: unable to create file '/run/user/1000/dconf/user': Read-only file system.  dconf will not work properly.
+
+(process:7): dconf-CRITICAL **: 05:47:59.959: unable to create file '/run/user/1000/dconf/user': Read-only file system.  dconf will not work properly.
+
+(process:7): dconf-CRITICAL **: 05:47:59.959: unable to create file '/run/user/1000/dconf/user': Read-only file system.  dconf will not work properly.
+
+(process:7): dconf-CRITICAL **: 05:47:59.959: unable to create file '/run/user/1000/dconf/user': Read-only file system.  dconf will not work properly.
+
+(process:7): dconf-CRITICAL **: 05:47:59.959: unable to create file '/run/user/1000/dconf/user': Read-only file system.  dconf will not work properly.
+
+(process:7): dconf-CRITICAL **: 05:47:59.960: unable to create file '/run/user/1000/dconf/user': Read-only file system.  dconf will not work properly.
+
+(process:7): dconf-CRITICAL **: 05:47:59.960: unable to create file '/run/user/1000/dconf/user': Read-only file system.  dconf will not work properly.
+
+(process:7): dconf-CRITICAL **: 05:47:59.960: unable to create file '/run/user/1000/dconf/user': Read-only file system.  dconf will not work properly.
+
+(process:7): dconf-CRITICAL **: 05:47:59.960: unable to create file '/run/user/1000/dconf/user': Read-only file system.  dconf will not work properly.
+
+(process:7): dconf-CRITICAL **: 05:47:59.961: unable to create file '/run/user/1000/dconf/user': Read-only file system.  dconf will not work properly.
+
+(process:7): dconf-CRITICAL **: 05:47:59.986: unable to create file '/run/user/1000/dconf/user': Read-only file system.  dconf will not work properly.
+
+(process:7): dconf-CRITICAL **: 05:47:59.987: unable to create file '/run/user/1000/dconf/user': Read-only file system.  dconf will not work properly.
+
+(process:7): dconf-CRITICAL **: 05:47:59.987: unable to create file '/run/user/1000/dconf/user': Read-only file system.  dconf will not work properly.
+
+(process:7): dconf-CRITICAL **: 05:47:59.987: unable to create file '/run/user/1000/dconf/user': Read-only file system.  dconf will not work properly.
+
+(process:7): dconf-CRITICAL **: 05:47:59.987: unable to create file '/run/user/1000/dconf/user': Read-only file system.  dconf will not work properly.
+
+(process:7): dconf-CRITICAL **: 05:47:59.988: unable to create file '/run/user/1000/dconf/user': Read-only file system.  dconf will not work properly.
+
+(process:7): dconf-CRITICAL **: 05:48:00.028: unable to create file '/run/user/1000/dconf/user': Read-only file system.  dconf will not work properly.
+
+(process:7): dconf-CRITICAL **: 05:48:00.028: unable to create file '/run/user/1000/dconf/user': Read-only file system.  dconf will not work properly.
+
+(process:7): dconf-CRITICAL **: 05:48:00.028: unable to create file '/run/user/1000/dconf/user': Read-only file system.  dconf will not work properly.

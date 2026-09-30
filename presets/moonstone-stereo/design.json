@@ -1,0 +1,86 @@
+{
+  "version": 2,
+  "name": "Moonstone Stereo",
+  "slug": "moonstone-stereo",
+  "direction": "Vintage hi-fi instrument: smoked walnut, brushed aluminum, warm ivory workspaces, charcoal sidebars and soft mint signal lights. Original Apple/Linux Mint silhouette recast as opal-blue/celadon enamel with champagne LM and nickel rim; fine dial markings compose a central medallion.",
+  "tokens": {
+    "background": "#e7e1d3",
+    "surface": "#f3eddd",
+    "elevated": "#fffaf0",
+    "foreground": "#302e29",
+    "muted": "#716a5d",
+    "accent": "#8db4a0",
+    "accent_dark": "#486d5c",
+    "sage": "#b5b99a",
+    "sage_dark": "#57604a",
+    "lavender": "#aaa4b4",
+    "blue": "#9badb5",
+    "border": "#b6ac97",
+    "selection": "#cedbd0",
+    "focus": "#526f64",
+    "success": "#46705c",
+    "warning": "#936931",
+    "error": "#9e4e42",
+    "walnut": "#4d352b",
+    "charcoal": "#222725",
+    "aluminum": "#c6c9c3"
+  },
+  "terminal_ansi": [
+    "#302e29",
+    "#9e4e42",
+    "#46705c",
+    "#936931",
+    "#516a7b",
+    "#756582",
+    "#477777",
+    "#c9c0ad",
+    "#716a5d",
+    "#b56255",
+    "#62846d",
+    "#a88142",
+    "#698496",
+    "#8b7b97",
+    "#5c9191",
+    "#fffaf0"
+  ],
+  "typography": {
+    "interface": "Ubuntu 10",
+    "document": "Ubuntu 10",
+    "monospace": "Hack 10",
+    "titlebar": "Ubuntu Medium 10"
+  },
+  "geometry": {
+    "preserve_panel_allocations": true,
+    "surface_radius": 6,
+    "control_radius": 3,
+    "dock_radius": 6,
+    "cursor_size": 32,
+    "composition": "Continuous slim aluminum status rail with recessed instruments; low horizontal stereo receiver with artwork, transport and audio-reactive low/high spectrum meters; ivory app canvas/charcoal navigation."
+  },
+  "preservation": [
+    "Original wallpapers and supplied logo geometry",
+    "Menu label cinabon",
+    "Custom music commands and playback behavior",
+    "All non-appearance application settings"
+  ],
+  "wallpaper": {
+    "path": "artwork/wallpaper.png",
+    "description": "Smoked walnut with composed inset medallion, opal/celadon Apple LM enamel, champagne monogram, nickel rim and restrained hi-fi dial engravings",
+    "source_logo": "/home/bertmacklen/Downloads/E5A4D645-7D5D-4BB8-A3D3-20EFE8881A44.png",
+    "menu_logo": "artwork/menu-logo.png"
+  },
+  "status": "ready",
+  "brand_color_source": "Authored Moonstone enamel finish, original supplied file preserves geometry only",
+  "brand_finish": {
+    "body": "Opal-blue and celadon enamel with natural mineral strata",
+    "monogram": "Champagne metal inlay preserving supplied LM geometry",
+    "edge": "Brushed nickel",
+    "palette": {
+      "opal_blue": "#8bacbb",
+      "celadon": "#94bca7",
+      "champagne": "#c6af80",
+      "nickel": "#bfc6c2"
+    },
+    "geometry_reference": "/home/bertmacklen/Downloads/E5A4D645-7D5D-4BB8-A3D3-20EFE8881A44.png"
+  }
+}

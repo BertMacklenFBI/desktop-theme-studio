@@ -1,0 +1,96 @@
+{
+  "assets": [
+    {
+      "action": "add an include; retain all other Kitty preferences",
+      "name": "Kitty",
+      "source": "kitty/cinnamon-current-moonstone-stereo.conf",
+      "target": "~/.config/kitty/cinnamon-current-moonstone-stereo.conf"
+    },
+    {
+      "action": "select only in the active Konsole profile",
+      "name": "Konsole",
+      "source": "konsole/CinnamonCurrentMoonstoneStereo.colorscheme",
+      "target": "~/.local/share/konsole/CinnamonCurrentMoonstoneStereo.colorscheme"
+    },
+    {
+      "name": "Ptyxis",
+      "requires_closed": true,
+      "source": "ptyxis/cinnamon-current-moonstone-stereo.palette",
+      "target": "~/.local/share/org.gnome.Ptyxis/palettes/cinnamon-current-moonstone-stereo.palette"
+    },
+    {
+      "name": "Ptyxis chrome",
+      "requires_closed": true,
+      "source": "ptyxis/gtk.css",
+      "target": "profile-specific GTK4 append block"
+    },
+    {
+      "action": "select scheme after installation",
+      "name": "GtkSourceView/Xed",
+      "source": "sourceview/cinnamon-current-moonstone-stereo.xml",
+      "target": "~/.local/share/gtksourceview-*/styles/"
+    },
+    {
+      "action": "select interface scheme only",
+      "name": "KDE/Krita",
+      "source": "kde/CinnamonCurrentMoonstoneStereo.colors",
+      "target": "~/.local/share/color-schemes/"
+    },
+    {
+      "action": "merge color lines only",
+      "name": "Nano",
+      "source": "nano/colors.rc",
+      "target": "~/.nanorc"
+    },
+    {
+      "action": "merge color keys only",
+      "name": "Tilda",
+      "requires_closed": true,
+      "source": "tilda/colors.ini",
+      "target": "~/.config/tilda/config_0"
+    },
+    {
+      "action": "merge appearance keys only",
+      "name": "Cava",
+      "source": "cava/colors.conf",
+      "target": "existing Cava color block"
+    },
+    {
+      "action": "replace current collection appearance block only",
+      "name": "gTile",
+      "source": "gtile/stylesheet.css",
+      "target": "gTile extension stylesheet"
+    },
+    {
+      "action": "preserve mode wrappers and required local-IP format",
+      "name": "Fastfetch short/long",
+      "source": "fastfetch/identity.json",
+      "target": "existing Fastfetch theme selector"
+    }
+  ],
+  "fresh_application_checks": [
+    "Kitty",
+    "GNOME Terminal",
+    "Konsole if installed",
+    "Ptyxis after normal closure",
+    "Xed",
+    "Krita if installed",
+    "Tilda after normal closure",
+    "Fastfetch short",
+    "Fastfetch long"
+  ],
+  "notes": "Moonstone Stereo has staged color assets only; no user application preferences are modified during collection build.",
+  "policy": "Staged only. Apply individual assets only after their host application is closed normally and the active profile is explicitly selected.",
+  "profile": "moonstone-stereo",
+  "protected": [
+    "~/.bashrc",
+    "~/.local/bin/play",
+    "~/.local/bin/playalbum",
+    "~/.local/bin/pause",
+    "~/.local/bin/next",
+    "~/.local/bin/prev",
+    "~/.local/bin/nextalbum",
+    "~/.local/bin/prevalbum",
+    "~/.local/bin/mpv-vis"
+  ]
+}

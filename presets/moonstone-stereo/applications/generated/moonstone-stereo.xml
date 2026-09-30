@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<style-scheme id="moonstone-stereo" name="Moonstone Stereo" version="1.0"><author>Desktop Theme Studio</author>
+<style name="text" foreground="#302e29" background="#e7e1d3"/>
+<style name="selection" foreground="#302e29" background="#cedbd0"/>
+<style name="current-line" background="#f3eddd"/><style name="line-numbers" foreground="#716a5d" background="#f3eddd"/>
+<style name="def:comment" foreground="#716a5d" italic="true"/><style name="def:keyword" foreground="#486d5c" bold="true"/>
+<style name="def:string" foreground="#57604a"/><style name="def:number" foreground="#516a7b"/><style name="def:type" foreground="#756582"/><style name="def:error" foreground="#9e4e42"/>
+</style-scheme>

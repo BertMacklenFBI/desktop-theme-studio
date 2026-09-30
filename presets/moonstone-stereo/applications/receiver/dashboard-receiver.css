@@ -1,0 +1,20 @@
+/* Moonstone Stereo - independent native library/player instrument */
+#panel .card-music { background:linear-gradient(110deg,#d1d4ca,#bcc3b9); color:#302e29; border:7px solid #4d352b; border-radius:5px; padding:18px 20px; box-shadow:0 7px 20px rgba(0,0,0,.26),inset 0 1px 0 #fffaf0; }
+#panel .card-music h2 { background:none; color:#302e29; font-size:10px; font-weight:700; letter-spacing:.18em; border-bottom:1px solid #90998d; padding:0 0 12px; margin-bottom:14px; }
+#panel .record-row { background:#222725; border:1px solid #87927f; border-radius:2px; padding:12px; box-shadow:inset 0 2px 6px rgba(0,0,0,.5); gap:12px; }
+#panel .record-cover { width:60px; height:60px; flex-basis:60px; border:1px solid #8e968e; border-radius:1px; background:#f3eddd; padding:2px; }
+#panel .np-title { color:#d4e4d5; font-family:Hack,monospace; font-size:14px; }
+#panel .np-artist,#panel #np-album { color:#9cbaa5; }
+#panel .np-controls { background:#aeb8aa; border:1px solid #87927f; border-radius:2px; padding:7px; gap:12px; }
+#panel .np-btn { color:#302e29; background:linear-gradient(#eeeee4,#aeb6ac); border:1px solid #82897f; border-radius:2px; width:31px; height:27px; box-shadow:inset 0 1px 0 #fffaf0; }
+#panel #np-playpause,#panel #np-playpause:hover { width:38px; height:27px; background:linear-gradient(#e7e1d3,#9fad9c); color:#302e29; border-bottom:3px solid #486d5c; border-radius:2px; }
+#panel .cava { background:#222725; padding:7px 8px; height:29px; border:1px solid #87927f; border-radius:2px; }
+#panel .cava-bar { background:linear-gradient(to top,#486d5c,#8db4a0,#d4e4d5) !important; border-radius:0; }
+#panel .track-times { color:#62695f; }
+#panel #track-progress::-webkit-progress-bar { background:#87927f; }
+#panel #track-progress::-webkit-progress-value { background:#486d5c; }
+#panel .music-library { border-top:1px solid #87927f; padding-top:12px; }
+#panel .music-search { background:#f3eddd; color:#302e29; border:1px solid #87927f; border-radius:2px; }
+#panel .music-search::placeholder { color:#716a5d; }
+#panel .music-result:hover { background:#cedbd0; }
+#panel #music-state { color:#486d5c; }

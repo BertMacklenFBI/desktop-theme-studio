@@ -1,0 +1,1820 @@
+{
+  "profiles": {
+    "dusk-ribbons": {
+      "aliases": {
+        "cinnamon": [
+          "Dusk-Ribbons"
+        ],
+        "cli": [
+          "dusk-ribbons",
+          "Dusk Ribbons"
+        ],
+        "cursor": [
+          "Dusk-Ribbons-Cursors"
+        ],
+        "gtk": [
+          "Dusk-Ribbons"
+        ],
+        "icons": [
+          "Dusk-Ribbons-Icons"
+        ],
+        "wm": [
+          "Dusk-Ribbons"
+        ]
+      },
+      "ansi": [
+        "#2d2c41",
+        "#e4a0a2",
+        "#b0c3a5",
+        "#e2bf91",
+        "#b2bbdf",
+        "#d0aedb",
+        "#a2ccd0",
+        "#f1e3df",
+        "#9e91aa",
+        "#f3b9b9",
+        "#c6d9ba",
+        "#f4d4ad",
+        "#cbd2ed",
+        "#e4c4ee",
+        "#c0e3e4",
+        "#fff3ef"
+      ],
+      "builder_compatibility": {
+        "missing_profile_fields": [
+          "palette.selection",
+          "palette.selection_foreground",
+          "palette.success",
+          "palette.warning",
+          "palette.error",
+          "typography"
+        ],
+        "missing_style_fields": [
+          "identity",
+          "panel_alpha",
+          "popup_alpha",
+          "panel_radius",
+          "radius",
+          "island_alpha",
+          "card_alpha"
+        ],
+        "required_style_fields": [
+          "identity",
+          "panel_alpha",
+          "popup_alpha",
+          "panel_radius",
+          "radius",
+          "island_alpha",
+          "card_alpha"
+        ],
+        "status": "blocked_missing_exact_style_contract"
+      },
+      "candidate_layout": {
+        "bottom_height": 76,
+        "kind": "two-panel",
+        "top_height": 78
+      },
+      "candidate_state_colors": {
+        "active_fill": "#bb8987",
+        "active_ink": "#2d2c41",
+        "compact_fill": "#2d2c41",
+        "compact_ink": "#bb8987",
+        "control": "#756172",
+        "disabled_ink": "#d3adb0",
+        "focus": "#bb8987",
+        "hover_fill": "#bb8987",
+        "hover_ink": "#2d2c41",
+        "muted": "#d3adb0",
+        "normal_fill": "#2d2c41",
+        "normal_ink": "#bb8987",
+        "panels": [
+          78,
+          76
+        ],
+        "shape": "pill",
+        "status_fill": "#bb8987",
+        "status_ink": "#2d2c41",
+        "strip": "#2d2c41",
+        "width": 84
+      },
+      "catalog_source": {
+        "catalog_palette": {
+          "accent": "#bb8987",
+          "background": "#2d2c41",
+          "border": "#756172",
+          "deep_ocean": "#2d2c41",
+          "elevated": "#48445b",
+          "foreground": "#f1e3df",
+          "frost": "#48445b",
+          "ink": "#2d2c41",
+          "mist": "#d3adb0",
+          "muted": "#d3adb0",
+          "slate_blue": "#756172",
+          "surface": "#373950",
+          "terminal": "#2d2c41",
+          "terminal_foreground": "#f1e3df",
+          "text": "#f1e3df"
+        },
+        "profile": "dusk-ribbons",
+        "provenance": [
+          {
+            "id": "dusk-ribbons-legacy-palette",
+            "path": "eucalyptus-felt-cinnamon/presets/dusk-ribbons/palette.json",
+            "sha256": "1d9a2e6d1c7a57b95f310350090aed646163c4627b9893e4125132ce858f7e58"
+          },
+          {
+            "id": "legacy-registry",
+            "path": "eucalyptus-felt-cinnamon/nim-suite/themes.json",
+            "sha256": "9b4d982606777864e94ba367ce6139be516157e64ed50577ea828badd7f1991e"
+          }
+        ],
+        "registry": "/home/bertmacklen/Documents/desktop-theme-studio/repairs/nim-nitch/catalog/generated/themes.json"
+      },
+      "cli_aliases": [
+        "dusk-ribbons",
+        "Dusk Ribbons"
+      ],
+      "cursor": "Dusk-Ribbons-Cursors",
+      "design_source": null,
+      "eww_palette_key": "Dusk-Ribbons",
+      "eww_palette_source": "/home/bertmacklen/Documents/eww-graphite-brass/config/themes/palettes.json",
+      "icons": "Dusk-Ribbons-Icons",
+      "identity_note": "Legacy Eucalyptus Felt preset; palette catalog provenance is the legacy palette. Keep original historical layout/panel values and cursor family; no Studio preset design.json exists.",
+      "integration_notes": {
+        "hover": "Derived from shared Eww palette Dusk-Ribbons.accent-hover.",
+        "island": "Shared .84 popup / .62 cards / geometry radius are coordinator defaults pending isolated visual review.",
+        "panel_scalars": "Compatibility placeholders; preserve_authored_shell means the source panel CSS is used verbatim.",
+        "selection_contrast": "Source's pale text on rose selection measured 2.39:1; generated package uses the dark background color for 4.55:1.",
+        "status_semantics": "Coordinator mapping: ANSI red/yellow/green slots fill missing status roles; source did not author semantic tokens."
+      },
+      "island_inline_style_updates": {
+        "actor": "background-color:transparent; color:#bb8987; border-radius:18px; box-shadow:none; padding:0; margin:0;",
+        "compact": "background-color:#2d2c41;",
+        "compact_clock": "color:#bb8987;",
+        "compact_status": "color:#bb8987;",
+        "compact_weather": "color:#bb8987;"
+      },
+      "island_paints": {
+        "meter_active": "#bb8987",
+        "meter_track": "#2d2c41",
+        "wave_active": "#bb8987",
+        "wave_idle": "#2d2c41"
+      },
+      "legacy_source": "/home/bertmacklen/Documents/eucalyptus-felt-cinnamon/presets/dusk-ribbons/profile.json",
+      "light": false,
+      "light_source": "Derived mechanically from the exact catalog background token; true when WCAG relative luminance > 0.35. No color value changed.",
+      "name": "Dusk Ribbons",
+      "overrides": {
+        "cinnamon_css": "/home/bertmacklen/Documents/desktop-theme-studio/refinements/candidate-repair-20260930/assembly/dusk-ribbons-cinnamon_css.css",
+        "gtk_css": "/home/bertmacklen/Documents/desktop-theme-studio/refinements/cinnamon-current-collection/contributions/all-theme-plan/accessibility/dusk-ribbons-gtk-selection.css",
+        "island_css": "/home/bertmacklen/Documents/desktop-theme-studio/refinements/candidate-repair-20260930/desktop/dusk-ribbons/island.css"
+      },
+      "palette": {
+        "accent": "#bb8987",
+        "background": "#2d2c41",
+        "border": "#756172",
+        "control_border": "#756172",
+        "error": "#e4a0a2",
+        "foreground": "#f1e3df",
+        "hover": "#d3adb0",
+        "muted": "#d3adb0",
+        "raised": "#48445b",
+        "selection": "#bb8987",
+        "selection_foreground": "#2d2c41",
+        "success": "#b0c3a5",
+        "surface": "#373950",
+        "terminal": "#2d2c41",
+        "terminal_foreground": "#f1e3df",
+        "warning": "#e2bf91"
+      },
+      "preserve_authored_shell": true,
+      "private_harness": "candidate_isolate.py",
+      "profile_contract_note": "Legacy Eucalyptus Felt source; catalog ANSI is empty, so the 16-color ANSI list is pinned from the exact legacy profile.json. Catalog does not define selection, semantic success/warning/error colors, or selection foreground; do not fill those from visual guesses. No Studio design.json exists.",
+      "release_status": "disabled-pending-current-native-interaction-recovery-and-independent-acceptance",
+      "runtime_parity": {
+        "asset_provenance": null,
+        "authored_eww_bundle": null,
+        "candidate_layout": {
+          "bottom_height": 76,
+          "kind": "two-panel",
+          "top_height": 78
+        },
+        "private_harness": "candidate_isolate.py",
+        "workspace_geometry": {
+          "minimum_gap": 4,
+          "shape": "pill"
+        }
+      },
+      "source_status": {
+        "cursor": {
+          "exists": true,
+          "kind": "directory",
+          "path": "/home/bertmacklen/Documents/eucalyptus-felt-cinnamon/visual-assets/dusk-ribbons/Dusk-Ribbons-Cursors",
+          "sha256_tree": "e05b78fa69ff268d718c3193cd822772e3105b694cc025d751e9b0c3d7b5164e"
+        },
+        "fastfetch_logo": {
+          "exists": true,
+          "kind": "file",
+          "path": "/home/bertmacklen/.config/fastfetch/logos/hues/macklenmobile-logo-dusk-ribbons.png",
+          "sha256": "d27a7ef34cd2d067b2a6097aedd379a047022999abcd2dc081fec0b318daf7d7"
+        },
+        "icon": {
+          "exists": true,
+          "kind": "directory",
+          "path": "/home/bertmacklen/Documents/eucalyptus-felt-cinnamon/visual-assets/dusk-ribbons/Dusk-Ribbons-Icons",
+          "sha256_tree": "c81b4dec477e484fca3699e1439677e4002d3627bf8c518a89db282d9c4c99b2"
+        },
+        "menu_logo": {
+          "exists": true,
+          "kind": "file",
+          "path": "/home/bertmacklen/Documents/eucalyptus-felt-cinnamon/presets/dusk-ribbons/logo.png",
+          "sha256": "d27a7ef34cd2d067b2a6097aedd379a047022999abcd2dc081fec0b318daf7d7"
+        },
+        "theme": {
+          "exists": true,
+          "kind": "directory",
+          "path": "/home/bertmacklen/Documents/eucalyptus-felt-cinnamon/presets/dusk-ribbons/Dusk-Ribbons",
+          "sha256_tree": "82142637ea96b9f1e3f878c5ac7ce1a2b2930f4182887d25e03406368ba01a18"
+        },
+        "wallpaper": {
+          "exists": true,
+          "kind": "file",
+          "path": "/home/bertmacklen/Pictures/Wallspaper/alivedusk-ribbons.png",
+          "sha256": "f1a60a8b3da127bfb37c02fc665cd0645f114d2367e004a13640b8be7667b52b"
+        }
+      },
+      "sources": {
+        "cursor": "/home/bertmacklen/Documents/desktop-theme-studio/refinements/cinnamon-current-collection/contributions/all-theme-plan/pipeline/staged-refresh-20260922/dusk-ribbons/cursors/Dusk-Ribbons-Cursors",
+        "fastfetch_logo": "/home/bertmacklen/Documents/desktop-theme-studio/refinements/cinnamon-current-collection/contributions/all-theme-plan/pipeline/staged-refresh-20260922/dusk-ribbons/artwork/macklenmobile-logo-dusk-ribbons.png",
+        "icon": "/home/bertmacklen/Documents/desktop-theme-studio/refinements/cinnamon-current-collection/contributions/all-theme-plan/pipeline/staged-refresh-20260922/dusk-ribbons/icons/Dusk-Ribbons-Icons",
+        "menu_logo": "/home/bertmacklen/Documents/desktop-theme-studio/refinements/cinnamon-current-collection/contributions/all-theme-plan/pipeline/staged-refresh-20260922/dusk-ribbons/artwork/menu-logo.png",
+        "theme": "/home/bertmacklen/Documents/desktop-theme-studio/refinements/candidate-repair-20260930/desktop/dusk-ribbons/desktop/Dusk-Ribbons",
+        "wallpaper": "/home/bertmacklen/Documents/desktop-theme-studio/refinements/cinnamon-current-collection/contributions/all-theme-plan/pipeline/staged-refresh-20260922/dusk-ribbons/artwork/wallpaper.png"
+      },
+      "style": {
+        "alpha_rationale": "Shared Nothing Island defaults selected within existing collection ranges; not source-authored values.",
+        "authored_panel_css_preserved": true,
+        "card_alpha": 1.0,
+        "coordinator_defaults": true,
+        "identity": "rose twilight ribbons and a layered dusk shell",
+        "island_alpha": 1.0,
+        "panel_alpha": 1.0,
+        "panel_radius": 0,
+        "popup_alpha": 1.0,
+        "radius": 8
+      },
+      "terminal_font_size": 11,
+      "theme": "Dusk-Ribbons",
+      "typography": {
+        "monospace_family": "Hack",
+        "monospace_size_pt": 11,
+        "provenance": "Ubuntu 10pt is authored in Cinnamon CSS; Hack 11pt is the current collection terminal default.",
+        "title_family": "Ubuntu",
+        "title_size_pt": 10,
+        "title_weight": 500,
+        "ui_family": "Ubuntu",
+        "ui_size_pt": 10
+      },
+      "workspace_geometry": {
+        "minimum_gap": 4,
+        "shape": "pill"
+      }
+    },
+    "macintosh-soft": {
+      "aliases": {
+        "cinnamon": [
+          "Macintosh Soft"
+        ],
+        "cli": [
+          "macintosh-soft",
+          "Macintosh Soft"
+        ],
+        "cursor": [
+          "Macintosh Soft cursors"
+        ],
+        "gtk": [
+          "Macintosh Soft"
+        ],
+        "icons": [
+          "Macintosh Soft icons"
+        ],
+        "wm": [
+          "Macintosh Soft"
+        ]
+      },
+      "ansi": [
+        "#949f9a",
+        "#c895a3",
+        "#99b79c",
+        "#d4c581",
+        "#8caebe",
+        "#a9a3bf",
+        "#9dc6c3",
+        "#ebe9e1",
+        "#a8b3ae",
+        "#e4adb6",
+        "#adc8af",
+        "#e5d89f",
+        "#abc8d5",
+        "#c2bcd4",
+        "#b8dad5",
+        "#fbf8f1"
+      ],
+      "asset_provenance": "/home/bertmacklen/Documents/desktop-theme-studio/refinements/candidate-repair-20260930/provenance/macintosh-soft/cursor-provenance.json",
+      "builder_compatibility": {
+        "missing_profile_fields": [],
+        "missing_style_fields": [
+          "identity",
+          "panel_alpha",
+          "popup_alpha",
+          "panel_radius",
+          "radius",
+          "island_alpha",
+          "card_alpha"
+        ],
+        "required_style_fields": [
+          "identity",
+          "panel_alpha",
+          "popup_alpha",
+          "panel_radius",
+          "radius",
+          "island_alpha",
+          "card_alpha"
+        ],
+        "status": "blocked_missing_exact_style_contract"
+      },
+      "candidate_layout": {
+        "bottom_height": 54,
+        "kind": "two-panel",
+        "top_height": 44
+      },
+      "candidate_state_colors": {
+        "active_fill": "#9DC6C3",
+        "active_ink": "#293238",
+        "compact_fill": "#293238",
+        "compact_ink": "#9DC6C3",
+        "control": "#697773",
+        "disabled_ink": "#505d66",
+        "focus": "#356262",
+        "hover_fill": "#356262",
+        "hover_ink": "#fbf8f1",
+        "muted": "#505d66",
+        "normal_fill": "#293238",
+        "normal_ink": "#9DC6C3",
+        "panels": [
+          44,
+          54
+        ],
+        "shape": "circle",
+        "status_fill": "#356262",
+        "status_ink": "#fbf8f1",
+        "strip": "#293238",
+        "width": 44
+      },
+      "catalog_source": {
+        "catalog_palette": {
+          "accent": "#507d7d",
+          "background": "#ebe9e1",
+          "border": "#a5aba8",
+          "control_border": "#697773",
+          "desktop": "#727f88",
+          "elevated": "#d7d9d4",
+          "error": "#944338",
+          "focus": "#356262",
+          "foreground": "#293238",
+          "island_background": "#293238",
+          "island_foreground": "#9dc6c3",
+          "muted": "#505d66",
+          "selection": "#356262",
+          "selection_foreground": "#fbf8f1",
+          "success": "#356247",
+          "surface": "#ebe9e1",
+          "terminal": "#293238",
+          "terminal_foreground": "#ebe9e1",
+          "top_background": "#293238",
+          "top_foreground": "#9dc6c3",
+          "warning": "#795615"
+        },
+        "profile": "macintosh-soft",
+        "provenance": [
+          {
+            "id": "macintosh-soft-design",
+            "path": "desktop-theme-studio/presets/macintosh-soft/design.json",
+            "sha256": "e144030f76c79321c99e47485896dd0e7c75b40c3f4d740f6a7e853148917152"
+          }
+        ],
+        "registry": "/home/bertmacklen/Documents/desktop-theme-studio/repairs/nim-nitch/catalog/generated/themes.json"
+      },
+      "cli_aliases": [
+        "macintosh-soft",
+        "Macintosh Soft"
+      ],
+      "cursor": "Macintosh Soft cursors",
+      "design_identity": "Retro Apple warmth with modern readable controls; cozy minimalism",
+      "design_source": "/home/bertmacklen/Documents/desktop-theme-studio/presets/macintosh-soft/design.json",
+      "eww_palette_key": "Macintosh Soft",
+      "eww_palette_source": "/home/bertmacklen/Documents/eww-graphite-brass/config/themes/palettes.json",
+      "geometry_source": {
+        "app_radius": 4,
+        "bottom_panel_height": 54,
+        "composition": "Three graphite top groups with soft teal lettering; bone bottom application dock",
+        "cursor_size": 28,
+        "music_art_size": 184,
+        "music_card_width": 320,
+        "panel_groups": "top left menu then workspace indicator; center clock/date island; right status; bottom centered launchers/running apps only",
+        "panel_height": 44,
+        "panel_position": "top menu / clock island / corner status; bottom dock",
+        "spacing": [
+          4,
+          8,
+          12,
+          16,
+          24
+        ],
+        "widget_radius": 6
+      },
+      "icons": "Macintosh Soft icons",
+      "identity_note": "Separate light bone application tree; preserve 44px top groups and 54px programs-only dock.",
+      "integration_notes": {
+        "hover": "Derived from shared Eww palette Macintosh Soft.accent-hover.",
+        "island": "Shared .84 popup / .62 cards / geometry radius are coordinator defaults pending isolated visual review.",
+        "panel_scalars": "Compatibility placeholders; preserve_authored_shell means the source panel CSS is used verbatim.",
+        "selection_contrast": null,
+        "status_semantics": null
+      },
+      "island_inline_style_updates": {
+        "actor": "background-color:transparent; color:#9DC6C3; border-radius:18px; box-shadow:none; padding:0; margin:0;",
+        "compact": "background-color:#293238;",
+        "compact_clock": "color:#9DC6C3;",
+        "compact_status": "color:#9DC6C3;",
+        "compact_weather": "color:#9DC6C3;"
+      },
+      "island_paints": {
+        "compact_background": "#293238",
+        "compact_clock": "#9DC6C3",
+        "compact_side": "#9DC6C3",
+        "meter_active": "#356262",
+        "meter_track": "#ebe9e1",
+        "wave_active": "#356262",
+        "wave_idle": "#ebe9e1"
+      },
+      "legacy_source": null,
+      "light": true,
+      "light_source": "Derived mechanically from the exact catalog background token; true when WCAG relative luminance > 0.35. No color value changed.",
+      "materials_source": {
+        "motion": "existing Cinnamon transitions",
+        "shadow": "small soft neutral shadow",
+        "text_surfaces": "opaque",
+        "texture": "none on controls or text surfaces",
+        "wallpaper": "User-requested matte blue-gray paved concrete with rhombus tiles; clean pastel logo"
+      },
+      "name": "Macintosh Soft",
+      "overrides": {
+        "cinnamon_css": "/home/bertmacklen/Documents/desktop-theme-studio/refinements/candidate-repair-20260930/desktop/macintosh-soft/workspace.css",
+        "island_css": "/home/bertmacklen/Documents/desktop-theme-studio/refinements/candidate-repair-20260930/desktop/macintosh-soft/island.css"
+      },
+      "palette": {
+        "accent": "#507d7d",
+        "background": "#ebe9e1",
+        "border": "#a5aba8",
+        "error": "#944338",
+        "foreground": "#293238",
+        "hover": "#356262",
+        "muted": "#505d66",
+        "raised": "#d7d9d4",
+        "selection": "#356262",
+        "selection_foreground": "#fbf8f1",
+        "success": "#356247",
+        "surface": "#ebe9e1",
+        "terminal": "#293238",
+        "terminal_foreground": "#ebe9e1",
+        "warning": "#795615"
+      },
+      "preserve_authored_shell": true,
+      "private_harness": "candidate_isolate.py",
+      "profile_contract_note": "Catalog palette values are preserved. Only `raised` is mapped from the catalog/design token `elevated`, as an explicit semantic synonym. Numeric overlay alpha/radius fields are absent from design contract and remain null.",
+      "release_status": "disabled-pending-current-native-interaction-recovery-and-independent-acceptance",
+      "runtime_parity": {
+        "asset_provenance": "/home/bertmacklen/Documents/desktop-theme-studio/refinements/candidate-repair-20260930/provenance/macintosh-soft/cursor-provenance.json",
+        "authored_eww_bundle": null,
+        "candidate_layout": {
+          "bottom_height": 54,
+          "kind": "two-panel",
+          "top_height": 44
+        },
+        "private_harness": "candidate_isolate.py",
+        "workspace_geometry": {
+          "minimum_gap": 4,
+          "shape": "circle"
+        }
+      },
+      "source_status": {
+        "cursor": {
+          "exists": true,
+          "kind": "directory",
+          "path": "/home/bertmacklen/Documents/desktop-theme-studio/presets/macintosh-soft/desktop/Macintosh Soft cursors",
+          "sha256_tree": "f989e88358e4932588094675b6cd7ba33b2af0c50cc2b2d35ee62c62e6aa01d9"
+        },
+        "fastfetch_logo": {
+          "exists": true,
+          "kind": "file",
+          "path": "/home/bertmacklen/Documents/desktop-theme-studio/presets/macintosh-soft/applications/staged/05-macklenmobile-logo-macintosh-soft.png",
+          "sha256": "414c19ce3069d01a62d972fe8fe78db8dce48113c65acb0650d684057a0e4e10"
+        },
+        "icon": {
+          "exists": true,
+          "kind": "directory",
+          "path": "/home/bertmacklen/Documents/desktop-theme-studio/presets/macintosh-soft/desktop/Macintosh Soft icons",
+          "sha256_tree": "dd55a2299023824b760dfd452b98d60105e690f5d45aea509a49e6aa6a75c61d"
+        },
+        "menu_logo": {
+          "exists": true,
+          "kind": "file",
+          "path": "/home/bertmacklen/Documents/desktop-theme-studio/presets/macintosh-soft/artwork/menu-logo.png",
+          "sha256": "414c19ce3069d01a62d972fe8fe78db8dce48113c65acb0650d684057a0e4e10"
+        },
+        "theme": {
+          "exists": true,
+          "kind": "directory",
+          "path": "/home/bertmacklen/Documents/desktop-theme-studio/presets/macintosh-soft/desktop/Macintosh Soft",
+          "sha256_tree": "9b45e1d2927d9e41ed53e7721ccb2b5c3c7b336615e2a10bdd1acf410ee90483"
+        },
+        "wallpaper": {
+          "exists": true,
+          "kind": "file",
+          "path": "/home/bertmacklen/Documents/desktop-theme-studio/presets/macintosh-soft/artwork/wallpaper.png",
+          "sha256": "a0fb3bedbb552b9ef66ffbb214dfee12539e7ae68672dd1e41a0bbe9bb2fbcfb"
+        }
+      },
+      "sources": {
+        "cursor": "/home/bertmacklen/Documents/desktop-theme-studio/refinements/cinnamon-current-collection/contributions/all-theme-plan/pipeline/staged-refresh-20260922/macintosh-soft/cursors/Macintosh Soft cursors",
+        "eww_stylesheet": "/home/bertmacklen/Documents/desktop-theme-studio/presets/macintosh-soft/desktop/widgets/eww.scss",
+        "fastfetch_logo": "/home/bertmacklen/Documents/desktop-theme-studio/refinements/cinnamon-current-collection/contributions/all-theme-plan/pipeline/staged-refresh-20260922/macintosh-soft/artwork/macklenmobile-logo-macintosh-soft.png",
+        "icon": "/home/bertmacklen/Documents/desktop-theme-studio/refinements/cinnamon-current-collection/contributions/all-theme-plan/pipeline/staged-refresh-20260922/macintosh-soft/icons/Macintosh Soft icons",
+        "menu_logo": "/home/bertmacklen/Documents/desktop-theme-studio/refinements/cinnamon-current-collection/contributions/all-theme-plan/pipeline/staged-refresh-20260922/macintosh-soft/artwork/menu-logo.png",
+        "theme": "/home/bertmacklen/Documents/desktop-theme-studio/refinements/cinnamon-current-collection/contributions/all-theme-plan/pipeline/staged-refresh-20260922/macintosh-soft/desktop/Macintosh Soft",
+        "wallpaper": "/home/bertmacklen/Documents/desktop-theme-studio/refinements/cinnamon-current-collection/contributions/all-theme-plan/pipeline/staged-refresh-20260922/macintosh-soft/artwork/wallpaper.png"
+      },
+      "style": {
+        "alpha_rationale": "Shared Nothing Island defaults selected within existing collection ranges; not source-authored values.",
+        "authored_panel_css_preserved": true,
+        "card_alpha": 1.0,
+        "coordinator_defaults": true,
+        "identity": "silver concrete with sea-glass controls",
+        "island_alpha": 1.0,
+        "panel_alpha": 1.0,
+        "panel_radius": 0,
+        "popup_alpha": 1.0,
+        "radius": 6
+      },
+      "terminal_font_size": 11,
+      "theme": "Macintosh Soft",
+      "typography": {
+        "clock_family": "Ubuntu",
+        "clock_size_pt": 10,
+        "clock_weight": 500,
+        "monospace_family": "Hack",
+        "monospace_size_pt": 11,
+        "title_family": "Ubuntu",
+        "title_size_pt": 11,
+        "title_weight": 600,
+        "ui_family": "Ubuntu",
+        "ui_size_pt": 11,
+        "verification": "Font availability checked; final actual-scale readability pending"
+      },
+      "workspace_geometry": {
+        "minimum_gap": 4,
+        "shape": "circle"
+      }
+    },
+    "moonstone-stereo": {
+      "aliases": {
+        "cinnamon": [
+          "Moonstone Stereo"
+        ],
+        "cli": [
+          "moonstone-stereo",
+          "Moonstone Stereo"
+        ],
+        "cursor": [
+          "Moonstone Stereo cursors"
+        ],
+        "gtk": [
+          "Moonstone Stereo"
+        ],
+        "icons": [
+          "Moonstone Stereo icons"
+        ],
+        "wm": [
+          "Moonstone Stereo"
+        ]
+      },
+      "ansi": [
+        "#302e29",
+        "#9e4e42",
+        "#46705c",
+        "#936931",
+        "#516a7b",
+        "#756582",
+        "#477777",
+        "#c9c0ad",
+        "#716a5d",
+        "#b56255",
+        "#62846d",
+        "#a88142",
+        "#698496",
+        "#8b7b97",
+        "#5c9191",
+        "#fffaf0"
+      ],
+      "authored_eww_bundle": {
+        "launcher": "bin/eww-widgets",
+        "manifest": "bundle.json",
+        "private_launcher": "private/launch.py",
+        "schema": 1,
+        "source": "/home/bertmacklen/Documents/desktop-theme-studio/refinements/candidate-repair-20260930/applications/moonstone-stereo/bundle-version2",
+        "windows": [
+          "clock",
+          "dashboard",
+          "controls",
+          "calendar",
+          "notes",
+          "timer",
+          "audio",
+          "system"
+        ]
+      },
+      "authored_receiver_ink": {
+        "timer": "#adcbb4"
+      },
+      "builder_compatibility": {
+        "missing_profile_fields": [
+          "palette.selection_foreground"
+        ],
+        "missing_style_fields": [
+          "identity",
+          "panel_alpha",
+          "popup_alpha",
+          "panel_radius",
+          "radius",
+          "island_alpha",
+          "card_alpha"
+        ],
+        "required_style_fields": [
+          "identity",
+          "panel_alpha",
+          "popup_alpha",
+          "panel_radius",
+          "radius",
+          "island_alpha",
+          "card_alpha"
+        ],
+        "status": "blocked_missing_exact_style_contract"
+      },
+      "candidate_layout": {
+        "bottom_height": 76,
+        "kind": "two-panel",
+        "top_height": 78
+      },
+      "candidate_state_colors": {
+        "active_fill": "#cedbd0",
+        "active_ink": "#302e29",
+        "compact_fill": "#222725",
+        "compact_ink": "#8db4a0",
+        "control": "#716a5d",
+        "disabled_ink": "#716a5d",
+        "focus": "#526f64",
+        "hover_fill": "#cedbd0",
+        "hover_ink": "#302e29",
+        "muted": "#716a5d",
+        "normal_fill": "#222725",
+        "normal_ink": "#8db4a0",
+        "panels": [
+          78,
+          76
+        ],
+        "shape": "pill",
+        "status_fill": "#8db4a0",
+        "status_ink": "#302e29",
+        "strip": "#222725",
+        "width": 84
+      },
+      "catalog_source": {
+        "catalog_palette": {
+          "accent": "#8db4a0",
+          "accent_dark": "#486d5c",
+          "aluminum": "#c6c9c3",
+          "background": "#e7e1d3",
+          "blue": "#9badb5",
+          "border": "#b6ac97",
+          "charcoal": "#222725",
+          "elevated": "#fffaf0",
+          "error": "#9e4e42",
+          "focus": "#526f64",
+          "foreground": "#302e29",
+          "lavender": "#aaa4b4",
+          "muted": "#716a5d",
+          "sage": "#b5b99a",
+          "sage_dark": "#57604a",
+          "selection": "#cedbd0",
+          "success": "#46705c",
+          "surface": "#f3eddd",
+          "terminal": "#e7e1d3",
+          "terminal_foreground": "#302e29",
+          "walnut": "#4d352b",
+          "warning": "#936931"
+        },
+        "profile": "moonstone-stereo",
+        "provenance": [
+          {
+            "id": "moonstone-stereo-design",
+            "path": "desktop-theme-studio/presets/moonstone-stereo/design.json",
+            "sha256": "b2cc6de0566d679cd3b68655cdd68d05b1caac3b0d791ebe9a314daeb60b616d"
+          }
+        ],
+        "registry": "/home/bertmacklen/Documents/desktop-theme-studio/repairs/nim-nitch/catalog/generated/themes.json"
+      },
+      "cli_aliases": [
+        "moonstone-stereo",
+        "Moonstone Stereo"
+      ],
+      "cursor": "Moonstone Stereo cursors",
+      "design_identity": "Vintage hi-fi instrument: smoked walnut, brushed aluminum, warm ivory workspaces, charcoal sidebars and soft mint signal lights. Original Apple/Linux Mint silhouette recast as opal-blue/celadon enamel with champagne LM and nickel rim; fine dial markings compose a central medallion.",
+      "design_source": "/home/bertmacklen/Documents/desktop-theme-studio/presets/moonstone-stereo/design.json",
+      "eww_palette_key": "Moonstone Stereo",
+      "eww_palette_source": "/home/bertmacklen/Documents/eww-graphite-brass/config/themes/palettes.json",
+      "geometry_source": {
+        "composition": "Continuous slim aluminum status rail with recessed instruments; low horizontal stereo receiver with artwork, transport and audio-reactive low/high spectrum meters; ivory app canvas/charcoal navigation.",
+        "control_radius": 3,
+        "cursor_size": 32,
+        "dock_radius": 6,
+        "preserve_panel_allocations": true,
+        "surface_radius": 6
+      },
+      "icons": "Moonstone Stereo icons",
+      "identity_note": "Hi-fi receiver composition with ivory canvas and charcoal navigation.",
+      "integration_notes": {
+        "hover": "Derived from shared Eww palette Moonstone Stereo.accent-hover.",
+        "island": "Shared .84 popup / .62 cards / geometry radius are coordinator defaults pending isolated visual review.",
+        "panel_scalars": "Compatibility placeholders; preserve_authored_shell means the source panel CSS is used verbatim.",
+        "selection_contrast": "Source's cream text on pale selection measured 1.23:1; generated package uses the dark foreground color for 9.47:1.",
+        "status_semantics": null
+      },
+      "island_inline_style_updates": {
+        "actor": "background-color:transparent; color:#8db4a0; border-radius:18px; box-shadow:none; padding:0; margin:0;",
+        "compact": "background-color:#222725;",
+        "compact_clock": "color:#8db4a0;",
+        "compact_status": "color:#8db4a0;",
+        "compact_weather": "color:#8db4a0;"
+      },
+      "island_paints": {
+        "compact_background": "#222725",
+        "compact_clock": "#8db4a0",
+        "compact_side": "#8db4a0",
+        "meter_active": "#526f64",
+        "meter_track": "#e7e1d3",
+        "wave_active": "#526f64",
+        "wave_idle": "#e7e1d3"
+      },
+      "legacy_source": null,
+      "light": true,
+      "light_source": "Derived mechanically from the exact catalog background token; true when WCAG relative luminance > 0.35. No color value changed.",
+      "materials_source": null,
+      "name": "Moonstone Stereo",
+      "overrides": {
+        "cinnamon_css": "/home/bertmacklen/Documents/desktop-theme-studio/refinements/candidate-repair-20260930/assembly/moonstone-stereo-cinnamon_css.css",
+        "gtk_css": "/home/bertmacklen/Documents/desktop-theme-studio/refinements/cinnamon-current-collection/contributions/all-theme-plan/accessibility/moonstone-stereo-gtk-selection.css",
+        "island_css": "/home/bertmacklen/Documents/desktop-theme-studio/refinements/candidate-repair-20260930/desktop/moonstone-stereo/island.css"
+      },
+      "palette": {
+        "accent": "#8db4a0",
+        "background": "#e7e1d3",
+        "border": "#b6ac97",
+        "error": "#9e4e42",
+        "foreground": "#302e29",
+        "hover": "#526f64",
+        "muted": "#716a5d",
+        "raised": "#fffaf0",
+        "selection": "#cedbd0",
+        "selection_foreground": "#302e29",
+        "success": "#46705c",
+        "surface": "#f3eddd",
+        "terminal": "#e7e1d3",
+        "terminal_foreground": "#302e29",
+        "warning": "#936931"
+      },
+      "preserve_authored_shell": true,
+      "private_harness": "candidate_isolate.py",
+      "profile_contract_note": "Catalog palette values are preserved. Only `raised` is mapped from the catalog/design token `elevated`, as an explicit semantic synonym. Numeric overlay alpha/radius fields are absent from design contract and remain null.",
+      "release_status": "disabled-pending-current-native-interaction-recovery-and-independent-acceptance",
+      "runtime_parity": {
+        "asset_provenance": null,
+        "authored_eww_bundle": {
+          "launcher": "bin/eww-widgets",
+          "manifest": "bundle.json",
+          "private_launcher": "private/launch.py",
+          "schema": 1,
+          "source": "/home/bertmacklen/Documents/desktop-theme-studio/refinements/candidate-repair-20260930/applications/moonstone-stereo/bundle-version2",
+          "windows": [
+            "clock",
+            "dashboard",
+            "controls",
+            "calendar",
+            "notes",
+            "timer",
+            "audio",
+            "system"
+          ]
+        },
+        "authored_receiver_ink": {
+          "timer": "#adcbb4"
+        },
+        "candidate_layout": {
+          "bottom_height": 76,
+          "kind": "two-panel",
+          "top_height": 78
+        },
+        "private_harness": "candidate_isolate.py",
+        "workspace_geometry": {
+          "minimum_gap": 4,
+          "shape": "pill"
+        }
+      },
+      "source_status": {
+        "cursor": {
+          "exists": true,
+          "kind": "directory",
+          "path": "/home/bertmacklen/Documents/desktop-theme-studio/presets/moonstone-stereo/desktop/Moonstone Stereo cursors",
+          "sha256_tree": "0a93152c8877583c91a222323bf5d5e545cf8a4dd653f70843b043e93daa9213"
+        },
+        "fastfetch_logo": {
+          "exists": true,
+          "kind": "file",
+          "path": "/home/bertmacklen/.config/fastfetch/logos/hues/macklenmobile-logo-moonstone-stereo.png",
+          "sha256": "3699a61e7e08480fb9d24c03883e470cfbf01d1bd1411cb6fd31441fa87d24cd"
+        },
+        "icon": {
+          "exists": true,
+          "kind": "directory",
+          "path": "/home/bertmacklen/Documents/desktop-theme-studio/presets/moonstone-stereo/desktop/Moonstone Stereo icons",
+          "sha256_tree": "2adabbb9216db9b6723f3e032c80208890d4724043c28db7daede4d1195cc5ff"
+        },
+        "menu_logo": {
+          "exists": true,
+          "kind": "file",
+          "path": "/home/bertmacklen/Documents/desktop-theme-studio/presets/moonstone-stereo/artwork/menu-logo.png",
+          "sha256": "3699a61e7e08480fb9d24c03883e470cfbf01d1bd1411cb6fd31441fa87d24cd"
+        },
+        "theme": {
+          "exists": true,
+          "kind": "directory",
+          "path": "/home/bertmacklen/Documents/desktop-theme-studio/presets/moonstone-stereo/desktop/Moonstone Stereo",
+          "sha256_tree": "20ff4ff58df36215e8ffb1fe0e91861b813add86843a0f307a0e32e9c1b6d75a"
+        },
+        "wallpaper": {
+          "exists": true,
+          "kind": "file",
+          "path": "/home/bertmacklen/Documents/desktop-theme-studio/presets/moonstone-stereo/artwork/wallpaper.png",
+          "sha256": "ce52ed020dec23db97a64e930d8fa2075ec362c94e264d1de508f2dce5f05509"
+        }
+      },
+      "sources": {
+        "cursor": "/home/bertmacklen/Documents/desktop-theme-studio/refinements/cinnamon-current-collection/contributions/all-theme-plan/pipeline/staged-refresh-20260922/moonstone-stereo/cursors/Moonstone Stereo cursors",
+        "fastfetch_logo": "/home/bertmacklen/Documents/desktop-theme-studio/refinements/cinnamon-current-collection/contributions/all-theme-plan/pipeline/staged-refresh-20260922/moonstone-stereo/artwork/macklenmobile-logo-moonstone-stereo.png",
+        "icon": "/home/bertmacklen/Documents/desktop-theme-studio/refinements/cinnamon-current-collection/contributions/all-theme-plan/pipeline/staged-refresh-20260922/moonstone-stereo/icons/Moonstone Stereo icons",
+        "menu_logo": "/home/bertmacklen/Documents/desktop-theme-studio/refinements/cinnamon-current-collection/contributions/all-theme-plan/pipeline/staged-refresh-20260922/moonstone-stereo/artwork/menu-logo.png",
+        "theme": "/home/bertmacklen/Documents/desktop-theme-studio/refinements/cinnamon-current-collection/contributions/all-theme-plan/pipeline/staged-refresh-20260922/moonstone-stereo/desktop/Moonstone Stereo",
+        "wallpaper": "/home/bertmacklen/Documents/desktop-theme-studio/refinements/cinnamon-current-collection/contributions/all-theme-plan/pipeline/staged-refresh-20260922/moonstone-stereo/artwork/wallpaper.png"
+      },
+      "style": {
+        "alpha_rationale": "Shared Nothing Island defaults selected within existing collection ranges; not source-authored values.",
+        "authored_panel_css_preserved": true,
+        "card_alpha": 1.0,
+        "coordinator_defaults": true,
+        "identity": "warm moonstone surfaces with a compact stereo dock",
+        "island_alpha": 1.0,
+        "panel_alpha": 1.0,
+        "panel_radius": 0,
+        "popup_alpha": 1.0,
+        "radius": 6
+      },
+      "terminal_font_size": 11,
+      "theme": "Moonstone Stereo",
+      "typography": {
+        "document": "Ubuntu 10",
+        "interface": "Ubuntu 10",
+        "monospace": "Hack 10",
+        "titlebar": "Ubuntu Medium 10"
+      },
+      "workspace_geometry": {
+        "minimum_gap": 4,
+        "shape": "pill"
+      }
+    },
+    "ocean-silk": {
+      "aliases": {
+        "cinnamon": [
+          "Ocean-Silk"
+        ],
+        "cli": [
+          "ocean-silk",
+          "Ocean Silk"
+        ],
+        "cursor": [
+          "Ocean-Silk-Cursors"
+        ],
+        "gtk": [
+          "Ocean-Silk"
+        ],
+        "icons": [
+          "Ocean-Silk-Icons"
+        ],
+        "wm": [
+          "Ocean-Silk"
+        ]
+      },
+      "ansi": [
+        "#8ca1aa",
+        "#d5a4a4",
+        "#afc3b1",
+        "#d6c6a0",
+        "#adc4d2",
+        "#c0b8d0",
+        "#a7cfd0",
+        "#e9ebe6",
+        "#b2c4c9",
+        "#e4bcb8",
+        "#c2d7c0",
+        "#e9d9b8",
+        "#c3d8e5",
+        "#d6cce1",
+        "#c5e5e2",
+        "#f3f5ef"
+      ],
+      "builder_compatibility": {
+        "missing_profile_fields": [],
+        "missing_style_fields": [
+          "identity",
+          "panel_alpha",
+          "popup_alpha",
+          "panel_radius",
+          "radius",
+          "island_alpha",
+          "card_alpha"
+        ],
+        "required_style_fields": [
+          "identity",
+          "panel_alpha",
+          "popup_alpha",
+          "panel_radius",
+          "radius",
+          "island_alpha",
+          "card_alpha"
+        ],
+        "status": "blocked_missing_exact_style_contract"
+      },
+      "candidate_layout": {
+        "bottom_height": 54,
+        "kind": "two-panel",
+        "top_height": 44
+      },
+      "candidate_state_colors": {
+        "active_fill": "#354d64",
+        "active_ink": "#e9ebe6",
+        "compact_fill": "#DEE7E6",
+        "compact_ink": "#304957",
+        "control": "#354D64",
+        "disabled_ink": "#475f6c",
+        "focus": "#354D64",
+        "hover_fill": "#354d64",
+        "hover_ink": "#e9ebe6",
+        "muted": "#475f6c",
+        "normal_fill": "#cbd7da",
+        "normal_ink": "#304957",
+        "panels": [
+          44,
+          54
+        ],
+        "shape": "circle",
+        "status_fill": "#354d64",
+        "status_ink": "#e9ebe6",
+        "strip": "#DEE7E6",
+        "width": 44
+      },
+      "catalog_source": {
+        "catalog_palette": {
+          "accent": "#6f94a4",
+          "background": "#e9ebe6",
+          "border": "#93aab4",
+          "control_border": "#647f8e",
+          "desktop": "#354d64",
+          "elevated": "#cbd7da",
+          "error": "#874b4b",
+          "focus": "#354d64",
+          "foreground": "#304957",
+          "island_background": "#dee7e6",
+          "island_foreground": "#304957",
+          "muted": "#475f6c",
+          "selection": "#354d64",
+          "selection_foreground": "#e9ebe6",
+          "success": "#42665c",
+          "surface": "#e9ebe6",
+          "terminal": "#304957",
+          "terminal_foreground": "#e9ebe6",
+          "top_background": "#dee7e6",
+          "top_foreground": "#304957",
+          "warning": "#755b30"
+        },
+        "profile": "ocean-silk",
+        "provenance": [
+          {
+            "id": "legacy-registry",
+            "path": "eucalyptus-felt-cinnamon/nim-suite/themes.json",
+            "sha256": "9b4d982606777864e94ba367ce6139be516157e64ed50577ea828badd7f1991e"
+          },
+          {
+            "id": "ocean-glass-design",
+            "path": "desktop-theme-studio/refinements/ocean-silk-current/design.json",
+            "sha256": "283d44364b1aa9112626b45588bfaed6db95569317df105de78c3376608109af"
+          },
+          {
+            "id": "ocean-silk-legacy-palette",
+            "path": "ocean-silk-cinnamon/palette.json",
+            "sha256": "e0153fcae0373d400c8d7064f9e6bd711c24fe72447ff7b266dc4e7177746f63"
+          }
+        ],
+        "registry": "/home/bertmacklen/Documents/desktop-theme-studio/repairs/nim-nitch/catalog/generated/themes.json"
+      },
+      "cli_aliases": [
+        "ocean-silk",
+        "Ocean Silk"
+      ],
+      "cursor": "Ocean-Silk-Cursors",
+      "design_identity": "Original Ocean Silk blue-gray, mist, frost and ivory glass identity with current Nothing Island and all current desktop features.",
+      "design_source": "/home/bertmacklen/Documents/desktop-theme-studio/refinements/ocean-silk-current/design.json",
+      "eww_palette_key": "Ocean-Silk-Glass",
+      "eww_palette_source": "/home/bertmacklen/Documents/eww-graphite-brass/config/themes/palettes.json",
+      "geometry_source": {
+        "app_radius": 4,
+        "bottom_panel_height": 54,
+        "composition": "Preserve live Nothing Island and eyes, top-left menu/workspaces, right status and bottom programs-only dock.",
+        "cursor_size": 28,
+        "music_art_size": 184,
+        "music_card_width": 320,
+        "panel_groups": "top left menu then workspace indicator; center clock/date island; right status; bottom centered launchers/running apps only",
+        "panel_height": 44,
+        "panel_position": "top menu / clock island / corner status; bottom dock",
+        "spacing": [
+          4,
+          8,
+          12,
+          16,
+          24
+        ],
+        "widget_radius": 6
+      },
+      "icons": "Ocean-Silk-Icons",
+      "identity_note": "Catalog display name Ocean Silk; design id ocean-silk-current and design.name Ocean-Silk-Glass. This candidate selects current Glass source tree; base Ocean Silk is a separate layer.",
+      "integration_notes": {
+        "hover": "Derived from shared Eww palette Ocean-Silk-Glass.accent-hover.",
+        "island": "Shared .84 popup / .62 cards / geometry radius are coordinator defaults pending isolated visual review.",
+        "panel_scalars": "Compatibility placeholders; preserve_authored_shell means the source panel CSS is used verbatim.",
+        "selection_contrast": null,
+        "status_semantics": null
+      },
+      "island_inline_style_updates": {
+        "actor": "background-color:transparent; color:#304957; border-radius:18px; box-shadow:none; padding:0; margin:0;",
+        "compact": "background-color:#DEE7E6;",
+        "compact_clock": "color:#304957;",
+        "compact_status": "color:#304957;",
+        "compact_weather": "color:#304957;"
+      },
+      "island_paints": {
+        "compact_background": "#DEE7E6",
+        "compact_clock": "#304957",
+        "compact_side": "#304957",
+        "meter_active": "#354D64",
+        "meter_track": "#e9ebe6",
+        "wave_active": "#354D64",
+        "wave_idle": "#e9ebe6"
+      },
+      "legacy_source": null,
+      "light": true,
+      "light_source": "Derived mechanically from the exact catalog background token; true when WCAG relative luminance > 0.35. No color value changed.",
+      "materials_source": {
+        "motion": "existing Cinnamon transitions",
+        "shadow": "small soft neutral shadow",
+        "text_surfaces": "opaque",
+        "texture": "none on controls or text surfaces",
+        "wallpaper": "Original approved bluegray silk dunes and ivory Linux Mint logo, unchanged."
+      },
+      "name": "Ocean Silk",
+      "overrides": {
+        "cinnamon_css": "/home/bertmacklen/Documents/desktop-theme-studio/refinements/candidate-repair-20260930/desktop/ocean-silk/workspace.css",
+        "island_css": "/home/bertmacklen/Documents/desktop-theme-studio/refinements/candidate-repair-20260930/desktop/ocean-silk/island.css"
+      },
+      "palette": {
+        "accent": "#6f94a4",
+        "background": "#e9ebe6",
+        "border": "#93aab4",
+        "error": "#874b4b",
+        "foreground": "#304957",
+        "hover": "#354D64",
+        "muted": "#475f6c",
+        "raised": "#cbd7da",
+        "selection": "#354d64",
+        "selection_foreground": "#e9ebe6",
+        "success": "#42665c",
+        "surface": "#e9ebe6",
+        "terminal": "#304957",
+        "terminal_foreground": "#e9ebe6",
+        "warning": "#755b30"
+      },
+      "preserve_authored_shell": true,
+      "private_harness": "candidate_isolate.py",
+      "profile_contract_note": "Catalog palette values are preserved. Only `raised` is mapped from the catalog/design token `elevated`, as an explicit semantic synonym. Numeric overlay alpha/radius fields are absent from design contract and remain null.",
+      "release_status": "disabled-pending-current-native-interaction-recovery-and-independent-acceptance",
+      "runtime_parity": {
+        "asset_provenance": null,
+        "authored_eww_bundle": null,
+        "candidate_layout": {
+          "bottom_height": 54,
+          "kind": "two-panel",
+          "top_height": 44
+        },
+        "private_harness": "candidate_isolate.py",
+        "workspace_geometry": {
+          "minimum_gap": 4,
+          "shape": "circle"
+        }
+      },
+      "source_status": {
+        "cursor": {
+          "exists": true,
+          "kind": "directory",
+          "path": "/home/bertmacklen/Documents/desktop-theme-studio/refinements/ocean-silk-current/desktop/Ocean-Silk-Glass cursors",
+          "sha256_tree": "ce48077eacb67af6649532478bfda5130273a7a15cb2ffe28c8c06f68faebff9"
+        },
+        "fastfetch_logo": {
+          "exists": true,
+          "kind": "file",
+          "path": "/home/bertmacklen/Documents/desktop-theme-studio/refinements/ocean-silk-current/applications/staged/05-macklenmobile-logo-ocean-silk-current.png",
+          "sha256": "50c72309586af55ff823a1da24fef5e9f196e4f497f0ea9cbf5879848ac242f8"
+        },
+        "icon": {
+          "exists": true,
+          "kind": "directory",
+          "path": "/home/bertmacklen/Documents/desktop-theme-studio/refinements/ocean-silk-current/desktop/Ocean-Silk-Glass icons",
+          "sha256_tree": "9b4dda3bbdeb09e342fd9ca403c9f7e11043a6c4fa56db67b38b58a27142d36b"
+        },
+        "menu_logo": {
+          "exists": true,
+          "kind": "file",
+          "path": "/home/bertmacklen/Documents/desktop-theme-studio/refinements/ocean-silk-current/artwork/menu-logo.png",
+          "sha256": "50c72309586af55ff823a1da24fef5e9f196e4f497f0ea9cbf5879848ac242f8"
+        },
+        "theme": {
+          "exists": true,
+          "kind": "directory",
+          "path": "/home/bertmacklen/Documents/desktop-theme-studio/refinements/ocean-silk-current/desktop/Ocean-Silk-Glass",
+          "sha256_tree": "f4e8a6730b76af05bd252b6ad381f1848261994b8e465cfcadc77ab9cacc44f5"
+        },
+        "wallpaper": {
+          "exists": true,
+          "kind": "file",
+          "path": "/home/bertmacklen/Documents/desktop-theme-studio/refinements/ocean-silk-current/artwork/wallpaper.png",
+          "sha256": "47c672c90403b254198d2000717173144a6becdd16c595a8d078ef5eb57cd98d"
+        }
+      },
+      "sources": {
+        "cursor": "/home/bertmacklen/Documents/desktop-theme-studio/refinements/candidate-repair-20260930/desktop/ocean-silk/cursors/Ocean-Silk-Cursors",
+        "eww_stylesheet": "/home/bertmacklen/Documents/desktop-theme-studio/refinements/ocean-silk-current/widgets/eww.scss",
+        "fastfetch_logo": "/home/bertmacklen/Documents/desktop-theme-studio/refinements/candidate-repair-20260930/desktop/ocean-silk/artwork/macklenmobile-logo-ocean-silk.png",
+        "icon": "/home/bertmacklen/Documents/desktop-theme-studio/refinements/candidate-repair-20260930/desktop/ocean-silk/icons/Ocean-Silk-Icons",
+        "menu_logo": "/home/bertmacklen/Documents/desktop-theme-studio/refinements/candidate-repair-20260930/desktop/ocean-silk/artwork/menu-logo.png",
+        "theme": "/home/bertmacklen/Documents/desktop-theme-studio/refinements/candidate-repair-20260930/desktop/ocean-silk/desktop/Ocean-Silk",
+        "wallpaper": "/home/bertmacklen/Documents/desktop-theme-studio/refinements/candidate-repair-20260930/desktop/ocean-silk/artwork/wallpaper.png"
+      },
+      "style": {
+        "alpha_rationale": "Shared Nothing Island defaults selected within existing collection ranges; not source-authored values.",
+        "authored_panel_css_preserved": true,
+        "card_alpha": 1.0,
+        "coordinator_defaults": true,
+        "identity": "misty blue-gray glass with separate rounded rails",
+        "island_alpha": 1.0,
+        "panel_alpha": 1.0,
+        "panel_radius": 0,
+        "popup_alpha": 1.0,
+        "radius": 6
+      },
+      "terminal_font_size": 11,
+      "theme": "Ocean-Silk",
+      "typography": {
+        "clock_family": "Ubuntu",
+        "clock_size_pt": 10,
+        "clock_weight": 500,
+        "monospace_family": "Hack",
+        "monospace_size_pt": 11,
+        "title_family": "Ubuntu",
+        "title_size_pt": 11,
+        "title_weight": 600,
+        "ui_family": "Ubuntu",
+        "ui_size_pt": 11,
+        "verification": "Font availability checked; final actual-scale readability pending"
+      },
+      "workspace_geometry": {
+        "minimum_gap": 4,
+        "shape": "circle"
+      }
+    },
+    "plum-afterglow": {
+      "aliases": {
+        "cinnamon": [
+          "Plum Afterglow"
+        ],
+        "cli": [
+          "plum-afterglow",
+          "Plum Afterglow"
+        ],
+        "cursor": [
+          "Plum Afterglow cursors"
+        ],
+        "gtk": [
+          "Plum Afterglow"
+        ],
+        "icons": [
+          "Plum Afterglow icons"
+        ],
+        "wm": [
+          "Plum Afterglow"
+        ]
+      },
+      "ansi": [
+        "#211e29",
+        "#e7a29c",
+        "#adc1a0",
+        "#dcc291",
+        "#a6b5cc",
+        "#c0a8d0",
+        "#a4c3bd",
+        "#d6cbd1",
+        "#887d90",
+        "#efb8b2",
+        "#c1d2b5",
+        "#ead6ae",
+        "#c0cce0",
+        "#d9c0e6",
+        "#bedad3",
+        "#f0e7df"
+      ],
+      "builder_compatibility": {
+        "missing_profile_fields": [
+          "palette.selection_foreground"
+        ],
+        "missing_style_fields": [
+          "identity",
+          "panel_alpha",
+          "popup_alpha",
+          "panel_radius",
+          "radius",
+          "island_alpha",
+          "card_alpha"
+        ],
+        "required_style_fields": [
+          "identity",
+          "panel_alpha",
+          "popup_alpha",
+          "panel_radius",
+          "radius",
+          "island_alpha",
+          "card_alpha"
+        ],
+        "status": "blocked_missing_exact_style_contract"
+      },
+      "candidate_layout": {
+        "height": 42,
+        "kind": "single-bottom"
+      },
+      "candidate_state_colors": {
+        "active_fill": "#d5a1aa",
+        "active_ink": "#211e29",
+        "compact_fill": "#211e29",
+        "compact_ink": "#d5a1aa",
+        "control": "#beb0bb",
+        "disabled_ink": "#beb0bb",
+        "focus": "#e4b6c0",
+        "hover_fill": "#584459",
+        "hover_ink": "#f0e7df",
+        "muted": "#beb0bb",
+        "normal_fill": "#393244",
+        "normal_ink": "#f0e7df",
+        "panels": [
+          42
+        ],
+        "shape": "pill",
+        "status_fill": "#d5a1aa",
+        "status_ink": "#211e29",
+        "strip": "#211e29",
+        "width": 48
+      },
+      "catalog_source": {
+        "catalog_palette": {
+          "accent": "#d5a1aa",
+          "accent_dark": "#775464",
+          "aluminum": "#beb0bb",
+          "background": "#211e29",
+          "blue": "#a6b5cc",
+          "border": "#65566d",
+          "charcoal": "#211e29",
+          "elevated": "#393244",
+          "error": "#e7a29c",
+          "focus": "#e4b6c0",
+          "foreground": "#f0e7df",
+          "lavender": "#b9a9cf",
+          "muted": "#beb0bb",
+          "sage": "#dcc291",
+          "sage_dark": "#b5907c",
+          "selection": "#584459",
+          "success": "#adc1a0",
+          "surface": "#2d2838",
+          "terminal": "#211e29",
+          "terminal_foreground": "#f0e7df",
+          "walnut": "#211e29",
+          "warning": "#dcc291"
+        },
+        "profile": "plum-afterglow",
+        "provenance": [
+          {
+            "id": "plum-afterglow-design",
+            "path": "desktop-theme-studio/presets/plum-afterglow/design.json",
+            "sha256": "d0d24ac8840ac439297417a20f1914c99727d2cf8752b35495823cc876431acc"
+          }
+        ],
+        "registry": "/home/bertmacklen/Documents/desktop-theme-studio/repairs/nim-nitch/catalog/generated/themes.json"
+      },
+      "cli_aliases": [
+        "plum-afterglow",
+        "Plum Afterglow"
+      ],
+      "cursor": "Plum Afterglow cursors",
+      "design_identity": "Cozy evening minimalism: ink and plum surfaces, cream text, dusty rose interaction, pale gold highlights. One 42px bottom panel; wide album-art music popup and useful tools on demand.",
+      "design_source": "/home/bertmacklen/Documents/desktop-theme-studio/presets/plum-afterglow/design.json",
+      "eww_palette_key": "Plum Afterglow",
+      "eww_palette_source": "/home/bertmacklen/Documents/eww-graphite-brass/config/themes/palettes.json",
+      "geometry_source": {
+        "composition": "One 42px bottom panel: menu and workspaces left, running apps center, clock and essential status right. Desktop empty at rest. Wide album-art music popup and separate useful tools on demand.",
+        "control_radius": 5,
+        "cursor_size": 28,
+        "panel_height": 42,
+        "preserve_panel_allocations": false,
+        "surface_radius": 10
+      },
+      "icons": "Plum Afterglow icons",
+      "identity_note": "Distinct 42px bottom-panel layout; keep this composition and widget placement.",
+      "integration_notes": {
+        "hover": "Derived from shared Eww palette Plum Afterglow.accent-hover.",
+        "island": "Shared .84 popup / .62 cards / geometry radius are coordinator defaults pending isolated visual review.",
+        "panel_scalars": "Compatibility placeholders; preserve_authored_shell means the source panel CSS is used verbatim.",
+        "selection_contrast": null,
+        "status_semantics": null
+      },
+      "island_inline_style_updates": {
+        "actor": "background-color:transparent; color:#d5a1aa; border-radius:18px; box-shadow:none; padding:0; margin:0;",
+        "compact": "background-color:#211e29;",
+        "compact_clock": "color:#d5a1aa;",
+        "compact_status": "color:#d5a1aa;",
+        "compact_weather": "color:#d5a1aa;"
+      },
+      "island_paints": {
+        "compact_background": "#211e29",
+        "compact_clock": "#d5a1aa",
+        "compact_side": "#d5a1aa",
+        "meter_active": "#e4b6c0",
+        "meter_track": "#211e29",
+        "wave_active": "#e4b6c0",
+        "wave_idle": "#211e29"
+      },
+      "legacy_source": null,
+      "light": false,
+      "light_source": "Derived mechanically from the exact catalog background token; true when WCAG relative luminance > 0.35. No color value changed.",
+      "materials_source": null,
+      "name": "Plum Afterglow",
+      "overrides": {
+        "cinnamon_css": "/home/bertmacklen/Documents/desktop-theme-studio/refinements/candidate-repair-20260930/desktop/plum-afterglow/workspace.css",
+        "island_css": "/home/bertmacklen/Documents/desktop-theme-studio/refinements/candidate-repair-20260930/desktop/plum-afterglow/island.css"
+      },
+      "palette": {
+        "accent": "#d5a1aa",
+        "background": "#211e29",
+        "border": "#65566d",
+        "error": "#e7a29c",
+        "foreground": "#f0e7df",
+        "hover": "#e4b6c0",
+        "muted": "#beb0bb",
+        "raised": "#393244",
+        "selection": "#584459",
+        "selection_foreground": "#f0e7df",
+        "success": "#adc1a0",
+        "surface": "#2d2838",
+        "terminal": "#211e29",
+        "terminal_foreground": "#f0e7df",
+        "warning": "#dcc291"
+      },
+      "preserve_authored_shell": true,
+      "private_harness": "candidate_isolate.py",
+      "profile_contract_note": "Catalog palette values are preserved. Only `raised` is mapped from the catalog/design token `elevated`, as an explicit semantic synonym. Numeric overlay alpha/radius fields are absent from design contract and remain null.",
+      "release_status": "disabled-pending-current-native-interaction-recovery-and-independent-acceptance",
+      "runtime_parity": {
+        "asset_provenance": null,
+        "authored_eww_bundle": null,
+        "candidate_layout": {
+          "height": 42,
+          "kind": "single-bottom"
+        },
+        "private_harness": "candidate_isolate.py",
+        "workspace_geometry": {
+          "minimum_gap": 4,
+          "shape": "pill"
+        }
+      },
+      "source_status": {
+        "cursor": {
+          "exists": true,
+          "kind": "directory",
+          "path": "/home/bertmacklen/Documents/desktop-theme-studio/presets/plum-afterglow/desktop/Plum Afterglow cursors",
+          "sha256_tree": "26cf9653bab5efd80ab20817109f2746d73596bc2de6c08cab648d313951b5dc"
+        },
+        "fastfetch_logo": {
+          "exists": true,
+          "kind": "file",
+          "path": "/home/bertmacklen/.config/fastfetch/logos/hues/macklenmobile-logo-plum-afterglow.png",
+          "sha256": "12e4d7718f90a4627a33c9a3d4e84f725d52b36677d84a1187a4a6761d763a77"
+        },
+        "icon": {
+          "exists": true,
+          "kind": "directory",
+          "path": "/home/bertmacklen/Documents/desktop-theme-studio/presets/plum-afterglow/desktop/Plum Afterglow icons",
+          "sha256_tree": "51e38813be023a9d83eb79961b7e2a84c373389d80c0627aa411b401be2afd2b"
+        },
+        "menu_logo": {
+          "exists": true,
+          "kind": "file",
+          "path": "/home/bertmacklen/Documents/desktop-theme-studio/presets/plum-afterglow/artwork/menu-logo.png",
+          "sha256": "12e4d7718f90a4627a33c9a3d4e84f725d52b36677d84a1187a4a6761d763a77"
+        },
+        "theme": {
+          "exists": true,
+          "kind": "directory",
+          "path": "/home/bertmacklen/Documents/desktop-theme-studio/presets/plum-afterglow/desktop/Plum Afterglow",
+          "sha256_tree": "725f17888432dc1400412e061b262db5e087741c0dbeea4d2244112b738eb190"
+        },
+        "wallpaper": {
+          "exists": true,
+          "kind": "file",
+          "path": "/home/bertmacklen/Documents/desktop-theme-studio/presets/plum-afterglow/artwork/wallpaper.png",
+          "sha256": "5f44e9ef8db6edb743c9ffe2a2100b20256421d602fd5c80de4b5e83ad85e17d"
+        }
+      },
+      "sources": {
+        "cursor": "/home/bertmacklen/Documents/desktop-theme-studio/refinements/cinnamon-current-collection/contributions/all-theme-plan/pipeline/staged-refresh-20260922/plum-afterglow/cursors/Plum Afterglow cursors",
+        "eww_stylesheet": "/home/bertmacklen/Documents/desktop-theme-studio/presets/plum-afterglow/applications/receiver/eww.scss",
+        "fastfetch_logo": "/home/bertmacklen/Documents/desktop-theme-studio/refinements/cinnamon-current-collection/contributions/all-theme-plan/pipeline/staged-refresh-20260922/plum-afterglow/artwork/macklenmobile-logo-plum-afterglow.png",
+        "icon": "/home/bertmacklen/Documents/desktop-theme-studio/refinements/cinnamon-current-collection/contributions/all-theme-plan/pipeline/staged-refresh-20260922/plum-afterglow/icons/Plum Afterglow icons",
+        "menu_logo": "/home/bertmacklen/Documents/desktop-theme-studio/refinements/cinnamon-current-collection/contributions/all-theme-plan/pipeline/staged-refresh-20260922/plum-afterglow/artwork/menu-logo.png",
+        "theme": "/home/bertmacklen/Documents/desktop-theme-studio/refinements/cinnamon-current-collection/contributions/all-theme-plan/pipeline/staged-refresh-20260922/plum-afterglow/desktop/Plum Afterglow",
+        "wallpaper": "/home/bertmacklen/Documents/desktop-theme-studio/refinements/cinnamon-current-collection/contributions/all-theme-plan/pipeline/staged-refresh-20260922/plum-afterglow/artwork/wallpaper.png"
+      },
+      "style": {
+        "alpha_rationale": "Shared Nothing Island defaults selected within existing collection ranges; not source-authored values.",
+        "authored_panel_css_preserved": true,
+        "card_alpha": 1.0,
+        "coordinator_defaults": true,
+        "identity": "deep plum surfaces with a restrained afterglow",
+        "island_alpha": 1.0,
+        "panel_alpha": 1.0,
+        "panel_radius": 0,
+        "popup_alpha": 1.0,
+        "radius": 10
+      },
+      "terminal_font_size": 11,
+      "theme": "Plum Afterglow",
+      "typography": {
+        "document": "Ubuntu 11",
+        "interface": "Ubuntu 11",
+        "monospace": "Hack 11",
+        "titlebar": "Ubuntu Medium 11"
+      },
+      "workspace_geometry": {
+        "minimum_gap": 4,
+        "shape": "pill"
+      }
+    },
+    "quiet-sage": {
+      "aliases": {
+        "cinnamon": [
+          "Quiet Sage"
+        ],
+        "cli": [
+          "quiet-sage",
+          "Quiet Sage"
+        ],
+        "cursor": [
+          "Quiet Sage cursors"
+        ],
+        "gtk": [
+          "Quiet Sage"
+        ],
+        "icons": [
+          "Quiet Sage icons"
+        ],
+        "wm": [
+          "Quiet Sage"
+        ]
+      },
+      "ansi": [
+        "#242722",
+        "#d49b91",
+        "#a8b99a",
+        "#d1bc8a",
+        "#9aafb0",
+        "#b7a7be",
+        "#9bbdb1",
+        "#d7d5c8",
+        "#7c8475",
+        "#e0afa5",
+        "#bacbab",
+        "#e1cda4",
+        "#aec3c3",
+        "#c9bad0",
+        "#b1d1c2",
+        "#ede8dc"
+      ],
+      "builder_compatibility": {
+        "missing_profile_fields": [],
+        "missing_style_fields": [
+          "identity",
+          "panel_alpha",
+          "popup_alpha",
+          "panel_radius",
+          "radius",
+          "island_alpha",
+          "card_alpha"
+        ],
+        "required_style_fields": [
+          "identity",
+          "panel_alpha",
+          "popup_alpha",
+          "panel_radius",
+          "radius",
+          "island_alpha",
+          "card_alpha"
+        ],
+        "status": "blocked_missing_exact_style_contract"
+      },
+      "candidate_layout": {
+        "bottom_height": 54,
+        "kind": "two-panel",
+        "top_height": 44
+      },
+      "candidate_state_colors": {
+        "active_fill": "#52684b",
+        "active_ink": "#ede8dc",
+        "compact_fill": "#242722",
+        "compact_ink": "#a8b99a",
+        "control": "#85927B",
+        "disabled_ink": "#b3b6a7",
+        "focus": "#bac8ab",
+        "hover_fill": "#52684b",
+        "hover_ink": "#ede8dc",
+        "muted": "#b3b6a7",
+        "normal_fill": "#242722",
+        "normal_ink": "#a8b99a",
+        "panels": [
+          44,
+          54
+        ],
+        "shape": "circle",
+        "status_fill": "#a8b99a",
+        "status_ink": "#242722",
+        "strip": "#242722",
+        "width": 44
+      },
+      "catalog_source": {
+        "catalog_palette": {
+          "accent": "#a8b99a",
+          "background": "#242722",
+          "border": "#4b5346",
+          "control_border": "#85927b",
+          "desktop": "#242722",
+          "elevated": "#383f35",
+          "error": "#d49b91",
+          "focus": "#bac8ab",
+          "foreground": "#ede8dc",
+          "island_background": "#242722",
+          "island_foreground": "#a8b99a",
+          "muted": "#b3b6a7",
+          "selection": "#52684b",
+          "selection_foreground": "#ede8dc",
+          "success": "#a8b99a",
+          "surface": "#2e332d",
+          "terminal": "#242722",
+          "terminal_foreground": "#ede8dc",
+          "top_background": "#242722",
+          "top_foreground": "#a8b99a",
+          "warning": "#d1bc8a"
+        },
+        "profile": "quiet-sage",
+        "provenance": [
+          {
+            "id": "quiet-sage-design",
+            "path": "desktop-theme-studio/refinements/quiet-sage-current/design.json",
+            "sha256": "22bb1cb6e9ad905a86cd5d544fa7480307b0fd17708b09c5b2db2eea1fe0c75a"
+          }
+        ],
+        "registry": "/home/bertmacklen/Documents/desktop-theme-studio/repairs/nim-nitch/catalog/generated/themes.json"
+      },
+      "cli_aliases": [
+        "quiet-sage",
+        "Quiet Sage"
+      ],
+      "cursor": "Quiet Sage cursors",
+      "design_identity": "Quiet Sage original warm charcoal, muted sage and cream identity with current Nothing Island, eyes,44px top groups,54px bottom dock and all existing music/application features.",
+      "design_source": "/home/bertmacklen/Documents/desktop-theme-studio/refinements/quiet-sage-current/design.json",
+      "eww_palette_key": "Quiet Sage",
+      "eww_palette_source": "/home/bertmacklen/Documents/eww-graphite-brass/config/themes/palettes.json",
+      "geometry_source": {
+        "app_radius": 4,
+        "bottom_panel_height": 54,
+        "composition": "Preserve live Nothing Island and eyes, top-left menu/workspaces, right status and bottom programs-only dock.",
+        "cursor_size": 28,
+        "music_art_size": 184,
+        "music_card_width": 320,
+        "panel_groups": "top left menu then workspace indicator; center clock/date island; right status; bottom centered launchers/running apps only",
+        "panel_height": 44,
+        "panel_position": "top menu / clock island / corner status; bottom dock",
+        "spacing": [
+          4,
+          8,
+          12,
+          16,
+          24
+        ],
+        "widget_radius": 6
+      },
+      "icons": "Quiet Sage icons",
+      "identity_note": "Catalog palette source points to refinements/quiet-sage-current; desktop artwork/theme trees exist in presets/quiet-sage. Combine only after hashing both roots and affirming canonical layer identity.",
+      "integration_notes": {
+        "hover": "Derived from shared Eww palette Quiet Sage.accent-hover.",
+        "island": "Shared .84 popup / .62 cards / geometry radius are coordinator defaults pending isolated visual review.",
+        "panel_scalars": "Compatibility placeholders; preserve_authored_shell means the source panel CSS is used verbatim.",
+        "selection_contrast": null,
+        "status_semantics": null
+      },
+      "island_inline_style_updates": {
+        "actor": "background-color:transparent; color:#a8b99a; border-radius:18px; box-shadow:none; padding:0; margin:0;",
+        "compact": "background-color:#242722;",
+        "compact_clock": "color:#a8b99a;",
+        "compact_status": "color:#a8b99a;",
+        "compact_weather": "color:#a8b99a;"
+      },
+      "island_paints": {
+        "meter_active": "#bac8ab",
+        "meter_track": "#242722",
+        "wave_active": "#bac8ab",
+        "wave_idle": "#242722"
+      },
+      "legacy_source": null,
+      "light": false,
+      "light_source": "Derived mechanically from the exact catalog background token; true when WCAG relative luminance > 0.35. No color value changed.",
+      "materials_source": {
+        "motion": "existing Cinnamon transitions",
+        "shadow": "small soft neutral shadow",
+        "text_surfaces": "opaque",
+        "texture": "none on controls or text surfaces",
+        "wallpaper": "Quiet warmcharcoal field with subtle small centered supplied Apple/LM silhouette in muted sage; no wood, metal or medallion."
+      },
+      "name": "Quiet Sage",
+      "overrides": {
+        "cinnamon_css": "/home/bertmacklen/Documents/desktop-theme-studio/refinements/candidate-repair-20260930/desktop/quiet-sage/workspace.css",
+        "island_css": "/home/bertmacklen/Documents/desktop-theme-studio/refinements/candidate-repair-20260930/desktop/quiet-sage/island.css"
+      },
+      "palette": {
+        "accent": "#a8b99a",
+        "background": "#242722",
+        "border": "#4b5346",
+        "error": "#d49b91",
+        "foreground": "#ede8dc",
+        "hover": "#bac8ab",
+        "muted": "#b3b6a7",
+        "raised": "#383f35",
+        "selection": "#52684b",
+        "selection_foreground": "#ede8dc",
+        "success": "#a8b99a",
+        "surface": "#2e332d",
+        "terminal": "#242722",
+        "terminal_foreground": "#ede8dc",
+        "warning": "#d1bc8a"
+      },
+      "preserve_authored_shell": true,
+      "private_harness": "candidate_isolate.py",
+      "profile_contract_note": "Catalog palette values are preserved. Only `raised` is mapped from the catalog/design token `elevated`, as an explicit semantic synonym. Numeric overlay alpha/radius fields are absent from design contract and remain null.",
+      "release_status": "disabled-pending-current-native-interaction-recovery-and-independent-acceptance",
+      "runtime_parity": {
+        "asset_provenance": null,
+        "authored_eww_bundle": null,
+        "candidate_layout": {
+          "bottom_height": 54,
+          "kind": "two-panel",
+          "top_height": 44
+        },
+        "private_harness": "candidate_isolate.py",
+        "workspace_geometry": {
+          "minimum_gap": 4,
+          "shape": "circle"
+        }
+      },
+      "source_status": {
+        "cursor": {
+          "exists": true,
+          "kind": "directory",
+          "path": "/home/bertmacklen/Documents/desktop-theme-studio/presets/quiet-sage/desktop/Quiet Sage cursors",
+          "sha256_tree": "e4d235c7dc5d00308f797648bc975b34c61380498646bd40174ec8d4d1d5f70c"
+        },
+        "fastfetch_logo": {
+          "exists": true,
+          "kind": "file",
+          "path": "/home/bertmacklen/.config/fastfetch/logos/hues/macklenmobile-logo-quiet-sage.png",
+          "sha256": "7698988811885e0e7c28974b41032938af781a0402c8628e40b3720dd24487ff"
+        },
+        "icon": {
+          "exists": true,
+          "kind": "directory",
+          "path": "/home/bertmacklen/Documents/desktop-theme-studio/presets/quiet-sage/desktop/Quiet Sage icons",
+          "sha256_tree": "7dd042a3b802e09368894dba741890948c6536f7bb97747dcad9c089fc97a59a"
+        },
+        "menu_logo": {
+          "exists": true,
+          "kind": "file",
+          "path": "/home/bertmacklen/Documents/desktop-theme-studio/presets/quiet-sage/artwork/menu-logo.png",
+          "sha256": "7698988811885e0e7c28974b41032938af781a0402c8628e40b3720dd24487ff"
+        },
+        "theme": {
+          "exists": true,
+          "kind": "directory",
+          "path": "/home/bertmacklen/Documents/desktop-theme-studio/presets/quiet-sage/desktop/Quiet Sage",
+          "sha256_tree": "522d9e88327b674b6b3c4dd34afddee6153c68d87898e3250122c7cbb5002f9e"
+        },
+        "wallpaper": {
+          "exists": true,
+          "kind": "file",
+          "path": "/home/bertmacklen/Documents/desktop-theme-studio/presets/quiet-sage/artwork/wallpaper.png",
+          "sha256": "76250fdd34b863b52a8499f8b4b1f34a314367a7c6673a08d5d3065d5fd8a650"
+        }
+      },
+      "sources": {
+        "cursor": "/home/bertmacklen/Documents/desktop-theme-studio/refinements/cinnamon-current-collection/contributions/all-theme-plan/pipeline/staged-refresh-20260922/quiet-sage/cursors/Quiet Sage cursors",
+        "eww_stylesheet": "/home/bertmacklen/Documents/desktop-theme-studio/refinements/quiet-sage-current/widgets/eww.scss",
+        "fastfetch_logo": "/home/bertmacklen/Documents/desktop-theme-studio/refinements/cinnamon-current-collection/contributions/all-theme-plan/pipeline/staged-refresh-20260922/quiet-sage/artwork/macklenmobile-logo-quiet-sage.png",
+        "icon": "/home/bertmacklen/Documents/desktop-theme-studio/refinements/cinnamon-current-collection/contributions/all-theme-plan/pipeline/staged-refresh-20260922/quiet-sage/icons/Quiet Sage icons",
+        "menu_logo": "/home/bertmacklen/Documents/desktop-theme-studio/refinements/cinnamon-current-collection/contributions/all-theme-plan/pipeline/staged-refresh-20260922/quiet-sage/artwork/menu-logo.png",
+        "theme": "/home/bertmacklen/Documents/desktop-theme-studio/refinements/cinnamon-current-collection/contributions/all-theme-plan/pipeline/staged-refresh-20260922/quiet-sage/desktop/Quiet Sage",
+        "wallpaper": "/home/bertmacklen/Documents/desktop-theme-studio/refinements/cinnamon-current-collection/contributions/all-theme-plan/pipeline/staged-refresh-20260922/quiet-sage/artwork/wallpaper.png"
+      },
+      "style": {
+        "alpha_rationale": "Shared Nothing Island defaults selected within existing collection ranges; not source-authored values.",
+        "authored_panel_css_preserved": true,
+        "card_alpha": 1.0,
+        "coordinator_defaults": true,
+        "identity": "quiet charcoal with muted sage controls",
+        "island_alpha": 1.0,
+        "panel_alpha": 1.0,
+        "panel_radius": 0,
+        "popup_alpha": 1.0,
+        "radius": 6
+      },
+      "terminal_font_size": 11,
+      "theme": "Quiet Sage",
+      "typography": {
+        "clock_family": "Ubuntu",
+        "clock_size_pt": 10,
+        "clock_weight": 500,
+        "monospace_family": "Hack",
+        "monospace_size_pt": 11,
+        "title_family": "Ubuntu",
+        "title_size_pt": 11,
+        "title_weight": 600,
+        "ui_family": "Ubuntu",
+        "ui_size_pt": 11,
+        "verification": "Font availability checked; final actual-scale readability pending"
+      },
+      "workspace_geometry": {
+        "minimum_gap": 4,
+        "shape": "circle"
+      }
+    }
+  },
+  "schema": 1,
+  "selection_note": "Only the six reviewed candidates; Macintosh Soft Evergreen excluded",
+  "source": "/home/bertmacklen/Documents/desktop-theme-studio/refinements/candidate-repair-20260930/assembly/profiles.json",
+  "source_sha256": "cc334394e1ca71cce34d91782af7f4d1f031bd2a29e807924aaa44ecdc229172"
+}

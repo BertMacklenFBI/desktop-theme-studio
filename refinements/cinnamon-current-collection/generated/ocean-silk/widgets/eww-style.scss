@@ -1,0 +1,41 @@
+* { all:unset; font-family:Ubuntu; font-size:11pt; color:$text; }
+window { background:transparent; }
+.popup { background:$base; border:1px solid $border; border-radius:6px; padding:16px; }
+.popup-header { padding-bottom:12px; border-bottom:1px solid $surface1; }
+.heading { font-size:12pt; font-weight:600; }
+.popup-header .muted { font-size:10pt; }
+.muted, .elapsed { color:$muted; }
+.elapsed { font-family:Hack; font-size:10pt; }
+.eyebrow { font-size:10pt; font-weight:600; color:$accent; }
+.track-title { font-size:12pt; font-weight:600; }
+button { background:$surface0; border:1px solid $border; border-radius:4px; padding:7px 10px; }
+button:hover { background:$surface1; }
+button:focus { border-color:$accent; box-shadow:inset 0 0 0 1px $accent; }
+button:active, button.selected, button.enabled { background:#354D64; color:#E9EBE6; }
+button:active label, button.selected label, button.enabled label, button.enabled .muted { color:#E9EBE6; }
+button:disabled { background:$surface1; border-color:$surface1; }
+button:disabled label { color:$muted; }
+button.close { min-width:26px; min-height:26px; padding:0; border:0; background:transparent; font-size:20px; }
+button.close:hover { background:$surface1; }
+.album-frame { padding:4px; background:$surface1; border:1px solid $border; border-radius:4px; }
+.transport button { padding:7px 5px; }
+.library-link { border-color:$accent; }
+.utility-row button { padding:5px 7px; border:0; background:$surface1; }
+.card { background:transparent; padding:0; }
+.calendar-card { padding:0; }
+calendar { color:$text; padding:8px; background:$surface0; border-radius:4px; }
+calendar.header { color:$text; background:$surface1; }
+calendar:selected { color:#E9EBE6; background:#354D64; border-radius:3px; }
+calendar:indeterminate { color:$muted; }
+scale { min-height:18px; }
+scale trough { min-height:4px; background:$surface1; border-radius:2px; }
+scale highlight { min-height:4px; background:$accent; border-radius:2px; }
+scale slider { background:$surface0; min-width:12px; min-height:12px; border:1px solid $border; border-radius:6px; }
+progress trough { min-height:4px; background:$surface1; border-radius:2px; }
+progress progress { min-height:4px; background:$accent; border-radius:2px; }
+.timer { font-family:Hack; font-size:30pt; color:$accent; }
+.notes { background:$surface1; padding:12px; border-radius:4px; }
+.chip { padding:7px 8px; }
+scrollbar trough { background:transparent; }
+scrollbar slider { background:$border; min-width:5px; border-radius:3px; }
+tooltip { background:$surface0; color:$text; border:1px solid $border; padding:6px; }

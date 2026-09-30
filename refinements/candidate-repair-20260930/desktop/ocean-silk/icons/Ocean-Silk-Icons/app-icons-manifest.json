@@ -1,0 +1,118 @@
+{
+  "icons": [
+    {
+      "name": "system-file-manager",
+      "source": "/usr/share/icons/Papirus/48x48/apps/system-file-manager.svg",
+      "resolved_source": "/usr/share/icons/Papirus/48x48/apps/system-file-manager.svg",
+      "source_sha256": "389963ce9dcd2ed4945c62a16b2ff277b978d51d2dff50a9b76ac03967ed4fd1",
+      "output_sha256": "1d79008729538b5c22ac6655b4ed2d0ecc60a6a84b14425e8f7f03930b6aa606",
+      "geometry_unchanged": true
+    },
+    {
+      "name": "firefox",
+      "source": "/usr/share/icons/Papirus/48x48/apps/firefox.svg",
+      "resolved_source": "/usr/share/icons/Papirus/48x48/apps/firefox.svg",
+      "source_sha256": "662f712b309a615f6ffb388d37ecda0ce789bb0bc54e6c4d5b0cc1169495666e",
+      "output_sha256": "1b29c30bea5cebe3df3058410cae8fa9aa17fc345f67bb25e7fc1680ca39d003",
+      "geometry_unchanged": true
+    },
+    {
+      "name": "org.gnome.Terminal",
+      "source": "/usr/share/icons/Papirus/48x48/apps/org.gnome.Terminal.svg",
+      "resolved_source": "/usr/share/icons/Papirus/48x48/apps/utilities-terminal.svg",
+      "source_sha256": "e012085d169034e338c2c143a803b30d32fe1923783503e33adb81d58e30ee6c",
+      "output_sha256": "eb9f4272eb1c8153c747fc5a32eea10b46d718816c55f2513dbf68c35959e694",
+      "geometry_unchanged": true
+    },
+    {
+      "name": "utilities-terminal",
+      "source": "/usr/share/icons/Papirus/48x48/apps/utilities-terminal.svg",
+      "resolved_source": "/usr/share/icons/Papirus/48x48/apps/utilities-terminal.svg",
+      "source_sha256": "e012085d169034e338c2c143a803b30d32fe1923783503e33adb81d58e30ee6c",
+      "output_sha256": "eb9f4272eb1c8153c747fc5a32eea10b46d718816c55f2513dbf68c35959e694",
+      "geometry_unchanged": true
+    },
+    {
+      "name": "steam",
+      "source": "/usr/share/icons/Papirus/48x48/apps/steam.svg",
+      "resolved_source": "/usr/share/icons/Papirus/48x48/apps/steam.svg",
+      "source_sha256": "3d6f80eea3007176ac15184ca9223092e9b5a2ded6d6f5f6bc0783b93f7c88d7",
+      "output_sha256": "a203d581876b9169f7fa7a436ed254e87901887be30ebaa8a4d3a2a9793aee76",
+      "geometry_unchanged": true
+    },
+    {
+      "name": "virtualbox",
+      "source": "/usr/share/icons/Papirus/48x48/apps/virtualbox.svg",
+      "resolved_source": "/usr/share/icons/Papirus/48x48/apps/virtualbox.svg",
+      "source_sha256": "6908ff87c8c3ee150599ffbec24f68ddf51445fb59bb7dfa794c74876f71e764",
+      "output_sha256": "792103f121e42d5a2155fa60c663eb6c2aaf7c1b28b3d9a33c4138a4736087f8",
+      "geometry_unchanged": true
+    },
+    {
+      "name": "kitty",
+      "source": "/usr/share/icons/Papirus/48x48/apps/kitty.svg",
+      "resolved_source": "/usr/share/icons/Papirus/48x48/apps/kitty.svg",
+      "source_sha256": "a8edab405afb1f6c42689737557d19f39462245c63225f7199079ef46e6701b7",
+      "output_sha256": "26bbeeb402823b98af30f26139210e1ef03b0a7d7f096b325b0ea4d7387c32ab",
+      "geometry_unchanged": true
+    },
+    {
+      "name": "konsole",
+      "source": "/usr/share/icons/Papirus/48x48/apps/konsole.svg",
+      "resolved_source": "/usr/share/icons/Papirus/48x48/apps/utilities-terminal.svg",
+      "source_sha256": "e012085d169034e338c2c143a803b30d32fe1923783503e33adb81d58e30ee6c",
+      "output_sha256": "eb9f4272eb1c8153c747fc5a32eea10b46d718816c55f2513dbf68c35959e694",
+      "geometry_unchanged": true
+    },
+    {
+      "name": "org.gnome.Settings",
+      "source": "/usr/share/icons/Papirus/48x48/apps/org.gnome.Settings.svg",
+      "resolved_source": "/usr/share/icons/Papirus/48x48/apps/org.gnome.Settings.svg",
+      "source_sha256": "d85578dc2a5b422889c06f3706b1a86f76eb31d25b4f26d10607e07f2f061b4c",
+      "output_sha256": "58cd44fab32e658ae43a04414e99b5effe3043daa255898b604923385b1b834c",
+      "geometry_unchanged": true
+    },
+    {
+      "name": "mintstick-logo-linuxmint",
+      "source": "/usr/share/icons/hicolor/scalable/status/mintstick-logo-linuxmint.svg",
+      "resolved_source": "/usr/share/icons/hicolor/scalable/status/mintstick-logo-linuxmint.svg",
+      "source_sha256": "4617c951c7e972d65a0b6d5dba3648f5d72a318516d17682c3ebf3e47de6c8a0",
+      "output_sha256": "d32b6cd6b82a9177d28083ce615dfa3ed91538b88d16e21694c305c993c7e626",
+      "geometry_unchanged": true
+    },
+    {
+      "name": "app.devsuite.Ptyxis",
+      "source": "/var/lib/flatpak/exports/share/icons/hicolor/scalable/apps/app.devsuite.Ptyxis.svg",
+      "resolved_source": "/var/lib/flatpak/app/app.devsuite.Ptyxis/x86_64/stable/769fa68f0529bcb3ad02e147c90578e9f6ceb5e30e843a917bc5bb1069e66164/export/share/icons/hicolor/scalable/apps/app.devsuite.Ptyxis.svg",
+      "source_sha256": "9fff2bf3a274bf7435b77dca7abf81cbe29c2d9c56ec0d86e3d2ef68944c2c00",
+      "output_sha256": "11e7dfb5ff13dff31e511c7702db546f170d61c23707277abb54caf144f1819a",
+      "geometry_unchanged": true
+    }
+  ],
+  "aliases": {
+    "nemo": "system-file-manager",
+    "org.gnome.Nautilus": "system-file-manager",
+    "firefox-esr": "firefox",
+    "org.mozilla.firefox": "firefox",
+    "org.kde.konsole": "konsole",
+    "cinnamon-settings": "org.gnome.Settings",
+    "preferences-system": "org.gnome.Settings",
+    "com.valvesoftware.Steam": "steam",
+    "ptyxis": "app.devsuite.Ptyxis"
+  },
+  "palette": [
+    "#304957",
+    "#354D64",
+    "#647F8E",
+    "#6F94A4",
+    "#CBD7DA",
+    "#E9EBE6",
+    "#E9EBE6"
+  ],
+  "limitations": [
+    "Application-provided window pixmaps and absolute icon paths bypass icon theme overrides.",
+    "Ptyxis icon geometry copied from installed app export; its upstream licensing stays with app.devsuite.Ptyxis package.",
+    "Other applications continue Papirus fallback.",
+    "No launcher desktop entries or live preferences modified."
+  ]
+}

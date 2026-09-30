@@ -1,0 +1,46 @@
+/* Ocean Silk Ptyxis application chrome; load as a profile-specific append block. */
+@define-color theme_fg_color #304957;
+@define-color theme_text_color #304957;
+@define-color theme_bg_color #e9ebe6;
+@define-color theme_base_color #304957;
+@define-color theme_selected_bg_color #354d64;
+@define-color theme_selected_fg_color #e9ebe6;
+@define-color window_fg_color #304957;
+@define-color window_bg_color #e9ebe6;
+@define-color view_fg_color #e9ebe6;
+@define-color view_bg_color #304957;
+@define-color headerbar_fg_color #304957;
+@define-color headerbar_bg_color #cbd7da;
+@define-color headerbar_backdrop_color #e9ebe6;
+@define-color headerbar_border_color #93aab4;
+@define-color accent_color #6f94a4;
+@define-color accent_bg_color #354d64;
+@define-color accent_fg_color #e9ebe6;
+:root {
+  --accent-bg-color: #354d64;
+  --accent-fg-color: #e9ebe6;
+  --accent-color: #6f94a4;
+  --window-bg-color: #e9ebe6;
+  --window-fg-color: #304957;
+  --view-bg-color: #304957;
+  --view-fg-color: #e9ebe6;
+  --headerbar-bg-color: #cbd7da;
+  --headerbar-fg-color: #304957;
+  --headerbar-backdrop-color: #e9ebe6;
+  --headerbar-border-color: #93aab4;
+  --sidebar-bg-color: #cbd7da;
+  --sidebar-fg-color: #304957;
+  --sidebar-backdrop-color: #e9ebe6;
+  --card-bg-color: #cbd7da;
+  --card-fg-color: #304957;
+  --dialog-bg-color: #e9ebe6;
+  --dialog-fg-color: #304957;
+  --popover-bg-color: #e9ebe6;
+  --popover-fg-color: #304957;
+}
+window { background-color: #e9ebe6; color: #304957; }
+headerbar { background-color: #cbd7da; background-image: none; color: #304957; border-color: #93aab4; }
+headerbar label, headerbar image, headerbar button, .titlebar label, .titlebar image, .titlebar button { color: #304957; }
+headerbar button:checked, headerbar button:checked label, headerbar button:checked image { color: #e9ebe6; }
+terminal, vte-terminal { background-color: #304957; color: #e9ebe6; }
+button:checked, button:active { background-color: #354d64; color: #e9ebe6; }

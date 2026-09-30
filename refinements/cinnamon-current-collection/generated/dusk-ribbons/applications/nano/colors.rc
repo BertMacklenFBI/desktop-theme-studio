@@ -1,0 +1,9 @@
+# Dusk Ribbons Nano color fragment; do not replace non-color user preferences.
+set titlecolor bold,#2d2c41,#b0c3a5
+set statuscolor #f1e3df,#2d2c41
+set errorcolor #2d2c41,#e4a0a2
+set promptcolor #f1e3df,#2d2c41
+set selectedcolor #2d2c41,#bb8987
+set numbercolor #d3adb0
+set keycolor #bb8987
+set functioncolor #f1e3df

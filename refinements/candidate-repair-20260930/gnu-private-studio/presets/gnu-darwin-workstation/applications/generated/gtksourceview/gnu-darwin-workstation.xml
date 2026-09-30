@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<style-scheme id="gnu-darwin-workstation" name="GNU-Darwin Workstation" version="1.0"><author>Desktop Theme Studio</author><description>Compact gray workstation editor with slate selection.</description>
+<style name="text" foreground="#101010" background="#FFFFFF"/>
+<style name="selection" foreground="#FFFFFF" background="#333641"/>
+<style name="cursor" foreground="#333641"/>
+<style name="current-line" background="#B3B2B0"/><style name="line-numbers" foreground="#383838" background="#B3B2B0"/>
+<style name="bracket-match" foreground="#FFFFFF" background="#353B50" bold="true"/>
+<style name="search-match" foreground="#FFFFFF" background="#5C3A00"/>
+<style name="def:comment" foreground="#383838" italic="true"/><style name="def:keyword" foreground="#333641" bold="true"/>
+<style name="def:string" foreground="#174A20"/><style name="def:number" foreground="#353B50"/><style name="def:type" foreground="#353B50"/>
+<style name="def:function" foreground="#333641"/><style name="def:preprocessor" foreground="#5C3A00"/><style name="def:error" foreground="#7A1818"/>
+</style-scheme>

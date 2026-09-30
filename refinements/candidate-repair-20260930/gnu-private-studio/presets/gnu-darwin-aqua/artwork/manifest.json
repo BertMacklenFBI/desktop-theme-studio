@@ -1,0 +1,43 @@
+{
+  "name": "GNU-Darwin Aqua",
+  "source": "Original mathematical flowing blue fields and original GD letter monogram; not an official logo",
+  "license": "CC0-1.0 original artwork",
+  "design_sha256": "5743461cfd7533f963f30a11009d52d43bdbaa83f32aa8964aea4eb75230e0b8",
+  "files": {
+    "grub-logo.png": {
+      "sha256": "8229b4e01420337f56a8263ac78bd865a8179f63552564af767e8a9c98cb4f2f",
+      "size": [
+        240,
+        240
+      ]
+    },
+    "preview.png": {
+      "sha256": "908c648495c19eac5ffd5ddd158977e7d083b2aad5a5cdc0a454eca22de31ec6",
+      "size": [
+        1440,
+        900
+      ]
+    },
+    "plymouth-logo.png": {
+      "sha256": "23435d51eaa13f8d9dbc12406e2542f2000ed9a8800318ad4d1e82cca1bbc094",
+      "size": [
+        720,
+        720
+      ]
+    },
+    "wallpaper.png": {
+      "sha256": "47c5600ea62e082a8ab94acc75bb71aaaac272c98d58e5b2a3d4a19a8e89560c",
+      "size": [
+        2880,
+        1800
+      ]
+    },
+    "menu-logo.png": {
+      "sha256": "23b5696982c36acb716fe1c606cf390d8aa4f565e52239bca9871f3787bb896f",
+      "size": [
+        256,
+        256
+      ]
+    }
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "name": "Macintosh Soft",
+  "id": "macintosh-soft",
+  "status": "building",
+  "direction": "Retro Apple warmth with modern readable controls; cozy minimalism",
+  "source_concept": "proposals/2026-09-20/three-directions.md#3-macintosh-soft",
+  "palette": {
+    "desktop": "#727F88",
+    "background": "#EBE9E1",
+    "surface": "#EBE9E1",
+    "elevated": "#D7D9D4",
+    "foreground": "#293238",
+    "muted": "#505D66",
+    "accent": "#507D7D",
+    "selection": "#356262",
+    "selection_foreground": "#FBF8F1",
+    "focus": "#356262",
+    "border": "#A5ABA8",
+    "control_border": "#697773",
+    "success": "#356247",
+    "warning": "#795615",
+    "error": "#944338",
+    "terminal": "#293238",
+    "terminal_foreground": "#EBE9E1",
+    "island_background": "#293238",
+    "island_foreground": "#9DC6C3",
+    "top_background": "#293238",
+    "top_foreground": "#9DC6C3"
+  },
+  "rainbow": [
+    "#99B79C",
+    "#D4C581",
+    "#D6A486",
+    "#C895A3",
+    "#A9A3BF",
+    "#8CAEBE"
+  ],
+  "typography": {
+    "ui_family": "Ubuntu",
+    "ui_size_pt": 11,
+    "title_family": "Ubuntu",
+    "title_size_pt": 11,
+    "title_weight": 600,
+    "clock_family": "Ubuntu",
+    "clock_size_pt": 10,
+    "clock_weight": 500,
+    "monospace_family": "Hack",
+    "monospace_size_pt": 11,
+    "verification": "Font availability checked; final actual-scale readability pending"
+  },
+  "geometry": {
+    "panel_height": 44,
+    "panel_position": "top menu / clock island / corner status; bottom dock",
+    "panel_groups": "top left menu then workspace indicator; center clock/date island; right status; bottom centered launchers/running apps only",
+    "app_radius": 4,
+    "widget_radius": 6,
+    "spacing": [
+      4,
+      8,
+      12,
+      16,
+      24
+    ],
+    "music_card_width": 320,
+    "cursor_size": 28,
+    "music_art_size": 184,
+    "bottom_panel_height": 54,
+    "composition": "Three graphite top groups with soft teal lettering; bone bottom application dock"
+  },
+  "materials": {
+    "text_surfaces": "opaque",
+    "shadow": "small soft neutral shadow",
+    "texture": "none on controls or text surfaces",
+    "motion": "existing Cinnamon transitions",
+    "wallpaper": "User-requested matte blue-gray paved concrete with rhombus tiles; clean pastel logo"
+  },
+  "artwork": {
+    "source": "/home/bertmacklen/Downloads/E5A4D645-7D5D-4BB8-A3D3-20EFE8881A44.png",
+    "instruction": "Use separately generated pastel logo and rhombus concrete wallpaper; preserve source original. See artwork/prompts.json and manifest.json."
+  },
+  "preserve": [
+    "cinabon menu name",
+    "custom music commands",
+    "fastfetch short and fastfetch long; plain fastfetch stays short",
+    "custom Local IP display 86.75-309",
+    "widget close, Escape, focus return and library reopen behavior",
+    "approved Plum Afterglow assets and recovery receipts"
+  ],
+  "first_milestone": [
+    "wallpaper",
+    "panel and menu",
+    "one real application",
+    "music popup"
+  ],
+  "verification": "Build, selection, visual, interaction and reboot evidence recorded separately. No live changes in identity phase.",
+  "terminal_ansi": [
+    "#949F9A",
+    "#C895A3",
+    "#99B79C",
+    "#D4C581",
+    "#8CAEBE",
+    "#A9A3BF",
+    "#9DC6C3",
+    "#EBE9E1",
+    "#A8B3AE",
+    "#E4ADB6",
+    "#ADC8AF",
+    "#E5D89F",
+    "#ABC8D5",
+    "#C2BCD4",
+    "#B8DAD5",
+    "#FBF8F1"
+  ],
+  "semantic_rules": {
+    "small_accent_text": "Use focus #356262, not accent #507D7D",
+    "primary_buttons": "Selection fill plus selection_foreground text",
+    "borders": "control_border for essential input edges; border only decorative",
+    "rainbow": "Identity and decorative accents on bone, readable foreground accents on graphite",
+    "ansi_black": "ANSI slot 0 is readable gray; inspect applications that use it as background"
+  }
+}

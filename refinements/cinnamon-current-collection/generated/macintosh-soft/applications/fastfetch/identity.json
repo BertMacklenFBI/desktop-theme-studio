@@ -1,0 +1,50 @@
+{
+  "guard": "Do not replace modes.py, long.jsonc, or user-defined Fastfetch wrappers.",
+  "logo": "macklenmobile-logo-macintosh-soft.png",
+  "long": {
+    "local_ip_format": "86.75-309",
+    "required_modules": [
+      "OS",
+      "HOST",
+      "KERNEL",
+      "SHELL",
+      "DE",
+      "WM",
+      "THEME",
+      "ICONS",
+      "TERMINAL",
+      "TERMINAL FONT",
+      "CPU",
+      "GPU",
+      "DISPLAY",
+      "MEM",
+      "SWAP",
+      "DISK",
+      "LOCAL IP"
+    ],
+    "uses_existing_mode_wrapper": true
+  },
+  "name": "Macintosh Soft",
+  "profile": "macintosh-soft",
+  "short": {
+    "palette": [
+      "#949f9a",
+      "#c895a3",
+      "#99b79c",
+      "#d4c581",
+      "#8caebe",
+      "#a9a3bf",
+      "#9dc6c3",
+      "#ebe9e1",
+      "#a8b3ae",
+      "#e4adb6",
+      "#adc8af",
+      "#e5d89f",
+      "#abc8d5",
+      "#c2bcd4",
+      "#b8dad5",
+      "#fbf8f1"
+    ],
+    "uses_existing_mode_wrapper": true
+  }
+}

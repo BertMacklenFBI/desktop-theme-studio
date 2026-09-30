@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64"><defs><linearGradient id="tile" x2="0" y2="1"><stop stop-color="#F8F9FA"/><stop offset="1" stop-color="#E2E4E7"/></linearGradient></defs><rect x="3" y="4" width="58" height="58" rx="12" fill="#265098" opacity=".3"/><rect x="3" y="2" width="58" height="58" rx="12" fill="url(#tile)" stroke="#A6ABB2" stroke-width="1"/><path d="M14 3.5h36" stroke="#265098" stroke-opacity=".55" stroke-width="1" stroke-linecap="round"/><svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" version="1" viewBox="0 0 64 64" x="10" y="9">
+ <circle style="opacity:0.2" cx="32" cy="31" r="29" />
+ <circle style="fill:#7160bd" cx="32" cy="30" r="29" />
+ <path style="opacity:0.2;fill:none;stroke:#000000;stroke-width:6" d="M 32,3 V 24.75 C 17.5,32 19.856843,50 32,50 44.143158,50 46.5,32 32,24.75" />
+ <path style="fill:none;stroke:#e4e4e4;stroke-width:6" d="M 32,1 V 23.75 C 17.5,31 19.856843,49 32,49 44.143158,49 46.5,31 32,23.75" />
+ <rect style="opacity:0.2" width="12" height="6" x="26" y="17" rx="3" ry="3" />
+ <rect style="fill:#ffffff" width="12" height="6" x="26" y="16" rx="3" ry="3" />
+ <rect style="opacity:0.2" width="12" height="6" x="26" y="11" rx="3" ry="3" />
+ <path style="opacity:0.1;fill:#ffffff" d="M 32 1 A 29 29 0 0 0 3 30 A 29 29 0 0 0 3.0175781 30.488281 A 29 29 0 0 1 32 2 A 29 29 0 0 1 60.974609 30.494141 A 29 29 0 0 0 61 30 A 29 29 0 0 0 32 1 z" />
+ <rect style="fill:#ffffff" width="12" height="6" x="26" y="10" rx="3" ry="3" />
+ <rect style="opacity:0.2" width="12" height="6" x="26" y="5" rx="3" ry="3" />
+ <rect style="fill:#ffffff" width="12" height="6" x="26" y="4" rx="3" ry="3" />
+</svg><path d="M25 56h14" stroke="#4384D6" stroke-linecap="round" stroke-width="2"/></svg>

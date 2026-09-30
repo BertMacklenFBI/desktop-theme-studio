@@ -1,0 +1,74 @@
+{
+  "version": 1,
+  "name": "Plum Afterglow",
+  "slug": "plum-afterglow",
+  "direction": "Cozy evening minimalism: ink and plum surfaces, cream text, dusty rose interaction, pale gold highlights. One 42px bottom panel; wide album-art music popup and useful tools on demand.",
+  "tokens": {
+    "background": "#211e29",
+    "surface": "#2d2838",
+    "elevated": "#393244",
+    "foreground": "#f0e7df",
+    "muted": "#beb0bb",
+    "accent": "#d5a1aa",
+    "accent_dark": "#775464",
+    "sage": "#dcc291",
+    "sage_dark": "#b5907c",
+    "lavender": "#b9a9cf",
+    "blue": "#a6b5cc",
+    "border": "#65566d",
+    "selection": "#584459",
+    "focus": "#e4b6c0",
+    "success": "#adc1a0",
+    "warning": "#dcc291",
+    "error": "#e7a29c",
+    "walnut": "#211e29",
+    "charcoal": "#211e29",
+    "aluminum": "#beb0bb"
+  },
+  "terminal_ansi": [
+    "#211e29",
+    "#e7a29c",
+    "#adc1a0",
+    "#dcc291",
+    "#a6b5cc",
+    "#c0a8d0",
+    "#a4c3bd",
+    "#d6cbd1",
+    "#887d90",
+    "#efb8b2",
+    "#c1d2b5",
+    "#ead6ae",
+    "#c0cce0",
+    "#d9c0e6",
+    "#bedad3",
+    "#f0e7df"
+  ],
+  "typography": {
+    "interface": "Ubuntu 11",
+    "document": "Ubuntu 11",
+    "monospace": "Hack 11",
+    "titlebar": "Ubuntu Medium 11"
+  },
+  "geometry": {
+    "preserve_panel_allocations": false,
+    "panel_height": 42,
+    "surface_radius": 10,
+    "control_radius": 5,
+    "cursor_size": 28,
+    "composition": "One 42px bottom panel: menu and workspaces left, running apps center, clock and essential status right. Desktop empty at rest. Wide album-art music popup and separate useful tools on demand."
+  },
+  "preservation": [
+    "Original supplied artwork files",
+    "Menu label cinabon",
+    "Custom music commands and playback behavior",
+    "Non-appearance application settings"
+  ],
+  "wallpaper": {
+    "path": "artwork/wallpaper.png",
+    "description": "Ink to plum field with restrained rose glow; supplied Apple/LM silhouette centered in muted lavender, rose, peach and pale gold. Original geometry and lettering preserved. No physical material simulation.",
+    "source_logo": "/home/bertmacklen/Downloads/E5A4D645-7D5D-4BB8-A3D3-20EFE8881A44.png",
+    "menu_logo": "artwork/menu-logo.png"
+  },
+  "status": "building",
+  "brand_color_source": "Supplied Apple/LM silhouette with muted lavender, pale gold, peach, rose, mauve and blue bands"
+}

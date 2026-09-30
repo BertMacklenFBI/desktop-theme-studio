@@ -1,0 +1,261 @@
+"""Reversible X11 visibility for the legacy overlay; never stops its playback process."""
+import ctypes, json, os, re, subprocess, time
+from pathlib import Path
+
+def matching():
+    # Query the X tree: an unmapped overlay may leave the WM client list.
+    text=subprocess.check_output(['xwininfo','-root','-tree'],text=True,timeout=8)
+    return [int(line.strip().split()[0],16) for line in text.splitlines()
+            if any(title in line for title in ('"Mint Dashboard": ("mint-dashboard" "Dashboard.py")', '"Music Library": ("mint-dashboard" "Dashboard.py")')) and re.match(r'\s*0x[0-9a-f]+\s',line)]
+
+def visible_windows():
+    # wmctrl may list unmapped windows; inspect map state before journaling.
+    return [w for w in matching() if 'Map State: IsViewable' in subprocess.check_output(['xwininfo','-id',hex(w)],text=True,timeout=5)]
+
+def hints(wid):
+    output=subprocess.check_output(['xprop','-id',hex(wid),'-notype','_NET_WM_WINDOW_TYPE','_NET_WM_STATE'],text=True,timeout=5)
+    return {line.split(' = ')[0]:line.split(' = ')[1] for line in output.splitlines() if ' = ' in line}
+
+def set_hints(wid,values):
+    for name,value in values.items():
+        args=['xprop','-id',hex(wid)]
+        args+=['-f',name,'32a','-set',name,value] if value else ['-remove',name]
+        subprocess.run(args,check=True,capture_output=True,timeout=5)
+
+def is_music_library(wid):
+    title=subprocess.check_output(['xprop','-id',hex(wid),'-notype','_NET_WM_NAME','WM_NAME'],text=True,stderr=subprocess.PIPE,timeout=5)
+    return any(line.endswith('= "Music Library"') for line in title.splitlines())
+
+def gtk_library_visibility(show):
+    # The application owns WebKit mapping; XMapWindow bypasses its lifecycle.
+    import gi
+    gi.require_version('Gio','2.0')
+    from gi.repository import Gio, GLib
+    bus=Gio.bus_get_sync(Gio.BusType.SESSION,None)
+    bus.call_sync('com.bertmacklen.MintDashboard','/com/bertmacklen/MintDashboard',
+        'org.gtk.Actions','Activate',GLib.Variant('(sava{sv})',
+        ('plum-present' if show else 'plum-hide',[],{})),None,
+        Gio.DBusCallFlags.NONE,3000,None)
+
+def map_windows(ids,show):
+    current=set(matching())
+    ids=[wid for wid in ids if wid in current]
+    native=[wid for wid in ids if is_music_library(wid)]
+    if native:gtk_library_visibility(show)
+    ids=[wid for wid in ids if wid not in native]
+    if not ids:return
+    x=ctypes.CDLL('libX11.so.6')
+    x.XOpenDisplay.argtypes=[ctypes.c_char_p];x.XOpenDisplay.restype=ctypes.c_void_p
+    x.XCloseDisplay.argtypes=[ctypes.c_void_p]
+    x.XSync.argtypes=[ctypes.c_void_p,ctypes.c_int]
+    fn=x.XMapWindow if show else x.XUnmapWindow
+    fn.argtypes=[ctypes.c_void_p,ctypes.c_ulong]
+    display=x.XOpenDisplay(None)
+    if not display:raise RuntimeError('No X display')
+    try:
+        for wid in ids:
+            if wid in matching():fn(display,wid)
+        x.XSync(display,False)
+    finally:x.XCloseDisplay(display)
+
+def hide(path):
+    from desktop_control import save
+    ids=visible_windows();data={'before':ids,'hints':{str(w):hints(w) for w in matching()},'status':'hiding'}
+    save(path,data)
+    map_windows(ids,False);data['status']='hidden';save(path,data)
+
+def refinement_path():
+    root=Path(__file__).resolve().parent/'state'
+    latest=json.loads((root/'latest.json').read_text())['id']
+    return root/latest/'native-usability.json'
+
+def window_details(wid):
+    output=subprocess.check_output(['xprop','-id',hex(wid),'-notype','_MOTIF_WM_HINTS','_NET_WM_PID'],text=True,stderr=subprocess.PIPE,timeout=5)
+    props={line.split(' = ')[0]:line.split(' = ')[1] for line in output.splitlines() if ' = ' in line}
+    info=subprocess.check_output(['xwininfo','-id',hex(wid)],text=True,stderr=subprocess.PIPE,timeout=5)
+    values=[]
+    for key in ('Absolute upper-left X','Absolute upper-left Y','Width','Height'):
+        m=re.search(re.escape(key)+r':\s*(-?\d+)',info)
+        if not m:raise RuntimeError('Cannot capture native library geometry')
+        values.append(int(m.group(1)))
+    return {'motif':props.get('_MOTIF_WM_HINTS'), 'pid':props.get('_NET_WM_PID'), 'geometry':values}
+
+def wait_ready(timeout=8):
+    """Require three stable real-window samples; never launch another process."""
+    deadline=time.monotonic()+timeout
+    previous=None;stable=0;last_error=None
+    while time.monotonic()<deadline:
+        sampled=[]
+        try:
+            for wid in matching():
+                details=window_details(wid)
+                if details['pid'] and min(details['geometry'][2:])>=100:
+                    sampled.append((wid,details['pid'],tuple(details['geometry'])))
+        except subprocess.CalledProcessError as error:
+            detail=(error.stderr or '')+(error.output or '')
+            if not any(term in detail for term in ('BadWindow','No such window','Invalid window id','Bad Drawable')):
+                raise
+            # GTK replaces its unrealized startup window. A disappearing XID
+            # is transient only here, before any live mutation has occurred.
+            last_error=detail.strip();sampled=[]
+        current=tuple(sampled)
+        stable=stable+1 if current and current==previous else 1 if current else 0
+        if stable>=3:return [row[0] for row in current]
+        previous=current;time.sleep(.2)
+    detail=(' Last X11 error: '+last_error) if last_error else ''
+    raise RuntimeError('Music library did not expose a stable window within '+str(timeout)+' seconds.'+detail)
+
+def record_refinement(wid):
+    from desktop_control import save
+    path=refinement_path()
+    data=json.loads(path.read_text()) if path.exists() else {'status':'applied','windows':{}}
+    details=window_details(wid)
+    old=data['windows'].get(str(wid))
+    if old is None or old['pid']!=details['pid'] or data['status']=='restored':
+        data['windows'][str(wid)]=details
+    data['status']='applied';save(path,data)
+
+def restore_refinement(path):
+    if not path.exists():return
+    from desktop_control import save
+    data=json.loads(path.read_text())
+    if data.get('status')=='restored':return
+    for wid in matching():
+        old=data['windows'].get(str(wid))
+        if not old or old['pid']!=window_details(wid)['pid']:continue
+        args=['xprop','-id',hex(wid)]
+        args+=['-remove','_MOTIF_WM_HINTS'] if old['motif'] is None else ['-f','_MOTIF_WM_HINTS','32c','-set','_MOTIF_WM_HINTS',old['motif']]
+        subprocess.run(args,check=True,capture_output=True,timeout=5)
+        subprocess.run(['wmctrl','-ir',hex(wid),'-e','0,'+','.join(map(str,old['geometry']))],check=True,timeout=5)
+    data['status']='restored';save(path,data)
+
+def center_target(area,geometry,extents):
+    _,_,width,height=geometry
+    left,right,top,bottom=extents
+    x=area.x+max(0,(area.width-width-left-right)//2)
+    y=area.y+max(0,(area.height-height-top-bottom)//2)
+    return (x,y),(x+left,y+top)
+
+def center_library(wid):
+    # WebKit's asynchronous content-height messages reapply the legacy corner
+    # placement. Observe startup for at least 3s, correcting only when needed,
+    # then require 1s of settled placement. This is not a persistent WM daemon.
+    import gi
+    gi.require_version('Gdk','3.0')
+    from gi.repository import Gdk
+    display=Gdk.Display.get_default()
+    if display is None:raise RuntimeError('No display for library placement')
+    area=display.get_monitor(0).get_workarea()
+    began=time.monotonic();stable_since=began;previous_size=None
+    while time.monotonic()-began<6:
+        geometry=window_details(wid)['geometry']
+        output=subprocess.check_output(['xprop','-id',hex(wid),'-notype','_NET_FRAME_EXTENTS'],text=True,stderr=subprocess.PIPE,timeout=5)
+        match=re.search(r'=\s*(\d+),\s*(\d+),\s*(\d+),\s*(\d+)',output)
+        extents=tuple(map(int,match.groups())) if match else (0,0,0,0)
+        frame,client=center_target(area,geometry,extents)
+        size=tuple(geometry[2:])
+        now=time.monotonic()
+        if tuple(geometry[:2])!=client or size!=previous_size:
+            stable_since=now
+            subprocess.run(['wmctrl','-ir',hex(wid),'-e',f'0,{frame[0]},{frame[1]},-1,-1'],check=True,timeout=5)
+        elif now-began>=3 and now-stable_since>=1:
+            return
+        previous_size=size;time.sleep(.2)
+    raise RuntimeError('Music library did not settle at its centered startup position within 6 seconds')
+
+def verified_ui_process():
+    """Resolve exactly one UI owner; never select players or Cava by name."""
+    import psutil
+    ids=matching()
+    if not ids:return None
+    try:pids={int(window_details(wid)['pid']) for wid in ids}
+    except (ValueError,TypeError,KeyError):raise RuntimeError('Native UI window has no trustworthy PID')
+    if len(pids)!=1:raise RuntimeError('Refusing to reload multiple native UI processes')
+    process=psutil.Process(pids.pop())
+    if set(process.uids())!={os.getuid()}:raise RuntimeError('Native UI UID does not match current user')
+    script=Path.home()/'Documents/Codex/2026-09-05/le/outputs/nocturne-studio/music-widget/dashboard.py'
+    command=process.cmdline()
+    if len(command)!=2 or Path(command[0]).resolve()!=Path('/usr/bin/python3').resolve() or Path(command[1]).resolve()!=script.resolve():
+        raise RuntimeError('Refusing unexpected native UI command line')
+    return process,script
+
+def reload_appearance():
+    """Reload only the verified native UI; never terminate its external player."""
+    unit='eucalyptus-music-widget.service'
+    active=subprocess.run(['systemctl','--user','is-active','--quiet',unit],timeout=5)
+    if not active.returncode:
+        subprocess.run(['systemctl','--user','restart',unit],check=True,timeout=15)
+        wait_ready(timeout=8)
+        return
+    owner=verified_ui_process()
+    if owner is None:return
+    import psutil
+    process,script=owner
+    # psutil checks process identity before signaling, preventing PID-reuse kills.
+    try:process.terminate()
+    except psutil.NoSuchProcess:pass
+    deadline=time.monotonic()+5
+    while time.monotonic()<deadline:
+        try:
+            if not process.is_running() or process.status()==psutil.STATUS_ZOMBIE:break
+        except psutil.NoSuchProcess:break
+        time.sleep(.1)
+    else:raise RuntimeError('Native UI did not exit; refusing a second instance')
+    log=Path(__file__).resolve().parent/'state/library.log'
+    log.parent.mkdir(parents=True,exist_ok=True)
+    with log.open('a') as stream:
+        subprocess.Popen(['/usr/bin/python3',str(script)],stdout=stream,stderr=stream,
+                         stdin=subprocess.DEVNULL,start_new_session=True)
+    wait_ready(timeout=8)
+
+def restore(path):
+    if not path.exists():return
+    from desktop_control import save
+    restore_refinement(path.parent/'native-usability.json')
+    data=json.loads(path.read_text())
+    current=matching()
+    old_hints=data.get('hints',{})
+    for wid in current:
+        values=old_hints.get(str(wid))
+        if values is None and len(current)==1 and len(old_hints)==1:
+            values=next(iter(old_hints.values()))
+        if values:
+            map_windows([wid],False);set_hints(wid,values)
+    visible=[w for w in data['before'] if w in current]
+    if data['before'] and not visible and len(current)==1:visible=current
+    map_windows(visible,True)
+    data['status']='restored';save(path,data)
+
+if __name__=='__main__':
+    import sys
+    show=len(sys.argv)<2 or sys.argv[1]!='hide'
+    ids=matching()
+    if show and not ids:
+        script=Path.home()/'Documents/Codex/2026-09-05/le/outputs/nocturne-studio/music-widget/dashboard.py'
+        log=Path(__file__).resolve().parent/'state/library.log'
+        with log.open('a') as stream:
+            subprocess.Popen(['/usr/bin/python3',str(script)],stdout=stream,stderr=stream,
+                             stdin=subprocess.DEVNULL,start_new_session=True)
+    if show:
+        ids=wait_ready(timeout=8)
+    if show:
+        for wid in ids:
+            if is_music_library(wid):continue
+            record_refinement(wid)
+            map_windows([wid],False)
+            # MWM_HINTS_DECORATIONS + MWM_DECOR_ALL gives the native titlebar.
+            subprocess.run(['xprop','-id',hex(wid),'-f','_MOTIF_WM_HINTS','32c','-set','_MOTIF_WM_HINTS','2, 0, 1, 0, 0'],check=True,capture_output=True,timeout=5)
+            state=hints(wid).get('_NET_WM_STATE','')
+            state=', '.join(a.strip() for a in state.split(',') if a.strip() and a.strip() not in
+                            ('_NET_WM_STATE_BELOW','_NET_WM_STATE_SKIP_TASKBAR','_NET_WM_STATE_SKIP_PAGER','_NET_WM_STATE_STICKY','_NET_WM_STATE_HIDDEN'))
+            set_hints(wid,{'_NET_WM_WINDOW_TYPE':'_NET_WM_WINDOW_TYPE_NORMAL','_NET_WM_STATE':state})
+    map_windows(ids,show)
+    if show:
+        # The legacy GTK map handler reasserts below/sticky after XMapWindow.
+        # Ask the window manager to remove those states after that handler runs.
+        time.sleep(.25)
+        for wid in ids:
+            subprocess.run(['wmctrl','-ir',hex(wid),'-b','remove,below,sticky'],check=True,timeout=5)
+            subprocess.run(['wmctrl','-ir',hex(wid),'-b','remove,skip_taskbar,skip_pager'],check=True,timeout=5)
+            center_library(wid)
+            subprocess.run(['wmctrl','-ia',hex(wid)],check=True,timeout=5)

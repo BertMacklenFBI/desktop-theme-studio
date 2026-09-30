@@ -1,0 +1,105 @@
+{
+  "$comment": "Preset-local Workstation controller. Fifteen installed functional replacements follow source settings/browser/office/document/science/image/PDF/viewer/transfer/editor/files/puzzle/tools order; no obsolete applications installed. Monitor metadata max-instances=-1 supports numbered instance settings for transactional journaling; this canonical profile allocates exactly one composite monitor. interval-seconds=1 is fixed by resource_monitor design.",
+  "schema": 1,
+  "desktop_control": {
+    "name": "GNU-Darwin Workstation",
+    "slug": "gnu-darwin-workstation",
+    "temp_tag": "gnu_darwin_workstation",
+    "panel": {
+      "panels_enabled": [
+        "1:0:right",
+        "2:0:bottom"
+      ],
+      "panels_height": [
+        "1:64",
+        "2:64"
+      ],
+      "enabled_applets": [
+        "panel1:left:0:panel-launchers@cinnamon.org:new",
+        "panel2:left:0:menu@cinnamon.org:17",
+        "panel2:left:1:grouped-window-list@cinnamon.org:16",
+        "panel2:right:0:gnu-darwin-workstation-monitor@desktop-theme-studio:new",
+        "panel2:right:1:systray@cinnamon.org:3",
+        "panel2:right:2:xapp-status@cinnamon.org:4",
+        "panel2:right:3:keyboard@cinnamon.org:8",
+        "panel2:right:4:notifications@cinnamon.org:20",
+        "panel2:right:5:network@cinnamon.org:19",
+        "panel2:right:6:sound@cinnamon.org:11",
+        "panel2:right:7:power@cinnamon.org:21",
+        "panel2:right:8:calendar@cinnamon.org:new"
+      ],
+      "remove": [
+        "nothing-island@desktop-theme-studio:42",
+        "c-eyes@anaximeno:41",
+        "c-eyes@anaximeno:44",
+        "workspace-switcher@cinnamon.org:36"
+      ],
+      "zone_sizes": {
+        "1": {
+          "panel-zone-icon-sizes": {
+            "left": 48,
+            "center": 48,
+            "right": 48
+          },
+          "panel-zone-symbolic-icon-sizes": {
+            "left": 20,
+            "center": 20,
+            "right": 20
+          }
+        },
+        "2": {
+          "panel-zone-icon-sizes": {
+            "left": 48,
+            "center": 48,
+            "right": 48
+          },
+          "panel-zone-symbolic-icon-sizes": {
+            "left": 20,
+            "center": 20,
+            "right": 20
+          }
+        }
+      },
+      "enabled_desklets": [],
+      "new_instances": [
+        {
+          "uuid": "panel-launchers@cinnamon.org",
+          "settings": {
+            "launcherList": [
+              "cinnamon-settings.desktop",
+              "cinnamon-settings-themes.desktop",
+              "firefox.desktop",
+              "libreoffice-startcenter.desktop",
+              "lyx.desktop",
+              "libreoffice-writer.desktop",
+              "blender.desktop",
+              "gimp.desktop",
+              "xreader.desktop",
+              "xviewer.desktop",
+              "org.x.Warpinator.desktop",
+              "org.x.editor.desktop",
+              "nemo.desktop",
+              "org.kde.kubrick.desktop",
+              "org.gnome.Terminal.desktop"
+            ],
+            "allow-dragging": false
+          }
+        },
+        {
+          "uuid": "gnu-darwin-workstation-monitor@desktop-theme-studio",
+          "settings": {
+            "interval-seconds": 1
+          }
+        },
+        {
+          "uuid": "calendar@cinnamon.org",
+          "settings": {
+            "use-custom-format": true,
+            "custom-format": "%H:%M",
+            "custom-tooltip-format": "%A %-d %B %Y"
+          }
+        }
+      ]
+    }
+  }
+}

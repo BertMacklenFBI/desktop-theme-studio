@@ -1,0 +1,14 @@
+{
+  "schema": 1,
+  "revision": "candidate-repair-20260930",
+  "launcher_sha256": "20cf98f547290006043d99e46d498e77df53d5fe1ca3ac28eec43aeb1293ef2e",
+  "historical_launcher_sha256": "0f81853ec599e014495964a75c6af0752b372d351f6f19becb9d3b82408166ca",
+  "source_sha256": {
+    "eww.yuck": "e708793e2e493404b47582c7060c4b180c2308993ef9b302ddc59a08b3ca381f",
+    "saimoom.yuck": "51e43b7f433dd5ecbf210a65d80dc7451b3a9f4f9b1ade751ab5fb051965deff",
+    "carbon.yuck": "ac7900e3af87b984006a4f8606c6b6447ff4bb0f5ab68cffd9dea61caf919e17",
+    "eww.scss": "1400852a36ce16659975caa7155e7af3b6a6f4983f8e8330820344e9237f550f"
+  },
+  "normalized_scss_sha256": "28de9a7e3fbf495d2849c698c78da651ef2366cb1adc330386480915ab3f30cf",
+  "historical_receipts_unchanged": true
+}

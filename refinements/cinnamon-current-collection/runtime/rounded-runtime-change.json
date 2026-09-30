@@ -1,0 +1,15 @@
+{
+  "scope": "Staged shared workspace runtime alignment; original exact host fixture retained separately",
+  "original": "refinements/cinnamon-current-collection/runtime/workspace-switcher@cinnamon.org",
+  "revised": "refinements/cinnamon-current-collection/runtime/workspace-switcher-rounded",
+  "original_applet_sha256": "3c0cef31583358eaccb177c0f5bb731815b611ee9d9f221e8f79142c700d49a7",
+  "revised_applet_sha256": "7e42a7d9f40a33aaa23a4d9df8c0d07eb024aaf90d8958bac8f1d9b712bb1dc4",
+  "changes": [
+    "Center preferred cross-axis ActorAlign in native _createButtons",
+    "Synchronize native St.BoxLayout child packing on added and createButtons lifecycle; prevent cross-axis fill",
+    "Use START in horizontal parent packing when sibling preferred height exceeds actual panel height; normal parents stay centered"
+  ],
+  "installed": false,
+  "diagnostic_evidence": "reports/all-themes/workspace-circles-2026-09-29/validation/osg-alignment-diagnostic/origin.json",
+  "independent_review": "OSG diagnostic code and native photos PASS before canonical staged copy"
+}

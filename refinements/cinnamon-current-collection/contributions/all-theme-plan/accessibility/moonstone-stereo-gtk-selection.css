@@ -1,0 +1,5 @@
+/* Coordinator readability correction: source foreground measured 1.23:1. */
+*:selected, *:selected label, .view:selected, .view:selected label,
+row:selected, row:selected label, .selection, .selection label {
+  color: #302e29;
+}

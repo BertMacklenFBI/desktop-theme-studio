@@ -1,0 +1,407 @@
+.ni-applet { padding:0 !important; margin:0 !important; }
+.ni-compact { width:428px; height:36px; padding:0 16px; background-color:#373950; color:#bb8987; border-radius:18px; spacing:8px; }
+.ni-compact-side { font-family:"Space Grotesk",Ubuntu; font-size:11px; color:#d3adb0; }
+.ni-compact-clock { font-family:"NDOT 47 (inspired by NOTHING)",Ubuntu; font-size:20px; font-weight:bold; color:#bb8987; }
+.ni-popup .popup-menu-content { background-color:#373950; border:1px solid #756172; border-radius:26px; padding:14px; box-shadow:0 4px 14px rgba(0,0,0,.20); }
+.ni-content { width:580px; spacing:12px; color:#f1e3df; font-family:"Space Grotesk",Ubuntu; font-size:13px; }
+.ni-header, .ni-row, .ni-status-row, .ni-lower, .ni-quick, .ni-footer, .ni-tabs, .ni-button-inner, .ni-transport { spacing:8px; }
+.ni-time { spacing:3px; }
+.ni-display { font-family:"NDOT 47 (inspired by NOTHING)",Ubuntu; font-size:40px; color:#bb8987; }
+.ni-title { font-size:15px; font-weight:bold; color:#f1e3df; }
+.ni-text, .ni-button-label { color:#f1e3df; }
+.ni-muted { font-size:12px; color:#d3adb0; }
+.ni-caption { font-size:11px; color:#d3adb0; }
+.ni-page { spacing:10px; }
+.ni-button, .ni-transport-button, .ni-tab { padding:8px 10px; border:1px solid transparent; border-radius:14px; background-color:#48445b; color:#f1e3df; }
+.ni-button:hover, .ni-transport-button:hover, .ni-tab:hover { background-color:#d3adb0; }
+.ni-button:focus, .ni-transport-button:focus, .ni-tab:focus { border-color:#bb8987; }
+.ni-tab:checked, .ni-button:active, .ni-transport-button:active { background-color:#bb8987; color:#373950; }
+.ni-tab:checked StLabel, .ni-button:active StLabel, .ni-transport-button:active StLabel, .ni-button:active StIcon, .ni-transport-button:active StIcon { color:#373950; }
+.ni-button:disabled, .ni-status:disabled, .ni-transport-button:disabled { background-color:#48445b; }
+.ni-button:disabled StLabel, .ni-status:disabled StLabel, .ni-transport-button:disabled StLabel, .ni-button:disabled StIcon, .ni-status:disabled StIcon, .ni-transport-button:disabled StIcon { color:#756172; }
+.ni-close { width:32px; height:32px; border-radius:16px; background-color:#48445b; padding:0; }
+.ni-close StLabel { font-size:24px; color:#f1e3df; }
+.ni-close:hover, .ni-close:focus { background-color:#d3adb0; }
+.ni-status { padding:10px 12px; border-radius:18px; background-color:#bb8987; color:#373950; }
+.ni-status StLabel, .ni-status StIcon { color:#373950; }
+.ni-status:hover { background-color:#d3adb0; }
+.ni-status-label { color:#d3adb0; padding:8px; }
+.ni-media, .ni-card { padding:14px; border-radius:18px; background-color:#48445b; spacing:12px; }
+.ni-cover { border-radius:14px; background-color:#373950; color:#bb8987; }
+.ni-media-details { spacing:5px; }
+.ni-transport-button { padding:6px 8px; background-color:#373950; }
+.ni-weather-card { background-color:#bb8987; border-radius:18px; padding:14px; spacing:8px; }
+.ni-weather-card StLabel { color:#373950; }
+.ni-meters { background-color:#48445b; border-radius:18px; padding:14px; spacing:6px; }
+.ni-metric { font-family:"NDOT 47 (inspired by NOTHING)",Ubuntu; font-size:20px; color:#bb8987; }
+.ni-slider { height:18px; min-width:180px; color:#bb8987; -slider-height:4px; -slider-background-color:#756172; -slider-border-color:#756172; -slider-active-background-color:#bb8987; -slider-active-border-color:#bb8987; -slider-border-width:0px; -slider-handle-radius:6px; }
+.ni-calendar-header, .ni-calendar-row { spacing:4px; }
+.ni-calendar-grid { spacing:4px; padding:10px; background-color:#48445b; border-radius:18px; }
+.ni-day-heading { font-size:12px; color:#d3adb0; width:68px; text-align:center; }
+.ni-day { padding:7px 0; text-align:center; color:#f1e3df; border-radius:10px; }
+.ni-today { background-color:#bb8987; color:#373950; }
+.ni-error { color:#e4a0a2; padding:6px; font-size:12px; }
+
+.ni-media-top { spacing:12px; }
+.ni-top-volume { padding:10px; spacing:7px; border-radius:18px; background-color:#48445b; color:#bb8987; }
+.ni-mini-slider { min-width:100px; width:110px; }
+.ni-wave { height:30px; }
+.ni-transport-button { width:24px; height:30px; padding:6px; border-radius:20px; }
+.ni-transport-button .ni-button-inner { spacing:0; }
+.ni-record-tile { padding:20px; min-height:64px; background-color:#bb8987; border-radius:18px; }
+.ni-record-tile StLabel, .ni-record-tile StIcon { color:#373950; }
+.ni-record-tile:hover { background-color:#d3adb0; }
+.ni-record-tile:focus { border:1px solid #f1e3df; }
+.ni-record-tile:disabled { background-color:#48445b; }
+.ni-record-tile:disabled StLabel, .ni-record-tile:disabled StIcon { color:#756172; }
+
+.ni-status-error { color:#d3adb0; font-size:11px; padding:4px; }
+
+/* Only the rounded inner surface paints; host .menu must not fill its corners. */
+.menu.ni-popup { background-color:transparent; background-image:none; border:0; box-shadow:none; padding:0; }
+
+.ni-meters { spacing:4px; }
+.ni-meter-bar { height:4px; min-width:140px; }
+
+/* Real alpha on background surfaces; labels retain full actor opacity. */
+.ni-compact { background-color:transparent; }
+.ni-popup .popup-menu-content { background-color:rgba(222,231,230,0.82); }
+.ni-media, .ni-card, .ni-meters, .ni-top-volume, .ni-calendar-grid { background-color:rgba(203,215,218,0.58); }
+.ni-button, .ni-tab, .ni-close { background-color:rgba(203,215,218,0.70); }
+.ni-status, .ni-record-tile, .ni-tab:checked, .ni-button:active, .ni-transport-button:active { background-color:rgba(53,77,100,0.92); }
+.ni-muted, .ni-caption, .ni-compact-side, .ni-status-label, .ni-day-heading, .ni-status-error { color:#f1e3df; }
+
+/* Dusk Ribbons per-profile island geometry and glass. */
+.ni-compact { border-radius:8px; }
+.ni-popup .popup-menu-content {
+  background-color:rgba(55,57,80,1.00);
+  border-color:#756172;
+  border-radius:16px;
+}
+.ni-media, .ni-card, .ni-meters, .ni-top-volume, .ni-calendar-grid {
+  background-color:rgba(72,68,91,1.00);
+  border-radius:8px;
+}
+.ni-button, .ni-tab, .ni-close {
+  background-color:rgba(72,68,91,0.82);
+  border-radius:8px;
+}
+.ni-status, .ni-record-tile, .ni-tab:checked, .ni-button:active, .ni-transport-button:active {
+  background-color:rgba(187,137,135,0.92);
+  color:#2d2c41;
+}
+.ni-status StLabel, .ni-status StIcon, .ni-record-tile StLabel, .ni-record-tile StIcon { color:#2d2c41; }
+
+
+/* dusk-ribbons: opaque reading surfaces and explicit semantic ink; existing palette only. */
+
+/* High-specificity panel selectors defeat inherited authored shell label ink. */
+
+#panel #panelLeft .ni-compact.ni-compact,
+#panel #panelCenter .ni-compact.ni-compact,
+#panel #panelRight .ni-compact.ni-compact { background-color:#2d2c41; color:#bb8987; }
+
+#panel #panelLeft .ni-compact.ni-compact StLabel,
+#panel #panelLeft .ni-compact.ni-compact StIcon,
+#panel #panelLeft .ni-compact.ni-compact .ni-compact-clock,
+#panel #panelLeft .ni-compact.ni-compact .ni-compact-side,
+#panel #panelCenter .ni-compact.ni-compact StLabel,
+#panel #panelCenter .ni-compact.ni-compact StIcon,
+#panel #panelCenter .ni-compact.ni-compact .ni-compact-clock,
+#panel #panelCenter .ni-compact.ni-compact .ni-compact-side,
+#panel #panelRight .ni-compact.ni-compact StLabel,
+#panel #panelRight .ni-compact.ni-compact StIcon,
+#panel #panelRight .ni-compact.ni-compact .ni-compact-clock,
+#panel #panelRight .ni-compact.ni-compact .ni-compact-side { color:#bb8987; }
+
+.menu.ni-popup .popup-menu-content { background-color:#373950; background-gradient-direction:none; color:#f1e3df; border-color:#756172; }
+
+.menu.ni-popup .ni-media,
+.menu.ni-popup .ni-card,
+.menu.ni-popup .ni-meters,
+.menu.ni-popup .ni-top-volume,
+.menu.ni-popup .ni-calendar-grid { background-color:#48445b; color:#f1e3df; }
+
+.menu.ni-popup .ni-content,
+.menu.ni-popup .ni-title,
+.menu.ni-popup .ni-text,
+.menu.ni-popup .ni-button-label,
+.menu.ni-popup .ni-day,
+.menu.ni-popup .ni-display,
+.menu.ni-popup .ni-metric,
+.menu.ni-popup .ni-cover,
+.menu.ni-popup .ni-cover StIcon,
+.menu.ni-popup .ni-top-volume { color:#f1e3df; }
+
+.menu.ni-popup .ni-muted,
+.menu.ni-popup .ni-caption,
+.menu.ni-popup .ni-status-label,
+.menu.ni-popup .ni-day-heading,
+.menu.ni-popup .ni-status-error { color:#d3adb0; }
+
+.menu.ni-popup .ni-error { color:#e4a0a2; }
+
+.menu.ni-popup .ni-cover { background-color:#2d2c41; }
+
+.menu.ni-popup .ni-button,
+.menu.ni-popup .ni-transport-button,
+.menu.ni-popup .ni-tab,
+.menu.ni-popup .ni-close { background-color:#48445b; background-gradient-direction:none; color:#f1e3df; border:1px solid #756172; }
+
+.menu.ni-popup .ni-button StLabel,
+.menu.ni-popup .ni-button StIcon,
+.menu.ni-popup .ni-transport-button StLabel,
+.menu.ni-popup .ni-transport-button StIcon,
+.menu.ni-popup .ni-tab StLabel,
+.menu.ni-popup .ni-tab StIcon,
+.menu.ni-popup .ni-close StLabel,
+.menu.ni-popup .ni-close StIcon { color:#f1e3df; }
+
+.menu.ni-popup .ni-button:hover,
+.menu.ni-popup .ni-transport-button:hover,
+.menu.ni-popup .ni-tab:hover,
+.menu.ni-popup .ni-close:hover { background-color:#bb8987; color:#2d2c41; }
+
+.menu.ni-popup .ni-button:hover StLabel,
+.menu.ni-popup .ni-button:hover StIcon,
+.menu.ni-popup .ni-transport-button:hover StLabel,
+.menu.ni-popup .ni-transport-button:hover StIcon,
+.menu.ni-popup .ni-tab:hover StLabel,
+.menu.ni-popup .ni-tab:hover StIcon,
+.menu.ni-popup .ni-close:hover StLabel,
+.menu.ni-popup .ni-close:hover StIcon { color:#2d2c41; }
+
+.menu.ni-popup .ni-button:active,
+.menu.ni-popup .ni-transport-button:active,
+.menu.ni-popup .ni-tab:active,
+.menu.ni-popup .ni-close:active { background-color:#bb8987; color:#2d2c41; }
+
+.menu.ni-popup .ni-button:active StLabel,
+.menu.ni-popup .ni-button:active StIcon,
+.menu.ni-popup .ni-transport-button:active StLabel,
+.menu.ni-popup .ni-transport-button:active StIcon,
+.menu.ni-popup .ni-tab:active StLabel,
+.menu.ni-popup .ni-tab:active StIcon,
+.menu.ni-popup .ni-close:active StLabel,
+.menu.ni-popup .ni-close:active StIcon { color:#2d2c41; }
+
+.menu.ni-popup .ni-button:checked,
+.menu.ni-popup .ni-transport-button:checked,
+.menu.ni-popup .ni-tab:checked,
+.menu.ni-popup .ni-close:checked { background-color:#bb8987; color:#2d2c41; }
+
+.menu.ni-popup .ni-button:checked StLabel,
+.menu.ni-popup .ni-button:checked StIcon,
+.menu.ni-popup .ni-transport-button:checked StLabel,
+.menu.ni-popup .ni-transport-button:checked StIcon,
+.menu.ni-popup .ni-tab:checked StLabel,
+.menu.ni-popup .ni-tab:checked StIcon,
+.menu.ni-popup .ni-close:checked StLabel,
+.menu.ni-popup .ni-close:checked StIcon { color:#2d2c41; }
+
+.menu.ni-popup .ni-button:checked:hover,
+.menu.ni-popup .ni-transport-button:checked:hover,
+.menu.ni-popup .ni-tab:checked:hover,
+.menu.ni-popup .ni-close:checked:hover { background-color:#bb8987; color:#2d2c41; }
+
+.menu.ni-popup .ni-button:checked:hover StLabel,
+.menu.ni-popup .ni-button:checked:hover StIcon,
+.menu.ni-popup .ni-transport-button:checked:hover StLabel,
+.menu.ni-popup .ni-transport-button:checked:hover StIcon,
+.menu.ni-popup .ni-tab:checked:hover StLabel,
+.menu.ni-popup .ni-tab:checked:hover StIcon,
+.menu.ni-popup .ni-close:checked:hover StLabel,
+.menu.ni-popup .ni-close:checked:hover StIcon { color:#2d2c41; }
+
+.menu.ni-popup .ni-button:active:hover,
+.menu.ni-popup .ni-transport-button:active:hover,
+.menu.ni-popup .ni-tab:active:hover,
+.menu.ni-popup .ni-close:active:hover { background-color:#bb8987; color:#2d2c41; }
+
+.menu.ni-popup .ni-button:active:hover StLabel,
+.menu.ni-popup .ni-button:active:hover StIcon,
+.menu.ni-popup .ni-transport-button:active:hover StLabel,
+.menu.ni-popup .ni-transport-button:active:hover StIcon,
+.menu.ni-popup .ni-tab:active:hover StLabel,
+.menu.ni-popup .ni-tab:active:hover StIcon,
+.menu.ni-popup .ni-close:active:hover StLabel,
+.menu.ni-popup .ni-close:active:hover StIcon { color:#2d2c41; }
+
+.menu.ni-popup .ni-button:focus,
+.menu.ni-popup .ni-transport-button:focus,
+.menu.ni-popup .ni-tab:focus,
+.menu.ni-popup .ni-close:focus { border-color:#bb8987; box-shadow:inset 0 0 0 1px #bb8987; }
+
+.menu.ni-popup .ni-button:disabled,
+.menu.ni-popup .ni-transport-button:disabled,
+.menu.ni-popup .ni-tab:disabled,
+.menu.ni-popup .ni-close:disabled { background-color:#48445b; color:#d3adb0; border-color:#756172; box-shadow:none; }
+
+.menu.ni-popup .ni-button:disabled StLabel,
+.menu.ni-popup .ni-button:disabled StIcon,
+.menu.ni-popup .ni-transport-button:disabled StLabel,
+.menu.ni-popup .ni-transport-button:disabled StIcon,
+.menu.ni-popup .ni-tab:disabled StLabel,
+.menu.ni-popup .ni-tab:disabled StIcon,
+.menu.ni-popup .ni-close:disabled StLabel,
+.menu.ni-popup .ni-close:disabled StIcon { color:#d3adb0; }
+
+.menu.ni-popup .ni-button:disabled:hover,
+.menu.ni-popup .ni-transport-button:disabled:hover,
+.menu.ni-popup .ni-tab:disabled:hover,
+.menu.ni-popup .ni-close:disabled:hover { background-color:#48445b; color:#d3adb0; border-color:#756172; box-shadow:none; }
+
+.menu.ni-popup .ni-button:disabled:hover StLabel,
+.menu.ni-popup .ni-button:disabled:hover StIcon,
+.menu.ni-popup .ni-transport-button:disabled:hover StLabel,
+.menu.ni-popup .ni-transport-button:disabled:hover StIcon,
+.menu.ni-popup .ni-tab:disabled:hover StLabel,
+.menu.ni-popup .ni-tab:disabled:hover StIcon,
+.menu.ni-popup .ni-close:disabled:hover StLabel,
+.menu.ni-popup .ni-close:disabled:hover StIcon { color:#d3adb0; }
+
+.menu.ni-popup .ni-button:disabled:checked,
+.menu.ni-popup .ni-transport-button:disabled:checked,
+.menu.ni-popup .ni-tab:disabled:checked,
+.menu.ni-popup .ni-close:disabled:checked { background-color:#48445b; color:#d3adb0; border-color:#756172; box-shadow:none; }
+
+.menu.ni-popup .ni-button:disabled:checked StLabel,
+.menu.ni-popup .ni-button:disabled:checked StIcon,
+.menu.ni-popup .ni-transport-button:disabled:checked StLabel,
+.menu.ni-popup .ni-transport-button:disabled:checked StIcon,
+.menu.ni-popup .ni-tab:disabled:checked StLabel,
+.menu.ni-popup .ni-tab:disabled:checked StIcon,
+.menu.ni-popup .ni-close:disabled:checked StLabel,
+.menu.ni-popup .ni-close:disabled:checked StIcon { color:#d3adb0; }
+
+.menu.ni-popup .ni-button:disabled:active,
+.menu.ni-popup .ni-transport-button:disabled:active,
+.menu.ni-popup .ni-tab:disabled:active,
+.menu.ni-popup .ni-close:disabled:active { background-color:#48445b; color:#d3adb0; border-color:#756172; box-shadow:none; }
+
+.menu.ni-popup .ni-button:disabled:active StLabel,
+.menu.ni-popup .ni-button:disabled:active StIcon,
+.menu.ni-popup .ni-transport-button:disabled:active StLabel,
+.menu.ni-popup .ni-transport-button:disabled:active StIcon,
+.menu.ni-popup .ni-tab:disabled:active StLabel,
+.menu.ni-popup .ni-tab:disabled:active StIcon,
+.menu.ni-popup .ni-close:disabled:active StLabel,
+.menu.ni-popup .ni-close:disabled:active StIcon { color:#d3adb0; }
+
+.menu.ni-popup .ni-status,
+.menu.ni-popup .ni-record-tile,
+.menu.ni-popup .ni-weather-card { background-color:#bb8987; background-gradient-direction:none; color:#2d2c41; border:1px solid #756172; }
+
+.menu.ni-popup .ni-status StLabel,
+.menu.ni-popup .ni-status StIcon,
+.menu.ni-popup .ni-record-tile StLabel,
+.menu.ni-popup .ni-record-tile StIcon,
+.menu.ni-popup .ni-weather-card StLabel,
+.menu.ni-popup .ni-weather-card StIcon { color:#2d2c41; }
+
+.menu.ni-popup .ni-status:hover,
+.menu.ni-popup .ni-record-tile:hover,
+.menu.ni-popup .ni-weather-card:hover { background-color:#bb8987; color:#2d2c41; }
+
+.menu.ni-popup .ni-status:hover StLabel,
+.menu.ni-popup .ni-status:hover StIcon,
+.menu.ni-popup .ni-record-tile:hover StLabel,
+.menu.ni-popup .ni-record-tile:hover StIcon,
+.menu.ni-popup .ni-weather-card:hover StLabel,
+.menu.ni-popup .ni-weather-card:hover StIcon { color:#2d2c41; }
+
+.menu.ni-popup .ni-status:active,
+.menu.ni-popup .ni-record-tile:active,
+.menu.ni-popup .ni-weather-card:active { background-color:#bb8987; color:#2d2c41; }
+
+.menu.ni-popup .ni-status:active StLabel,
+.menu.ni-popup .ni-status:active StIcon,
+.menu.ni-popup .ni-record-tile:active StLabel,
+.menu.ni-popup .ni-record-tile:active StIcon,
+.menu.ni-popup .ni-weather-card:active StLabel,
+.menu.ni-popup .ni-weather-card:active StIcon { color:#2d2c41; }
+
+.menu.ni-popup .ni-status:checked,
+.menu.ni-popup .ni-record-tile:checked,
+.menu.ni-popup .ni-weather-card:checked { background-color:#bb8987; color:#2d2c41; }
+
+.menu.ni-popup .ni-status:checked StLabel,
+.menu.ni-popup .ni-status:checked StIcon,
+.menu.ni-popup .ni-record-tile:checked StLabel,
+.menu.ni-popup .ni-record-tile:checked StIcon,
+.menu.ni-popup .ni-weather-card:checked StLabel,
+.menu.ni-popup .ni-weather-card:checked StIcon { color:#2d2c41; }
+
+.menu.ni-popup .ni-status:checked:hover,
+.menu.ni-popup .ni-record-tile:checked:hover,
+.menu.ni-popup .ni-weather-card:checked:hover { background-color:#bb8987; color:#2d2c41; }
+
+.menu.ni-popup .ni-status:checked:hover StLabel,
+.menu.ni-popup .ni-status:checked:hover StIcon,
+.menu.ni-popup .ni-record-tile:checked:hover StLabel,
+.menu.ni-popup .ni-record-tile:checked:hover StIcon,
+.menu.ni-popup .ni-weather-card:checked:hover StLabel,
+.menu.ni-popup .ni-weather-card:checked:hover StIcon { color:#2d2c41; }
+
+.menu.ni-popup .ni-status:active:hover,
+.menu.ni-popup .ni-record-tile:active:hover,
+.menu.ni-popup .ni-weather-card:active:hover { background-color:#bb8987; color:#2d2c41; }
+
+.menu.ni-popup .ni-status:active:hover StLabel,
+.menu.ni-popup .ni-status:active:hover StIcon,
+.menu.ni-popup .ni-record-tile:active:hover StLabel,
+.menu.ni-popup .ni-record-tile:active:hover StIcon,
+.menu.ni-popup .ni-weather-card:active:hover StLabel,
+.menu.ni-popup .ni-weather-card:active:hover StIcon { color:#2d2c41; }
+
+.menu.ni-popup .ni-status:focus,
+.menu.ni-popup .ni-record-tile:focus,
+.menu.ni-popup .ni-weather-card:focus { border-color:#bb8987; box-shadow:inset 0 0 0 1px #bb8987; }
+
+.menu.ni-popup .ni-status:disabled,
+.menu.ni-popup .ni-record-tile:disabled,
+.menu.ni-popup .ni-weather-card:disabled { background-color:#48445b; color:#d3adb0; border-color:#756172; box-shadow:none; }
+
+.menu.ni-popup .ni-status:disabled StLabel,
+.menu.ni-popup .ni-status:disabled StIcon,
+.menu.ni-popup .ni-record-tile:disabled StLabel,
+.menu.ni-popup .ni-record-tile:disabled StIcon,
+.menu.ni-popup .ni-weather-card:disabled StLabel,
+.menu.ni-popup .ni-weather-card:disabled StIcon { color:#d3adb0; }
+
+.menu.ni-popup .ni-status:disabled:hover,
+.menu.ni-popup .ni-record-tile:disabled:hover,
+.menu.ni-popup .ni-weather-card:disabled:hover { background-color:#48445b; color:#d3adb0; border-color:#756172; box-shadow:none; }
+
+.menu.ni-popup .ni-status:disabled:hover StLabel,
+.menu.ni-popup .ni-status:disabled:hover StIcon,
+.menu.ni-popup .ni-record-tile:disabled:hover StLabel,
+.menu.ni-popup .ni-record-tile:disabled:hover StIcon,
+.menu.ni-popup .ni-weather-card:disabled:hover StLabel,
+.menu.ni-popup .ni-weather-card:disabled:hover StIcon { color:#d3adb0; }
+
+.menu.ni-popup .ni-status:disabled:checked,
+.menu.ni-popup .ni-record-tile:disabled:checked,
+.menu.ni-popup .ni-weather-card:disabled:checked { background-color:#48445b; color:#d3adb0; border-color:#756172; box-shadow:none; }
+
+.menu.ni-popup .ni-status:disabled:checked StLabel,
+.menu.ni-popup .ni-status:disabled:checked StIcon,
+.menu.ni-popup .ni-record-tile:disabled:checked StLabel,
+.menu.ni-popup .ni-record-tile:disabled:checked StIcon,
+.menu.ni-popup .ni-weather-card:disabled:checked StLabel,
+.menu.ni-popup .ni-weather-card:disabled:checked StIcon { color:#d3adb0; }
+
+.menu.ni-popup .ni-status:disabled:active,
+.menu.ni-popup .ni-record-tile:disabled:active,
+.menu.ni-popup .ni-weather-card:disabled:active { background-color:#48445b; color:#d3adb0; border-color:#756172; box-shadow:none; }
+
+.menu.ni-popup .ni-status:disabled:active StLabel,
+.menu.ni-popup .ni-status:disabled:active StIcon,
+.menu.ni-popup .ni-record-tile:disabled:active StLabel,
+.menu.ni-popup .ni-record-tile:disabled:active StIcon,
+.menu.ni-popup .ni-weather-card:disabled:active StLabel,
+.menu.ni-popup .ni-weather-card:disabled:active StIcon { color:#d3adb0; }
+
+.menu.ni-popup .ni-today { background-color:#bb8987; color:#2d2c41; }
+
+.menu.ni-popup .slider.ni-slider { color:#bb8987; -slider-background-color:#48445b; -slider-border-color:#756172; -slider-active-background-color:#bb8987; -slider-active-border-color:#bb8987; }

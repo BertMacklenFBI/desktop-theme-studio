@@ -1,0 +1,14 @@
+.env
+.env.*
+*.pem
+*.key
+__pycache__/
+*.py[cod]
+.claude/
+node_modules/
+state/
+verification/
+backups/
+*.log
+*.pid
+*.sock

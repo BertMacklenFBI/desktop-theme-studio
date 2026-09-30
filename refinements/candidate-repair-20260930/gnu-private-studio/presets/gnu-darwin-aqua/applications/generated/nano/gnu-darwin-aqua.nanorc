@@ -1,0 +1,13 @@
+## GNU-Darwin Aqua interface colors for nano 7.x (merged key by key into ~/.nanorc)
+set titlecolor bold,#FFFFFF,#245FA8
+set statuscolor #202328,#E2E4E7
+set errorcolor #FFFFFF,#A52925
+set promptcolor #202328,#E2E4E7
+set selectedcolor #FFFFFF,#245FA8
+set stripecolor ,#E2E4E7
+set numbercolor #535A64
+set keycolor #245FA8
+set functioncolor #202328
+set scrollercolor #747A83
+set spotlightcolor #FFFFFF,#265098
+set minicolor #535A64

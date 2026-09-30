@@ -1,0 +1,9 @@
+# Ocean Silk Nano color fragment; do not replace non-color user preferences.
+set titlecolor bold,#304957,#42665c
+set statuscolor #e9ebe6,#304957
+set errorcolor #304957,#874b4b
+set promptcolor #e9ebe6,#304957
+set selectedcolor #e9ebe6,#354d64
+set numbercolor #475f6c
+set keycolor #6f94a4
+set functioncolor #e9ebe6

@@ -1,0 +1,16 @@
+#!/bin/bash
+set -eu
+root=$(cd "$(dirname "$0")/../.." && pwd)
+case "${1:-dashboard}" in
+ edit-notes) xed "$root/Notes.txt" >/dev/null 2>&1 & ;;
+ network) cinnamon-settings network >/dev/null 2>&1 & ;;
+ appearance) cinnamon-settings themes >/dev/null 2>&1 & ;;
+ settings) cinnamon-settings >/dev/null 2>&1 & ;;
+ power) cinnamon-settings power >/dev/null 2>&1 & ;;
+ lock) cinnamon-screensaver-command --lock >/dev/null 2>&1 & ;;
+ screenshot) gnome-screenshot --interactive >/dev/null 2>&1 & ;;
+ files) nemo "$HOME" >/dev/null 2>&1 & ;;
+ browser) xdg-open https://www.google.com >/dev/null 2>&1 & ;;
+ terminal) x-terminal-emulator >/dev/null 2>&1 & ;;
+ *) exec "$root/bin/eww-widgets" "$@" ;;
+esac

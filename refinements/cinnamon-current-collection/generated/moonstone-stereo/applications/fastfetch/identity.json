@@ -1,0 +1,50 @@
+{
+  "guard": "Do not replace modes.py, long.jsonc, or user-defined Fastfetch wrappers.",
+  "logo": "macklenmobile-logo-moonstone-stereo.png",
+  "long": {
+    "local_ip_format": "86.75-309",
+    "required_modules": [
+      "OS",
+      "HOST",
+      "KERNEL",
+      "SHELL",
+      "DE",
+      "WM",
+      "THEME",
+      "ICONS",
+      "TERMINAL",
+      "TERMINAL FONT",
+      "CPU",
+      "GPU",
+      "DISPLAY",
+      "MEM",
+      "SWAP",
+      "DISK",
+      "LOCAL IP"
+    ],
+    "uses_existing_mode_wrapper": true
+  },
+  "name": "Moonstone Stereo",
+  "profile": "moonstone-stereo",
+  "short": {
+    "palette": [
+      "#302e29",
+      "#9e4e42",
+      "#46705c",
+      "#936931",
+      "#516a7b",
+      "#756582",
+      "#477777",
+      "#c9c0ad",
+      "#716a5d",
+      "#b56255",
+      "#62846d",
+      "#a88142",
+      "#698496",
+      "#8b7b97",
+      "#5c9191",
+      "#fffaf0"
+    ],
+    "uses_existing_mode_wrapper": true
+  }
+}

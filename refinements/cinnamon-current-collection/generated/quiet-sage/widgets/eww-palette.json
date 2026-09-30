@@ -1,0 +1,18 @@
+{
+  "Quiet Sage": {
+    "accent": "#a8b99a",
+    "accent-hover": "#bac8ab",
+    "base": "#242722",
+    "battery": "#bac8ab",
+    "border": "#4b5346",
+    "indeterminate": "#b3b6a7",
+    "label": "Quiet Sage",
+    "muted": "#b3b6a7",
+    "secondary": "#bac8ab",
+    "short": "QS",
+    "surface0": "#2e332d",
+    "surface1": "#383f35",
+    "text": "#ede8dc",
+    "tile": "#52684b"
+  }
+}

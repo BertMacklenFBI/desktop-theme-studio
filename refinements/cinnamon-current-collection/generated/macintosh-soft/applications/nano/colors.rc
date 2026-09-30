@@ -1,0 +1,9 @@
+# Macintosh Soft Nano color fragment; do not replace non-color user preferences.
+set titlecolor bold,#293238,#356247
+set statuscolor #ebe9e1,#293238
+set errorcolor #293238,#944338
+set promptcolor #ebe9e1,#293238
+set selectedcolor #fbf8f1,#356262
+set numbercolor #505d66
+set keycolor #507d7d
+set functioncolor #ebe9e1

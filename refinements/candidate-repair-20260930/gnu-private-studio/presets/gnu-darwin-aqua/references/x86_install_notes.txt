@@ -1,0 +1,101 @@
+Darwin/x86 1.4.1 Installation Notes:
+------------------------------------
+
+This is the first release of Darwin/x86.
+
+Supported Hardware:
+-------------------
+
+IDE:
+	Only the PIIX4 IDE controllers have been found to work.
+	Attached devices must be UDMA/33 compatible or better.
+Ethernet:
+	Intel 8255x 10/100 ethernet controllers are supported.
+Video:
+	You must have a VESA 2.0 compliant video card.  Almost all
+	modern graphics cards are VESA 2.0 compliant.  However, emulators
+	such as vmware do not have VESA 2.0 compliant emulated video cards.
+Successfully tested hardware:
+	All 440BX motherboards tested have worked with their internal
+	IDE controllers.  
+	IBM ThinkPad A21m (with onboard Intel ethernet)
+Known to not be supported:
+	All AMD and VIA based systems.
+
+
+Preparing for Installation:
+---------------------------
+
+To install Darwin/x86, you must retrieve the installation CD image from
+http://www.opensource.apple.com/projects/darwin/.  After getting the CD
+image, you'll need to write that image to a CDROM.  The installation
+image is a bootable El-Torito ISO disk image.
+
+When preparing your system to install Darwin/x86, it is a good idea to
+disconnect all hard drives other than the target disk.  This is to
+prevent the accidental destruction of data on the wrong disk.  
+
+Installation:
+-------------
+
+After getting the installation CD, and your machine prepared to install
+Darwin/x86, insert the installation CD into an IDE CDROM drive and turn
+the machine on.  
+When booting off the CDROM, the first screen you'll see is a bootloader
+prompt.  You should not need to enter any flags to the bootloader, so
+either press enter to continue, or wait 10 seconds and the boot process
+will continue automatically. 
+After the boot process continues, you will see diagnostic output from
+the kernel, and you will end up at an installation prompt.  The installation
+prompt will list the devices it found to potentially install Darwin/x86 onto:
+
+The following devices are available for installation:
+1. [ Vendor String ] /dev/disk0 [ size ]
+2. [ Vendor String ] /dev/disk1 [ size ]
+Which device would you like to install Darwin onto?
+
+At this prompt enter the disk you wish to install Darwin onto (the
+number of the disk to install onto; 1 for /dev/disk0, 2 for /dev/disk1).  
+You can also enter "shell" at this prompt and it will drop you into an 
+emergency shell.  
+
+After entering the disk you wish to install Darwin/x86 onto, the install
+script will give you the following prompt:
+1) Auto-partition the disk (Destroys all disk contents)
+2) Manually partition the disk using fdisk
+Choice:
+
+If your disk is already partitioned, you will get a third option:
+3) Use existing partitions
+
+The first option (Auto-partition) will destroy the contents of the disk,
+and create 2 partitions.  A small partition for the booter, and the
+rest of the disk will be the Apple UFS filesystem.  This is the
+preferred option.
+The second option (Manually partition) will run the Darwin/x86 fdisk.
+Use this only if you know which partition scheme you want.
+This option can also destroy all contents of the selected disk.
+If you choose this option, you must create at least 2 partitions.
+The Apple Booter partition of at least 1MB in size, and of type 0xAB.
+You must also create an Apple UFS partition of at least 480MB and of
+type 0xA8.
+The third option will let you install Darwin/x86 onto an already
+existing partition.  Make sure you already have the partitions from
+option 2 set up.  The install script will ask you which partition you
+want to use for your booter, and which you want to use for your root
+partition.  All contents of the two selected partitions will be destroyed.
+
+The install script will then install the booter onto the booter 
+partition, create a new filesystem on the root partition, and 
+unpack the Darwin/x86 packages onto it.
+
+When the install script is finished, it will give you the choice
+of rebooting or spawning a shell.  Unless you have post-install
+things you wish to do, you should reboot the system and remove
+the install CD from the CDROM drive.
+
+When Darwin/x86 boots for the first time, it will prompt you to enter
+a root password.  You must enter a password.  Not entering a password,
+or entering a blank password will result in an unusable system.
+
+

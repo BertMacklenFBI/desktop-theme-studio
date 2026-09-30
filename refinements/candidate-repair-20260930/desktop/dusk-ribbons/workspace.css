@@ -1,0 +1,95 @@
+/* Existing reviewed selection correction is retained verbatim. */
+/* Coordinator readability correction: source foreground measured 2.39:1. */
+.popup-menu-item:selected, .popup-menu-item:active, .popup-menu-item:hover,
+.appmenu-category-button-selected, .appmenu-category-button-selected StLabel,
+.appmenu-application-button-selected, .appmenu-application-button-selected StLabel,
+#panel .workspace-switcher .workspace-button:outlined {
+  color: #2d2c41;
+}
+
+/* dusk-ribbons: rounded native strip; actor cross-axis size belongs to the reviewed runtime. */
+
+#panel #panelLeft .workspace-switcher,
+#panel #panelCenter .workspace-switcher,
+#panel #panelRight .workspace-switcher {
+  background-color:#2d2c41; background-gradient-direction:none;
+  border:0; border-image:none; border-radius:9999px;
+  margin:0; padding:0 4px; spacing:6px; box-shadow:none;
+}
+
+#panel #panelLeft .workspace-switcher .workspace-button,
+#panel #panelCenter .workspace-switcher .workspace-button,
+#panel #panelRight .workspace-switcher .workspace-button {
+  width:84px; min-width:84px;
+  padding:0; margin:0; border:0; border-image:none; border-radius:9999px;
+  background-color:#2d2c41; background-gradient-direction:none;
+  color:#bb8987; box-shadow:inset 0 0 0 1px #bb8987;
+}
+
+#panel #panelLeft .workspace-switcher .workspace-button StLabel,
+#panel #panelCenter .workspace-switcher .workspace-button StLabel,
+#panel #panelRight .workspace-switcher .workspace-button StLabel { color:#bb8987; }
+
+#panel #panelLeft .workspace-switcher .workspace-button,
+#panel #panelCenter .workspace-switcher .workspace-button,
+#panel #panelRight .workspace-switcher .workspace-button { background-color:#2d2c41; color:#bb8987; border-radius:9999px; box-shadow:inset 0 0 0 1px #bb8987; }
+
+#panel #panelLeft .workspace-switcher .workspace-button StLabel,
+#panel #panelCenter .workspace-switcher .workspace-button StLabel,
+#panel #panelRight .workspace-switcher .workspace-button StLabel { color:#bb8987; }
+
+#panel #panelLeft .workspace-switcher .workspace-button:hover,
+#panel #panelCenter .workspace-switcher .workspace-button:hover,
+#panel #panelRight .workspace-switcher .workspace-button:hover { background-color:#bb8987; color:#2d2c41; border-radius:9999px; box-shadow:inset 0 0 0 1px #2d2c41; }
+
+#panel #panelLeft .workspace-switcher .workspace-button:hover StLabel,
+#panel #panelCenter .workspace-switcher .workspace-button:hover StLabel,
+#panel #panelRight .workspace-switcher .workspace-button:hover StLabel { color:#2d2c41; }
+
+#panel #panelLeft .workspace-switcher .workspace-button:outlined,
+#panel #panelCenter .workspace-switcher .workspace-button:outlined,
+#panel #panelRight .workspace-switcher .workspace-button:outlined { background-color:#bb8987; color:#2d2c41; border-radius:9999px; box-shadow:inset 0 0 0 1px #2d2c41; }
+
+#panel #panelLeft .workspace-switcher .workspace-button:outlined StLabel,
+#panel #panelCenter .workspace-switcher .workspace-button:outlined StLabel,
+#panel #panelRight .workspace-switcher .workspace-button:outlined StLabel { color:#2d2c41; }
+
+#panel #panelLeft .workspace-switcher .workspace-button:outlined:hover,
+#panel #panelCenter .workspace-switcher .workspace-button:outlined:hover,
+#panel #panelRight .workspace-switcher .workspace-button:outlined:hover { background-color:#bb8987; color:#2d2c41; border-radius:9999px; box-shadow:inset 0 0 0 1px #2d2c41; }
+
+#panel #panelLeft .workspace-switcher .workspace-button:outlined:hover StLabel,
+#panel #panelCenter .workspace-switcher .workspace-button:outlined:hover StLabel,
+#panel #panelRight .workspace-switcher .workspace-button:outlined:hover StLabel { color:#2d2c41; }
+
+#panel #panelLeft .workspace-switcher .workspace-button:shaded,
+#panel #panelCenter .workspace-switcher .workspace-button:shaded,
+#panel #panelRight .workspace-switcher .workspace-button:shaded { background-color:#2d2c41; color:#bb8987; border-radius:9999px; box-shadow:inset 0 0 0 1px #bb8987; }
+
+#panel #panelLeft .workspace-switcher .workspace-button:shaded StLabel,
+#panel #panelCenter .workspace-switcher .workspace-button:shaded StLabel,
+#panel #panelRight .workspace-switcher .workspace-button:shaded StLabel { color:#bb8987; }
+
+#panel #panelLeft .workspace-switcher .workspace-button:shaded:hover,
+#panel #panelCenter .workspace-switcher .workspace-button:shaded:hover,
+#panel #panelRight .workspace-switcher .workspace-button:shaded:hover { background-color:#bb8987; color:#2d2c41; border-radius:9999px; box-shadow:inset 0 0 0 1px #2d2c41; }
+
+#panel #panelLeft .workspace-switcher .workspace-button:shaded:hover StLabel,
+#panel #panelCenter .workspace-switcher .workspace-button:shaded:hover StLabel,
+#panel #panelRight .workspace-switcher .workspace-button:shaded:hover StLabel { color:#2d2c41; }
+
+#panel #panelLeft .workspace-switcher .workspace-button:outlined:shaded,
+#panel #panelCenter .workspace-switcher .workspace-button:outlined:shaded,
+#panel #panelRight .workspace-switcher .workspace-button:outlined:shaded { background-color:#bb8987; color:#2d2c41; border-radius:9999px; box-shadow:inset 0 0 0 1px #2d2c41; }
+
+#panel #panelLeft .workspace-switcher .workspace-button:outlined:shaded StLabel,
+#panel #panelCenter .workspace-switcher .workspace-button:outlined:shaded StLabel,
+#panel #panelRight .workspace-switcher .workspace-button:outlined:shaded StLabel { color:#2d2c41; }
+
+#panel #panelLeft .workspace-switcher .workspace-button:outlined:shaded:hover,
+#panel #panelCenter .workspace-switcher .workspace-button:outlined:shaded:hover,
+#panel #panelRight .workspace-switcher .workspace-button:outlined:shaded:hover { background-color:#bb8987; color:#2d2c41; border-radius:9999px; box-shadow:inset 0 0 0 1px #2d2c41; }
+
+#panel #panelLeft .workspace-switcher .workspace-button:outlined:shaded:hover StLabel,
+#panel #panelCenter .workspace-switcher .workspace-button:outlined:shaded:hover StLabel,
+#panel #panelRight .workspace-switcher .workspace-button:outlined:shaded:hover StLabel { color:#2d2c41; }

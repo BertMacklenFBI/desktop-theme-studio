@@ -1,0 +1,470 @@
+[
+  {
+    "worker": "desktop-artwork",
+    "surface": "Cinnamon shell",
+    "baseline_status": "observed-config",
+    "requirement": "No current-session screenshot inspected.",
+    "disposition": "assigned; inventory and evidence per surface required",
+    "assets_built": true,
+    "configured": false,
+    "visual_verified": false,
+    "functional_verified": false,
+    "status": "staged; graphical/interaction verification pending coordinator",
+    "evidence": [
+      "desktop/build-report.json",
+      "desktop/assets-report.json",
+      "desktop/validation.json",
+      "artwork/manifest.json"
+    ]
+  },
+  {
+    "worker": "desktop-artwork",
+    "surface": "Top panel and bottom dock",
+    "baseline_status": "observed-config",
+    "requirement": "Allocation height may differ from visibly painted height.",
+    "disposition": "assigned; inventory and evidence per surface required",
+    "assets_built": true,
+    "configured": false,
+    "visual_verified": false,
+    "functional_verified": false,
+    "status": "staged; graphical/interaction verification pending coordinator",
+    "evidence": [
+      "desktop/build-report.json",
+      "desktop/assets-report.json",
+      "desktop/validation.json",
+      "artwork/manifest.json"
+    ]
+  },
+  {
+    "worker": "desktop-artwork",
+    "surface": "Panel applets",
+    "baseline_status": "observed-config",
+    "requirement": "Third-party applets can use their own CSS and cannot be assumed covered by shell palette.",
+    "disposition": "assigned; inventory and evidence per surface required",
+    "assets_built": true,
+    "configured": false,
+    "visual_verified": false,
+    "functional_verified": false,
+    "status": "staged; graphical/interaction verification pending coordinator",
+    "evidence": [
+      "desktop/build-report.json",
+      "desktop/assets-report.json",
+      "desktop/validation.json",
+      "artwork/manifest.json"
+    ]
+  },
+  {
+    "worker": "desktop-artwork",
+    "surface": "Application launcher and menu logo",
+    "baseline_status": "observed-config",
+    "requirement": "Exact visible label must be preserved unless design explicitly changes it.",
+    "disposition": "assigned; inventory and evidence per surface required",
+    "assets_built": true,
+    "configured": false,
+    "visual_verified": false,
+    "functional_verified": false,
+    "status": "staged; graphical/interaction verification pending coordinator",
+    "evidence": [
+      "desktop/build-report.json",
+      "desktop/assets-report.json",
+      "desktop/validation.json",
+      "artwork/manifest.json"
+    ]
+  },
+  {
+    "worker": "desktop-artwork",
+    "surface": "Centered clock and calendar",
+    "baseline_status": "observed-config",
+    "requirement": "Calendar popup and clock alignment not visually checked.",
+    "disposition": "assigned; inventory and evidence per surface required",
+    "assets_built": true,
+    "configured": false,
+    "visual_verified": false,
+    "functional_verified": false,
+    "status": "Clock/calendar now bottom-right; controller-owned integration, not centered.",
+    "evidence": [
+      "desktop/build-report.json",
+      "desktop/assets-report.json",
+      "desktop/validation.json",
+      "artwork/manifest.json"
+    ]
+  },
+  {
+    "worker": "desktop-artwork",
+    "surface": "CPU/RAM/network graphs",
+    "baseline_status": "observed-config",
+    "requirement": "Refresh/legibility not exercised.",
+    "disposition": "assigned; inventory and evidence per surface required",
+    "assets_built": false,
+    "configured": false,
+    "visual_verified": false,
+    "functional_verified": false,
+    "status": "No fabricated scientific dockapp graphs; original existing configs preserved.",
+    "evidence": [
+      "desktop/build-report.json",
+      "desktop/assets-report.json",
+      "desktop/validation.json",
+      "artwork/manifest.json"
+    ]
+  },
+  {
+    "worker": "desktop-artwork",
+    "surface": "System tray and status icons",
+    "baseline_status": "observed-config",
+    "requirement": "Application tray icons may be embedded or inherited.",
+    "disposition": "assigned; inventory and evidence per surface required",
+    "assets_built": true,
+    "configured": false,
+    "visual_verified": false,
+    "functional_verified": false,
+    "status": "staged; graphical/interaction verification pending coordinator",
+    "evidence": [
+      "desktop/build-report.json",
+      "desktop/assets-report.json",
+      "desktop/validation.json",
+      "artwork/manifest.json"
+    ]
+  },
+  {
+    "worker": "desktop-artwork",
+    "surface": "Notification banners and history",
+    "baseline_status": "observed-config",
+    "requirement": "No test notification sent.",
+    "disposition": "assigned; inventory and evidence per surface required",
+    "assets_built": true,
+    "configured": false,
+    "visual_verified": false,
+    "functional_verified": false,
+    "status": "staged; graphical/interaction verification pending coordinator",
+    "evidence": [
+      "desktop/build-report.json",
+      "desktop/assets-report.json",
+      "desktop/validation.json",
+      "artwork/manifest.json"
+    ]
+  },
+  {
+    "worker": "desktop-artwork",
+    "surface": "Volume/brightness/snap on-screen displays",
+    "baseline_status": "observed-config",
+    "requirement": "Extension stylesheet may override shell.",
+    "disposition": "assigned; inventory and evidence per surface required",
+    "assets_built": true,
+    "configured": false,
+    "visual_verified": false,
+    "functional_verified": false,
+    "status": "staged; graphical/interaction verification pending coordinator",
+    "evidence": [
+      "desktop/build-report.json",
+      "desktop/assets-report.json",
+      "desktop/validation.json",
+      "artwork/manifest.json"
+    ]
+  },
+  {
+    "worker": "desktop-artwork",
+    "surface": "Tooltips and popup menus",
+    "baseline_status": "observed-config",
+    "requirement": "CSS presence is not visual verification.",
+    "disposition": "assigned; inventory and evidence per surface required",
+    "assets_built": true,
+    "configured": false,
+    "visual_verified": false,
+    "functional_verified": false,
+    "status": "staged; graphical/interaction verification pending coordinator",
+    "evidence": [
+      "desktop/build-report.json",
+      "desktop/assets-report.json",
+      "desktop/validation.json",
+      "artwork/manifest.json"
+    ]
+  },
+  {
+    "worker": "desktop-artwork",
+    "surface": "Alt-Tab switcher",
+    "baseline_status": "observed-config",
+    "requirement": "Switcher previews not inspected.",
+    "disposition": "assigned; inventory and evidence per surface required",
+    "assets_built": true,
+    "configured": false,
+    "visual_verified": false,
+    "functional_verified": false,
+    "status": "staged; graphical/interaction verification pending coordinator",
+    "evidence": [
+      "desktop/build-report.json",
+      "desktop/assets-report.json",
+      "desktop/validation.json",
+      "artwork/manifest.json"
+    ]
+  },
+  {
+    "worker": "desktop-artwork",
+    "surface": "Workspaces and overview",
+    "baseline_status": "observed-config",
+    "requirement": "No workspace or overview interaction performed.",
+    "disposition": "assigned; inventory and evidence per surface required",
+    "assets_built": true,
+    "configured": false,
+    "visual_verified": false,
+    "functional_verified": false,
+    "status": "staged; graphical/interaction verification pending coordinator",
+    "evidence": [
+      "desktop/build-report.json",
+      "desktop/assets-report.json",
+      "desktop/validation.json",
+      "artwork/manifest.json"
+    ]
+  },
+  {
+    "worker": "desktop-artwork",
+    "surface": "Nemo desktop icons",
+    "baseline_status": "observed-config",
+    "requirement": "Disabled surfaces should be designed but not enabled just for theme coverage.",
+    "disposition": "assigned; inventory and evidence per surface required",
+    "assets_built": true,
+    "configured": false,
+    "visual_verified": false,
+    "functional_verified": false,
+    "status": "staged; graphical/interaction verification pending coordinator",
+    "evidence": [
+      "desktop/build-report.json",
+      "desktop/assets-report.json",
+      "desktop/validation.json",
+      "artwork/manifest.json"
+    ]
+  },
+  {
+    "worker": "desktop-artwork",
+    "surface": "Window borders and titlebar controls",
+    "baseline_status": "observed-config",
+    "requirement": "Client-drawn decorations can bypass Metacity.",
+    "disposition": "assigned; inventory and evidence per surface required",
+    "assets_built": true,
+    "configured": false,
+    "visual_verified": false,
+    "functional_verified": false,
+    "status": "staged; graphical/interaction verification pending coordinator",
+    "evidence": [
+      "desktop/build-report.json",
+      "desktop/assets-report.json",
+      "desktop/validation.json",
+      "artwork/manifest.json"
+    ]
+  },
+  {
+    "worker": "desktop-artwork",
+    "surface": "GTK2/3/4 controls and file dialogs",
+    "baseline_status": "observed-config",
+    "requirement": "Application agent owns overrides and app-specific exceptions.",
+    "disposition": "assigned; inventory and evidence per surface required",
+    "assets_built": true,
+    "configured": false,
+    "visual_verified": false,
+    "functional_verified": false,
+    "status": "staged; graphical/interaction verification pending coordinator",
+    "evidence": [
+      "desktop/build-report.json",
+      "desktop/assets-report.json",
+      "desktop/validation.json",
+      "artwork/manifest.json"
+    ]
+  },
+  {
+    "worker": "desktop-artwork",
+    "surface": "Applications, folders, devices and MIME icons",
+    "baseline_status": "observed-config",
+    "requirement": "Inherited icons mean not every icon is individually recolored.",
+    "disposition": "assigned; inventory and evidence per surface required",
+    "assets_built": true,
+    "configured": false,
+    "visual_verified": false,
+    "functional_verified": false,
+    "status": "staged; graphical/interaction verification pending coordinator",
+    "evidence": [
+      "desktop/build-report.json",
+      "desktop/assets-report.json",
+      "desktop/validation.json",
+      "artwork/manifest.json"
+    ]
+  },
+  {
+    "worker": "desktop-artwork",
+    "surface": "Pointer cursor family",
+    "baseline_status": "observed-config",
+    "requirement": "Fallback shapes and applications retaining old cursor need checks.",
+    "disposition": "assigned; inventory and evidence per surface required",
+    "assets_built": true,
+    "configured": false,
+    "visual_verified": false,
+    "functional_verified": false,
+    "status": "staged; graphical/interaction verification pending coordinator",
+    "evidence": [
+      "desktop/build-report.json",
+      "desktop/assets-report.json",
+      "desktop/validation.json",
+      "artwork/manifest.json"
+    ]
+  },
+  {
+    "worker": "desktop-artwork",
+    "surface": "Interface, titlebar, document and monospace fonts",
+    "baseline_status": "observed-config",
+    "requirement": "Font availability/fallback and per-application fonts not rendered.",
+    "disposition": "assigned; inventory and evidence per surface required",
+    "assets_built": true,
+    "configured": false,
+    "visual_verified": false,
+    "functional_verified": false,
+    "status": "CSS uses Liberation Sans10; actual desktop/monospace selection belongs to controller/app lane.",
+    "evidence": [
+      "desktop/build-report.json",
+      "desktop/assets-report.json",
+      "desktop/validation.json",
+      "artwork/manifest.json"
+    ]
+  },
+  {
+    "worker": "desktop-artwork",
+    "surface": "Wallpaper artwork and scaling",
+    "baseline_status": "observed-config",
+    "requirement": "Actual wallpaper image not inspected in this audit; original artwork preserved.",
+    "disposition": "assigned; inventory and evidence per surface required",
+    "assets_built": true,
+    "configured": false,
+    "visual_verified": false,
+    "functional_verified": false,
+    "status": "staged; graphical/interaction verification pending coordinator",
+    "evidence": [
+      "desktop/build-report.json",
+      "desktop/assets-report.json",
+      "desktop/validation.json",
+      "artwork/manifest.json"
+    ]
+  },
+  {
+    "worker": "desktop-artwork",
+    "surface": "Desktop desklets",
+    "baseline_status": "observed-config",
+    "requirement": "Coordinates may be off-screen depending on display layout; no visibility claim.; Desklet CSS and inline styles require separate coverage.",
+    "disposition": "assigned; inventory and evidence per surface required",
+    "assets_built": false,
+    "configured": false,
+    "visual_verified": false,
+    "functional_verified": false,
+    "status": "No enabled desklets by design; original state journaled by coordinator.",
+    "evidence": [
+      "desktop/build-report.json",
+      "desktop/assets-report.json",
+      "desktop/validation.json",
+      "artwork/manifest.json"
+    ]
+  },
+  {
+    "worker": "desktop-artwork",
+    "surface": "Shell extensions",
+    "baseline_status": "observed-config",
+    "requirement": "Installed but disabled visual extensions are not active styling.",
+    "disposition": "assigned; inventory and evidence per surface required",
+    "assets_built": false,
+    "configured": false,
+    "visual_verified": false,
+    "functional_verified": false,
+    "status": "Existing extensions unmodified; no new extension needed.",
+    "evidence": [
+      "desktop/build-report.json",
+      "desktop/assets-report.json",
+      "desktop/validation.json",
+      "artwork/manifest.json"
+    ]
+  },
+  {
+    "worker": "desktop-artwork",
+    "surface": "Custom music dashboard",
+    "baseline_status": "observed-config",
+    "requirement": "Projects/mint-dashboard is a separate older source, not the autostart target.; Running visibility/function not checked.",
+    "disposition": "assigned; inventory and evidence per surface required",
+    "assets_built": false,
+    "configured": false,
+    "visual_verified": false,
+    "functional_verified": false,
+    "status": "Protected original music/dashboard configs untouched.",
+    "evidence": [
+      "desktop/build-report.json",
+      "desktop/assets-report.json",
+      "desktop/validation.json",
+      "artwork/manifest.json"
+    ]
+  },
+  {
+    "worker": "desktop-artwork",
+    "surface": "Eww theme widgets",
+    "baseline_status": "observed-config",
+    "requirement": "Autostart enabled does not prove widgets currently running/visible.",
+    "disposition": "assigned; inventory and evidence per surface required",
+    "assets_built": false,
+    "configured": false,
+    "visual_verified": false,
+    "functional_verified": false,
+    "status": "Existing widget implementation unmodified; no Eww adapter in this lane.",
+    "evidence": [
+      "desktop/build-report.json",
+      "desktop/assets-report.json",
+      "desktop/validation.json",
+      "artwork/manifest.json"
+    ]
+  },
+  {
+    "worker": "desktop-artwork",
+    "surface": "Translucency and compositor",
+    "baseline_status": "observed-config",
+    "requirement": "Old theme-named helper may apply opacity across newer presets.; No compositor restart or opacity change performed.",
+    "disposition": "assigned; inventory and evidence per surface required",
+    "assets_built": true,
+    "configured": false,
+    "visual_verified": false,
+    "functional_verified": false,
+    "status": "Opaque gray surfaces and black empty panel segments; compositor settings unmodified.",
+    "evidence": [
+      "desktop/build-report.json",
+      "desktop/assets-report.json",
+      "desktop/validation.json",
+      "artwork/manifest.json"
+    ]
+  },
+  {
+    "worker": "desktop-artwork",
+    "surface": "Desktop animation behavior",
+    "baseline_status": "observed-config",
+    "requirement": "Performance and timing untested.",
+    "disposition": "assigned; inventory and evidence per surface required",
+    "assets_built": false,
+    "configured": false,
+    "visual_verified": false,
+    "functional_verified": false,
+    "status": "Existing animations unmodified.",
+    "evidence": [
+      "desktop/build-report.json",
+      "desktop/assets-report.json",
+      "desktop/validation.json",
+      "artwork/manifest.json"
+    ]
+  },
+  {
+    "worker": "desktop-artwork",
+    "surface": "Run, authentication and session dialogs",
+    "baseline_status": "observed-config",
+    "requirement": "Polkit/lock/login use additional theme boundaries; assigned to boot/login agent.",
+    "disposition": "assigned; inventory and evidence per surface required",
+    "assets_built": true,
+    "configured": false,
+    "visual_verified": false,
+    "functional_verified": false,
+    "status": "staged; graphical/interaction verification pending coordinator",
+    "evidence": [
+      "desktop/build-report.json",
+      "desktop/assets-report.json",
+      "desktop/validation.json",
+      "artwork/manifest.json"
+    ]
+  }
+]

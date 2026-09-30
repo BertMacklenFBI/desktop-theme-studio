@@ -1,0 +1,8 @@
+/* Quiet Sage GTK application surface. */
+window, dialog, .background { background-color: #2e332d; color: #ede8dc; }
+headerbar { background-color: #383f35; color: #ede8dc; border-color: #4b5346; }
+entry, textview, .view { background-color: #242722; color: #ede8dc; caret-color: #a8b99a; }
+button { background-color: #383f35; color: #ede8dc; border-color: #4b5346; }
+button:hover { background-color: #bac8ab; }
+button:checked, button:active { background-color: #52684b; color: #ede8dc; }
+selection { background-color: #52684b; color: #ede8dc; }

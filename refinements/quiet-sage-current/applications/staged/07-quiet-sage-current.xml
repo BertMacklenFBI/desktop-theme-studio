@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<style-scheme id="quiet-sage-current" name="Quiet Sage" version="1.0"><author>Desktop Theme Studio</author>
+<style name="text" foreground="#ede8dc" background="#2e332d"/>
+<style name="selection" foreground="#ede8dc" background="#52684b"/>
+<style name="current-line" background="#383f35"/>
+<style name="line-numbers" foreground="#b3b6a7" background="#383f35"/>
+<style name="def:comment" foreground="#b3b6a7"/>
+<style name="def:keyword" foreground="#bac8ab"/>
+<style name="def:string" foreground="#a8b99a"/>
+<style name="def:number" foreground="#d1bc8a"/>
+<style name="def:type" foreground="#a8b99a"/>
+<style name="def:error" foreground="#d49b91"/>
+</style-scheme>

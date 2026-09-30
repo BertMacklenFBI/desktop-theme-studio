@@ -1,0 +1,9 @@
+# Quiet Sage Nano color fragment; do not replace non-color user preferences.
+set titlecolor bold,#242722,#a8b99a
+set statuscolor #ede8dc,#242722
+set errorcolor #242722,#d49b91
+set promptcolor #ede8dc,#242722
+set selectedcolor #ede8dc,#52684b
+set numbercolor #b3b6a7
+set keycolor #a8b99a
+set functioncolor #ede8dc

@@ -1,0 +1,27 @@
+/* GNU-Darwin Workstation numbered pager: native 64px circles in either orientation.
+ * Horizontal content width60 + 2px border per side; vertical content height60 + 2px border per side.
+ * The bottom picker alone is rounded; right-rail and bottom application/status tiles remain square.
+ */
+#panel .workspace-switcher {
+ padding:0 6px; margin:0; spacing:4px;
+ border:0; border-radius:999px; background-color:#B3B2B0;
+}
+#panel .workspace-switcher .workspace-button,
+#panel .workspace-switcher .workspace-button:shaded {
+ padding:0; margin:0; border:2px solid #FFFFFF; border-radius:999px; background-image:none; transition-duration:0;
+ background-color:#B3B2B0; color:#101010; box-shadow:inset 1px 1px 0 #FFFFFF; font-weight:bold;
+}
+#panel .workspace-switcher .workspace-button:hover,
+#panel .workspace-switcher .workspace-button:shaded:hover { background-color:#D0D0D0; color:#101010; }
+#panel .workspace-switcher .workspace-button:outlined,
+#panel .workspace-switcher .workspace-button:outlined:shaded,
+#panel .workspace-switcher .workspace-button:outlined:hover,
+#panel .workspace-switcher .workspace-button:outlined:shaded:hover {
+ background-color:#333641; color:#FFFFFF; border-color:#595959; box-shadow:inset 1px 1px 0 #595959;
+}
+
+/* Native SimpleButton fixes the cross-axis to the panel height. Match the other axis. */
+#panel.panel-bottom .workspace-switcher .workspace-button { width:60px; min-width:60px; max-width:60px; }
+#panel.panel-right .workspace-switcher, #panel.panel-left .workspace-switcher { padding:6px 0; }
+#panel.panel-right .workspace-switcher .workspace-button.vertical,
+#panel.panel-left .workspace-switcher .workspace-button.vertical { height:60px; min-height:60px; max-height:60px; }

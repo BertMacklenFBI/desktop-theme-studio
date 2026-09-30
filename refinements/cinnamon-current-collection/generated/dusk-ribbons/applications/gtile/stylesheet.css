@@ -1,0 +1,7 @@
+/* Dusk Ribbons gTile appearance; geometry and key bindings remain untouched. */
+.grid-panel { background-color:#373950; border:1px solid #756172; border-radius:8px; }
+.grid-title,.grid-panel .settings-label,.grid-panel .tile-label { color:#f1e3df; }
+.table-element,.settings-button { background-color:#48445b; color:#f1e3df; border:1px solid #756172; }
+.table-element:hover,.table-element:activate,.settings-button:hover,.settings-button:activate,.settings-button:activate:hover { background-color:#bb8987; color:#2d2c41; border-color:#bb8987; }
+.table-element:hover .tile-label,.table-element:activate .tile-label,.settings-button:hover .settings-label,.settings-button:activate .settings-label,.settings-button:activate:hover .settings-label { color:#2d2c41; }
+.grid-preview:activate { background-color:rgba(187,137,135,0.30); border:2px solid #bb8987; }

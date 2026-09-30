@@ -1,0 +1,70 @@
+{
+  "source": {
+    "file": "today-2002.png",
+    "url": "https://web.archive.org/web/20021016083440id_/http://gnu-darwin.sourceforge.net/today.png",
+    "sha256": "db17eb8f3514c33378f4ede46482174d90ec9d1cb7681b1b7e5ac7ad7683510e",
+    "bytes": 262844,
+    "type": "image/png"
+  },
+  "dimensions": [
+    1280,
+    1024
+  ],
+  "samples": {
+    "utility_canvas": {
+      "xy": [
+        300,
+        60
+      ],
+      "hex": "#BEBEBE"
+    },
+    "app_chrome": {
+      "xy": [
+        600,
+        45
+      ],
+      "hex": "#B3B2B0"
+    },
+    "inactive_title": {
+      "xy": [
+        100,
+        12
+      ],
+      "hex": "#9EA0AC"
+    },
+    "active_title_left": {
+      "xy": [
+        300,
+        164
+      ],
+      "hex": "#21232B"
+    },
+    "active_title_right": {
+      "xy": [
+        700,
+        164
+      ],
+      "hex": "#0E0F13"
+    },
+    "dock_dark": {
+      "xy": [
+        1220,
+        500
+      ],
+      "hex": "#333641"
+    },
+    "desktop": {
+      "xy": [
+        400,
+        980
+      ],
+      "hex": "#000000"
+    }
+  },
+  "measurements": {
+    "right_dock_x": 1216,
+    "right_dock_width": 64,
+    "bottom_tiles_y": 960,
+    "bottom_tile_height": 64
+  }
+}

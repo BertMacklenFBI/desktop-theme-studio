@@ -1,0 +1,753 @@
+{
+  "name": "GNU-Darwin Workstation",
+  "id": "gnu-darwin-workstation",
+  "status": "draft",
+  "direction": "Faithful reconstruction of selected original gray GNU-Darwin scientific workstation screenshot: flat gray controls, square bevels, slate titles, black workspace, right and bottom 64px square dock tiles.",
+  "source_concept": "Original GNU-Darwin project today.png archived20021016083440; exact source and measured pixels in identity/source-samples.json. User selected this gray scientific workstation, superseding Aqua for this new separate preset.",
+  "palette": {
+    "desktop": "#000000",
+    "background": "#BEBEBE",
+    "surface": "#B3B2B0",
+    "elevated": "#D0D0D0",
+    "foreground": "#101010",
+    "muted": "#383838",
+    "disabled": "#595959",
+    "accent": "#333641",
+    "secondary": "#353B50",
+    "selection": "#333641",
+    "selection_foreground": "#FFFFFF",
+    "focus": "#333641",
+    "border": "#808080",
+    "control_border": "#595959",
+    "success": "#174A20",
+    "warning": "#5C3A00",
+    "error": "#7A1818",
+    "terminal": "#000000",
+    "terminal_foreground": "#FFFFFF",
+    "island_background": "#333641",
+    "island_foreground": "#FFFFFF",
+    "top_background": "#BEBEBE",
+    "top_foreground": "#101010"
+  },
+  "rainbow": [
+    "#D0D0D0",
+    "#BEBEBE",
+    "#9EA0AC",
+    "#808080",
+    "#333641",
+    "#000000"
+  ],
+  "typography": {
+    "ui_family": "Liberation Sans",
+    "ui_size_pt": 10,
+    "title_family": "Liberation Sans",
+    "title_size_pt": 10,
+    "title_weight": 700,
+    "clock_family": "Liberation Mono",
+    "clock_size_pt": 9,
+    "clock_weight": 400,
+    "monospace_family": "Liberation Mono",
+    "monospace_size_pt": 10,
+    "verification": "fc-list confirms Liberation Sans/Mono. Screenshot does not establish original font names; neutral compact installed substitutes approximate bitmap-era metrics. Antialiasing may differ; no font installation."
+  },
+  "geometry": {
+    "panel_height": 64,
+    "panel_position": "right and bottom; no top panel",
+    "panel_groups": "right vertical launcher/task tiles; bottom square application/status tiles. No centered floating dock or top menu bar.",
+    "app_radius": 0,
+    "widget_radius": 0,
+    "spacing": [
+      2,
+      4,
+      6,
+      8,
+      12
+    ],
+    "cursor_size": 24,
+    "bottom_panel_height": 64,
+    "geometry_note": "Screenshot1280x1024: rightmost64px column and bottom64px row. Preserve logical64px tile pitch with48px icon artwork, no scaling inflation. Cinnamon right panel may reserve a monitor-edge strip and intersect bottom panel; integration must explicitly assign the corner once.",
+    "composition": "Black uncovered workspace. Rectangular gray applications use 1px light top/left and dark bottom/right bevels, compact menu rows and square controls. Inactive slate-gray titlebars; active near-black slate titlebars with white centered titles, minimize at left and close at right. A continuous sequence of64px square icon tiles hugs the right edge; individual running-app/status tiles occupy the bottom edge with empty black space between groups. No Aqua pinstripes, blue waves, traffic lights, glass or global top panel. The user-requested workspace picker alone uses an elongated rounded strip and circular numbered indicators; launcher, task and status tiles remain square.",
+    "titlebar_height": 22,
+    "control_height": 24,
+    "dock_tile_size": 64,
+    "dock_icon_size": 48,
+    "button_layout": "minimize:close",
+    "titlebar_inactive": "#9EA0AC",
+    "titlebar_active": "#21232B",
+    "titlebar_active_end": "#0E0F13",
+    "workspace_selector": {
+      "shape": "elongated fully rounded strip with native numbered workspace circles",
+      "indicator_content_width_px": 60,
+      "indicator_border_px": 2,
+      "indicator_outer_width_px": 64,
+      "indicator_radius_px": 999,
+      "indicator_height": "native panel allocation; no horizontal height constraints",
+      "strip_vertical_padding_px": 0,
+      "strip_border_px": 0,
+      "strip_radius_px": 999,
+      "indicator_spacing_px": 4,
+      "scope": "native workspace-switcher only; horizontal top/bottom in Jesta/Cryostat; both orientations in Workstation",
+      "states": "unchanged geometry and foreground/background pairs in all eight native state combinations",
+      "preservation": "numbers, names/tooltips, click/scroll/keyboard/accessibility behavior and global workspace count/names unchanged",
+      "acceptance": "pending fresh actual allocation/pixels/labels/containment/click evidence at 2880x1800",
+      "vertical_indicator_content_height_px": 60
+    }
+  },
+  "materials": {
+    "text_surfaces": "Opaque flat neutral gray utility chrome and white document/editor content. White-on-black terminal. Prefer-light application chrome.",
+    "shadow": "No soft blur shadow; narrow dark outline or hard 1px offset only.",
+    "texture": "Flat gray with square raised bevels; title active subtle dark slate horizontal gradient from sampled #21232B to #0E0F13; inactive #9EA0AC. No brushed metal or pinstripes.",
+    "motion": "Use existing short Cinnamon transitions; no dock magnification or custom animation.",
+    "wallpaper": "Solid black #000000, matching visible uncovered screenshot pixels. No logo, wordmark, wave or invented scene.",
+    "dock": "64px square tiles, medium slate-gray tile faces and hard light upper-left/dark lower-right bevel. Icon artwork max48px centered; no enclosing rounded dock body."
+  },
+  "artwork": {
+    "source": "Original GNU-Darwin today.png source screenshot is research reference, not wallpaper. Solid black new wallpaper requires no copied artwork. Use installed application icons with resolved source path/license provenance; reuse exact original icons only if independently recovered with provenance. Licensed modern WindowMaker package assets recovered in proposals/gnu-darwin-archive/windowmaker-assets/extracted may supply defaultterm/GNUterm/pdf/wilber/staroffice2/write/GNUstepGlow/clip icons with package provenance. These are documented modern packaged substitutes, not claimed byte-identical screenshot artwork.",
+    "instruction": "Do not crop icons out of the screenshot and call them original assets. No fabricated branding or replacement original Fastfetch art. Menu icon may use installed distributor icon with provenance; preserve exact menu label le cinabon. Keep new monochrome generic control glyphs authored locally; map screenshot dock application function to installed launcher without changing application content.",
+    "reference": "https://web.archive.org/web/20021016083440id_/http://gnu-darwin.sourceforge.net/today.png"
+  },
+  "preserve": [
+    "Exact current menu label le cinabon",
+    "Carbon Typewriter host selection during staging",
+    "All GNU-Darwin Aqua assets and all GNUOS NT assets unchanged",
+    "Shell and custom music commands, mixed MPV/Cava behavior",
+    "Original Fastfetch artwork, short/long modes, plain fastfetch stays short, Local IP86.75-309",
+    "Other presets and all receipts",
+    "Unrelated app preferences and document/media contents",
+    "GRUB timeout, EFI loaders, autologin, PAM"
+  ],
+  "verification": "Design only; source resemblance does not establish original beta2.5 default. Build/configuration/isolated render/interaction/login/reboot evidence tracked separately.",
+  "terminal_ansi": [
+    "#707070",
+    "#DD7777",
+    "#77CC77",
+    "#CCCC77",
+    "#8C9DDE",
+    "#CC88CC",
+    "#77CCCC",
+    "#DDDDDD",
+    "#999999",
+    "#FF9999",
+    "#99EE99",
+    "#EEEE99",
+    "#ACBDFF",
+    "#EEAAEE",
+    "#99EEEE",
+    "#FFFFFF"
+  ],
+  "semantic_rules": {
+    "small_accent_text": "Accent is text-safe on all light canvases; its role is subdued slate selection and focus, not a bright brand hue.",
+    "primary_buttons": "Normal gray surface with foreground label and square bevel; selected/pressed selection with white selection_foreground. No glossy cap.",
+    "borders": "control_border is essential edge; border decorative only. Bevel highlight #FFFFFF and lower edge #595959. Focus visible2px slate inset or dashed ring, not blue glow.",
+    "secondary": "Secondary/status text values pass4.5 on gray canvases; pair statuses with labels/icons.",
+    "rainbow": "Neutral ramp for technical diagrams only, no rainbow branding.",
+    "ansi_black": "Slot0 uses readable gray on black; ANSI slot8 brighter gray. Preserve white terminal text and black background matching source.",
+    "states": "Normal light-gray/black text; hover elevated/foreground; selected slate/white; focus2px slate; disabled #595959 without additional opacity; urgent error on elevated with icon. Active title white on sampled dark gradient; inactive title #101010 on#9EA0AC. Control minimize and close white glyphs on active title, dark glyphs on inactive title.",
+    "light_preference": "GTK prefer-dark false; color-scheme prefer-light. Terminal explicitly black independent of application preference.",
+    "source_fidelity": "Literal: sampled neutral gray, slate titles, white-on-black terminal, square bevels,64px right and bottom tiles, black uncovered desktop. Adaptations: Cinnamon menu/status affordances and launcher mapping, modern fonts/contrast, no cloned scientific documents, arbitrary app contents or obsolete executable code. Original screenshot cannot establish hidden wallpaper pixels or beta2.5 default.",
+    "hue_census": "A slate accent intentionally follows the selected historical screenshot; close blue/slate hue warnings are expected and accepted for source fidelity. Distinctness comes from grayscale bevels/right dock/black terminal, not invented hue.",
+    "contrast": "foreground/background 10.24:1; foreground/surface 8.98:1; foreground/elevated 12.34:1; muted/background 6.31:1; muted/surface 5.53:1; muted/elevated 7.60:1; disabled/background 3.77:1; disabled/surface 3.31:1; disabled/elevated 4.54:1; accent/background 6.48:1; accent/surface 5.68:1; accent/elevated 7.80:1; secondary/background 5.97:1; secondary/surface 5.24:1; secondary/elevated 7.19:1; focus/background 6.48:1; focus/surface 5.68:1; focus/elevated 7.80:1; control_border/background 3.77:1; control_border/surface 3.31:1; control_border/elevated 4.54:1; success/background 5.55:1; success/surface 4.87:1; success/elevated 6.68:1; warning/background 5.48:1; warning/surface 4.81:1; warning/elevated 6.61:1; error/background 5.73:1; error/surface 5.03:1; error/elevated 6.91:1; selection_foreground/selection 12.04:1; terminal_foreground/terminal 21.00:1; island_foreground/island_background 12.04:1; top_foreground/top_background 10.24:1",
+    "resource_monitor": "Black inset monitor text/graphs: #DDDDDD/#000000 15.46:1; #77CC77/#000000 10.69:1; #CCCC77/#000000 12.47:1; #77CCCC/#000000 11.29:1; #DD7777/#000000 6.98:1. Monitor-only ANSI colours never become light-canvas small text. Four square64px tiles; explicit labels/units, real read-only1Hz metrics, gaps for unavailable/reset samples."
+  },
+  "coverage_assignments": [
+    {
+      "worker": "desktop-artwork",
+      "surface": "Cinnamon shell",
+      "baseline_status": "observed-config",
+      "requirement": "No current-session screenshot inspected.",
+      "disposition": "assigned; inventory and evidence per surface required"
+    },
+    {
+      "worker": "desktop-artwork",
+      "surface": "Top panel and bottom dock",
+      "baseline_status": "observed-config",
+      "requirement": "Allocation height may differ from visibly painted height.",
+      "disposition": "assigned; inventory and evidence per surface required"
+    },
+    {
+      "worker": "desktop-artwork",
+      "surface": "Panel applets",
+      "baseline_status": "observed-config",
+      "requirement": "Third-party applets can use their own CSS and cannot be assumed covered by shell palette.",
+      "disposition": "assigned; inventory and evidence per surface required"
+    },
+    {
+      "worker": "desktop-artwork",
+      "surface": "Application launcher and menu logo",
+      "baseline_status": "observed-config",
+      "requirement": "Exact visible label must be preserved unless design explicitly changes it.",
+      "disposition": "assigned; inventory and evidence per surface required"
+    },
+    {
+      "worker": "desktop-artwork",
+      "surface": "Centered clock and calendar",
+      "baseline_status": "observed-config",
+      "requirement": "Calendar popup and clock alignment not visually checked.",
+      "disposition": "assigned; inventory and evidence per surface required"
+    },
+    {
+      "worker": "desktop-artwork",
+      "surface": "CPU/RAM/network graphs",
+      "baseline_status": "observed-config",
+      "requirement": "Refresh/legibility not exercised.",
+      "disposition": "assigned; inventory and evidence per surface required"
+    },
+    {
+      "worker": "desktop-artwork",
+      "surface": "System tray and status icons",
+      "baseline_status": "observed-config",
+      "requirement": "Application tray icons may be embedded or inherited.",
+      "disposition": "assigned; inventory and evidence per surface required"
+    },
+    {
+      "worker": "desktop-artwork",
+      "surface": "Notification banners and history",
+      "baseline_status": "observed-config",
+      "requirement": "No test notification sent.",
+      "disposition": "assigned; inventory and evidence per surface required"
+    },
+    {
+      "worker": "desktop-artwork",
+      "surface": "Volume/brightness/snap on-screen displays",
+      "baseline_status": "observed-config",
+      "requirement": "Extension stylesheet may override shell.",
+      "disposition": "assigned; inventory and evidence per surface required"
+    },
+    {
+      "worker": "desktop-artwork",
+      "surface": "Tooltips and popup menus",
+      "baseline_status": "observed-config",
+      "requirement": "CSS presence is not visual verification.",
+      "disposition": "assigned; inventory and evidence per surface required"
+    },
+    {
+      "worker": "desktop-artwork",
+      "surface": "Alt-Tab switcher",
+      "baseline_status": "observed-config",
+      "requirement": "Switcher previews not inspected.",
+      "disposition": "assigned; inventory and evidence per surface required"
+    },
+    {
+      "worker": "desktop-artwork",
+      "surface": "Workspaces and overview",
+      "baseline_status": "observed-config",
+      "requirement": "No workspace or overview interaction performed.",
+      "disposition": "assigned; inventory and evidence per surface required"
+    },
+    {
+      "worker": "desktop-artwork",
+      "surface": "Nemo desktop icons",
+      "baseline_status": "observed-config",
+      "requirement": "Disabled surfaces should be designed but not enabled just for theme coverage.",
+      "disposition": "assigned; inventory and evidence per surface required"
+    },
+    {
+      "worker": "desktop-artwork",
+      "surface": "Window borders and titlebar controls",
+      "baseline_status": "observed-config",
+      "requirement": "Client-drawn decorations can bypass Metacity.",
+      "disposition": "assigned; inventory and evidence per surface required"
+    },
+    {
+      "worker": "desktop-artwork",
+      "surface": "GTK2/3/4 controls and file dialogs",
+      "baseline_status": "observed-config",
+      "requirement": "Application agent owns overrides and app-specific exceptions.",
+      "disposition": "assigned; inventory and evidence per surface required"
+    },
+    {
+      "worker": "desktop-artwork",
+      "surface": "Applications, folders, devices and MIME icons",
+      "baseline_status": "observed-config",
+      "requirement": "Inherited icons mean not every icon is individually recolored.",
+      "disposition": "assigned; inventory and evidence per surface required"
+    },
+    {
+      "worker": "desktop-artwork",
+      "surface": "Pointer cursor family",
+      "baseline_status": "observed-config",
+      "requirement": "Fallback shapes and applications retaining old cursor need checks.",
+      "disposition": "assigned; inventory and evidence per surface required"
+    },
+    {
+      "worker": "desktop-artwork",
+      "surface": "Interface, titlebar, document and monospace fonts",
+      "baseline_status": "observed-config",
+      "requirement": "Font availability/fallback and per-application fonts not rendered.",
+      "disposition": "assigned; inventory and evidence per surface required"
+    },
+    {
+      "worker": "desktop-artwork",
+      "surface": "Wallpaper artwork and scaling",
+      "baseline_status": "observed-config",
+      "requirement": "Actual wallpaper image not inspected in this audit; original artwork preserved.",
+      "disposition": "assigned; inventory and evidence per surface required"
+    },
+    {
+      "worker": "desktop-artwork",
+      "surface": "Desktop desklets",
+      "baseline_status": "observed-config",
+      "requirement": "Coordinates may be off-screen depending on display layout; no visibility claim.; Desklet CSS and inline styles require separate coverage.",
+      "disposition": "assigned; inventory and evidence per surface required"
+    },
+    {
+      "worker": "desktop-artwork",
+      "surface": "Shell extensions",
+      "baseline_status": "observed-config",
+      "requirement": "Installed but disabled visual extensions are not active styling.",
+      "disposition": "assigned; inventory and evidence per surface required"
+    },
+    {
+      "worker": "desktop-artwork",
+      "surface": "Custom music dashboard",
+      "baseline_status": "observed-config",
+      "requirement": "Projects/mint-dashboard is a separate older source, not the autostart target.; Running visibility/function not checked.",
+      "disposition": "assigned; inventory and evidence per surface required"
+    },
+    {
+      "worker": "desktop-artwork",
+      "surface": "Eww theme widgets",
+      "baseline_status": "observed-config",
+      "requirement": "Autostart enabled does not prove widgets currently running/visible.",
+      "disposition": "assigned; inventory and evidence per surface required"
+    },
+    {
+      "worker": "desktop-artwork",
+      "surface": "Translucency and compositor",
+      "baseline_status": "observed-config",
+      "requirement": "Old theme-named helper may apply opacity across newer presets.; No compositor restart or opacity change performed.",
+      "disposition": "assigned; inventory and evidence per surface required"
+    },
+    {
+      "worker": "desktop-artwork",
+      "surface": "Desktop animation behavior",
+      "baseline_status": "observed-config",
+      "requirement": "Performance and timing untested.",
+      "disposition": "assigned; inventory and evidence per surface required"
+    },
+    {
+      "worker": "desktop-artwork",
+      "surface": "Run, authentication and session dialogs",
+      "baseline_status": "observed-config",
+      "requirement": "Polkit/lock/login use additional theme boundaries; assigned to boot/login agent.",
+      "disposition": "assigned; inventory and evidence per surface required"
+    },
+    {
+      "worker": "applications-terminal",
+      "surface": "GTK 2 applications",
+      "baseline_status": "observed-config",
+      "requirement": "Check older widgets, menus, tooltips, disabled states and file dialogs.",
+      "disposition": "assigned; inventory and evidence per surface required"
+    },
+    {
+      "worker": "applications-terminal",
+      "surface": "GTK 3 applications",
+      "baseline_status": "observed-config",
+      "requirement": "Verify Nemo, Xed, Xreader, Mint settings, notifications belonging to applications, and authentication dialogs.",
+      "disposition": "assigned; inventory and evidence per surface required"
+    },
+    {
+      "worker": "applications-terminal",
+      "surface": "GTK 4 applications",
+      "baseline_status": "observed-config",
+      "requirement": "Verify selector compatibility and widget states separately from GTK3; preserve symlink target in backup.",
+      "disposition": "assigned; inventory and evidence per surface required"
+    },
+    {
+      "worker": "applications-terminal",
+      "surface": "Libadwaita applications",
+      "baseline_status": "observed-config",
+      "requirement": "Per-app check required; installed library plus GTK_THEME does not prove matching accents, dialogs or widget rendering.",
+      "disposition": "assigned; inventory and evidence per surface required"
+    },
+    {
+      "worker": "applications-terminal",
+      "surface": "Qt 5 and KDE applications",
+      "baseline_status": "observed-config",
+      "requirement": "No explicit unified Qt palette/selection verified; inspect KDE application style, icons, dialogs and syntax themes.",
+      "disposition": "assigned; inventory and evidence per surface required"
+    },
+    {
+      "worker": "applications-terminal",
+      "surface": "Qt 6 applications",
+      "baseline_status": "observed-config",
+      "requirement": "Toolkit presence does not establish effective theme in native or sandboxed Qt6 applications.",
+      "disposition": "assigned; inventory and evidence per surface required"
+    },
+    {
+      "worker": "applications-terminal",
+      "surface": "Flatpak theme access and overrides",
+      "baseline_status": "observed-config",
+      "requirement": "Inspect app-specific overrides and sandbox visibility before changing grants.; Test GTK, libadwaita, Qt and Electron applications individually; access grants alone do not establish matching appearance.",
+      "disposition": "assigned; inventory and evidence per surface required"
+    },
+    {
+      "worker": "applications-terminal",
+      "surface": "GNOME Terminal",
+      "baseline_status": "observed-config",
+      "requirement": "Decide whether to preserve historical named profiles instead of recoloring every profile; exact visible names must be intentional.; Verify bold, selection, cursor, tabs and transparency.",
+      "disposition": "assigned; inventory and evidence per surface required"
+    },
+    {
+      "worker": "applications-terminal",
+      "surface": "Kitty",
+      "baseline_status": "observed-config",
+      "requirement": "Current Kitty palette differs from Dusk-Ribbons desktop.",
+      "disposition": "assigned; inventory and evidence per surface required"
+    },
+    {
+      "worker": "applications-terminal",
+      "surface": "Konsole",
+      "baseline_status": "observed-config",
+      "requirement": "Current selected terminal palette differs from Dusk-Ribbons desktop.",
+      "disposition": "assigned; inventory and evidence per surface required"
+    },
+    {
+      "worker": "applications-terminal",
+      "surface": "Ptyxis Flatpak",
+      "baseline_status": "observed-config",
+      "requirement": "Verify palette visibility in Flatpak; selected palette differs from Dusk-Ribbons.",
+      "disposition": "assigned; inventory and evidence per surface required"
+    },
+    {
+      "worker": "applications-terminal",
+      "surface": "Tilda drop-down terminal",
+      "baseline_status": "observed-config",
+      "requirement": "Need dedicated palette adapter and visual check; config contains behavior settings so avoid whole-file replacement.",
+      "disposition": "assigned; inventory and evidence per surface required"
+    },
+    {
+      "worker": "applications-terminal",
+      "surface": "Shell prompt",
+      "baseline_status": "observed-config",
+      "requirement": "Do not replace shell startup files. A future prompt should be a separate sourced appearance fragment with a minimal reviewed insertion.",
+      "disposition": "assigned; inventory and evidence per surface required"
+    },
+    {
+      "worker": "applications-terminal",
+      "surface": "Fastfetch and supplied logo",
+      "baseline_status": "observed-config",
+      "requirement": "Verify actual logo framing, transparency, color rendering and shell wrapper behavior; do not invoke the mutating wrapper during audit.",
+      "disposition": "assigned; inventory and evidence per surface required"
+    },
+    {
+      "worker": "applications-terminal",
+      "surface": "Nano",
+      "baseline_status": "observed-config",
+      "requirement": "Current palette differs from Dusk-Ribbons; preserve editing options and syntax includes.",
+      "disposition": "assigned; inventory and evidence per surface required"
+    },
+    {
+      "worker": "applications-terminal",
+      "surface": "Xed",
+      "baseline_status": "observed-config",
+      "requirement": "Need syntax palette plus GTK visual check.",
+      "disposition": "assigned; inventory and evidence per surface required"
+    },
+    {
+      "worker": "applications-terminal",
+      "surface": "GNOME Builder",
+      "baseline_status": "observed-config",
+      "requirement": "Need syntax palette and application chrome check.",
+      "disposition": "assigned; inventory and evidence per surface required"
+    },
+    {
+      "worker": "applications-terminal",
+      "surface": "Kate and KWrite",
+      "baseline_status": "observed-config",
+      "requirement": "Do not collapse section-specific settings; syntax and application themes require separate adapters.",
+      "disposition": "assigned; inventory and evidence per surface required"
+    },
+    {
+      "worker": "applications-terminal",
+      "surface": "Cursor editor",
+      "baseline_status": "unverified",
+      "requirement": "Determine active configuration location through application settings; no profile or workspace data scanned.",
+      "disposition": "assigned; inventory and evidence per surface required"
+    },
+    {
+      "worker": "applications-terminal",
+      "surface": "Firefox browser chrome",
+      "baseline_status": "unverified",
+      "requirement": "Browser chrome, tab bar, new tab background, extension icons and website appearance not verified.; Use in-app appearance settings; do not copy browser profiles or modify site content globally by default.",
+      "disposition": "assigned; inventory and evidence per surface required"
+    },
+    {
+      "worker": "applications-terminal",
+      "surface": "Thunderbird mail chrome",
+      "baseline_status": "unverified",
+      "requirement": "In-app theme inspection required without reading messages/accounts/profile secrets.",
+      "disposition": "assigned; inventory and evidence per surface required"
+    },
+    {
+      "worker": "applications-terminal",
+      "surface": "Electron and custom-rendered applications",
+      "baseline_status": "unverified",
+      "requirement": "Each application needs its own supported theme settings and visual verification.; Obsidian vault theme settings not inspected; no vault search or private content access performed.",
+      "disposition": "assigned; inventory and evidence per surface required"
+    },
+    {
+      "worker": "applications-terminal",
+      "surface": "Steam, games and launchers",
+      "baseline_status": "unverified",
+      "requirement": "Steam chrome and game content have independent appearance; inventory launcher icons and supported appearance settings separately.",
+      "disposition": "assigned; inventory and evidence per surface required"
+    },
+    {
+      "worker": "applications-terminal",
+      "surface": "LibreOffice",
+      "baseline_status": "unverified",
+      "requirement": "Application UI, icons and document canvas require separate checks; document content colors should remain untouched.",
+      "disposition": "assigned; inventory and evidence per surface required"
+    },
+    {
+      "worker": "applications-terminal",
+      "surface": "GIMP",
+      "baseline_status": "observed-config",
+      "requirement": "GIMP uses its own Dark theme; themerc is generated and explicitly says to edit personal gtkrc instead.",
+      "disposition": "assigned; inventory and evidence per surface required"
+    },
+    {
+      "worker": "applications-terminal",
+      "surface": "Krita and Blender",
+      "baseline_status": "unverified",
+      "requirement": "Application palettes and canvas/background settings not established; use dedicated app theme assets without changing artwork color management.",
+      "disposition": "assigned; inventory and evidence per surface required"
+    },
+    {
+      "worker": "applications-terminal",
+      "surface": "Media application chrome",
+      "baseline_status": "unverified",
+      "requirement": "Verify chrome, controls, playlists and OSD independently from media content.",
+      "disposition": "assigned; inventory and evidence per surface required"
+    },
+    {
+      "worker": "applications-terminal",
+      "surface": "MPV visualizer and OSD",
+      "baseline_status": "observed-config",
+      "requirement": "Preserve IPC, MPRIS, profiles and output mode; appearance changes must be limited to declared color fields.; Playback and command functionality were not exercised.",
+      "disposition": "assigned; inventory and evidence per surface required"
+    },
+    {
+      "worker": "applications-terminal",
+      "surface": "Cava and panel visualizer",
+      "baseline_status": "observed-config",
+      "requirement": "Panel colors belong to consumer rendering; do not overwrite signal/format settings to theme bars.",
+      "disposition": "assigned; inventory and evidence per surface required"
+    },
+    {
+      "worker": "applications-terminal",
+      "surface": "Mint Dashboard overlay",
+      "baseline_status": "observed-config",
+      "requirement": "Dashboard theme differs from Dusk-Ribbons; patch only theme fields and scoped UI styles.; Layout, weather, links and music settings must survive; do not copy whole mixed config as an appearance preset.",
+      "disposition": "assigned; inventory and evidence per surface required"
+    },
+    {
+      "worker": "applications-terminal",
+      "surface": "Additional desktop application coverage",
+      "baseline_status": "unverified",
+      "requirement": "Verify representative toolkit surfaces plus per-app exceptions; add every new installed app to inventory.",
+      "disposition": "assigned; inventory and evidence per surface required"
+    },
+    {
+      "worker": "applications-terminal",
+      "surface": "Universal pixel-identical application theming",
+      "baseline_status": "unsupported",
+      "requirement": "A universal force-theme adapter is intentionally unsupported; use supported per-app settings and record exceptions.",
+      "disposition": "unsupported: A universal force-theme adapter is intentionally unsupported; use supported per-app settings and record exceptions."
+    },
+    {
+      "worker": "boot-login-completeness",
+      "surface": "LightDM / Slick Greeter",
+      "baseline_status": "observed-config",
+      "requirement": "Desktop is configured for Dusk-Ribbons while greeter remains Nocturne-Studio.; Automatic login may skip greeter display; reboot alone is insufficient to verify greeter.; No explicit greeter font-name; actual selected font not observed.",
+      "disposition": "assigned; inventory and evidence per surface required"
+    },
+    {
+      "worker": "boot-login-completeness",
+      "surface": "System theme, icons, cursor, wallpaper and accessibility assets",
+      "baseline_status": "observed-config",
+      "requirement": "System assets need separate installation for each new preset.; Some theme/background files and directories are group-writable; ownership mapping appears as nobody/nogroup in sandbox and needs host-level validation before installation.; Readability is filesystem evidence, not a greeter-user runtime test.",
+      "disposition": "assigned; inventory and evidence per surface required"
+    },
+    {
+      "worker": "boot-login-completeness",
+      "surface": "GRUB graphical menu",
+      "baseline_status": "observed-config",
+      "requirement": "Generated GRUB selection and timeout cannot be verified with current read permissions.; No reboot visual evidence.; Theme differs from current Dusk-Ribbons desktop.",
+      "disposition": "assigned; inventory and evidence per surface required"
+    },
+    {
+      "worker": "boot-login-completeness",
+      "surface": "Plymouth startup splash",
+      "baseline_status": "observed-config",
+      "requirement": "Selected theme is text-based; no custom graphical splash is selected.; Initramfs timestamp is newer than theme descriptor but does not prove bundled theme content.; No startup screenshot or reboot verification.",
+      "disposition": "assigned; inventory and evidence per surface required"
+    },
+    {
+      "worker": "boot-login-completeness",
+      "surface": "Shutdown and reboot transition splash",
+      "baseline_status": "unverified",
+      "requirement": "Shutdown/reboot display not observed; startup evidence would not establish shutdown behavior.",
+      "disposition": "assigned; inventory and evidence per surface required"
+    },
+    {
+      "worker": "boot-login-completeness",
+      "surface": "Cinnamon lock screen and unlock controls",
+      "baseline_status": "observed-config",
+      "requirement": "No lock/unlock visual or functional verification.; Theme-specific screensaver selector coverage must be checked before declaring a complete preset.; Read-only dconf warning occurred; queried persisted values returned, no write attempted.",
+      "disposition": "assigned; inventory and evidence per surface required"
+    },
+    {
+      "worker": "boot-login-completeness",
+      "surface": "Polkit authentication dialogs",
+      "baseline_status": "unverified",
+      "requirement": "Actual running authentication dialog appearance not observed.; Appearance adapters must preserve authentication behavior and password visibility/contrast.",
+      "disposition": "assigned; inventory and evidence per surface required"
+    },
+    {
+      "worker": "boot-login-completeness",
+      "surface": "Linux virtual console / recovery appearance",
+      "baseline_status": "observed-config",
+      "requirement": "Console font/colors are separate from GUI terminal themes.; Recovery and emergency consoles have not been rendered or customized.",
+      "disposition": "assigned; inventory and evidence per surface required"
+    },
+    {
+      "worker": "boot-login-completeness",
+      "surface": "Early disk unlock prompt",
+      "baseline_status": "unverified",
+      "requirement": "No claim can be made about an encrypted-root or external-device unlock surface solely from crypttab absence.; If applicable, test prompt legibility and input through supported Plymouth customization only.",
+      "disposition": "assigned; inventory and evidence per surface required"
+    },
+    {
+      "worker": "boot-login-completeness",
+      "surface": "Mac firmware boot picker and pre-Linux logo",
+      "baseline_status": "unsupported",
+      "requirement": "Desktop Theme Studio does not provide a supported firmware appearance adapter.",
+      "disposition": "unsupported: Desktop Theme Studio does not provide a supported firmware appearance adapter."
+    }
+  ],
+  "panel_layout": {
+    "comment": "Source-led right dock and bottom app/status row. Three newly allocated applet instances (panel-launchers, calendar and the workstation monitor) need independent journaled allocation/restore. Keep exact le cinabon label on bottom horizontal menu.",
+    "panels-enabled": [
+      "1:0:right",
+      "2:0:bottom"
+    ],
+    "panels-height": [
+      "1:64",
+      "2:64"
+    ],
+    "enabled-applets": [
+      "panel1:left:0:panel-launchers@cinnamon.org:new",
+      "panel2:left:0:menu@cinnamon.org:17",
+      "panel2:left:1:grouped-window-list@cinnamon.org:16",
+      "panel2:right:0:gnu-darwin-workstation-monitor@desktop-theme-studio:new",
+      "panel2:right:1:systray@cinnamon.org:3",
+      "panel2:right:2:xapp-status@cinnamon.org:4",
+      "panel2:right:3:keyboard@cinnamon.org:8",
+      "panel2:right:4:notifications@cinnamon.org:20",
+      "panel2:right:5:network@cinnamon.org:19",
+      "panel2:right:6:sound@cinnamon.org:11",
+      "panel2:right:7:power@cinnamon.org:21",
+      "panel2:right:8:calendar@cinnamon.org:new"
+    ],
+    "removed_for_this_preset_only": [
+      "panel1:center:1:nothing-island@desktop-theme-studio:42:orient",
+      "panel1:center:2:c-eyes@anaximeno:41",
+      "panel1:center:0:c-eyes@anaximeno:44",
+      "panel1:left:1:workspace-switcher@cinnamon.org:36"
+    ],
+    "applet_settings": {
+      "calendar@cinnamon.org:new": {
+        "use-custom-format": true,
+        "custom-format": "%H:%M",
+        "custom-tooltip-format": "%A %-d %B %Y"
+      }
+    },
+    "icon_sizes": {
+      "panel-zone-icon-sizes": {
+        "left": 48,
+        "center": 48,
+        "right": 48
+      },
+      "panel-zone-symbolic-icon-sizes": {
+        "left": 20,
+        "center": 20,
+        "right": 20
+      }
+    },
+    "enabled_desklets": [],
+    "restore": "Journal all three new applet IDs and settings paths independently, allocate from current next-applet-id, restore removed multi-instance settings byte-exact before original panel arrays/applets, remove only newly allocated instance settings after original layout restored, preserve monotonic next-applet-id, and restore exact menu through menu receipt. Rehearse two-panel right/bottom corner ownership before any host activation.",
+    "icon_sizes_by_panel": {
+      "1": {
+        "panel-zone-icon-sizes": {
+          "left": 48,
+          "center": 48,
+          "right": 48
+        },
+        "panel-zone-symbolic-icon-sizes": {
+          "left": 20,
+          "center": 20,
+          "right": 20
+        }
+      },
+      "2": {
+        "panel-zone-icon-sizes": {
+          "left": 48,
+          "center": 48,
+          "right": 48
+        },
+        "panel-zone-symbolic-icon-sizes": {
+          "left": 20,
+          "center": 20,
+          "right": 20
+        }
+      }
+    },
+    "launcher_policy": "Coordinator resolves installed application desktop IDs and explicit launcherList before build, preserving stable screenshot functional sequence where installed: terminal, browser, office, editor, scientific graphics, image editor, PDF, file manager. No guessed missing desktop IDs; record mapping/provenance.",
+    "corner_policy": "Bottom panel owns lower-right corner; right dock rail ends above bottom64px row. Bottom center stays empty black.",
+    "task_policy": "Stock grouped-window-list tiles represent running windows, not solely minimized windows or free-positioned WindowMaker miniwindows."
+  },
+  "resource_monitor": {
+    "uuid": "gnu-darwin-workstation-monitor@desktop-theme-studio",
+    "placement": "panel2:right:0; before unchanged relative status/clock order",
+    "size": {
+      "width": 256,
+      "height": 64,
+      "tile_width": 64,
+      "tile_height": 64,
+      "tiles": 4
+    },
+    "tiles": [
+      "CPU",
+      "MEM",
+      "RX",
+      "TX"
+    ],
+    "appearance": {
+      "bezel": "Existing surface #B3B2B0; square white upper-left and control_border #595959 lower-right bevel; radius0",
+      "inset": "#000000; 4px outer bezel;56px inner width",
+      "font": "Liberation Mono, labels9px bold and values10px regular; no fractional scaling required",
+      "layout": "Each64px tile: 4px bezel; label y6..17; value y19..31; graph y35..57, width54px. No labels over graphs. Tooltip expands full metric/interface/unit details.",
+      "foreground": "#DDDDDD",
+      "cpu_graph": "#77CC77",
+      "memory_graph": "#CCCC77",
+      "network_graph": "#77CCCC",
+      "warning": "#DD7777",
+      "graph_style": "54 one-pixel columns, one new sample per second, no glow/smoothing; dark unused graph pixels. Colour is supplemented by CPU/MEM/RX/TX labels and numeric values."
+    },
+    "sampling": {
+      "interval_seconds": 1,
+      "method": "Single shared GLib timeout; read /proc/stat, /proc/meminfo and /proc/net/dev through in-process file APIs; no subprocess polling, shell loops, external services or network requests. Remove timer on applet removal.",
+      "cpu": "Aggregate CPU utilization from successive total/idle+iowait counter deltas; exclude guest fields already included in user/nice. Show rounded0..100%. First sample or nonpositive total delta => -- and graph gap; never fabricated zero.",
+      "memory": "(MemTotal-MemAvailable)/MemTotal, clamp0..100; rounded percent. Missing MemAvailable => -- rather than counting cache as used or inventing a fallback. Tooltip shows used/total bytes and definition.",
+      "network": "Select one active default-route interface from /proc/net/route (lowest metric; stable name tie-break), excluding loopback. If no IPv4 route, support IPv6 default route via /proc/net/ipv6_route. Do not sum virtual/physical interfaces and double-count traffic. RX/TX from that interface counters divided by actual monotonic elapsed time; interface name in tooltip.",
+      "rate_format": "ASCII compact bytes/second: 0B/s,999B/s,1.0K/s,999K/s,1.0M/s,999M/s,1.0G/s; K/M/G binary1024 units, tooltip spells KiB/s etc. Maximum6 visible characters for typical rates; at >=1000GiB/s use >999G with exact tooltip.",
+      "graphs": "CPU/MEM fixed0..100% scale. RX/TX share a rolling54-sample ceiling, minimum1KiB/s, labelled scale in tooltip; auto scale is visual only, numeric rate always actual. Reset history when interface changes.",
+      "errors": "Missing/read-error/no usable interface => -- with tooltip reason and empty graph, no repeated alerts. Counter decrease/interface change => baseline/reset gap, never negative or huge spike. Actual valid zero => 0% or0B/s. On long interval >5s discard CPU/network delta and rebaseline; retain memory snapshot.",
+      "warnings": "CPU or memory >=90% uses warning ink plus ! in label (CPU!/MEM!), no flashing; CPU! reads current high usage rather than a fault. Network has no arbitrary danger threshold. Missing/reset state uses --, not error colour alone."
+    },
+    "provenance": "WMMon/WMNet-style descriptive period adaptation requested by user; not a claim of exact screenshot app identity, asset bytes or original widget code. All monitor graph/control drawing newly authored with existing palette/ANSI colours.",
+    "verification_api": "Expose read-only getMetricsSnapshot() returning sequence, monotonic timestamp, cpuPercent, memoryPercent, rxBytesPerSec, txBytesPerSec, interfaceName, disposed and sourceId; unavailable numbers null. Snapshot must be copied data, no side effects. Private harness checks two advancing real samples, then retains applet reference across removal and verifies disposed=true/sourceId=0/no further sequence advance."
+  }
+}

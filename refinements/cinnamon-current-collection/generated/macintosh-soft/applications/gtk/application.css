@@ -1,0 +1,8 @@
+/* Macintosh Soft GTK application surface. */
+window, dialog, .background { background-color: #ebe9e1; color: #293238; }
+headerbar { background-color: #d7d9d4; color: #293238; border-color: #a5aba8; }
+entry, textview, .view { background-color: #293238; color: #ebe9e1; caret-color: #507d7d; }
+button { background-color: #d7d9d4; color: #293238; border-color: #a5aba8; }
+button:hover { background-color: #356262; }
+button:checked, button:active { background-color: #356262; color: #fbf8f1; }
+selection { background-color: #356262; color: #fbf8f1; }

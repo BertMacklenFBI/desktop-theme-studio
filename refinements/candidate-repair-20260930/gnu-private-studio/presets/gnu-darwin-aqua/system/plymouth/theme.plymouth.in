@@ -1,0 +1,8 @@
+[Plymouth Theme]
+Name=@theme_name@
+Description=Original GNU-Darwin Aqua wallpaper, blue progress pill, silver unlock dialog and opaque message band
+ModuleName=script
+
+[script]
+ImageDir=/usr/share/plymouth/themes/@slug@
+ScriptFile=/usr/share/plymouth/themes/@slug@/@slug@.script

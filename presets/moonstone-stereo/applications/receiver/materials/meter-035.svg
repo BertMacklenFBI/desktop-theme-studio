@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="174" height="114" viewBox="0 0 174 114">
+<defs><linearGradient id="ivory" x2="0" y2="1"><stop stop-color="#fffaf0"/><stop offset="1" stop-color="#e7e1d3"/></linearGradient></defs>
+<rect x="1" y="1" width="172" height="112" rx="4" fill="#222725"/>
+<rect x="5" y="5" width="164" height="104" rx="2" fill="url(#ivory)"/>
+<path d="M24 69 A75 75 0 0 1 150 69" stroke="#b6ac97" stroke-width="1" fill="none"/>
+<path d="M25.51 65.66 L34.29 72.28" stroke="#716a5d" stroke-width="1.3"/>
+<path d="M33.01 62.87 L38.18 67.58" stroke="#716a5d" stroke-width="0.7"/>
+<path d="M37.78 58.09 L42.50 63.26" stroke="#716a5d" stroke-width="0.7"/>
+<path d="M42.97 53.78 L47.19 59.36" stroke="#716a5d" stroke-width="0.7"/>
+<path d="M48.53 49.96 L52.22 55.91" stroke="#716a5d" stroke-width="0.7"/>
+<path d="M52.64 43.09 L57.55 52.93" stroke="#716a5d" stroke-width="1.3"/>
+<path d="M60.60 43.94 L63.13 50.47" stroke="#716a5d" stroke-width="0.7"/>
+<path d="M67.00 41.79 L68.92 48.53" stroke="#716a5d" stroke-width="0.7"/>
+<path d="M73.57 40.25 L74.86 47.13" stroke="#716a5d" stroke-width="0.7"/>
+<path d="M80.26 39.31 L80.90 46.28" stroke="#716a5d" stroke-width="0.7"/>
+<path d="M87.00 35.00 L87.00 46.00" stroke="#716a5d" stroke-width="1.3"/>
+<path d="M93.74 39.31 L93.10 46.28" stroke="#716a5d" stroke-width="0.7"/>
+<path d="M100.43 40.25 L99.14 47.13" stroke="#716a5d" stroke-width="0.7"/>
+<path d="M107.00 41.79 L105.08 48.53" stroke="#716a5d" stroke-width="0.7"/>
+<path d="M113.40 43.94 L110.87 50.47" stroke="#716a5d" stroke-width="0.7"/>
+<path d="M121.36 43.09 L116.45 52.93" stroke="#716a5d" stroke-width="1.3"/>
+<path d="M125.47 49.96 L121.78 55.91" stroke="#716a5d" stroke-width="0.7"/>
+<path d="M131.03 53.78 L126.81 59.36" stroke="#9e4e42" stroke-width="0.7"/>
+<path d="M136.22 58.09 L131.50 63.26" stroke="#9e4e42" stroke-width="0.7"/>
+<path d="M140.99 62.87 L135.82 67.58" stroke="#9e4e42" stroke-width="0.7"/>
+<path d="M148.49 65.66 L139.71 72.28" stroke="#9e4e42" stroke-width="1.3"/>
+<text x="25" y="40" fill="#716a5d" font-family="sans-serif" font-size="8">0</text>
+<text x="52" y="29" fill="#716a5d" font-family="sans-serif" font-size="8">25</text>
+<text x="81" y="25" fill="#716a5d" font-family="sans-serif" font-size="8">50</text>
+<text x="112" y="29" fill="#716a5d" font-family="sans-serif" font-size="8">75</text>
+<text x="139" y="40" fill="#716a5d" font-family="sans-serif" font-size="8">100</text>
+<text x="87" y="70" text-anchor="middle" fill="#302e29" font-family="sans-serif" font-size="15" font-weight="bold" letter-spacing="2">SIGNAL</text>
+<text x="87" y="85" text-anchor="middle" fill="#716a5d" font-family="sans-serif" font-size="6.5" letter-spacing="1">RELATIVE LEVEL</text>
+<path d="M87 112 L65.91 37.95" stroke="#9e4e42" stroke-width="1.8"/>
+<circle cx="87" cy="111" r="8" fill="#302e29"/>
+</svg>

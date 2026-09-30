@@ -1,0 +1,258 @@
+{
+  "name": "GNU-Darwin Workstation",
+  "design_sha256": "fc6691242cfa9d0e9e462cd3b72dd32e5ad43bc7253e393a306a090e830cebf3",
+  "icons": [
+    {
+      "icon": "org.gnome.Terminal",
+      "function": "terminal",
+      "source": "/home/bertmacklen/Documents/desktop-theme-studio/proposals/gnu-darwin-archive/windowmaker-assets/extracted/usr/share/WindowMaker/Icons/defaultterm.tiff",
+      "source_sha256": "ae1534f2c06b7988e9e7b8db3464adb662c3b7d06d42a03dd6c29a8d58c9b083",
+      "output_sha256": "83f78936193af8e317c5df3e143eab576dbc1284440ec7d330ea3177f431e804",
+      "author": "Marco van Hylckama Vlieg, 1997",
+      "license": "attribution",
+      "transformation": "lossless format conversion; shape and colors retained; toolkit scales to48px",
+      "historical_identity": "modern packaged source; not verified screenshot bytes"
+    },
+    {
+      "icon": "utilities-terminal",
+      "function": "terminal",
+      "source": "/home/bertmacklen/Documents/desktop-theme-studio/proposals/gnu-darwin-archive/windowmaker-assets/extracted/usr/share/WindowMaker/Icons/defaultterm.tiff",
+      "source_sha256": "ae1534f2c06b7988e9e7b8db3464adb662c3b7d06d42a03dd6c29a8d58c9b083",
+      "output_sha256": "83f78936193af8e317c5df3e143eab576dbc1284440ec7d330ea3177f431e804",
+      "author": "Marco van Hylckama Vlieg, 1997",
+      "license": "attribution",
+      "transformation": "lossless format conversion; shape and colors retained; toolkit scales to48px",
+      "historical_identity": "modern packaged source; not verified screenshot bytes"
+    },
+    {
+      "icon": "terminal",
+      "function": "terminal",
+      "source": "/home/bertmacklen/Documents/desktop-theme-studio/proposals/gnu-darwin-archive/windowmaker-assets/extracted/usr/share/WindowMaker/Icons/defaultterm.tiff",
+      "source_sha256": "ae1534f2c06b7988e9e7b8db3464adb662c3b7d06d42a03dd6c29a8d58c9b083",
+      "output_sha256": "83f78936193af8e317c5df3e143eab576dbc1284440ec7d330ea3177f431e804",
+      "author": "Marco van Hylckama Vlieg, 1997",
+      "license": "attribution",
+      "transformation": "lossless format conversion; shape and colors retained; toolkit scales to48px",
+      "historical_identity": "modern packaged source; not verified screenshot bytes"
+    },
+    {
+      "icon": "firefox",
+      "function": "browser",
+      "source": "/home/bertmacklen/Documents/desktop-theme-studio/proposals/gnu-darwin-archive/windowmaker-assets/extracted/usr/share/WindowMaker/Icons/Mozilla.png",
+      "source_sha256": "ab54e5f5f4b8d24f2f487ab86f37d19da50a3519d03296d2d951a0e176e1fdfe",
+      "output_sha256": "2ec0f5ad501248d0069f8003fea7aced5492bce5167e6eaed31eb6c1da41715d",
+      "author": "Banlu Kemiyatorn, 2000",
+      "license": "WTFPL-1",
+      "transformation": "lossless format conversion; shape and colors retained; toolkit scales to48px",
+      "historical_identity": "modern packaged source; not verified screenshot bytes"
+    },
+    {
+      "icon": "web-browser",
+      "function": "browser",
+      "source": "/home/bertmacklen/Documents/desktop-theme-studio/proposals/gnu-darwin-archive/windowmaker-assets/extracted/usr/share/WindowMaker/Icons/Mozilla.png",
+      "source_sha256": "ab54e5f5f4b8d24f2f487ab86f37d19da50a3519d03296d2d951a0e176e1fdfe",
+      "output_sha256": "2ec0f5ad501248d0069f8003fea7aced5492bce5167e6eaed31eb6c1da41715d",
+      "author": "Banlu Kemiyatorn, 2000",
+      "license": "WTFPL-1",
+      "transformation": "lossless format conversion; shape and colors retained; toolkit scales to48px",
+      "historical_identity": "modern packaged source; not verified screenshot bytes"
+    },
+    {
+      "icon": "libreoffice-startcenter",
+      "function": "office",
+      "source": "/home/bertmacklen/Documents/desktop-theme-studio/proposals/gnu-darwin-archive/windowmaker-assets/extracted/usr/share/WindowMaker/Icons/staroffice2.tiff",
+      "source_sha256": "ec449d3dc397fb988825cfd9a62e86e15323b375f6439d14cf6b69943c242e36",
+      "output_sha256": "594d71aa142ade64467643622c0fa64a5f704d795458fd5304b4f60b3c3c782a",
+      "author": "Marco van Hylckama Vlieg, 1997",
+      "license": "attribution",
+      "transformation": "lossless format conversion; shape and colors retained; toolkit scales to48px",
+      "historical_identity": "modern packaged source; not verified screenshot bytes"
+    },
+    {
+      "icon": "accessories-text-editor",
+      "function": "document/text editor",
+      "source": "/home/bertmacklen/Documents/desktop-theme-studio/proposals/gnu-darwin-archive/windowmaker-assets/extracted/usr/share/WindowMaker/Icons/write.tiff",
+      "source_sha256": "1613f33ef9b98be71bf8505d81b47a03c13eb98d22cd0efaf63fe56a8d274011",
+      "output_sha256": "843721dfd70e41b4adcfe334234cb727f223d5a1031b2377dc4726a64553698c",
+      "author": "Marco van Hylckama Vlieg, 1997",
+      "license": "attribution",
+      "transformation": "lossless format conversion; shape and colors retained; toolkit scales to48px",
+      "historical_identity": "modern packaged source; not verified screenshot bytes"
+    },
+    {
+      "icon": "org.x.editor",
+      "function": "document/text editor",
+      "source": "/home/bertmacklen/Documents/desktop-theme-studio/proposals/gnu-darwin-archive/windowmaker-assets/extracted/usr/share/WindowMaker/Icons/write.tiff",
+      "source_sha256": "1613f33ef9b98be71bf8505d81b47a03c13eb98d22cd0efaf63fe56a8d274011",
+      "output_sha256": "843721dfd70e41b4adcfe334234cb727f223d5a1031b2377dc4726a64553698c",
+      "author": "Marco van Hylckama Vlieg, 1997",
+      "license": "attribution",
+      "transformation": "lossless format conversion; shape and colors retained; toolkit scales to48px",
+      "historical_identity": "modern packaged source; not verified screenshot bytes"
+    },
+    {
+      "icon": "libreoffice-writer",
+      "function": "document/text editor",
+      "source": "/home/bertmacklen/Documents/desktop-theme-studio/proposals/gnu-darwin-archive/windowmaker-assets/extracted/usr/share/WindowMaker/Icons/write.tiff",
+      "source_sha256": "1613f33ef9b98be71bf8505d81b47a03c13eb98d22cd0efaf63fe56a8d274011",
+      "output_sha256": "843721dfd70e41b4adcfe334234cb727f223d5a1031b2377dc4726a64553698c",
+      "author": "Marco van Hylckama Vlieg, 1997",
+      "license": "attribution",
+      "transformation": "lossless format conversion; shape and colors retained; toolkit scales to48px",
+      "historical_identity": "modern packaged source; not verified screenshot bytes"
+    },
+    {
+      "icon": "gimp",
+      "function": "image editor",
+      "source": "/home/bertmacklen/Documents/desktop-theme-studio/proposals/gnu-darwin-archive/windowmaker-assets/extracted/usr/share/WindowMaker/Icons/wilber.tiff",
+      "source_sha256": "84d51e6498e5647116a41cfca1485a55c1ca81f95c5ac78666c972136b3eeb83",
+      "output_sha256": "78844446078ccdea4085d393778cee9eb83d634326b7a198b2b746106715b729",
+      "author": "Marco van Hylckama Vlieg, 1997",
+      "license": "attribution",
+      "transformation": "lossless format conversion; shape and colors retained; toolkit scales to48px",
+      "historical_identity": "modern packaged source; not verified screenshot bytes"
+    },
+    {
+      "icon": "xreader",
+      "function": "PDF reader",
+      "source": "/home/bertmacklen/Documents/desktop-theme-studio/proposals/gnu-darwin-archive/windowmaker-assets/extracted/usr/share/WindowMaker/Icons/pdf.tiff",
+      "source_sha256": "84c89fba5ceb8b03c653192f3da9d496edd146cff3f40a4a48ff226a0bbc74ba",
+      "output_sha256": "3be4ae9ad05a6d05a083005d04510e7415a74aaaa8561c4dade77fc18cb6f02d",
+      "author": "Marco van Hylckama Vlieg, 1997",
+      "license": "attribution",
+      "transformation": "lossless format conversion; shape and colors retained; toolkit scales to48px",
+      "historical_identity": "modern packaged source; not verified screenshot bytes"
+    },
+    {
+      "icon": "application-pdf",
+      "function": "PDF reader",
+      "source": "/home/bertmacklen/Documents/desktop-theme-studio/proposals/gnu-darwin-archive/windowmaker-assets/extracted/usr/share/WindowMaker/Icons/pdf.tiff",
+      "source_sha256": "84c89fba5ceb8b03c653192f3da9d496edd146cff3f40a4a48ff226a0bbc74ba",
+      "output_sha256": "3be4ae9ad05a6d05a083005d04510e7415a74aaaa8561c4dade77fc18cb6f02d",
+      "author": "Marco van Hylckama Vlieg, 1997",
+      "license": "attribution",
+      "transformation": "lossless format conversion; shape and colors retained; toolkit scales to48px",
+      "historical_identity": "modern packaged source; not verified screenshot bytes"
+    },
+    {
+      "icon": "system-file-manager",
+      "function": "file manager",
+      "source": "/home/bertmacklen/Documents/desktop-theme-studio/proposals/gnu-darwin-archive/windowmaker-assets/extracted/usr/share/WindowMaker/Icons/Drawer.tiff",
+      "source_sha256": "a933d46f73f98114057802740bc233490f47132c823dc04f0253cf816e205281",
+      "output_sha256": "8accb15f0014887d4246310a579fe0649ba53b1c65fcd193fa1b9f8c475c0cd2",
+      "author": "Window Maker contributors; full package copyright retained",
+      "license": "GPL-2+",
+      "transformation": "lossless format conversion; shape and colors retained; toolkit scales to48px",
+      "historical_identity": "modern packaged source; not verified screenshot bytes"
+    },
+    {
+      "icon": "nemo",
+      "function": "file manager",
+      "source": "/home/bertmacklen/Documents/desktop-theme-studio/proposals/gnu-darwin-archive/windowmaker-assets/extracted/usr/share/WindowMaker/Icons/Drawer.tiff",
+      "source_sha256": "a933d46f73f98114057802740bc233490f47132c823dc04f0253cf816e205281",
+      "output_sha256": "8accb15f0014887d4246310a579fe0649ba53b1c65fcd193fa1b9f8c475c0cd2",
+      "author": "Window Maker contributors; full package copyright retained",
+      "license": "GPL-2+",
+      "transformation": "lossless format conversion; shape and colors retained; toolkit scales to48px",
+      "historical_identity": "modern packaged source; not verified screenshot bytes"
+    },
+    {
+      "icon": "folder",
+      "function": "file manager",
+      "source": "/home/bertmacklen/Documents/desktop-theme-studio/proposals/gnu-darwin-archive/windowmaker-assets/extracted/usr/share/WindowMaker/Icons/Drawer.tiff",
+      "source_sha256": "a933d46f73f98114057802740bc233490f47132c823dc04f0253cf816e205281",
+      "output_sha256": "8accb15f0014887d4246310a579fe0649ba53b1c65fcd193fa1b9f8c475c0cd2",
+      "author": "Window Maker contributors; full package copyright retained",
+      "license": "GPL-2+",
+      "transformation": "lossless format conversion; shape and colors retained; toolkit scales to48px",
+      "historical_identity": "modern packaged source; not verified screenshot bytes"
+    },
+    {
+      "icon": "cs-themes",
+      "function": "appearance settings",
+      "source": "/home/bertmacklen/Documents/desktop-theme-studio/proposals/gnu-darwin-archive/windowmaker-assets/extracted/usr/share/WindowMaker/Icons/../../GNUstep/System/Applications/WPrefs.app/WPrefs.xpm",
+      "source_sha256": "e9969182169b0bc750f17242412662c049bdf584c624d4bd6fcc07cca4b2dbb8",
+      "output_sha256": "89a5000adf27962699ba2727fb834bef11d3c825d1a95160b87013b4dcbf3410",
+      "author": "Banlu Kemiyatorn, 2000",
+      "license": "WTFPL-1",
+      "transformation": "lossless format conversion; shape and colors retained; toolkit scales to48px",
+      "historical_identity": "modern packaged source; not verified screenshot bytes"
+    },
+    {
+      "icon": "xviewer",
+      "function": "image viewer",
+      "source": "/home/bertmacklen/Documents/desktop-theme-studio/proposals/gnu-darwin-archive/windowmaker-assets/extracted/usr/share/WindowMaker/Icons/xv.tiff",
+      "source_sha256": "3b57ecc45a208fce1a673e63688076c72ad726b4384c9b91ce7b1a23e59646f5",
+      "output_sha256": "28bf72bac8bda7124c07dae388eb6823550287f34dfb7c554e178698990e5f29",
+      "author": "Marco van Hylckama Vlieg, 1997",
+      "license": "attribution",
+      "transformation": "lossless format conversion; shape and colors retained; toolkit scales to48px",
+      "historical_identity": "modern packaged source; not verified screenshot bytes"
+    },
+    {
+      "icon": "gnu-darwin-workstation-menu",
+      "function": "menu/settings icon",
+      "source": "/home/bertmacklen/Documents/desktop-theme-studio/proposals/gnu-darwin-archive/windowmaker-assets/extracted/usr/share/WindowMaker/Icons/GNUstepGlow.xpm",
+      "source_sha256": "3812d3f4056f6a5454d497e3e15366d706cb49ad038ee822e14c21faee9498de",
+      "output_sha256": "449767fe12347c85ea669acd5b7d20d9c6d475fda2108b24e9f2c86aa817fc53",
+      "author": "Banlu Kemiyatorn, 2000",
+      "license": "WTFPL-1",
+      "transformation": "lossless format conversion; shape and colors retained; toolkit scales to48px",
+      "historical_identity": "modern packaged source; not verified screenshot bytes"
+    },
+    {
+      "icon": "preferences-desktop",
+      "function": "menu/settings icon",
+      "source": "/home/bertmacklen/Documents/desktop-theme-studio/proposals/gnu-darwin-archive/windowmaker-assets/extracted/usr/share/WindowMaker/Icons/GNUstepGlow.xpm",
+      "source_sha256": "3812d3f4056f6a5454d497e3e15366d706cb49ad038ee822e14c21faee9498de",
+      "output_sha256": "449767fe12347c85ea669acd5b7d20d9c6d475fda2108b24e9f2c86aa817fc53",
+      "author": "Banlu Kemiyatorn, 2000",
+      "license": "WTFPL-1",
+      "transformation": "lossless format conversion; shape and colors retained; toolkit scales to48px",
+      "historical_identity": "modern packaged source; not verified screenshot bytes"
+    },
+    {
+      "icon": "blender",
+      "function": "installed modern application",
+      "source": "/usr/share/icons/Papirus/64x64/apps/blender.svg",
+      "source_sha256": "5110b63574043fd5da5de69733aefa3df4e2036a6a5206455ee3002854c53907",
+      "license": "Papirus GPL-3; COPYRIGHT-Papirus retained",
+      "historical_identity": "modern installed substitution, not claimed legacy application"
+    },
+    {
+      "icon": "lyx",
+      "function": "installed modern application",
+      "source": "/usr/share/icons/Papirus/64x64/apps/lyx.svg",
+      "source_sha256": "de01d1b077dcda67056046f0ec5dd78ef82c8cf920e208437191de74f47104ee",
+      "license": "Papirus GPL-3; COPYRIGHT-Papirus retained",
+      "historical_identity": "modern installed substitution, not claimed legacy application"
+    },
+    {
+      "icon": "org.x.Warpinator",
+      "function": "installed modern application",
+      "source": "/usr/share/icons/Papirus/64x64/apps/org.x.Warpinator.svg",
+      "source_sha256": "09dfc292901edae802e214ad8fd2f7df96eea196f20d11b615a7a5a0de6ddbcc",
+      "license": "Papirus GPL-3; COPYRIGHT-Papirus retained",
+      "historical_identity": "modern installed substitution, not claimed legacy application"
+    },
+    {
+      "icon": "gvim",
+      "function": "installed modern application",
+      "source": "/usr/share/icons/Papirus/64x64/apps/gvim.svg",
+      "source_sha256": "a6d97fca2c694d61e96a77c219df2d6db4d892143762d360cf9df7ae8b7c9594",
+      "license": "Papirus GPL-3; COPYRIGHT-Papirus retained",
+      "historical_identity": "modern installed substitution, not claimed legacy application"
+    },
+    {
+      "icon": "kubrick",
+      "function": "installed modern application",
+      "source": "/usr/share/icons/Papirus/64x64/apps/kubrick.svg",
+      "source_sha256": "d76d8de9215b580a3d2459d4cc40543fee37e4956a41585eeda12b7b0eb0d1dd",
+      "license": "Papirus GPL-3; COPYRIGHT-Papirus retained",
+      "historical_identity": "modern installed substitution, not claimed legacy application"
+    }
+  ],
+  "count": 24,
+  "cursor": "Installed Bibata-Modern-Classic inherited without copies",
+  "applied": false
+}

@@ -1,0 +1,674 @@
+{
+  "area": "applications-terminal",
+  "observed_at": "2026-09-20T04:31:54.877562+00:00",
+  "surfaces": [
+    {
+      "id": "gtk2",
+      "label": "GTK 2 applications",
+      "status": "observed-config",
+      "evidence": [
+        "~/.gtkrc-2.0 selects Dusk-Ribbons, Dusk-Ribbons-Icons and Dusk-Ribbons-Cursors.",
+        "GTK2 2.24.33 and Murrine engine are installed."
+      ],
+      "gaps": [
+        "Check older widgets, menus, tooltips, disabled states and file dialogs."
+      ],
+      "verification": "Read-only configuration inspection; application rendering and interaction not visually verified."
+    },
+    {
+      "id": "gtk3",
+      "label": "GTK 3 applications",
+      "status": "observed-config",
+      "evidence": [
+        "~/.config/gtk-3.0/settings.ini selects Dusk-Ribbons and dark preference.",
+        "GTK3 3.24.41 is installed. No per-user gtk-3.0/gtk.css found."
+      ],
+      "gaps": [
+        "Verify Nemo, Xed, Xreader, Mint settings, notifications belonging to applications, and authentication dialogs."
+      ],
+      "verification": "Read-only configuration inspection; application rendering and interaction not visually verified."
+    },
+    {
+      "id": "gtk4",
+      "label": "GTK 4 applications",
+      "status": "observed-config",
+      "evidence": [
+        "~/.config/gtk-4.0/settings.ini selects Dusk-Ribbons.",
+        "~/.config/gtk-4.0/gtk.css is a symlink to ~/.themes/Dusk-Ribbons/gtk-4.0/gtk.css (140315 bytes).",
+        "GTK4 4.14.5 installed."
+      ],
+      "gaps": [
+        "Verify selector compatibility and widget states separately from GTK3; preserve symlink target in backup."
+      ],
+      "verification": "Read-only configuration inspection; application rendering and interaction not visually verified."
+    },
+    {
+      "id": "libadwaita",
+      "label": "Libadwaita applications",
+      "status": "observed-config",
+      "evidence": [
+        "libadwaita 1.5.0 installed; org.gnome.desktop.interface color-scheme is prefer-dark."
+      ],
+      "gaps": [
+        "Per-app check required; installed library plus GTK_THEME does not prove matching accents, dialogs or widget rendering."
+      ],
+      "verification": "Read-only configuration inspection; application rendering and interaction not visually verified."
+    },
+    {
+      "id": "qt5",
+      "label": "Qt 5 and KDE applications",
+      "status": "observed-config",
+      "evidence": [
+        "Qt5 GTK platform theme plugins installed; many KDE applications installed (Dolphin, Kate, Konsole, Okular, Krita and others).",
+        "~/.config/kdeglobals has no global Colors, Icons or General appearance groups.",
+        "qt5ct and Kvantum not installed; QT_QPA_PLATFORMTHEME and QT_STYLE_OVERRIDE absent from this process environment."
+      ],
+      "gaps": [
+        "No explicit unified Qt palette/selection verified; inspect KDE application style, icons, dialogs and syntax themes."
+      ],
+      "verification": "Read-only configuration inspection; application rendering and interaction not visually verified."
+    },
+    {
+      "id": "qt6",
+      "label": "Qt 6 applications",
+      "status": "observed-config",
+      "evidence": [
+        "qt6-gtk-platformtheme 6.4.2 installed.",
+        "qt6ct and Kvantum not installed; no qt6ct.conf found."
+      ],
+      "gaps": [
+        "Toolkit presence does not establish effective theme in native or sandboxed Qt6 applications."
+      ],
+      "verification": "Read-only configuration inspection; application rendering and interaction not visually verified."
+    },
+    {
+      "id": "flatpak",
+      "label": "Flatpak theme access and overrides",
+      "status": "observed-config",
+      "evidence": [
+        "13 installed Flatpak applications.",
+        "User global GTK_THEME=Dusk-Ribbons; read access to ~/.themes and ~/.icons.",
+        "Global override also contains an older Nocturne-Studio directory grant.",
+        "No system-global override output."
+      ],
+      "gaps": [
+        "Inspect app-specific overrides and sandbox visibility before changing grants.",
+        "Test GTK, libadwaita, Qt and Electron applications individually; access grants alone do not establish matching appearance."
+      ],
+      "verification": "Read-only configuration inspection; application rendering and interaction not visually verified."
+    },
+    {
+      "id": "gnome-terminal",
+      "label": "GNOME Terminal",
+      "status": "observed-config",
+      "evidence": [
+        "Seven configured profiles share Dusk-Ribbons background #2d2c41, foreground #f1e3df and ANSI palette.",
+        "Default profile dd8eea03-4e10-4a4a-aed4-cd641c0e1cc5 is still named Nocturne; font Hack 11.",
+        "Other profile names include Catppuccin variants and Silo despite matching Dusk colors."
+      ],
+      "gaps": [
+        "Decide whether to preserve historical named profiles instead of recoloring every profile; exact visible names must be intentional.",
+        "Verify bold, selection, cursor, tabs and transparency."
+      ],
+      "verification": "Read-only configuration inspection; application rendering and interaction not visually verified."
+    },
+    {
+      "id": "kitty",
+      "label": "Kitty",
+      "status": "observed-config",
+      "evidence": [
+        "~/.config/kitty/kitty.conf includes /home/bertmacklen/Documents/Codex/2026-09-05/le/outputs/nocturne/kitty.conf.",
+        "Included palette remains Nocturne #111a23/#dce7ec/#83c7b7; Hack 11; opacity 0.95."
+      ],
+      "gaps": [
+        "Current Kitty palette differs from Dusk-Ribbons desktop."
+      ],
+      "verification": "Read-only configuration inspection; application rendering and interaction not visually verified."
+    },
+    {
+      "id": "konsole",
+      "label": "Konsole",
+      "status": "observed-config",
+      "evidence": [
+        "~/.config/konsolerc selects Nocturne.profile.",
+        "Nocturne.profile selects Nocturne.colorscheme; background 17,26,35 and foreground 220,231,236.",
+        "Silo and Catppuccin profile assets also exist."
+      ],
+      "gaps": [
+        "Current selected terminal palette differs from Dusk-Ribbons desktop."
+      ],
+      "verification": "Read-only configuration inspection; application rendering and interaction not visually verified."
+    },
+    {
+      "id": "ptyxis",
+      "label": "Ptyxis Flatpak",
+      "status": "observed-config",
+      "evidence": [
+        "app.devsuite.Ptyxis installed.",
+        "dconf /org/gnome/Ptyxis/ selects profile 3e18c910e9674a25bfaa33ecd605fea3, palette nocturne.",
+        "~/.local/share/org.gnome.Ptyxis/palettes/nocturne.palette and silo.palette exist."
+      ],
+      "gaps": [
+        "Verify palette visibility in Flatpak; selected palette differs from Dusk-Ribbons."
+      ],
+      "verification": "Read-only configuration inspection; application rendering and interaction not visually verified."
+    },
+    {
+      "id": "tilda",
+      "label": "Tilda drop-down terminal",
+      "status": "observed-config",
+      "evidence": [
+        "Tilda launcher and ~/.config/tilda/config_0 present.",
+        "Monospace 11; palette_scheme=1; stored palette differs from Dusk-Ribbons."
+      ],
+      "gaps": [
+        "Need dedicated palette adapter and visual check; config contains behavior settings so avoid whole-file replacement."
+      ],
+      "verification": "Read-only configuration inspection; application rendering and interaction not visually verified."
+    },
+    {
+      "id": "shell-prompt",
+      "label": "Shell prompt",
+      "status": "observed-config",
+      "evidence": [
+        "~/.bashrc includes custom PS1 color variables and a Fastfetch wrapper invoking rotate-logo.sh."
+      ],
+      "gaps": [
+        "Do not replace shell startup files. A future prompt should be a separate sourced appearance fragment with a minimal reviewed insertion."
+      ],
+      "verification": "Read-only configuration inspection; application rendering and interaction not visually verified."
+    },
+    {
+      "id": "fastfetch",
+      "label": "Fastfetch and supplied logo",
+      "status": "observed-config",
+      "evidence": [
+        "~/.config/fastfetch/.theme is dusk-ribbons.",
+        "config.jsonc selects ~/.config/fastfetch/logos/hues/macklenmobile-logo-dusk-ribbons.png; chafa, 34x17 cells.",
+        "Fastfetch 2.68.1 installed; custom rotation, hue and wrapper scripts present."
+      ],
+      "gaps": [
+        "Verify actual logo framing, transparency, color rendering and shell wrapper behavior; do not invoke the mutating wrapper during audit."
+      ],
+      "verification": "Read-only configuration inspection; application rendering and interaction not visually verified."
+    },
+    {
+      "id": "nano",
+      "label": "Nano",
+      "status": "observed-config",
+      "evidence": [
+        "~/.nanorc explicitly uses Nocturne UI and syntax palette."
+      ],
+      "gaps": [
+        "Current palette differs from Dusk-Ribbons; preserve editing options and syntax includes."
+      ],
+      "verification": "Read-only configuration inspection; application rendering and interaction not visually verified."
+    },
+    {
+      "id": "xed",
+      "label": "Xed",
+      "status": "observed-config",
+      "evidence": [
+        "org.x.editor.preferences.editor scheme=xed; use-default-font=true."
+      ],
+      "gaps": [
+        "Need syntax palette plus GTK visual check."
+      ],
+      "verification": "Read-only configuration inspection; application rendering and interaction not visually verified."
+    },
+    {
+      "id": "builder",
+      "label": "GNOME Builder",
+      "status": "observed-config",
+      "evidence": [
+        "org.gnome.builder.editor style-scheme-name=Adwaita."
+      ],
+      "gaps": [
+        "Need syntax palette and application chrome check."
+      ],
+      "verification": "Read-only configuration inspection; application rendering and interaction not visually verified."
+    },
+    {
+      "id": "kate",
+      "label": "Kate and KWrite",
+      "status": "observed-config",
+      "evidence": [
+        "Kate and KWrite desktop launchers installed.",
+        "~/.config/katerc contains section-dependent Catppuccin Mocha and Breeze Light color theme selections."
+      ],
+      "gaps": [
+        "Do not collapse section-specific settings; syntax and application themes require separate adapters."
+      ],
+      "verification": "Read-only configuration inspection; application rendering and interaction not visually verified."
+    },
+    {
+      "id": "cursor-editor",
+      "label": "Cursor editor",
+      "status": "unverified",
+      "evidence": [
+        "Cursor launchers installed; standard ~/.config/Cursor/User and ~/.config/cursor/User settings.json absent."
+      ],
+      "gaps": [
+        "Determine active configuration location through application settings; no profile or workspace data scanned."
+      ],
+      "verification": "Read-only configuration inspection; application rendering and interaction not visually verified."
+    },
+    {
+      "id": "firefox",
+      "label": "Firefox browser chrome",
+      "status": "unverified",
+      "evidence": [
+        "Firefox desktop launcher installed; standard ~/.mozilla/firefox and snap/firefox/common/.mozilla/firefox profile roots absent."
+      ],
+      "gaps": [
+        "Browser chrome, tab bar, new tab background, extension icons and website appearance not verified.",
+        "Use in-app appearance settings; do not copy browser profiles or modify site content globally by default."
+      ],
+      "verification": "Read-only configuration inspection; application rendering and interaction not visually verified."
+    },
+    {
+      "id": "thunderbird",
+      "label": "Thunderbird mail chrome",
+      "status": "unverified",
+      "evidence": [
+        "Thunderbird launcher installed; standard ~/.thunderbird profile root absent."
+      ],
+      "gaps": [
+        "In-app theme inspection required without reading messages/accounts/profile secrets."
+      ],
+      "verification": "Read-only configuration inspection; application rendering and interaction not visually verified."
+    },
+    {
+      "id": "electron",
+      "label": "Electron and custom-rendered applications",
+      "status": "unverified",
+      "evidence": [
+        "Claude, ChatGPT and Cursor desktop launchers present; Discord, Obsidian and FreeTube installed as Flatpaks."
+      ],
+      "gaps": [
+        "Each application needs its own supported theme settings and visual verification.",
+        "Obsidian vault theme settings not inspected; no vault search or private content access performed."
+      ],
+      "verification": "Read-only configuration inspection; application rendering and interaction not visually verified."
+    },
+    {
+      "id": "steam-games",
+      "label": "Steam, games and launchers",
+      "status": "unverified",
+      "evidence": [
+        "Steam plus user game launchers installed."
+      ],
+      "gaps": [
+        "Steam chrome and game content have independent appearance; inventory launcher icons and supported appearance settings separately."
+      ],
+      "verification": "Read-only configuration inspection; application rendering and interaction not visually verified."
+    },
+    {
+      "id": "office",
+      "label": "LibreOffice",
+      "status": "unverified",
+      "evidence": [
+        "Writer, Calc, Impress, Draw and GTK3 integration installed."
+      ],
+      "gaps": [
+        "Application UI, icons and document canvas require separate checks; document content colors should remain untouched."
+      ],
+      "verification": "Read-only configuration inspection; application rendering and interaction not visually verified."
+    },
+    {
+      "id": "gimp",
+      "label": "GIMP",
+      "status": "observed-config",
+      "evidence": [
+        "~/.config/GIMP/2.10/themerc imports /usr/share/gimp/2.0/themes/Dark/gtkrc and /etc/gimp/2.0/gtkrc."
+      ],
+      "gaps": [
+        "GIMP uses its own Dark theme; themerc is generated and explicitly says to edit personal gtkrc instead."
+      ],
+      "verification": "Read-only configuration inspection; application rendering and interaction not visually verified."
+    },
+    {
+      "id": "krita-blender",
+      "label": "Krita and Blender",
+      "status": "unverified",
+      "evidence": [
+        "Krita and Blender desktop launchers installed."
+      ],
+      "gaps": [
+        "Application palettes and canvas/background settings not established; use dedicated app theme assets without changing artwork color management."
+      ],
+      "verification": "Read-only configuration inspection; application rendering and interaction not visually verified."
+    },
+    {
+      "id": "media-apps",
+      "label": "Media application chrome",
+      "status": "unverified",
+      "evidence": [
+        "Celluloid, VLC, Rhythmbox, JuK and Elisa launchers present."
+      ],
+      "gaps": [
+        "Verify chrome, controls, playlists and OSD independently from media content."
+      ],
+      "verification": "Read-only configuration inspection; application rendering and interaction not visually verified."
+    },
+    {
+      "id": "mpv",
+      "label": "MPV visualizer and OSD",
+      "status": "observed-config",
+      "evidence": [
+        "~/.config/mpv/mpv.conf has tui-audio/tui-video profiles, terminal rendering, MPRIS and ~/.cache/mpv-vis.sock.",
+        "Visualizer color 0xbb8987; OSD #d3adb0 and border #2d2c41 match Dusk-Ribbons."
+      ],
+      "gaps": [
+        "Preserve IPC, MPRIS, profiles and output mode; appearance changes must be limited to declared color fields.",
+        "Playback and command functionality were not exercised."
+      ],
+      "verification": "Read-only configuration inspection; application rendering and interaction not visually verified."
+    },
+    {
+      "id": "cava",
+      "label": "Cava and panel visualizer",
+      "status": "observed-config",
+      "evidence": [
+        "Cava 0.7.4 installed.",
+        "~/.config/cava/config has equalizer settings; panel.conf outputs raw ASCII at 30fps with 14 bars."
+      ],
+      "gaps": [
+        "Panel colors belong to consumer rendering; do not overwrite signal/format settings to theme bars."
+      ],
+      "verification": "Read-only configuration inspection; application rendering and interaction not visually verified."
+    },
+    {
+      "id": "mint-dashboard",
+      "label": "Mint Dashboard overlay",
+      "status": "observed-config",
+      "evidence": [
+        "Project /home/bertmacklen/Projects/mint-dashboard with UI style.css, app.js, logo.svg and logo.png.",
+        "~/.config/mint-dashboard/config.json theme has teal #1fc9a6, green surfaces and silo-logo.png."
+      ],
+      "gaps": [
+        "Dashboard theme differs from Dusk-Ribbons; patch only theme fields and scoped UI styles.",
+        "Layout, weather, links and music settings must survive; do not copy whole mixed config as an appearance preset."
+      ],
+      "verification": "Read-only configuration inspection; application rendering and interaction not visually verified."
+    },
+    {
+      "id": "misc-desktop-apps",
+      "label": "Additional desktop application coverage",
+      "status": "unverified",
+      "evidence": [
+        "Installed launchers include Wireshark, VirtualBox, Transmission, Remmina, LocalSend, PDF Arranger, DistroShelf, Kontainer and ProtonUp-Qt.",
+        "GTK file pickers, KDE file pickers and desktop portal implementations installed."
+      ],
+      "gaps": [
+        "Verify representative toolkit surfaces plus per-app exceptions; add every new installed app to inventory."
+      ],
+      "verification": "Read-only configuration inspection; application rendering and interaction not visually verified."
+    },
+    {
+      "id": "universal-forcing",
+      "label": "Universal pixel-identical application theming",
+      "status": "unsupported",
+      "evidence": [
+        "Desktop contains multiple toolkits, sandbox boundaries and applications with independent rendering."
+      ],
+      "gaps": [
+        "A universal force-theme adapter is intentionally unsupported; use supported per-app settings and record exceptions."
+      ],
+      "verification": "Scope boundary: no claim that every application can inherit every theme property."
+    }
+  ],
+  "assets": [
+    {
+      "path": "/home/bertmacklen/.themes/Dusk-Ribbons",
+      "kind": "gtk-theme",
+      "notes": "Current theme dependency; inventory owned by desktop agent."
+    },
+    {
+      "path": "/home/bertmacklen/.config/gtk-4.0/gtk.css",
+      "kind": "symlink",
+      "notes": "Resolves to Dusk-Ribbons/gtk-4.0/gtk.css; preserve both link identity and target."
+    },
+    {
+      "path": "/home/bertmacklen/Documents/Codex/2026-09-05/le/outputs/nocturne/kitty.conf",
+      "kind": "terminal-palette",
+      "notes": "Currently included by Kitty; Nocturne colors."
+    },
+    {
+      "path": "/home/bertmacklen/.config/fastfetch/logos/hues/macklenmobile-logo-dusk-ribbons.png",
+      "kind": "supplied-logo-derivative",
+      "notes": "Current Fastfetch logo; preserve source artwork."
+    },
+    {
+      "path": "/home/bertmacklen/.local/share/konsole",
+      "kind": "terminal-presets",
+      "notes": "Only .profile and .colorscheme files are appearance assets; directory also contains unrelated data."
+    },
+    {
+      "path": "/home/bertmacklen/.local/share/org.gnome.Ptyxis/palettes",
+      "kind": "terminal-palettes",
+      "notes": "Nocturne and Silo palettes."
+    },
+    {
+      "path": "/home/bertmacklen/Projects/mint-dashboard/ui/style.css",
+      "kind": "dashboard-css",
+      "notes": "Patch palette and appearance only."
+    },
+    {
+      "path": "/home/bertmacklen/Projects/mint-dashboard/ui/logo.png",
+      "kind": "supplied-artwork",
+      "notes": "Preserve existing pixels unless separately requested."
+    },
+    {
+      "path": "/home/bertmacklen/Projects/mint-dashboard/ui/logo.svg",
+      "kind": "supplied-artwork",
+      "notes": "Preserve existing source."
+    },
+    {
+      "path": "/home/bertmacklen/.config/mint-dashboard/silo-logo.png",
+      "kind": "dashboard-logo",
+      "notes": "Current configured logo."
+    }
+  ],
+  "settings": [
+    {
+      "schema": "org.gnome.desktop.interface",
+      "key": "color-scheme",
+      "value": "'prefer-dark'"
+    },
+    {
+      "schema": "org.gnome.desktop.interface",
+      "key": "gtk-theme",
+      "value": "'Dusk-Ribbons'"
+    },
+    {
+      "schema": "org.gnome.desktop.interface",
+      "key": "icon-theme",
+      "value": "'Dusk-Ribbons-Icons'"
+    },
+    {
+      "schema": "org.gnome.desktop.interface",
+      "key": "cursor-theme",
+      "value": "'Dusk-Ribbons-Cursors'"
+    },
+    {
+      "schema": "org.gnome.desktop.interface",
+      "key": "font-name",
+      "value": "'Ubuntu 10'"
+    },
+    {
+      "schema": "org.gnome.desktop.interface",
+      "key": "monospace-font-name",
+      "value": "'DejaVu Sans Mono 10'"
+    },
+    {
+      "schema": "org.x.editor.preferences.editor",
+      "key": "scheme",
+      "value": "'xed'"
+    },
+    {
+      "schema": "org.x.editor.preferences.editor",
+      "key": "use-default-font",
+      "value": "true"
+    },
+    {
+      "schema": "org.x.editor.preferences.editor",
+      "key": "editor-font",
+      "value": "'Monospace 12'"
+    },
+    {
+      "schema": "org.gnome.builder.editor",
+      "key": "style-scheme-name",
+      "value": "'Adwaita'"
+    },
+    {
+      "schema": "org.gnome.Terminal.ProfilesList",
+      "key": "default",
+      "value": "'dd8eea03-4e10-4a4a-aed4-cd641c0e1cc5'"
+    },
+    {
+      "schema": "org.gnome.Terminal.ProfilesList",
+      "key": "list",
+      "value": "['b1dcc9dd-5262-4d8d-a863-c897e6d979b9', 'de8a9081-8352-4ce4-9519-5de655ad9361', '71a9971e-e829-43a9-9b2f-4565c855d664', '5083e06b-024e-46be-9cd2-892b814f1fc8', '95894cfd-82f7-430d-af6e-84d168bc34f5', '94642781-d4cb-43f9-afa2-16e085495549', 'dd8eea03-4e10-4a4a-aed4-cd641c0e1cc5']"
+    },
+    {
+      "schema": "org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:dd8eea03-4e10-4a4a-aed4-cd641c0e1cc5/",
+      "key": "visible-name",
+      "value": "'Nocturne'"
+    },
+    {
+      "schema": "org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:dd8eea03-4e10-4a4a-aed4-cd641c0e1cc5/",
+      "key": "background-color",
+      "value": "'#2d2c41'"
+    },
+    {
+      "schema": "org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:dd8eea03-4e10-4a4a-aed4-cd641c0e1cc5/",
+      "key": "foreground-color",
+      "value": "'#f1e3df'"
+    },
+    {
+      "schema": "org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:dd8eea03-4e10-4a4a-aed4-cd641c0e1cc5/",
+      "key": "palette",
+      "value": "['#2d2c41', '#e4a0a2', '#b0c3a5', '#e2bf91', '#b2bbdf', '#d0aedb', '#a2ccd0', '#f1e3df', '#9e91aa', '#f3b9b9', '#c6d9ba', '#f4d4ad', '#cbd2ed', '#e4c4ee', '#c0e3e4', '#fff3ef']"
+    },
+    {
+      "schema": "org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:dd8eea03-4e10-4a4a-aed4-cd641c0e1cc5/",
+      "key": "use-theme-colors",
+      "value": "false"
+    },
+    {
+      "schema": "org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:dd8eea03-4e10-4a4a-aed4-cd641c0e1cc5/",
+      "key": "font",
+      "value": "'Hack 11'"
+    },
+    {
+      "schema": "org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:dd8eea03-4e10-4a4a-aed4-cd641c0e1cc5/",
+      "key": "use-system-font",
+      "value": "false"
+    },
+    {
+      "schema": "org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:dd8eea03-4e10-4a4a-aed4-cd641c0e1cc5/",
+      "key": "cursor-colors-set",
+      "value": "true"
+    },
+    {
+      "schema": "org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:dd8eea03-4e10-4a4a-aed4-cd641c0e1cc5/",
+      "key": "cursor-background-color",
+      "value": "'#f1e3df'"
+    },
+    {
+      "schema": "org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:dd8eea03-4e10-4a4a-aed4-cd641c0e1cc5/",
+      "key": "cursor-foreground-color",
+      "value": "'#2d2c41'"
+    }
+  ],
+  "config_files": [
+    "/home/bertmacklen/.gtkrc-2.0",
+    "/home/bertmacklen/.config/gtk-3.0/settings.ini",
+    "/home/bertmacklen/.config/gtk-4.0/settings.ini",
+    "/home/bertmacklen/.config/gtk-4.0/gtk.css",
+    "/home/bertmacklen/.config/kitty/kitty.conf",
+    "/home/bertmacklen/.config/fastfetch/config.jsonc",
+    "/home/bertmacklen/.config/fastfetch/.theme",
+    "/home/bertmacklen/.nanorc",
+    "/home/bertmacklen/Documents/Codex/2026-09-05/le/outputs/nocturne/kitty.conf",
+    "/home/bertmacklen/Projects/mint-dashboard/ui/style.css",
+    "/home/bertmacklen/.local/share/konsole/CatppuccinMocha.profile",
+    "/home/bertmacklen/.local/share/konsole/Silo.profile",
+    "/home/bertmacklen/.local/share/konsole/Nocturne.profile",
+    "/home/bertmacklen/.local/share/konsole/silo.colorscheme",
+    "/home/bertmacklen/.local/share/konsole/catppuccin-mocha.colorscheme",
+    "/home/bertmacklen/.local/share/konsole/Nocturne.colorscheme",
+    "/home/bertmacklen/.local/share/org.gnome.Ptyxis/palettes/nocturne.palette",
+    "/home/bertmacklen/.local/share/org.gnome.Ptyxis/palettes/silo.palette"
+  ],
+  "protected_files": [
+    "/home/bertmacklen/.bashrc",
+    "/home/bertmacklen/.config/cava/config",
+    "/home/bertmacklen/.config/cava/panel.conf",
+    "/home/bertmacklen/.config/fastfetch/apply-hue-colors.py",
+    "/home/bertmacklen/.config/fastfetch/rotate-logo.sh",
+    "/home/bertmacklen/.config/mpv/mpv.conf",
+    "/home/bertmacklen/.local/bin/album-match.py",
+    "/home/bertmacklen/.local/bin/album-step.py",
+    "/home/bertmacklen/.local/bin/cava-panel.sh",
+    "/home/bertmacklen/.local/bin/fastfetch",
+    "/home/bertmacklen/.local/bin/flashfetch",
+    "/home/bertmacklen/.local/bin/mpv-ipc.py",
+    "/home/bertmacklen/.local/bin/mpv-vis",
+    "/home/bertmacklen/.local/bin/next",
+    "/home/bertmacklen/.local/bin/nextalbum",
+    "/home/bertmacklen/.local/bin/pause",
+    "/home/bertmacklen/.local/bin/play",
+    "/home/bertmacklen/.local/bin/play-match.py",
+    "/home/bertmacklen/.local/bin/playalbum",
+    "/home/bertmacklen/.local/bin/prev",
+    "/home/bertmacklen/.local/bin/prevalbum",
+    "/home/bertmacklen/.profile",
+    "/home/bertmacklen/Projects/mint-dashboard/backend/music.py"
+  ],
+  "protected_hashes": {
+    "/home/bertmacklen/.bashrc": "f282eba4224aa178fe4476b0c4e7bb8830c47722e96e59698fef6d5c88c0477e",
+    "/home/bertmacklen/.config/cava/config": "3c7ee667e7e8ec67a82a7ff294cba094c238424f3c51698e6f4e70ce33381c7b",
+    "/home/bertmacklen/.config/cava/panel.conf": "9685e063fa968d6c5525347ab674f351b89da1dcbe5d21994603174b223258ee",
+    "/home/bertmacklen/.config/fastfetch/apply-hue-colors.py": "08141030fcd0dffdd9d8cac3355bad23c95421419b37374c039ab23a145cd39e",
+    "/home/bertmacklen/.config/fastfetch/rotate-logo.sh": "785dc2a3ec96eca7a900b07e8a87bb60b111e799d2632b9b3a12ff918bee9297",
+    "/home/bertmacklen/.config/mpv/mpv.conf": "09e5dcf1e7455a1ebfcc60f57cd5c930b3a7ac7354f187f37804c62bab53406e",
+    "/home/bertmacklen/.local/bin/album-match.py": "8f59afff3c65294648081c7a002dd9a84ca798f77e54954464295476d6eefb7a",
+    "/home/bertmacklen/.local/bin/album-step.py": "a838aee54c5b25b03db1db42ecd596ccc5d87d96735030794e399cedd77a074a",
+    "/home/bertmacklen/.local/bin/cava-panel.sh": "b85e4ac876001b2fe97be8356fe3a2c6463e41ff5ad76eb4688d2d2ff4056f97",
+    "/home/bertmacklen/.local/bin/fastfetch": "a4d2bc16ddb6331f74fef5aefe7cee1959412d95ddebfa5e05c97532da421bbe",
+    "/home/bertmacklen/.local/bin/flashfetch": "c078369d145acdf9604128cbedbb0abe26b46f7ddee4456707ccedce74a1d12a",
+    "/home/bertmacklen/.local/bin/mpv-ipc.py": "c7fb433d8d9807db5b73f2fb2840a0793fc1252f5cde8e9f34908a4c0b8ea545",
+    "/home/bertmacklen/.local/bin/mpv-vis": "a896f18d0c3f09f07e8afcb417de160bc04438e15a92ea16eba79744a432ffc5",
+    "/home/bertmacklen/.local/bin/next": "c546d4991d4c3b0170a8cbb0625e37758a1b1577635e0c5cee0d45627fd28b24",
+    "/home/bertmacklen/.local/bin/nextalbum": "44e6ab68ac43b8038936868701fb0b456eccf19ac8d85dfa45fcc087c142ce68",
+    "/home/bertmacklen/.local/bin/pause": "8368825b295343628b865b85e1227e844fb77a428bb0691773290d051a87d763",
+    "/home/bertmacklen/.local/bin/play": "49a8d7c38e04cbd0d3a7800ea7b784737e01febaa8516da63db4417d23030ab2",
+    "/home/bertmacklen/.local/bin/play-match.py": "a0326e2cfd3ebe8028bde274ef774783073beb8683880d5593e6518414a5ca42",
+    "/home/bertmacklen/.local/bin/playalbum": "c7cdba715bcbf7c1675027e7cf9cd9dadb5292cadd2352ab98271dd1ecb0bced",
+    "/home/bertmacklen/.local/bin/prev": "3bfe2f84ae6f6f966399ccaef360449120c83fcc985eb4b1f4f8c25ae5435f6e",
+    "/home/bertmacklen/.local/bin/prevalbum": "f25a05327a932ba31b880f672009548b15bc2c2f866da605f7e5d939a491f304",
+    "/home/bertmacklen/.profile": "28b4a453b68dde64f814e94bab14ee651f4f162e15dd9920490aa1d49f05d2a4",
+    "/home/bertmacklen/Projects/mint-dashboard/backend/music.py": "00f70551082f3fb1bf24d26a318060cdfdaba5addb80df5af58c22407c24afa2"
+  },
+  "application_inventory": {
+    "flatpak": [
+      "app.devsuite.Ptyxis\tPtyxis",
+      "com.discordapp.Discord\tDiscord",
+      "com.github.Matoking.protontricks\tProtontricks",
+      "com.github.jeromerobert.pdfarranger\tPDF Arranger",
+      "com.ranfdev.DistroShelf\tDistroShelf",
+      "dev.geopjr.Calligraphy\tCalligraphy",
+      "io.freetubeapp.FreeTube\tFreeTube",
+      "io.github.DenysMb.Kontainer\tKontainer",
+      "io.github.nokse22.asciidraw\tASCII Draw",
+      "md.obsidian.Obsidian\tObsidian",
+      "net.davidotek.pupgui2\tProtonUp-Qt",
+      "org.localsend.localsend_app\tLocalSend",
+      "org.remmina.Remmina\tRemmina"
+    ],
+    "native_desktop_launcher_count": 520,
+    "inventory_scope": "Desktop launcher presence and named appearance configs only; launchers may include helpers. No browser profiles, messages, vaults, or credential stores copied."
+  }
+}

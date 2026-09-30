@@ -1,0 +1,7 @@
+/* Ocean Silk gTile appearance; geometry and key bindings remain untouched. */
+.grid-panel { background-color:#e9ebe6; border:1px solid #93aab4; border-radius:6px; }
+.grid-title,.grid-panel .settings-label,.grid-panel .tile-label { color:#304957; }
+.table-element,.settings-button { background-color:#cbd7da; color:#304957; border:1px solid #93aab4; }
+.table-element:hover,.table-element:activate,.settings-button:hover,.settings-button:activate,.settings-button:activate:hover { background-color:#354d64; color:#e9ebe6; border-color:#6f94a4; }
+.table-element:hover .tile-label,.table-element:activate .tile-label,.settings-button:hover .settings-label,.settings-button:activate .settings-label,.settings-button:activate:hover .settings-label { color:#e9ebe6; }
+.grid-preview:activate { background-color:rgba(111,148,164,0.30); border:2px solid #6f94a4; }

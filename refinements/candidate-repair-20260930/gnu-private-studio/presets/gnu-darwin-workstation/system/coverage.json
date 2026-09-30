@@ -1,0 +1,112 @@
+[
+  {
+    "surface": "LightDM / Slick Greeter",
+    "assets_built": true,
+    "configuration_selected": false,
+    "live_screenshot": null,
+    "interaction_checked": false,
+    "login_reboot_checked": false,
+    "simulated_preview": null,
+    "limitation": "Staged files and simulated previews only; runtime untested",
+    "timestamp": "2026-09-29T08:57:42.220798+00:00"
+  },
+  {
+    "surface": "System theme, icons, cursor, wallpaper and accessibility assets",
+    "assets_built": true,
+    "configuration_selected": false,
+    "live_screenshot": null,
+    "interaction_checked": false,
+    "login_reboot_checked": false,
+    "simulated_preview": null,
+    "limitation": "Staged files and simulated previews only; runtime untested",
+    "timestamp": "2026-09-29T08:57:42.220823+00:00"
+  },
+  {
+    "surface": "GRUB graphical menu",
+    "assets_built": true,
+    "configuration_selected": false,
+    "live_screenshot": null,
+    "interaction_checked": false,
+    "login_reboot_checked": false,
+    "simulated_preview": "grub/mockup.png",
+    "limitation": "Staged files and simulated previews only; runtime untested",
+    "timestamp": "2026-09-29T08:57:42.220828+00:00"
+  },
+  {
+    "surface": "Plymouth startup splash",
+    "assets_built": true,
+    "configuration_selected": false,
+    "live_screenshot": null,
+    "interaction_checked": false,
+    "login_reboot_checked": false,
+    "simulated_preview": "plymouth/mockups/",
+    "limitation": "Staged files and simulated previews only; runtime untested",
+    "timestamp": "2026-09-29T08:57:42.220831+00:00"
+  },
+  {
+    "surface": "Shutdown and reboot transition splash",
+    "assets_built": true,
+    "configuration_selected": false,
+    "live_screenshot": null,
+    "interaction_checked": false,
+    "login_reboot_checked": false,
+    "simulated_preview": "plymouth/mockups/",
+    "limitation": "Staged files and simulated previews only; runtime untested",
+    "timestamp": "2026-09-29T08:57:42.220834+00:00"
+  },
+  {
+    "surface": "Cinnamon lock screen and unlock controls",
+    "assets_built": false,
+    "configuration_selected": false,
+    "live_screenshot": null,
+    "interaction_checked": false,
+    "login_reboot_checked": false,
+    "simulated_preview": null,
+    "limitation": "Desktop toolkit coverage only; runtime untested",
+    "timestamp": "2026-09-29T08:57:42.220837+00:00"
+  },
+  {
+    "surface": "Polkit authentication dialogs",
+    "assets_built": false,
+    "configuration_selected": false,
+    "live_screenshot": null,
+    "interaction_checked": false,
+    "login_reboot_checked": false,
+    "simulated_preview": null,
+    "limitation": "Desktop toolkit coverage only; runtime untested",
+    "timestamp": "2026-09-29T08:57:42.220844+00:00"
+  },
+  {
+    "surface": "Linux virtual console / recovery appearance",
+    "assets_built": false,
+    "configuration_selected": false,
+    "live_screenshot": null,
+    "interaction_checked": false,
+    "login_reboot_checked": false,
+    "simulated_preview": null,
+    "limitation": "Console/recovery preserved without adapter",
+    "timestamp": "2026-09-29T08:57:42.220847+00:00"
+  },
+  {
+    "surface": "Early disk unlock prompt",
+    "assets_built": true,
+    "configuration_selected": false,
+    "live_screenshot": null,
+    "interaction_checked": false,
+    "login_reboot_checked": false,
+    "simulated_preview": "plymouth/mockups/",
+    "limitation": "Staged files and simulated previews only; runtime untested",
+    "timestamp": "2026-09-29T08:57:42.220850+00:00"
+  },
+  {
+    "surface": "Mac firmware boot picker and pre-Linux logo",
+    "assets_built": false,
+    "configuration_selected": false,
+    "live_screenshot": null,
+    "interaction_checked": false,
+    "login_reboot_checked": false,
+    "simulated_preview": null,
+    "limitation": "Firmware adapter unsupported",
+    "timestamp": "2026-09-29T08:57:42.220853+00:00"
+  }
+]

@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "profile": "gnu-darwin-aqua",
+  "scope": "temporary-font-byte reproduction only, staged notices, no bitmap/source rewrite or install",
+  "fonts": {
+    "font.pf2": {
+      "source": "/usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf",
+      "source_sha256": "4659bc0c58c5028dd488ec928d41d9265db43d9b669fc14ca8b0832daca7b144",
+      "source_package": "fonts-liberation",
+      "source_package_version": "1:2.1.5-3",
+      "actual_sha256": "8951f2ee6e0e8455d833ef2bda2750815fa21f933b5e62ad7e6af4104435d585",
+      "reproduced_sha256": "8951f2ee6e0e8455d833ef2bda2750815fa21f933b5e62ad7e6af4104435d585",
+      "exact": true,
+      "command": [
+        "/usr/bin/grub-mkfont",
+        "-s",
+        "28",
+        "-r",
+        "0x20-0x7F,0xA0-0x17F,0x2010-0x2027",
+        "-n",
+        "GNU-Darwin Aqua",
+        "-o",
+        "/tmp/font-proof-uqgzjpur/font.pf2",
+        "/usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf"
+      ],
+      "stderr": "",
+      "stdout": ""
+    },
+    "font-bold.pf2": {
+      "source": "/usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf",
+      "source_sha256": "4659bc0c58c5028dd488ec928d41d9265db43d9b669fc14ca8b0832daca7b144",
+      "source_package": "fonts-liberation",
+      "source_package_version": "1:2.1.5-3",
+      "actual_sha256": "6d12c63a3740fbb93db514d7621108589057df84b4d64bc642abed733867d3b2",
+      "reproduced_sha256": "6d12c63a3740fbb93db514d7621108589057df84b4d64bc642abed733867d3b2",
+      "exact": true,
+      "command": [
+        "/usr/bin/grub-mkfont",
+        "-s",
+        "28",
+        "-r",
+        "0x20-0x7F,0xA0-0x17F,0x2010-0x2027",
+        "-n",
+        "GNU-Darwin Aqua",
+        "-b",
+        "-o",
+        "/tmp/font-proof-uqgzjpur/font-bold.pf2",
+        "/usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf"
+      ],
+      "stderr": "",
+      "stdout": ""
+    },
+    "font-mono.pf2": {
+      "source": "/usr/share/fonts/truetype/liberation/LiberationMono-Regular.ttf",
+      "source_sha256": "395fa5ab8d40c8eba390ced528744ea75a7f69aabf3e68b6f925ca0e39a27370",
+      "source_package": "fonts-liberation",
+      "source_package_version": "1:2.1.5-3",
+      "actual_sha256": "8e48e854e58294fb8dcd4f8224e59c81c200c71f41a205d72bc4c3ac0040e75c",
+      "reproduced_sha256": "8e48e854e58294fb8dcd4f8224e59c81c200c71f41a205d72bc4c3ac0040e75c",
+      "exact": true,
+      "command": [
+        "/usr/bin/grub-mkfont",
+        "-s",
+        "28",
+        "-r",
+        "0x20-0x7F,0xA0-0x17F,0x2010-0x2027",
+        "-n",
+        "GNU-Darwin Aqua Mono",
+        "-o",
+        "/tmp/font-proof-uqgzjpur/font-mono.pf2",
+        "/usr/share/fonts/truetype/liberation/LiberationMono-Regular.ttf"
+      ],
+      "stderr": "",
+      "stdout": ""
+    }
+  },
+  "all_exact": true,
+  "license_notice": "Liberation-fonts-copyright",
+  "license": "SIL-OFL-1.1",
+  "source_package_version": "1:2.1.5-3"
+}

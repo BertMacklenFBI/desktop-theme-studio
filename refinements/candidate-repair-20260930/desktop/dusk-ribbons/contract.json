@@ -1,0 +1,171 @@
+{
+  "schema": 1,
+  "slug": "dusk-ribbons",
+  "sources": {
+    "cursor": "/home/bertmacklen/Documents/desktop-theme-studio/refinements/cinnamon-current-collection/contributions/all-theme-plan/pipeline/staged-refresh-20260922/dusk-ribbons/cursors/Dusk-Ribbons-Cursors",
+    "fastfetch_logo": "/home/bertmacklen/Documents/desktop-theme-studio/refinements/cinnamon-current-collection/contributions/all-theme-plan/pipeline/staged-refresh-20260922/dusk-ribbons/artwork/macklenmobile-logo-dusk-ribbons.png",
+    "icon": "/home/bertmacklen/Documents/desktop-theme-studio/refinements/cinnamon-current-collection/contributions/all-theme-plan/pipeline/staged-refresh-20260922/dusk-ribbons/icons/Dusk-Ribbons-Icons",
+    "menu_logo": "/home/bertmacklen/Documents/desktop-theme-studio/refinements/cinnamon-current-collection/contributions/all-theme-plan/pipeline/staged-refresh-20260922/dusk-ribbons/artwork/menu-logo.png",
+    "theme": "/home/bertmacklen/Documents/desktop-theme-studio/refinements/cinnamon-current-collection/contributions/all-theme-plan/pipeline/staged-refresh-20260922/dusk-ribbons/desktop/Dusk-Ribbons",
+    "wallpaper": "/home/bertmacklen/Documents/desktop-theme-studio/refinements/cinnamon-current-collection/contributions/all-theme-plan/pipeline/staged-refresh-20260922/dusk-ribbons/artwork/wallpaper.png"
+  },
+  "source_records_sha256": "6b604ea0675cf8a412343d118267f75d84d814245b4fa9b6536aa0dc54d4a368",
+  "palette_sha256": "d72f8221beae250c642e641f62853009ebfc8d3bc0368fd659b0d041c6e98535",
+  "source_assets_changed": "two GTK3 document-thumbnail border rules only; all source/artwork/palette bytes preserved",
+  "artwork_regenerated": false,
+  "native_accepted": false,
+  "design_source": null,
+  "design_sha256": null,
+  "existing_gate_files": {
+    "/home/bertmacklen/Documents/eucalyptus-felt-cinnamon/presets/dusk-ribbons/profile.json": "196bac83c791b2a71078612cba0f100dd41591fd8073c24aeeb30dbfeeb3f18b",
+    "/home/bertmacklen/Documents/eucalyptus-felt-cinnamon/presets/dusk-ribbons/palette.json": "1d9a2e6d1c7a57b95f310350090aed646163c4627b9893e4125132ce858f7e58"
+  },
+  "artwork_sha256": {
+    "fastfetch_logo": "d27a7ef34cd2d067b2a6097aedd379a047022999abcd2dc081fec0b318daf7d7",
+    "menu_logo": "d27a7ef34cd2d067b2a6097aedd379a047022999abcd2dc081fec0b318daf7d7",
+    "wallpaper": "f1a60a8b3da127bfb37c02fc665cd0645f114d2367e004a13640b8be7667b52b"
+  },
+  "required_native_acceptance": [
+    "actual2880x1800",
+    "original panel composition",
+    "source-bound native paint and lifecycle",
+    "current restore and containment evidence",
+    "native strip/button/label containment",
+    "all8 workspace states and label pixels",
+    "four physical workspace clicks",
+    "compact actual fill/ink",
+    "expanded normal/selected/hover/disabled actual ink",
+    "popup dismissal/reload"
+  ],
+  "source_status": "assets complete; source package remains read-only",
+  "name": "Dusk Ribbons",
+  "theme": "Dusk-Ribbons",
+  "icons": "Dusk-Ribbons-Icons",
+  "cursor": "Dusk-Ribbons-Cursors",
+  "palette": {
+    "accent": "#bb8987",
+    "background": "#2d2c41",
+    "border": "#756172",
+    "control_border": "#756172",
+    "error": "#e4a0a2",
+    "foreground": "#f1e3df",
+    "hover": "#d3adb0",
+    "muted": "#d3adb0",
+    "raised": "#48445b",
+    "selection": "#bb8987",
+    "selection_foreground": "#2d2c41",
+    "success": "#b0c3a5",
+    "surface": "#373950",
+    "terminal": "#2d2c41",
+    "terminal_foreground": "#f1e3df",
+    "warning": "#e2bf91"
+  },
+  "authored_palette_sha256": "d72f8221beae250c642e641f62853009ebfc8d3bc0368fd659b0d041c6e98535",
+  "workspace_geometry": {
+    "shape": "pill",
+    "minimum_gap": 4
+  },
+  "workspace_style": {
+    "width_px": 84,
+    "gap_px": 6,
+    "backing_radius_px": 9999,
+    "button_radius_px": 9999,
+    "height_constraints": "none; cross-axis allocation belongs to reviewed native runtime",
+    "panel_heights": [
+      78,
+      76
+    ]
+  },
+  "state_colors": {
+    "width": 84,
+    "shape": "pill",
+    "panels": [
+      78,
+      76
+    ],
+    "strip": "#2d2c41",
+    "normal_fill": "#2d2c41",
+    "normal_ink": "#bb8987",
+    "hover_fill": "#bb8987",
+    "hover_ink": "#2d2c41",
+    "active_fill": "#bb8987",
+    "active_ink": "#2d2c41",
+    "compact_fill": "#2d2c41",
+    "compact_ink": "#bb8987",
+    "control": "#756172",
+    "focus": "#bb8987",
+    "muted": "#d3adb0",
+    "disabled_ink": "#d3adb0",
+    "status_fill": "#bb8987",
+    "status_ink": "#2d2c41"
+  },
+  "style_updates": {
+    "island_alpha": 1.0,
+    "card_alpha": 1.0,
+    "popup_alpha": 1.0
+  },
+  "overrides": {
+    "cinnamon_css": "/home/bertmacklen/Documents/desktop-theme-studio/refinements/candidate-repair-20260930/desktop/dusk-ribbons/workspace.css",
+    "island_css": "/home/bertmacklen/Documents/desktop-theme-studio/refinements/candidate-repair-20260930/desktop/dusk-ribbons/island.css"
+  },
+  "retained_cinnamon_correction": {
+    "path": "/home/bertmacklen/Documents/desktop-theme-studio/refinements/cinnamon-current-collection/contributions/all-theme-plan/accessibility/dusk-ribbons-cinnamon-selection.css",
+    "sha256": "56ed4993619f3101453efe62da8743b2a2d7d99a88af264601117062b2d927ce"
+  },
+  "retained_gtk_correction": "/home/bertmacklen/Documents/desktop-theme-studio/refinements/cinnamon-current-collection/contributions/all-theme-plan/accessibility/dusk-ribbons-gtk-selection.css",
+  "panel_composition": {
+    "panels": [
+      {
+        "id": 1,
+        "edge": "top",
+        "height_px": 78
+      },
+      {
+        "id": 2,
+        "edge": "bottom",
+        "height_px": 76
+      }
+    ],
+    "layout_assembly_owner": "coordinator"
+  },
+  "required_runtime": "/home/bertmacklen/Documents/desktop-theme-studio/refinements/cinnamon-current-collection/runtime/workspace-switcher-rounded",
+  "island": {
+    "included": true,
+    "reading_surfaces": "opaque existing palette fills"
+  },
+  "island_inline_style_updates": {
+    "actor": "background-color:transparent; color:#bb8987; border-radius:18px; box-shadow:none; padding:0; margin:0;",
+    "compact": "background-color:#2d2c41;",
+    "compact_weather": "color:#bb8987;",
+    "compact_clock": "color:#bb8987;",
+    "compact_status": "color:#bb8987;"
+  },
+  "integration_order": "retained authored accessibility correction, workspace.css, generated Island base, island.css; apply explicit compact inline values in generated applet assembly",
+  "shape_findings": "Original workspace buttons remain rectangular: radius4px",
+  "source_updates": {
+    "theme": "/home/bertmacklen/Documents/desktop-theme-studio/refinements/candidate-repair-20260930/desktop/dusk-ribbons/desktop/Dusk-Ribbons"
+  },
+  "source_repair": {
+    "missing_asset": "gtk-3.0/assets/thumbnail-frame.png",
+    "scope": ".content-view.document-page only",
+    "resolution": "use original authored solid border widths with existing Dusk border #756172; remove obsolete unresolved border-image reference",
+    "changed_files": [
+      {
+        "relative": "gtk-3.0/gtk.css",
+        "before_sha256": "0594dc115fa5b4bef3838272e7d19e9c935e0b49d3d7fe60d50cfa77f54322f5",
+        "after_sha256": "2a12c3e509e77f072ab4a3adb5e16c2b3d228d5ed4a4d4ae0b07f6edf41832ec",
+        "replaced": "border-image: url(\"assets/thumbnail-frame.png\") 3 3 6 4;",
+        "replacement": "border-image: none; border-color: #756172;"
+      },
+      {
+        "relative": "gtk-3.0/gtk-dark.css",
+        "before_sha256": "0594dc115fa5b4bef3838272e7d19e9c935e0b49d3d7fe60d50cfa77f54322f5",
+        "after_sha256": "2a12c3e509e77f072ab4a3adb5e16c2b3d228d5ed4a4d4ae0b07f6edf41832ec",
+        "replaced": "border-image: url(\"assets/thumbnail-frame.png\") 3 3 6 4;",
+        "replacement": "border-image: none; border-color: #756172;"
+      }
+    ],
+    "preserved_notices": true,
+    "sourcecopy_method": "shutil.copytree(copy2, symlinks=True); no hardlinks"
+  }
+}

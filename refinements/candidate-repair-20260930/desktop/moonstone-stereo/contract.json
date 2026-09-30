@@ -1,0 +1,172 @@
+{
+  "schema": 1,
+  "slug": "moonstone-stereo",
+  "palette_sha256": "90bd6b3acd42dd91110964dfdc944d85664765a7b143b0aaf6e380cd1ac4aaea",
+  "palette": {
+    "accent": "#8db4a0",
+    "background": "#e7e1d3",
+    "border": "#b6ac97",
+    "error": "#9e4e42",
+    "foreground": "#302e29",
+    "hover": "#526f64",
+    "muted": "#716a5d",
+    "raised": "#fffaf0",
+    "selection": "#cedbd0",
+    "selection_foreground": "#302e29",
+    "success": "#46705c",
+    "surface": "#f3eddd",
+    "terminal": "#e7e1d3",
+    "terminal_foreground": "#302e29",
+    "warning": "#936931"
+  },
+  "authored_palette_sha256": "74e9b37fb1e60d0302919c64a4d3ca82af0c7fbfa271fdcb93d3b728240fcd5a",
+  "design_source": "/home/bertmacklen/Documents/desktop-theme-studio/presets/moonstone-stereo/design.json",
+  "design_sha256": "b2cc6de0566d679cd3b68655cdd68d05b1caac3b0d791ebe9a314daeb60b616d",
+  "workspace_geometry": {
+    "shape": "pill",
+    "minimum_gap": 4
+  },
+  "workspace_style": {
+    "width_px": 84,
+    "gap_px": 6,
+    "backing_radius_px": 9999,
+    "button_radius_px": 9999,
+    "height_constraints": "none; cross-axis allocation belongs to reviewed native runtime",
+    "panel_heights": [
+      78,
+      76
+    ]
+  },
+  "state_colors": {
+    "width": 84,
+    "shape": "pill",
+    "panels": [
+      78,
+      76
+    ],
+    "strip": "#222725",
+    "normal_fill": "#222725",
+    "normal_ink": "#8db4a0",
+    "hover_fill": "#cedbd0",
+    "hover_ink": "#302e29",
+    "active_fill": "#cedbd0",
+    "active_ink": "#302e29",
+    "compact_fill": "#222725",
+    "compact_ink": "#8db4a0",
+    "control": "#716a5d",
+    "focus": "#526f64",
+    "muted": "#716a5d",
+    "disabled_ink": "#716a5d",
+    "status_fill": "#8db4a0",
+    "status_ink": "#302e29"
+  },
+  "style_updates": {
+    "island_alpha": 1.0,
+    "card_alpha": 1.0,
+    "popup_alpha": 1.0
+  },
+  "overrides": {
+    "cinnamon_css": "/home/bertmacklen/Documents/desktop-theme-studio/refinements/candidate-repair-20260930/desktop/moonstone-stereo/workspace.css",
+    "island_css": "/home/bertmacklen/Documents/desktop-theme-studio/refinements/candidate-repair-20260930/desktop/moonstone-stereo/island.css"
+  },
+  "retained_cinnamon_correction": {
+    "path": "/home/bertmacklen/Documents/desktop-theme-studio/refinements/cinnamon-current-collection/contributions/all-theme-plan/accessibility/moonstone-stereo-cinnamon-selection.css",
+    "sha256": "36f9e31119c37e1d0ac7e7097db5961bcd61662318a6a859d63cddaf413fbb6c"
+  },
+  "artwork_sha256_before": {
+    "wallpaper": "ce52ed020dec23db97a64e930d8fa2075ec362c94e264d1de508f2dce5f05509",
+    "menu_logo": "3699a61e7e08480fb9d24c03883e470cfbf01d1bd1411cb6fd31441fa87d24cd",
+    "fastfetch_logo": "3699a61e7e08480fb9d24c03883e470cfbf01d1bd1411cb6fd31441fa87d24cd"
+  },
+  "artwork_sha256_after": {
+    "wallpaper": "ce52ed020dec23db97a64e930d8fa2075ec362c94e264d1de508f2dce5f05509",
+    "menu_logo": "3699a61e7e08480fb9d24c03883e470cfbf01d1bd1411cb6fd31441fa87d24cd",
+    "fastfetch_logo": "3699a61e7e08480fb9d24c03883e470cfbf01d1bd1411cb6fd31441fa87d24cd"
+  },
+  "required_native_acceptance": [
+    "actual2880x1800",
+    "declared original panel composition",
+    "native panel/strip/button/label containment",
+    "all8workspace pseudo-states",
+    "four physical workspace clicks",
+    "compact actual ink",
+    "expanded normal/selected/hover/disabled actual ink",
+    "popup dismissal/reload"
+  ],
+  "source_assets_changed": false,
+  "artwork_regenerated": false,
+  "native_accepted": false,
+  "island_inline_style_updates": {
+    "actor": "background-color:transparent; color:#8db4a0; border-radius:18px; box-shadow:none; padding:0; margin:0;",
+    "compact": "background-color:#222725;",
+    "compact_weather": "color:#8db4a0;",
+    "compact_clock": "color:#8db4a0;",
+    "compact_status": "color:#8db4a0;"
+  },
+  "island_inline_style_reason": "Generated applet.js sets compact actor, fill and label styles inline. Root-owned assembly must update those exact appearance values; CSS selectors alone do not override inline styles.",
+  "panel_composition": {
+    "panels": [
+      {
+        "id": 1,
+        "edge": "top",
+        "height_px": 78
+      },
+      {
+        "id": 2,
+        "edge": "bottom",
+        "height_px": 76
+      }
+    ],
+    "source": "reviewed original candidate composition",
+    "layout_assembly_owner": "coordinator"
+  },
+  "candidate_layout": {
+    "kind": "two-panel",
+    "top_height": 78,
+    "bottom_height": 76
+  },
+  "island_paints": {
+    "compact_background": "#222725",
+    "compact_clock": "#8db4a0",
+    "compact_side": "#8db4a0",
+    "meter_active": "#526f64",
+    "meter_track": "#e7e1d3",
+    "wave_active": "#526f64",
+    "wave_idle": "#e7e1d3"
+  },
+  "inline_paint_integration": {
+    "owner": "coordinator",
+    "required": true,
+    "do_not_assume_css_overrides_inline": true,
+    "source_literals": [
+      "this._compact.set_style('background-color:transparent;');",
+      "this._compactClock.set_style('color:#354D64;');",
+      "this._compactWeather.set_style('color:#304957;');",
+      "this._compactStatus.set_style('color:#304957;');"
+    ],
+    "required_count_each": 1,
+    "transform_order": "replace exact known literals with temporary role placeholders before recolor_ocean; substitute existing target palette colors after recoloring",
+    "drawing_literals": [
+      {
+        "prefix": "",
+        "literal": ".314,.365,.4,1",
+        "role": "meter_track"
+      },
+      {
+        "prefix": "if(Number.isFinite(value)){",
+        "literal": ".616,.776,.765,1",
+        "role": "meter_active"
+      },
+      {
+        "prefix": "if(i/bars<progress)",
+        "literal": ".616,.776,.765,1",
+        "role": "wave_active"
+      },
+      {
+        "prefix": "else ",
+        "literal": ".412,.467,.451,1",
+        "role": "wave_idle"
+      }
+    ]
+  }
+}

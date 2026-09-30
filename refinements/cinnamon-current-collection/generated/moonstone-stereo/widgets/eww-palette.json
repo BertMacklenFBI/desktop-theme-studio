@@ -1,0 +1,18 @@
+{
+  "Moonstone Stereo": {
+    "accent": "#486d5c",
+    "accent-hover": "#526f64",
+    "base": "#e7e1d3",
+    "battery": "#57604a",
+    "border": "#b6ac97",
+    "indeterminate": "#716a5d",
+    "label": "Moonstone Stereo",
+    "muted": "#716a5d",
+    "secondary": "#57604a",
+    "short": "MS",
+    "surface0": "#f3eddd",
+    "surface1": "#fffaf0",
+    "text": "#302e29",
+    "tile": "#cedbd0"
+  }
+}

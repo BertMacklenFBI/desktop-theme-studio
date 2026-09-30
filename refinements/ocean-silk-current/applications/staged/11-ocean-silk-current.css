@@ -1,0 +1,27 @@
+/* Ocean-Silk-Glass: UI only. Existing DOM IDs, search and media handlers remain intact. */
+html,body { background:#E9EBE6 !important;color:#304957; }
+#panel { background:#E9EBE6;color:#304957; }
+#panel .card,#panel .card-music { background:#E9EBE6;color:#304957;border:0;border-radius:4px;padding:16px;box-shadow:none; }
+#panel .card-music h2 { color:#304957;font:600 16px Ubuntu,sans-serif;background:none;border:0;letter-spacing:0;margin-bottom:16px; }
+#panel .record-row { background:#CBD7DA;border:0;border-radius:4px;padding:12px;box-shadow:none;gap:12px; }
+#panel .record-cover { width:72px;height:72px;flex-basis:72px;border:0;border-radius:4px;padding:0; }
+#panel .np-title { color:#304957;font:600 18px Ubuntu,sans-serif; }
+#panel .np-artist,#panel #np-album,#panel .track-times,#panel .music-library summary span { color:#475F6C; }
+#panel .np-controls { background:none;border:0;padding:12px 0;box-shadow:none;gap:12px; }
+#panel .np-btn,#panel #np-playpause { background:#E9EBE6;color:#304957;border:1px solid #647F8E;border-radius:4px;min-width:40px;min-height:36px;box-shadow:none; }
+#panel #np-playpause,#panel #np-playpause:hover { background:#354D64;color:#E9EBE6; }
+#panel .np-btn:hover { background:#CBD7DA; }
+#panel .cava { background:none;border:0;border-radius:0;padding:0;height:24px; }
+#panel .cava-bar { background:#354D64 !important;border-radius:0; }
+#panel .music-library { border-top:1px solid #93AAB4;padding-top:16px; }
+#panel .music-library summary { color:#304957;font-size:16px; }
+#panel .music-search { background:#E9EBE6;color:#304957;border:1px solid #647F8E;border-radius:4px;min-height:40px;font-size:16px; }
+#panel .music-search::placeholder { color:#475F6C; }
+#panel .music-result { color:#304957;background:#E9EBE6;border-bottom:1px solid #93AAB4; }
+#panel .music-result:hover { background:#CBD7DA; }
+#panel .mr-title { color:#304957; }
+#panel .mr-artist { color:#475F6C; }
+#panel #track-progress::-webkit-progress-bar { background:#CBD7DA; }
+#panel #track-progress::-webkit-progress-value { background:#354D64; }
+#panel #music-state { color:#354D64; }
+#panel :focus-visible { outline:2px solid #354D64;outline-offset:2px; }

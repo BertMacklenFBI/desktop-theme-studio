@@ -1,0 +1,10 @@
+[Icon Theme]
+Name=Plum Afterglow icons
+Inherits=Papirus-Dark,Papirus,hicolor
+Directories=scalable/places
+[scalable/places]
+Size=48
+MinSize=16
+MaxSize=256
+Type=Scalable
+Context=Places

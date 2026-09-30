@@ -1,0 +1,150 @@
+{
+  "schema": 1,
+  "slug": "quiet-sage",
+  "sources": {
+    "cursor": "/home/bertmacklen/Documents/desktop-theme-studio/refinements/cinnamon-current-collection/contributions/all-theme-plan/pipeline/staged-refresh-20260922/quiet-sage/cursors/Quiet Sage cursors",
+    "eww_stylesheet": "/home/bertmacklen/Documents/desktop-theme-studio/refinements/quiet-sage-current/widgets/eww.scss",
+    "fastfetch_logo": "/home/bertmacklen/Documents/desktop-theme-studio/refinements/cinnamon-current-collection/contributions/all-theme-plan/pipeline/staged-refresh-20260922/quiet-sage/artwork/macklenmobile-logo-quiet-sage.png",
+    "icon": "/home/bertmacklen/Documents/desktop-theme-studio/refinements/cinnamon-current-collection/contributions/all-theme-plan/pipeline/staged-refresh-20260922/quiet-sage/icons/Quiet Sage icons",
+    "menu_logo": "/home/bertmacklen/Documents/desktop-theme-studio/refinements/cinnamon-current-collection/contributions/all-theme-plan/pipeline/staged-refresh-20260922/quiet-sage/artwork/menu-logo.png",
+    "theme": "/home/bertmacklen/Documents/desktop-theme-studio/refinements/cinnamon-current-collection/contributions/all-theme-plan/pipeline/staged-refresh-20260922/quiet-sage/desktop/Quiet Sage",
+    "wallpaper": "/home/bertmacklen/Documents/desktop-theme-studio/refinements/cinnamon-current-collection/contributions/all-theme-plan/pipeline/staged-refresh-20260922/quiet-sage/artwork/wallpaper.png"
+  },
+  "source_records_sha256": "81383c2cba583579ff3d66f0d9a7dac6c3261f5f7e5356f91ddf08995b988af3",
+  "palette_sha256": "609defd76aac212ee7c66abc78807ca94ecc73a023fdef0dc628b6bf86a0da8f",
+  "source_assets_changed": false,
+  "artwork_regenerated": false,
+  "native_accepted": false,
+  "design_source": "/home/bertmacklen/Documents/desktop-theme-studio/refinements/quiet-sage-current/design.json",
+  "design_sha256": "22bb1cb6e9ad905a86cd5d544fa7480307b0fd17708b09c5b2db2eea1fe0c75a",
+  "existing_gate_files": {
+    "/home/bertmacklen/Documents/desktop-theme-studio/presets/quiet-sage/design.json": "bb3724d9fe6e0221786b3e1d0a3f865535d98c7477a1f027a6e88239ca183c12"
+  },
+  "artwork_sha256": {
+    "fastfetch_logo": "7698988811885e0e7c28974b41032938af781a0402c8628e40b3720dd24487ff",
+    "menu_logo": "7698988811885e0e7c28974b41032938af781a0402c8628e40b3720dd24487ff",
+    "wallpaper": "76250fdd34b863b52a8499f8b4b1f34a314367a7c6673a08d5d3065d5fd8a650"
+  },
+  "required_native_acceptance": [
+    "actual2880x1800",
+    "original panel composition",
+    "source-bound native paint and lifecycle",
+    "current restore and containment evidence",
+    "native strip/button/label containment",
+    "all8 workspace states and label pixels",
+    "four physical workspace clicks",
+    "compact actual fill/ink",
+    "expanded normal/selected/hover/disabled actual ink",
+    "popup dismissal/reload"
+  ],
+  "source_status": "assets complete; source package remains read-only",
+  "name": "Quiet Sage",
+  "theme": "Quiet Sage",
+  "icons": "Quiet Sage icons",
+  "cursor": "Quiet Sage cursors",
+  "palette": {
+    "accent": "#a8b99a",
+    "background": "#242722",
+    "border": "#4b5346",
+    "error": "#d49b91",
+    "foreground": "#ede8dc",
+    "hover": "#bac8ab",
+    "muted": "#b3b6a7",
+    "raised": "#383f35",
+    "selection": "#52684b",
+    "selection_foreground": "#ede8dc",
+    "success": "#a8b99a",
+    "surface": "#2e332d",
+    "terminal": "#242722",
+    "terminal_foreground": "#ede8dc",
+    "warning": "#d1bc8a"
+  },
+  "authored_palette_sha256": "609defd76aac212ee7c66abc78807ca94ecc73a023fdef0dc628b6bf86a0da8f",
+  "workspace_geometry": {
+    "shape": "circle",
+    "minimum_gap": 4
+  },
+  "workspace_style": {
+    "width_px": 44,
+    "gap_px": 6,
+    "backing_radius_px": 9999,
+    "button_radius_px": 9999,
+    "height_constraints": "none; cross-axis allocation belongs to reviewed native runtime",
+    "panel_heights": [
+      44,
+      54
+    ]
+  },
+  "state_colors": {
+    "width": 44,
+    "shape": "circle",
+    "panels": [
+      44,
+      54
+    ],
+    "strip": "#242722",
+    "normal_fill": "#242722",
+    "normal_ink": "#a8b99a",
+    "hover_fill": "#52684b",
+    "hover_ink": "#ede8dc",
+    "active_fill": "#52684b",
+    "active_ink": "#ede8dc",
+    "compact_fill": "#242722",
+    "compact_ink": "#a8b99a",
+    "control": "#85927B",
+    "focus": "#bac8ab",
+    "muted": "#b3b6a7",
+    "disabled_ink": "#b3b6a7",
+    "status_fill": "#a8b99a",
+    "status_ink": "#242722"
+  },
+  "style_updates": {
+    "island_alpha": 1.0,
+    "card_alpha": 1.0,
+    "popup_alpha": 1.0
+  },
+  "overrides": {
+    "cinnamon_css": "/home/bertmacklen/Documents/desktop-theme-studio/refinements/candidate-repair-20260930/desktop/quiet-sage/workspace.css",
+    "island_css": "/home/bertmacklen/Documents/desktop-theme-studio/refinements/candidate-repair-20260930/desktop/quiet-sage/island.css"
+  },
+  "retained_cinnamon_correction": null,
+  "retained_gtk_correction": null,
+  "panel_composition": {
+    "panels": [
+      {
+        "id": 1,
+        "edge": "top",
+        "height_px": 44
+      },
+      {
+        "id": 2,
+        "edge": "bottom",
+        "height_px": 54
+      }
+    ],
+    "layout_assembly_owner": "coordinator"
+  },
+  "required_runtime": "/home/bertmacklen/Documents/desktop-theme-studio/refinements/cinnamon-current-collection/runtime/workspace-switcher-rounded",
+  "island": {
+    "included": true,
+    "reading_surfaces": "opaque existing palette fills"
+  },
+  "island_inline_style_updates": {
+    "actor": "background-color:transparent; color:#a8b99a; border-radius:18px; box-shadow:none; padding:0; margin:0;",
+    "compact": "background-color:#242722;",
+    "compact_weather": "color:#a8b99a;",
+    "compact_clock": "color:#a8b99a;",
+    "compact_status": "color:#a8b99a;"
+  },
+  "integration_order": "retained authored accessibility correction, workspace.css, generated Island base, island.css; apply explicit compact inline values in generated applet assembly",
+  "shape_findings": "Original workspace buttons remain rectangular: radius3px",
+  "composition_authority": {
+    "candidate_design_source": "/home/bertmacklen/Documents/desktop-theme-studio/refinements/quiet-sage-current/design.json",
+    "candidate_design_sha256": "22bb1cb6e9ad905a86cd5d544fa7480307b0fd17708b09c5b2db2eea1fe0c75a",
+    "candidate_composition": "44px top groups /54px bottom dock /Nothing Island and eyes; pinned by candidate/catalog current refinement",
+    "historical_standalone_design": "/home/bertmacklen/Documents/desktop-theme-studio/presets/quiet-sage/design.json",
+    "historical_design_sha256": "bb3724d9fe6e0221786b3e1d0a3f865535d98c7477a1f027a6e88239ca183c12",
+    "historical_composition": "single40px top; no permanent Eww or bottom dock",
+    "choice": "coordinator confirms current refinement is candidate authority; historical standalone package remains unchanged"
+  }
+}

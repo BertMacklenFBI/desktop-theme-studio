@@ -1,0 +1,50 @@
+{
+  "guard": "Do not replace modes.py, long.jsonc, or user-defined Fastfetch wrappers.",
+  "logo": "macklenmobile-logo-plum-afterglow.png",
+  "long": {
+    "local_ip_format": "86.75-309",
+    "required_modules": [
+      "OS",
+      "HOST",
+      "KERNEL",
+      "SHELL",
+      "DE",
+      "WM",
+      "THEME",
+      "ICONS",
+      "TERMINAL",
+      "TERMINAL FONT",
+      "CPU",
+      "GPU",
+      "DISPLAY",
+      "MEM",
+      "SWAP",
+      "DISK",
+      "LOCAL IP"
+    ],
+    "uses_existing_mode_wrapper": true
+  },
+  "name": "Plum Afterglow",
+  "profile": "plum-afterglow",
+  "short": {
+    "palette": [
+      "#211e29",
+      "#e7a29c",
+      "#adc1a0",
+      "#dcc291",
+      "#a6b5cc",
+      "#c0a8d0",
+      "#a4c3bd",
+      "#d6cbd1",
+      "#887d90",
+      "#efb8b2",
+      "#c1d2b5",
+      "#ead6ae",
+      "#c0cce0",
+      "#d9c0e6",
+      "#bedad3",
+      "#f0e7df"
+    ],
+    "uses_existing_mode_wrapper": true
+  }
+}

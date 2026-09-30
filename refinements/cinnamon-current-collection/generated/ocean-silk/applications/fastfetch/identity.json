@@ -1,0 +1,50 @@
+{
+  "guard": "Do not replace modes.py, long.jsonc, or user-defined Fastfetch wrappers.",
+  "logo": "macklenmobile-logo-ocean-silk.png",
+  "long": {
+    "local_ip_format": "86.75-309",
+    "required_modules": [
+      "OS",
+      "HOST",
+      "KERNEL",
+      "SHELL",
+      "DE",
+      "WM",
+      "THEME",
+      "ICONS",
+      "TERMINAL",
+      "TERMINAL FONT",
+      "CPU",
+      "GPU",
+      "DISPLAY",
+      "MEM",
+      "SWAP",
+      "DISK",
+      "LOCAL IP"
+    ],
+    "uses_existing_mode_wrapper": true
+  },
+  "name": "Ocean Silk",
+  "profile": "ocean-silk",
+  "short": {
+    "palette": [
+      "#8ca1aa",
+      "#d5a4a4",
+      "#afc3b1",
+      "#d6c6a0",
+      "#adc4d2",
+      "#c0b8d0",
+      "#a7cfd0",
+      "#e9ebe6",
+      "#b2c4c9",
+      "#e4bcb8",
+      "#c2d7c0",
+      "#e9d9b8",
+      "#c3d8e5",
+      "#d6cce1",
+      "#c5e5e2",
+      "#f3f5ef"
+    ],
+    "uses_existing_mode_wrapper": true
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "all_ready_for_release": false,
+  "candidates": [
+    {
+      "copied_cursor_binaries_omitted": true,
+      "export_installable": false,
+      "name": "Macintosh Soft",
+      "release_eligible": false,
+      "slug": "macintosh-soft",
+      "source_acceptance_applies_to_export": false,
+      "source_native_check_count": 14,
+      "source_native_report_sha256": "9aadaed2e8fb9366f9ede036c3b8e5b34b84e5886e7fad0278fa37395485736a",
+      "source_native_status": "passed",
+      "switch_enabled": false
+    },
+    {
+      "copied_cursor_binaries_omitted": false,
+      "export_installable": false,
+      "name": "Moonstone Stereo",
+      "release_eligible": false,
+      "slug": "moonstone-stereo",
+      "source_acceptance_applies_to_export": false,
+      "source_native_check_count": 15,
+      "source_native_report_sha256": "71de78b4dd10e725cc3b2d2c5bcbe49fa9c8782222834dc002970eae2e55ce4a",
+      "source_native_status": "passed",
+      "switch_enabled": false
+    },
+    {
+      "copied_cursor_binaries_omitted": true,
+      "export_installable": false,
+      "name": "Ocean Silk",
+      "release_eligible": false,
+      "slug": "ocean-silk",
+      "source_acceptance_applies_to_export": false,
+      "source_native_check_count": 14,
+      "source_native_report_sha256": "db54c9e228be4da8ba7967dfd2fd103651bf2b832a1a723653163ad9706a705d",
+      "source_native_status": "passed",
+      "switch_enabled": false
+    },
+    {
+      "copied_cursor_binaries_omitted": true,
+      "export_installable": false,
+      "name": "Plum Afterglow",
+      "release_eligible": false,
+      "slug": "plum-afterglow",
+      "source_acceptance_applies_to_export": false,
+      "source_native_check_count": 14,
+      "source_native_report_sha256": "5ed350359b5045b8cb87bd07de212a4d9cb2446b88aae814fd3a78a6becd10ca",
+      "source_native_status": "passed",
+      "switch_enabled": false
+    },
+    {
+      "copied_cursor_binaries_omitted": false,
+      "export_installable": false,
+      "name": "Dusk Ribbons",
+      "release_eligible": false,
+      "slug": "dusk-ribbons",
+      "source_acceptance_applies_to_export": false,
+      "source_native_check_count": 14,
+      "source_native_report_sha256": "4d1caf000e2a2cb71faba01b2c2bc25cd4b2d5b2bdaac78a1676a371c659f990",
+      "source_native_status": "passed",
+      "switch_enabled": false
+    },
+    {
+      "copied_cursor_binaries_omitted": true,
+      "export_installable": false,
+      "name": "Quiet Sage",
+      "release_eligible": false,
+      "slug": "quiet-sage",
+      "source_acceptance_applies_to_export": false,
+      "source_native_check_count": 14,
+      "source_native_report_sha256": "8470df5ee903f7b6fcd167eafec9c437130f2a4bb02fd4299014892f9127c17c",
+      "source_native_status": "passed",
+      "switch_enabled": false
+    },
+    {
+      "copied_cursor_binaries_omitted": true,
+      "export_installable": false,
+      "name": "GNU-Darwin Aqua",
+      "release_eligible": false,
+      "slug": "gnu-darwin-aqua",
+      "source_acceptance_applies_to_export": false,
+      "source_native_check_count": 16,
+      "source_native_report_sha256": "44e693644e9b55a7d354d42da1805c06abad83d0fd813f46467286409334ad3e",
+      "source_native_status": "passed",
+      "switch_enabled": false
+    },
+    {
+      "copied_cursor_binaries_omitted": false,
+      "export_installable": false,
+      "name": "GNU-Darwin Workstation",
+      "release_eligible": false,
+      "slug": "gnu-darwin-workstation",
+      "source_acceptance_applies_to_export": false,
+      "source_native_check_count": 24,
+      "source_native_report_sha256": "d192c73b073690a5246b45b7d00a3d85671c5e4e41b4da7e19a054874a4273fb",
+      "source_native_status": "passed",
+      "switch_enabled": false
+    }
+  ],
+  "date": "2026-09-30",
+  "destination_for_complete_themes": "BertMacklenFBI/cinnamon-store",
+  "schema": 1,
+  "visibility": "private"
+}

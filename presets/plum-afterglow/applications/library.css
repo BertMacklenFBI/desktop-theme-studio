@@ -1,0 +1,19 @@
+#panel .card, #panel .card-music { background:#2d2838;color:#f0e7df;border:1px solid #65566d;border-radius:6px;padding:18px;box-shadow:none; }
+#panel .card-music h2 { background:none;color:#beb0bb;font-size:14px;letter-spacing:0;border:0;margin-bottom:14px; }
+#panel .record-row { background:none;border:0;border-radius:0;padding:0;box-shadow:none;gap:12px; }
+#panel .record-cover { width:64px;height:64px;flex-basis:64px;border:0;border-radius:4px;padding:0; }
+#panel .np-title { color:#f0e7df;font-family:Ubuntu,sans-serif;font-size:17px; }
+#panel .np-artist,#panel #np-album,#panel .track-times { color:#beb0bb; }
+#panel .np-controls { background:none;border:0;padding:10px 0;box-shadow:none;gap:12px; }
+#panel .np-btn,#panel #np-playpause,#panel #np-playpause:hover { background:#393244;color:#f0e7df;border:1px solid #65566d;border-radius:4px;width:38px;height:32px;box-shadow:none; }
+#panel .np-btn:hover { background:#584459; }
+#panel .cava { background:none;border:0;border-radius:0;padding:0;height:24px; }
+#panel .cava-bar { background:#d5a1aa !important;border-radius:0; }
+#panel .music-library { border-top:1px solid #65566d;padding-top:12px; }
+#panel .music-search { background:#211e29;color:#f0e7df;border:1px solid #65566d;border-radius:4px; }
+#panel .music-search::placeholder { color:#beb0bb; }
+#panel .music-result:hover { background:#584459; }
+#panel #track-progress::-webkit-progress-bar { background:#393244; }
+#panel #track-progress::-webkit-progress-value { background:#d5a1aa; }
+#panel #music-state { color:#d5a1aa; }
+#panel :focus-visible { outline:2px solid #e4b6c0; }

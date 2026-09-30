@@ -1,0 +1,23 @@
+{
+  "behavior_handlers_sha256": "b24b103ca6e00306ac10ab74e7369b58511b1ef0bc9d49273c4059a6519069ec",
+  "dependency_sha256": {
+    "backend.py": "b24b103ca6e00306ac10ab74e7369b58511b1ef0bc9d49273c4059a6519069ec",
+    "theme-sync.py": "a3c8c6c0adce7b0ad2401c68d6ef3297906b8cc0924699c6465a2f4fc0787fba",
+    "theme-watch.py": "b90402c6fcf22ff836f5dead9081f3846da7e7e53ac1ec5ee5525e92d2aa09c1",
+    "ui": "aea92487b2f510dc128b6406d96f17c5ebb5cd6696b1276fef015543f988b923"
+  },
+  "normalized_scss_sha256": {
+    "/home/bertmacklen/Documents/eww-graphite-brass/config/eww.scss": "28de9a7e3fbf495d2849c698c78da651ef2366cb1adc330386480915ab3f30cf"
+  },
+  "revision": "candidate-repair-20260930",
+  "schema": 1,
+  "sha256": {
+    "/home/bertmacklen/Documents/eww-graphite-brass/bin/eww-widgets": "20cf98f547290006043d99e46d498e77df53d5fe1ca3ac28eec43aeb1293ef2e",
+    "/home/bertmacklen/Documents/eww-graphite-brass/config/carbon.yuck": "ac7900e3af87b984006a4f8606c6b6447ff4bb0f5ab68cffd9dea61caf919e17",
+    "/home/bertmacklen/Documents/eww-graphite-brass/config/eww.scss": "1400852a36ce16659975caa7155e7af3b6a6f4983f8e8330820344e9237f550f",
+    "/home/bertmacklen/Documents/eww-graphite-brass/config/eww.yuck": "e708793e2e493404b47582c7060c4b180c2308993ef9b302ddc59a08b3ca381f",
+    "/home/bertmacklen/Documents/eww-graphite-brass/config/saimoom.yuck": "51e43b7f433dd5ecbf210a65d80dc7451b3a9f4f9b1ade751ab5fb051965deff"
+  },
+  "supersedes_for_new_plans_only": "widget-baseline.json; immutable historical receipts and source freeze retained",
+  "watcher_sha256": "a3c8c6c0adce7b0ad2401c68d6ef3297906b8cc0924699c6465a2f4fc0787fba"
+}

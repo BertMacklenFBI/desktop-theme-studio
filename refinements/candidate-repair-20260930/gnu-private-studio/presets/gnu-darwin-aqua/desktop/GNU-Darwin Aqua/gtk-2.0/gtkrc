@@ -1,0 +1,32 @@
+gtk-color-scheme = "bg_color:#EEF0F2\nbase_color:#E2E4E7\nfg_color:#202328\ntext_color:#202328\nselected_bg_color:#245FA8\nselected_fg_color:#FFFFFF\ntooltip_bg_color:#E2E4E7\ntooltip_fg_color:#202328\nlink_color:#4384D6"
+
+gtk-icon-sizes = "gtk-button=16,16"
+style "gnu-darwin-aqua" {
+ xthickness=2
+ ythickness=2
+ bg[NORMAL]=@bg_color
+ bg[PRELIGHT]="#F8F9FA"
+ bg[SELECTED]=@selected_bg_color
+ bg[ACTIVE]="#F8F9FA"
+ bg[INSENSITIVE]=@bg_color
+ fg[NORMAL]=@fg_color
+ fg[PRELIGHT]=@fg_color
+ fg[SELECTED]=@selected_fg_color
+ fg[ACTIVE]=@fg_color
+ fg[INSENSITIVE]="#747A83"
+ text[NORMAL]=@text_color
+ text[SELECTED]=@selected_fg_color
+ text[INSENSITIVE]="#747A83"
+ base[NORMAL]=@base_color
+ base[SELECTED]=@selected_bg_color
+ base[INSENSITIVE]=@bg_color
+ engine "murrine" {
+  roundness=6
+  contrast=1.0
+  glazestyle=0
+  glowstyle=0
+  reliefstyle=0
+  focus_color="#245FA8"
+ }
+}
+class "*" style "gnu-darwin-aqua"

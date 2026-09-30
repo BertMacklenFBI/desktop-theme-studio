@@ -1,0 +1,17 @@
+[Icon Theme]
+Name=GNU-Darwin Workstation icons
+Comment=Recovered classic Window Maker icons with documented application aliases
+Inherits=Adwaita,hicolor
+Directories=64x64/apps,scalable/apps
+
+[64x64/apps]
+Size=64
+Type=Fixed
+Context=Applications
+
+[scalable/apps]
+Size=64
+Type=Scalable
+MinSize=16
+MaxSize=256
+Context=Applications

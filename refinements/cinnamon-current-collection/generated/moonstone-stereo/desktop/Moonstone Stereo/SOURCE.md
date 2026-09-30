@@ -1,0 +1,1 @@
+Moonstone Stereo reuses Mint-Y-compatible GTK/Cinnamon/Metacity plumbing from the local Lavender-Glass source. Original COPYRIGHT/GPLv3 LICENSE retained. Hi-fi rail, machined controls, instrument wells, native geometry and material SVGs were authored for Moonstone Stereo. No visual imports from pastel leather.

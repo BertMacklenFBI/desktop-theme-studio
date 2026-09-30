@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<style-scheme id="cinnamon-current-plum-afterglow" name="Plum Afterglow" version="1.0"><author>Desktop Theme Studio</author>
+<style name="text" foreground="#f0e7df" background="#2d2838"/>
+<style name="selection" foreground="#f0e7df" background="#584459"/>
+<style name="current-line" background="#393244"/>
+<style name="line-numbers" foreground="#beb0bb" background="#393244"/>
+<style name="def:comment" foreground="#beb0bb"/>
+<style name="def:keyword" foreground="#d5a1aa"/>
+<style name="def:string" foreground="#adc1a0"/>
+<style name="def:number" foreground="#dcc291"/>
+<style name="def:error" foreground="#e7a29c"/>
+</style-scheme>

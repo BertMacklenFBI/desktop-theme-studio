@@ -1,0 +1,102 @@
+Booting on x86 
+Rob Braun 
+Darwin Committer 
+
+<bbraun@apple.com> 
+     
+Revision History  
+Revision 2  8 October 2001  rjh - rhayden@apple.com  
+Changed title to "Darwin Committer" and cleaned up some formatting.  
+Revision 1  10 August 2001  rb - bbraun@apple.com  
+Created.  
+
+Abstract 
+
+Darwin's x86 boot CD uses a 2.88 floppy emulation as specified in the El Torito boot cd specification. This boot floppy is usually created as a file of 5760 512 byte sectors rather than as a real floppy, since 2.88 floppies are hard to come by. 
+
+This floppy is rather odd. In it's MBR, it has boot1f from the boot project. boot1f is essentially boot0 with a fictitious partition table on it for the floppy. This partition table specifies two partitions for the floppy, one of 0xAB (the booter partition) and one of 0xA8 (the UFS root filesystem). Boot2 (boot is the object created by the build of the boot project) is then installed into the first partition (0xAB), but boot1 is placed in it's PBR. 
+
+The second partition (0xA8) is a real Darwin UFS filesystem with the kernel and the boot2 configuration file. The boot2 configuration file needs to have an argument that tells boot2 that it should tell the kernel to use "rd=cdrom", so the kernel will root off the cdrom, not the fake floppy partition, which wouldn't work anyway. 
+
+
+--------------------------------------------------------------------------------
+
+Table of Contents 
+
+Create the 2.88 floppy 
+Create a root filesystem 
+Copyright 
+Create the 2.88 floppy 
+I use a spare hard disk to create the 2.88 floppy image. Under OS X, you can use the hdid commands in a similar fashion. My spare disk is /dev/disk1 on my Darwin machine 
+
+Check out, and build the boot project. 
+Install boot1f onto the disk: 
+dd if=boot1f of=/dev/disk1
+When this is done, the kernel will make device nodes for the "fake" partitions. These will be /dev/disk1s1 and /dev/disk1s2. 
+
+Install boot1 on the booter partition: 
+dd if=boot1 of=/dev/disk1s1
+Install boot2 onto the booter partition, but skip over boot1: 
+dd if=boot of=/dev/disk1s1 seek=1 bs=512
+Make a filesystem on /dev/disk1s2: 
+newfs /dev/disk1s2
+Mount the filesystem (I use /mnt as the mount point): 
+mount /dev/disk1s2 /mnt
+Make the directory path to the config file 
+mkdir -p /mnt/private/Drivers/i386/System.config/
+Copy the configuration file over. I'm assuming you're on a Darwin/x86 machine here. Use whatever path is appropriate. 
+cp /private/Drivers/i386/System.config/Default.table \
+         /mnt/private/Drivers/i386/System.config/
+Edit the installed file to root off the cdrom. 
+Add (or edit) the line: 
+
+"Kernel Flags" = "rd=cdrom"
+This will tell the kernel to root off the CD. 
+
+Make sure your kernel is i386 "thin". If your kernel is "fat" you can use the lipo command. 
+Compress your kernel using the rcz command: 
+rcz -c -o mach_kernel.rcz mach_kernel
+Copy the compressed kernel to the "floppy": 
+cp mach_kernel.rcz /mnt/
+Unmount the fake filesystem: 
+umount /mnt
+Create the floppy image: 
+dd if=/dev/disk1 of=boot.flp bs=512 count=5760
+Congratulations, you now have a 2.88 floppy! 
+
+Create a root filesystem 
+Now you just need to make a root filesystem for the CD. To do this, put all the things you need into one directory. For instance, assume /cdimage will be the "/" for your CD. You can put whatever you want here. 
+
+The list of Darwin projects that are used on Darwin/x86 install CD are: 
+
+iokituser 
+xnu 
+startup 
+Libsystem 
+boot 
+diskdev_cmds 
+text_cmds 
+zsh 
+basic_cmds 
+awk 
+file_cmds 
+shell_cmds 
+system_cmds 
+files 
+adv_cmds 
+corefoundation 
+zlib 
+cctools 
+Once you have built yourself a suitable "/" in /cdimage, you'll need to create the actual ISO image of the cdrom. First, copy the boot floppy to an appropriate place on the cd: 
+
+cp boot.flp /cdimage/usr/standalone/i386/boot.flp
+And then create the image. You'll need the "mkisofs" project installed on your machine. 
+
+mkhybrid -r -J -h -c user/standalone/i386/boot.catalog -b	\
+      usr/standalone/i386/boot.flp -o darwincd.iso /cdimage
+You will now have a bootable Darwin/x86 cd image ready to be burned to disc. 
+
+Copyright 
+Copyright © 2001 by Apple Computer, Inc. 
+
+This material has been released under and is subject to the terms of the Common Documentation License, v.1.0, the terms of which are hereby incorporated by reference. Please obtain a copy of the License at http://www.opensource.apple.com/cdl/ and read it before using this material. Your use of this material signifies your agreement to the terms of the License. 

@@ -1,0 +1,143 @@
+{
+  "schema": 1,
+  "media_type": "actual",
+  "execution_status": "current_pause_and_client_fallback_source_native_pending",
+  "authored_bundle_descriptor": "/home/bertmacklen/Documents/desktop-theme-studio/refinements/candidate-repair-20260930/applications/moonstone-stereo/authored-eww-bundle-version2.json",
+  "launcher": "private/player/launch.py",
+  "argv_prefix": [
+    "/usr/bin/python3",
+    "-B"
+  ],
+  "commands": {
+    "prepare": [
+      "private/launch.py",
+      "prepare"
+    ],
+    "player_start": [
+      "private/player/launch.py",
+      "start"
+    ],
+    "player_verify": [
+      "private/player/launch.py",
+      "verify"
+    ],
+    "player_status": [
+      "private/player/launch.py",
+      "status"
+    ],
+    "player_action": [
+      "private/player/launch.py",
+      "action",
+      "<toggle|play|pause|seek|next|previous>",
+      "[argument]"
+    ],
+    "player_stop": [
+      "private/player/launch.py",
+      "stop"
+    ]
+  },
+  "environment_required": [
+    "DTS_PRIVATE_ROOT",
+    "HOME",
+    "DISPLAY",
+    "DBUS_SESSION_BUS_ADDRESS",
+    "CURRENT_COLLECTION_HOST_DISPLAY",
+    "CURRENT_COLLECTION_HOST_BUS",
+    "DTS_EWW_BINARY"
+  ],
+  "plugin_sha256": "4a9622b06dbc784e91a1c5f911c4e503980732ea2d633683b8bca4eb430e9fab",
+  "receipt_relative_paths": [
+    "player/prepared.json",
+    "player/discovery.json",
+    "player/acceptance.json",
+    "player/transport-actions.jsonl",
+    "player/cleanup.json",
+    "player/mpv.log"
+  ],
+  "scope": "Actual owned player discovery/endpoint transport with mpv IPC readback. All other controls remain owned mock fixtures. Physical Eww frontend interactions remain separate.",
+  "mpv_home": "<DTS_PRIVATE_ROOT>/player/home",
+  "mpv_xdg": [
+    "config",
+    "data",
+    "cache",
+    "state",
+    "runtime"
+  ],
+  "private_session_attestation": "Canonical private/host X server and Unix D-Bus endpoint comparison; both peers require SO_PEERCRED UID/PID and /proc birth; only the private peer requires receiver HOME/display environment attestation.",
+  "ipc_attestation": "Owned Unix socket type/UID and SO_PEERCRED exact mpv PID/birth",
+  "timeout_cleanup_requirement": "Preregister the standalone outer_cleanup receipt before any player start, update owned PID/birth from binding after successful start, and call outer_cleanup in the coordinator finally after command quiescence even if bus/X/private root have gone.",
+  "outer_cleanup": {
+    "source": "/home/bertmacklen/Documents/desktop-theme-studio/refinements/candidate-repair-20260930/applications/moonstone-stereo/private-player/cleanup.py",
+    "sha256": "fedd1a46c675efa8a98369f79ce08304b91e73604d445f291e1307127ecca4ad",
+    "in_authored_bundle": false,
+    "call": "cleanup.cleanup(run_directory, saved_host_display)",
+    "receipt": "<run_directory>/owned-private-player-root.json",
+    "result": "Returns schema1 cleaned evidence on success; raises on unresolved or refused identity. Caller saves success or failure evidence in its owned run directory.",
+    "signals": "pidfd only, TERM wait3s then KILL same fd wait2s; no numeric PID signals; no bus connection",
+    "required_phase": "Quiesce start-command supervisor/launchers before outer cleanup; retain receipt outside deletable private root.",
+    "registration": {
+      "schema": 1,
+      "kind": "owned-private-player",
+      "private_root": "<DTS_PRIVATE_ROOT>",
+      "player_home": "<DTS_PRIVATE_ROOT>/player/home",
+      "display": "<exact private DISPLAY>",
+      "uid": "<current UID integer>",
+      "mpv_executable": "/usr/bin/mpv",
+      "plugin_path": "<DTS_PRIVATE_ROOT>/player/mpris.so",
+      "plugin_sha256": "4a9622b06dbc784e91a1c5f911c4e503980732ea2d633683b8bca4eb430e9fab",
+      "socket": "<DTS_PRIVATE_ROOT>/player/mpv.sock",
+      "pid": "null before start; owned PID integer after binding",
+      "birth": "null before start; /proc birth numeric string after binding",
+      "environment": {
+        "HOME": "<DTS_PRIVATE_ROOT>/player/home",
+        "DISPLAY": "<exact private DISPLAY>",
+        "DBUS_SESSION_BUS_ADDRESS": "<exact saved private Unix bus address>",
+        "XDG_CONFIG_HOME": "<DTS_PRIVATE_ROOT>/player/home/config",
+        "XDG_DATA_HOME": "<DTS_PRIVATE_ROOT>/player/home/data",
+        "XDG_CACHE_HOME": "<DTS_PRIVATE_ROOT>/player/home/cache",
+        "XDG_STATE_HOME": "<DTS_PRIVATE_ROOT>/player/home/state",
+        "XDG_RUNTIME_DIR": "<DTS_PRIVATE_ROOT>/player/home/runtime"
+      }
+    }
+  },
+  "bundle_manifest_sha256": "3c044a36d0df2f5048da407504ea78a39379ddf13f7766d80c7f5849bb86c6bf",
+  "fixture_results_sha256": "b6fb1fb79abf58a53788dd59b2904ec84e5210a4ea5f2e691a52a81d40d6bfd1",
+  "fixture_groups": 7,
+  "fixture_checks": 44,
+  "source_freeze": {
+    "path": "/home/bertmacklen/Documents/desktop-theme-studio/refinements/candidate-repair-20260930/applications/moonstone-stereo/private-player/source-freeze.json",
+    "code_review_snapshot_sha256": "3a0709862196ca994c1dc7ed1a56f1a277a80c7c3a52acb7aa6eaf85fbad49da",
+    "current_hash_index": "/home/bertmacklen/Documents/desktop-theme-studio/reports/all-themes/candidate-repair-2026-09-30/applications/receiver-version2-index.json",
+    "note": "Current freeze is the document-only successor of the code-review snapshot. Runtime code and bundle manifest remain exact."
+  },
+  "capture_stability": {
+    "original_actions": [
+      "pause",
+      "play",
+      "seek35",
+      "next",
+      "previous"
+    ],
+    "final_action": "actual MPRIS pause plus matching mpv IPC/PlaybackStatus readback",
+    "acceptance_fields": [
+      "final_state=paused",
+      "capture_stability.pause",
+      "capture_stability.readback"
+    ],
+    "bad_final_state": "refuses before acceptance write"
+  },
+  "eww_client_lifecycle": {
+    "first_daemon": "Explicit start unchanged",
+    "subsequent_clients": "All private launcher/UI clients carry --no-daemonize",
+    "timeout": "Checked10s timeout propagates; no retries or automatic daemon fallback",
+    "native_acceptance": "Strict unique-window and native close-disappearance checks remain coordinator-owned and pending"
+  },
+  "historical_references": {
+    "original_mock_manifest_sha256": "fba3a67500b405a91c0e74448be04f11c55cdb322177ee878c2fc5ef31dc460d",
+    "pre_host_bus_freeze_sha256": "f6fd611c821c8cd4a751498392dd079cb0258d476f028f0c58ed5a638c84e91e",
+    "pre_capture_pause_freeze_sha256": "b75dfd653da8af9059a2f45a642790caf1437c0aa1b79021137d46132985901d",
+    "pre_client_flag_freeze_sha256": "ccb0a8b310e0f4f60730c850967272a868efe02b373c3d29aba63a2acb3bafe5",
+    "pre_document_freeze_sha256": "3a0709862196ca994c1dc7ed1a56f1a277a80c7c3a52acb7aa6eaf85fbad49da",
+    "actual064933": "Endpoint proof and cleanup recorded; receiver open-close incomplete because duplicate dashboard/overlap. This receipt is historical for current source."
+  }
+}

@@ -1,0 +1,15 @@
+#!/bin/bash
+set -euo pipefail
+root=$(cd "$(dirname "$0")/.." && pwd)
+eww="${DTS_EWW_BINARY:-$root/bin/eww}"
+config="$root/config"
+case "${1:-show}" in
+ show|start) "$eww" -c "$config" open clock ;;
+ hide) "$eww" -c "$config" close clock music system launchers ;;
+ stop) "$eww" -c "$config" kill ;;
+ status) "$eww" -c "$config" active-windows ;;
+ reload) "$eww" -c "$config" reload ;;
+ close) "$eww" -c "$config" close "${2:?Window name required}" ;;
+ dashboard|controls|calendar|notes|timer|audio|music|system|dock|bar|launchers) "$eww" -c "$config" open --toggle "$1" ;;
+ *) echo 'Usage: eww-widgets [show|hide|dashboard|controls|calendar|notes|timer|audio|music|system|dock|bar|launchers|status|reload|stop|close WINDOW]' >&2; exit 2 ;;
+esac

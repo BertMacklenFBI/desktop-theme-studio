@@ -1,0 +1,47 @@
+#!/bin/bash
+set -euo pipefail
+root=$(cd "$(dirname "$(readlink -f "$0")")/.." && pwd)
+eww="$root/bin/eww"
+config="$root/config"
+sync="$config/scripts/theme-sync.py"
+watch="$config/scripts/theme-watch.py"
+export PATH="$HOME/.local/bin:/usr/local/bin:/usr/bin:/bin:$PATH"
+export GDK_BACKEND=x11
+flow=(/usr/bin/python3 "/home/bertmacklen/Documents/desktop-theme-studio/presets/macintosh-soft/desktop/flow.py")
+usage() {
+  echo 'Usage: eww-widgets [start|show|hide|toggle|dashboard|controls|calendar|notes|timer|audio|music|system|dock|bar|launchers|theme|status|reload|stop|close WINDOW]'
+}
+
+# Help must be safe to invoke: do not sync the palette, start the watcher, or
+# contact the Eww daemon just to print supported commands.
+case "${1:-}" in
+  -h|--help|help) usage; exit 0 ;;
+esac
+
+# Start explicitly with persistent output files: upstream only redirects TTYs.
+case "${1:-toggle}" in
+  start|show|toggle|dashboard|controls|calendar|notes|timer|audio|music|system|dock|bar|launchers|reload)
+    "$sync"
+    /usr/bin/python3 "/home/bertmacklen/Documents/desktop-theme-studio/presets/macintosh-soft/desktop/daemon_guard.py" ;;
+esac
+case "${1:-toggle}" in
+  start|show|toggle|dashboard|controls|calendar|notes|timer|audio|music|system|dock|bar|launchers|reload)
+    setsid "$watch" >>"$root/state/theme-watch.log" 2>&1 < /dev/null & ;;
+esac
+case "${1:-toggle}" in
+ start) : ;;
+ show) "${flow[@]}" open dashboard ;;
+ hide) "${flow[@]}" hide ;;
+ toggle)
+   if "$eww" -c "$config" active-windows 2>/dev/null | grep -q ':'; then
+     "$0" hide
+   else "$0" show; fi ;;
+ stop) "$eww" -c "$config" kill ;;
+ status) "$eww" -c "$config" active-windows ;;
+ reload) "$eww" -c "$config" reload ;;
+ theme) "$sync" --print ;;
+ close) "${flow[@]}" close "${2:?Window name required}" ;;
+ dashboard|controls|calendar|notes|timer|audio|music|system|dock|bar|launchers)
+   "${flow[@]}" toggle "$1" ;;
+ *) usage >&2; exit 2 ;;
+esac

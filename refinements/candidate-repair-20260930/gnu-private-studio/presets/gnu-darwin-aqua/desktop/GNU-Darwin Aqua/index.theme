@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=GNU-Darwin Aqua
+Comment=Panther/Tiger Aqua: cool pale pinstripes, brushed silver headers, glossy blue controls, left traffic lights, a continuous light top panel and centered bottom dock.
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=GNU-Darwin Aqua
+MetacityTheme=GNU-Darwin Aqua
+IconTheme=GNU-Darwin Aqua icons
+CursorTheme=GNU-Darwin Aqua cursors
+ButtonLayout=close,minimize,maximize:

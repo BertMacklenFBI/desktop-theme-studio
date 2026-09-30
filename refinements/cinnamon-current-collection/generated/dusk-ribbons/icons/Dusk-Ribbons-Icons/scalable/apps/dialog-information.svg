@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64"><defs><linearGradient id="tile" x2="0" y2="1"><stop stop-color="#48445b"/><stop offset="1" stop-color="#373950"/></linearGradient></defs><rect x="3" y="4" width="58" height="58" rx="14" fill="#2d2c41" opacity=".3"/><rect x="3" y="2" width="58" height="58" rx="14" fill="url(#tile)" stroke="#756172" stroke-width="1"/><svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" version="1" viewBox="0 0 48 48" x="10" y="9">
+ <rect fill="#30a3db" width="40" height="40" x="-44" y="-44" rx="20" ry="20" transform="matrix(0,-1,-1,0,0,0)" />
+ <g opacity=".2" transform="matrix(2,0,0,-2,-1068,-672)">
+  <path class="error" d="m545-355h2v9.0039h-2zm0 11.004h2v1.9961h-2z" />
+ </g>
+ <g transform="matrix(2,0,0,-2,-1068,-673.01)">
+  <path fill="#fff" class="error" d="m545-355h2v9.0039h-2zm0 11.004h2v1.9961h-2z" />
+ </g>
+ <path fill="#fff" opacity=".2" d="m24 4c-11.08 0-20 8.92-20 20 0 0.168 0.008 0.333 0.0117 0.5 0.2647-10.846 9.0763-19.5 19.988-19.5s19.724 8.6539 19.988 19.5c0.004-0.16686 0.0117-0.33213 0.0117-0.5 0-11.08-8.92-20-20-20z" />
+ <path opacity=".2" d="m4.0117 24.5c-0.0041 0.167-0.0117 0.332-0.0117 0.5 0 11.08 8.92 20 20 20s20-8.92 20-20c0-0.168-0.008-0.333-0.012-0.5-0.264 10.846-9.076 19.5-19.988 19.5s-19.724-8.654-19.988-19.5z" />
+</svg><path d="M25 56h14" stroke="#bb8987" stroke-linecap="round" stroke-width="2"/></svg>

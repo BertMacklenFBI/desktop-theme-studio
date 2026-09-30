@@ -1,0 +1,359 @@
+{
+  "name": "GNU-Darwin Workstation",
+  "theme": "/home/bertmacklen/Documents/desktop-theme-studio/presets/gnu-darwin-workstation/desktop/GNU-Darwin Workstation",
+  "base": "/home/bertmacklen/Documents/desktop-theme-studio/presets/gnu-darwin-workstation/desktop/base",
+  "base_files": 525,
+  "design_sha256": "4567edbadcea74d60c5c5ec37292527cf3b217ea642d0632ffe027da8bf0fda8",
+  "files_per_dir": {
+    "cinnamon": 40,
+    "gtk-2.0": 1,
+    "gtk-3.0": 84,
+    "gtk-4.0": 78,
+    "metacity-1": 12
+  },
+  "css_lines": {
+    "gtk-3.0/gtk.css": 4357,
+    "gtk-4.0/gtk.css": 3399,
+    "cinnamon/cinnamon.css": 2240,
+    "gtk-2.0/gtkrc": 34
+  },
+  "svg_control_assets": 157,
+  "xml_svg_parsed": 204,
+  "missing_assets": [],
+  "gtk_raster_assets": 0,
+  "metacity_disc_draw_ops": 16,
+  "thumbnails": "regenerated from palette (PIL)",
+  "role_map": {
+    "desktop": {
+      "token": "#000000",
+      "mint_y_hexes": [
+        "#080808",
+        "#050506",
+        "#0f0f0f",
+        "#0f0f10",
+        "#111113",
+        "#141416",
+        "#161616",
+        "#161619",
+        "#171717",
+        "#1a1a1a",
+        "#1b1b1b",
+        "#1b1b1e",
+        "#1c1c1c",
+        "#1d1d21",
+        "#18181b",
+        "#161a26",
+        "#0f1116",
+        "#1b1c21"
+      ]
+    },
+    "background": {
+      "token": "#BEBEBE",
+      "mint_y_hexes": [
+        "#202023",
+        "#222226",
+        "#212121",
+        "#222222",
+        "#242429",
+        "#25252a",
+        "#26262a",
+        "#27272b",
+        "#29292e",
+        "#2a2a2f",
+        "#2b2b2b",
+        "#202020",
+        "#252a35"
+      ]
+    },
+    "surface": {
+      "token": "#B3B2B0",
+      "mint_y_hexes": [
+        "#2e2e33",
+        "#303036",
+        "#2c2c31",
+        "#2c2c30",
+        "#333339",
+        "#333338",
+        "#343439",
+        "#383838",
+        "#353535",
+        "#303030",
+        "#373737",
+        "#2f2f2f",
+        "#383c4a",
+        "#323644",
+        "#353945",
+        "#2b2f3b",
+        "#3c4049",
+        "#353537"
+      ]
+    },
+    "elevated": {
+      "token": "#D0D0D0",
+      "mint_y_hexes": [
+        "#3c3c44",
+        "#44444c",
+        "#38383e",
+        "#494951",
+        "#3f3f46",
+        "#404040",
+        "#3e3e3e",
+        "#3a3a41",
+        "#46464e",
+        "#474747",
+        "#4a4a4a",
+        "#4c4c50",
+        "#3b3c3e",
+        "#434343"
+      ]
+    },
+    "border": {
+      "token": "#808080",
+      "mint_y_hexes": [
+        "#55555f",
+        "#555559",
+        "#5c5c5c",
+        "#5c616c",
+        "#5e5e69",
+        "#4d4f52",
+        "#525252",
+        "#5b5b5b"
+      ]
+    },
+    "control_border": {
+      "token": "#595959",
+      "mint_y_hexes": [
+        "#616166",
+        "#6a6a77",
+        "#797987"
+      ]
+    },
+    "disabled": {
+      "token": "#595959",
+      "mint_y_hexes": [
+        "#666666",
+        "#676767"
+      ]
+    },
+    "muted": {
+      "token": "#383838",
+      "mint_y_hexes": [
+        "#7f7f7f",
+        "#808080",
+        "#838383",
+        "#909090",
+        "#949498",
+        "#9d9d9d",
+        "#a0a0a0",
+        "#a1a1a1",
+        "#a8a8a8",
+        "#a7a7ab",
+        "#aeaeae",
+        "#b6b6b6",
+        "#bababa",
+        "#bebebe",
+        "#c3c3c3",
+        "#c4c7cc",
+        "#c7c7c7",
+        "#c8c8c8",
+        "#d4d4d4"
+      ]
+    },
+    "foreground": {
+      "token": "#101010",
+      "mint_y_hexes": [
+        "#ffffff",
+        "#e1e1e1",
+        "#dbdbdb",
+        "#dadada",
+        "#d3d3d3",
+        "#d7d7d7",
+        "#d9d9d9",
+        "#e2e2e2",
+        "#eeeeee",
+        "#f4f4f4",
+        "#f8f8f8",
+        "#fdfdfd"
+      ]
+    },
+    "selection": {
+      "token": "#333641",
+      "mint_y_hexes": [
+        "#35a854",
+        "#6db442",
+        "#30974c",
+        "#30984c"
+      ]
+    },
+    "selection_hover": {
+      "token": "#4b4e58",
+      "mint_y_hexes": [
+        "#3bbb5e",
+        "#88c663",
+        "#4ac66b",
+        "#71d28b",
+        "#5acb78",
+        "#3ab85c"
+      ]
+    },
+    "selection_active": {
+      "token": "#2b2e37",
+      "mint_y_hexes": [
+        "#298141",
+        "#2f954a",
+        "#568f34",
+        "#1d5a2d",
+        "#236e37"
+      ]
+    },
+    "selection_pale": {
+      "token": "#606168",
+      "mint_y_hexes": [
+        "#9ad4aa",
+        "#a4d8b2",
+        "#98deab",
+        "#86cb98",
+        "#aedcbb",
+        "#c2e5cc"
+      ]
+    },
+    "selection_foreground": {
+      "token": "#FFFFFF",
+      "mint_y_hexes": [
+        "#d7eedd",
+        "#e1f2e5",
+        "#ebf6ee"
+      ]
+    },
+    "error": {
+      "token": "#7A1818",
+      "mint_y_hexes": [
+        "#f04a50",
+        "#fc4138",
+        "#c01c28",
+        "#d61f2d",
+        "#ec1b22",
+        "#e12e3b",
+        "#f4797e",
+        "#ff4d4d",
+        "#ff6666",
+        "#ee878f",
+        "#f70505",
+        "#f75a61",
+        "#ff7a80",
+        "#ef2929",
+        "#ff0b00"
+      ]
+    },
+    "error_active": {
+      "token": "#681414",
+      "mint_y_hexes": [
+        "#aa3936",
+        "#a53531",
+        "#d8354a"
+      ]
+    },
+    "warning": {
+      "token": "#5C3A00",
+      "mint_y_hexes": [
+        "#f27835",
+        "#fbeaa0",
+        "#f57900"
+      ]
+    },
+    "warning_active": {
+      "token": "#4e3100",
+      "mint_y_hexes": [
+        "#a45a34",
+        "#9f562f"
+      ]
+    },
+    "secondary": {
+      "token": "#353B50",
+      "mint_y_hexes": [
+        "#5294e2",
+        "#7eafe9",
+        "#55c1ec",
+        "#001aff"
+      ]
+    },
+    "secondary_dark": {
+      "token": "#202330",
+      "mint_y_hexes": [
+        "#102b68"
+      ]
+    },
+    "success": {
+      "token": "#174A20",
+      "mint_y_hexes": [
+        "#73d216"
+      ]
+    }
+  },
+  "derived_tokens": {
+    "tile_top": "#5f6169",
+    "tile_bottom": "#333641",
+    "titlebar_active": "#21232B",
+    "titlebar_active_end": "#0E0F13",
+    "titlebar_inactive": "#9EA0AC",
+    "document": "#FFFFFF",
+    "selection_hover": "#4b4e58",
+    "selection_active": "#2b2e37",
+    "selection_pale": "#606168",
+    "surface_hover": "#bcbbb9",
+    "surface_active": "#989796",
+    "accent_hover": "#4b4e58",
+    "accent_active": "#2b2e37",
+    "secondary_hover": "#4d5365",
+    "secondary_active": "#2d3244",
+    "secondary_dark": "#202330",
+    "muted_hover": "#505050",
+    "muted_active": "#303030",
+    "error_active": "#681414",
+    "warning_active": "#4e3100",
+    "disabled": "#595959",
+    "highlight": "#a6a5a3",
+    "highlight_rgba": "rgba(16,16,16,0.08)",
+    "popup": "#B3B2B0",
+    "popup_top": "#a9a8a6",
+    "shadow": "rgba(0,0,0,0)"
+  },
+  "window_controls": {
+    "minimize": "#B3B2B0",
+    "maximize": "#B3B2B0",
+    "close": "#B3B2B0",
+    "glyph_ink": "#FFFFFF",
+    "geometry": "square, dark active title and slate inactive title",
+    "button_layout": "minimize:close"
+  },
+  "geometry_outputs": {
+    "cinnamon_panel_css_height_px": 64,
+    "metacity_window_frame_corners": "square; rounded draw-op references replaced by rectangle/line ops",
+    "gtk_selection_ink": "#FFFFFF"
+  },
+  "workspace_selector": {
+    "shape": "elongated fully rounded strip with native numbered workspace circles",
+    "indicator_content_width_px": 60,
+    "indicator_border_px": 2,
+    "indicator_outer_width_px": 64,
+    "indicator_radius_px": 999,
+    "indicator_height": "native panel allocation; no horizontal height constraints",
+    "strip_vertical_padding_px": 0,
+    "strip_border_px": 0,
+    "strip_radius_px": 999,
+    "indicator_spacing_px": 4,
+    "scope": "native workspace-switcher only; horizontal top/bottom in Jesta/Cryostat; both orientations in Workstation",
+    "states": "unchanged geometry and foreground/background pairs in all eight native state combinations",
+    "preservation": "numbers, names/tooltips, click/scroll/keyboard/accessibility behavior and global workspace count/names unchanged",
+    "acceptance": "pending fresh actual allocation/pixels/labels/containment/click evidence at 2880x1800",
+    "vertical_indicator_content_height_px": 60
+  },
+  "workspace_picker_source_sha256": "b5d796ef8b0c789a7f008c7ec6c364d8d5050afa728ac3ad5325aac450b55e3f",
+  "applied": false,
+  "limitations": [
+    "Right rail and bottom tasks64px layout requires coordinator private geometry validation.",
+    "Libadwaita, Openbox and Xfwm4 receive no dedicated styles in this Cinnamon preset; application-owned surfaces may retain their own palette.",
+    "The cursor theme inherits installed Bibata-Modern-Classic files without copying them.",
+    "All graphical rendering and interactions await coordinator serialized private preview; this report is structural only."
+  ]
+}

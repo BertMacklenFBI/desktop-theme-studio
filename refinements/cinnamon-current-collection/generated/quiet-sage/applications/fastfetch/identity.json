@@ -1,0 +1,50 @@
+{
+  "guard": "Do not replace modes.py, long.jsonc, or user-defined Fastfetch wrappers.",
+  "logo": "macklenmobile-logo-quiet-sage.png",
+  "long": {
+    "local_ip_format": "86.75-309",
+    "required_modules": [
+      "OS",
+      "HOST",
+      "KERNEL",
+      "SHELL",
+      "DE",
+      "WM",
+      "THEME",
+      "ICONS",
+      "TERMINAL",
+      "TERMINAL FONT",
+      "CPU",
+      "GPU",
+      "DISPLAY",
+      "MEM",
+      "SWAP",
+      "DISK",
+      "LOCAL IP"
+    ],
+    "uses_existing_mode_wrapper": true
+  },
+  "name": "Quiet Sage",
+  "profile": "quiet-sage",
+  "short": {
+    "palette": [
+      "#242722",
+      "#d49b91",
+      "#a8b99a",
+      "#d1bc8a",
+      "#9aafb0",
+      "#b7a7be",
+      "#9bbdb1",
+      "#d7d5c8",
+      "#7c8475",
+      "#e0afa5",
+      "#bacbab",
+      "#e1cda4",
+      "#aec3c3",
+      "#c9bad0",
+      "#b1d1c2",
+      "#ede8dc"
+    ],
+    "uses_existing_mode_wrapper": true
+  }
+}

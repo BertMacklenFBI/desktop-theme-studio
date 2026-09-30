@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<style-scheme id="cinnamon-current-ocean-silk" name="Ocean Silk" version="1.0"><author>Desktop Theme Studio</author>
+<style name="text" foreground="#304957" background="#e9ebe6"/>
+<style name="selection" foreground="#e9ebe6" background="#354d64"/>
+<style name="current-line" background="#cbd7da"/>
+<style name="line-numbers" foreground="#475f6c" background="#cbd7da"/>
+<style name="def:comment" foreground="#475f6c"/>
+<style name="def:keyword" foreground="#6f94a4"/>
+<style name="def:string" foreground="#42665c"/>
+<style name="def:number" foreground="#755b30"/>
+<style name="def:error" foreground="#874b4b"/>
+</style-scheme>

@@ -1,0 +1,7 @@
+/* Macintosh Soft gTile appearance; geometry and key bindings remain untouched. */
+.grid-panel { background-color:#ebe9e1; border:1px solid #a5aba8; border-radius:6px; }
+.grid-title,.grid-panel .settings-label,.grid-panel .tile-label { color:#293238; }
+.table-element,.settings-button { background-color:#d7d9d4; color:#293238; border:1px solid #a5aba8; }
+.table-element:hover,.table-element:activate,.settings-button:hover,.settings-button:activate,.settings-button:activate:hover { background-color:#356262; color:#fbf8f1; border-color:#507d7d; }
+.table-element:hover .tile-label,.table-element:activate .tile-label,.settings-button:hover .settings-label,.settings-button:activate .settings-label,.settings-button:activate:hover .settings-label { color:#fbf8f1; }
+.grid-preview:activate { background-color:rgba(80,125,125,0.30); border:2px solid #507d7d; }

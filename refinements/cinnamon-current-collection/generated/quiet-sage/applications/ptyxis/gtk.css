@@ -1,0 +1,46 @@
+/* Quiet Sage Ptyxis application chrome; load as a profile-specific append block. */
+@define-color theme_fg_color #ede8dc;
+@define-color theme_text_color #ede8dc;
+@define-color theme_bg_color #2e332d;
+@define-color theme_base_color #242722;
+@define-color theme_selected_bg_color #52684b;
+@define-color theme_selected_fg_color #ede8dc;
+@define-color window_fg_color #ede8dc;
+@define-color window_bg_color #2e332d;
+@define-color view_fg_color #ede8dc;
+@define-color view_bg_color #242722;
+@define-color headerbar_fg_color #ede8dc;
+@define-color headerbar_bg_color #383f35;
+@define-color headerbar_backdrop_color #2e332d;
+@define-color headerbar_border_color #4b5346;
+@define-color accent_color #a8b99a;
+@define-color accent_bg_color #52684b;
+@define-color accent_fg_color #ede8dc;
+:root {
+  --accent-bg-color: #52684b;
+  --accent-fg-color: #ede8dc;
+  --accent-color: #a8b99a;
+  --window-bg-color: #2e332d;
+  --window-fg-color: #ede8dc;
+  --view-bg-color: #242722;
+  --view-fg-color: #ede8dc;
+  --headerbar-bg-color: #383f35;
+  --headerbar-fg-color: #ede8dc;
+  --headerbar-backdrop-color: #2e332d;
+  --headerbar-border-color: #4b5346;
+  --sidebar-bg-color: #383f35;
+  --sidebar-fg-color: #ede8dc;
+  --sidebar-backdrop-color: #2e332d;
+  --card-bg-color: #383f35;
+  --card-fg-color: #ede8dc;
+  --dialog-bg-color: #2e332d;
+  --dialog-fg-color: #ede8dc;
+  --popover-bg-color: #2e332d;
+  --popover-fg-color: #ede8dc;
+}
+window { background-color: #2e332d; color: #ede8dc; }
+headerbar { background-color: #383f35; background-image: none; color: #ede8dc; border-color: #4b5346; }
+headerbar label, headerbar image, headerbar button, .titlebar label, .titlebar image, .titlebar button { color: #ede8dc; }
+headerbar button:checked, headerbar button:checked label, headerbar button:checked image { color: #ede8dc; }
+terminal, vte-terminal { background-color: #242722; color: #ede8dc; }
+button:checked, button:active { background-color: #52684b; color: #ede8dc; }

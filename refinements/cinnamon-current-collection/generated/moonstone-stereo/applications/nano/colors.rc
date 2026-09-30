@@ -1,0 +1,9 @@
+# Moonstone Stereo Nano color fragment; do not replace non-color user preferences.
+set titlecolor bold,#e7e1d3,#46705c
+set statuscolor #302e29,#e7e1d3
+set errorcolor #e7e1d3,#9e4e42
+set promptcolor #302e29,#e7e1d3
+set selectedcolor #302e29,#cedbd0
+set numbercolor #716a5d
+set keycolor #8db4a0
+set functioncolor #302e29

@@ -1,0 +1,312 @@
+/* macintosh-soft: opaque reading surfaces and explicit semantic ink; existing palette only. */
+
+/* High-specificity panel selectors defeat inherited authored shell label ink. */
+
+#panel #panelLeft .ni-compact.ni-compact,
+#panel #panelCenter .ni-compact.ni-compact,
+#panel #panelRight .ni-compact.ni-compact { background-color:#293238; color:#9DC6C3; }
+
+#panel #panelLeft .ni-compact.ni-compact StLabel,
+#panel #panelLeft .ni-compact.ni-compact StIcon,
+#panel #panelLeft .ni-compact.ni-compact .ni-compact-clock,
+#panel #panelLeft .ni-compact.ni-compact .ni-compact-side,
+#panel #panelCenter .ni-compact.ni-compact StLabel,
+#panel #panelCenter .ni-compact.ni-compact StIcon,
+#panel #panelCenter .ni-compact.ni-compact .ni-compact-clock,
+#panel #panelCenter .ni-compact.ni-compact .ni-compact-side,
+#panel #panelRight .ni-compact.ni-compact StLabel,
+#panel #panelRight .ni-compact.ni-compact StIcon,
+#panel #panelRight .ni-compact.ni-compact .ni-compact-clock,
+#panel #panelRight .ni-compact.ni-compact .ni-compact-side { color:#9DC6C3; }
+
+.menu.ni-popup .popup-menu-content { background-color:#ebe9e1; background-gradient-direction:none; color:#293238; border-color:#697773; }
+
+.menu.ni-popup .ni-media,
+.menu.ni-popup .ni-card,
+.menu.ni-popup .ni-meters,
+.menu.ni-popup .ni-top-volume,
+.menu.ni-popup .ni-calendar-grid { background-color:#d7d9d4; color:#293238; }
+
+.menu.ni-popup .ni-content,
+.menu.ni-popup .ni-title,
+.menu.ni-popup .ni-text,
+.menu.ni-popup .ni-button-label,
+.menu.ni-popup .ni-day,
+.menu.ni-popup .ni-display,
+.menu.ni-popup .ni-metric,
+.menu.ni-popup .ni-cover,
+.menu.ni-popup .ni-cover StIcon,
+.menu.ni-popup .ni-top-volume { color:#293238; }
+
+.menu.ni-popup .ni-muted,
+.menu.ni-popup .ni-caption,
+.menu.ni-popup .ni-status-label,
+.menu.ni-popup .ni-day-heading,
+.menu.ni-popup .ni-status-error { color:#505d66; }
+
+.menu.ni-popup .ni-error { color:#944338; }
+
+.menu.ni-popup .ni-cover { background-color:#ebe9e1; }
+
+.menu.ni-popup .ni-button,
+.menu.ni-popup .ni-transport-button,
+.menu.ni-popup .ni-tab,
+.menu.ni-popup .ni-close { background-color:#d7d9d4; background-gradient-direction:none; color:#293238; border:1px solid #697773; }
+
+.menu.ni-popup .ni-button StLabel,
+.menu.ni-popup .ni-button StIcon,
+.menu.ni-popup .ni-transport-button StLabel,
+.menu.ni-popup .ni-transport-button StIcon,
+.menu.ni-popup .ni-tab StLabel,
+.menu.ni-popup .ni-tab StIcon,
+.menu.ni-popup .ni-close StLabel,
+.menu.ni-popup .ni-close StIcon { color:#293238; }
+
+.menu.ni-popup .ni-button:hover,
+.menu.ni-popup .ni-transport-button:hover,
+.menu.ni-popup .ni-tab:hover,
+.menu.ni-popup .ni-close:hover { background-color:#356262; color:#fbf8f1; }
+
+.menu.ni-popup .ni-button:hover StLabel,
+.menu.ni-popup .ni-button:hover StIcon,
+.menu.ni-popup .ni-transport-button:hover StLabel,
+.menu.ni-popup .ni-transport-button:hover StIcon,
+.menu.ni-popup .ni-tab:hover StLabel,
+.menu.ni-popup .ni-tab:hover StIcon,
+.menu.ni-popup .ni-close:hover StLabel,
+.menu.ni-popup .ni-close:hover StIcon { color:#fbf8f1; }
+
+.menu.ni-popup .ni-button:active,
+.menu.ni-popup .ni-transport-button:active,
+.menu.ni-popup .ni-tab:active,
+.menu.ni-popup .ni-close:active { background-color:#356262; color:#fbf8f1; }
+
+.menu.ni-popup .ni-button:active StLabel,
+.menu.ni-popup .ni-button:active StIcon,
+.menu.ni-popup .ni-transport-button:active StLabel,
+.menu.ni-popup .ni-transport-button:active StIcon,
+.menu.ni-popup .ni-tab:active StLabel,
+.menu.ni-popup .ni-tab:active StIcon,
+.menu.ni-popup .ni-close:active StLabel,
+.menu.ni-popup .ni-close:active StIcon { color:#fbf8f1; }
+
+.menu.ni-popup .ni-button:checked,
+.menu.ni-popup .ni-transport-button:checked,
+.menu.ni-popup .ni-tab:checked,
+.menu.ni-popup .ni-close:checked { background-color:#356262; color:#fbf8f1; }
+
+.menu.ni-popup .ni-button:checked StLabel,
+.menu.ni-popup .ni-button:checked StIcon,
+.menu.ni-popup .ni-transport-button:checked StLabel,
+.menu.ni-popup .ni-transport-button:checked StIcon,
+.menu.ni-popup .ni-tab:checked StLabel,
+.menu.ni-popup .ni-tab:checked StIcon,
+.menu.ni-popup .ni-close:checked StLabel,
+.menu.ni-popup .ni-close:checked StIcon { color:#fbf8f1; }
+
+.menu.ni-popup .ni-button:checked:hover,
+.menu.ni-popup .ni-transport-button:checked:hover,
+.menu.ni-popup .ni-tab:checked:hover,
+.menu.ni-popup .ni-close:checked:hover { background-color:#356262; color:#fbf8f1; }
+
+.menu.ni-popup .ni-button:checked:hover StLabel,
+.menu.ni-popup .ni-button:checked:hover StIcon,
+.menu.ni-popup .ni-transport-button:checked:hover StLabel,
+.menu.ni-popup .ni-transport-button:checked:hover StIcon,
+.menu.ni-popup .ni-tab:checked:hover StLabel,
+.menu.ni-popup .ni-tab:checked:hover StIcon,
+.menu.ni-popup .ni-close:checked:hover StLabel,
+.menu.ni-popup .ni-close:checked:hover StIcon { color:#fbf8f1; }
+
+.menu.ni-popup .ni-button:active:hover,
+.menu.ni-popup .ni-transport-button:active:hover,
+.menu.ni-popup .ni-tab:active:hover,
+.menu.ni-popup .ni-close:active:hover { background-color:#356262; color:#fbf8f1; }
+
+.menu.ni-popup .ni-button:active:hover StLabel,
+.menu.ni-popup .ni-button:active:hover StIcon,
+.menu.ni-popup .ni-transport-button:active:hover StLabel,
+.menu.ni-popup .ni-transport-button:active:hover StIcon,
+.menu.ni-popup .ni-tab:active:hover StLabel,
+.menu.ni-popup .ni-tab:active:hover StIcon,
+.menu.ni-popup .ni-close:active:hover StLabel,
+.menu.ni-popup .ni-close:active:hover StIcon { color:#fbf8f1; }
+
+.menu.ni-popup .ni-button:focus,
+.menu.ni-popup .ni-transport-button:focus,
+.menu.ni-popup .ni-tab:focus,
+.menu.ni-popup .ni-close:focus { border-color:#356262; box-shadow:inset 0 0 0 1px #356262; }
+
+.menu.ni-popup .ni-button:disabled,
+.menu.ni-popup .ni-transport-button:disabled,
+.menu.ni-popup .ni-tab:disabled,
+.menu.ni-popup .ni-close:disabled { background-color:#d7d9d4; color:#505d66; border-color:#697773; box-shadow:none; }
+
+.menu.ni-popup .ni-button:disabled StLabel,
+.menu.ni-popup .ni-button:disabled StIcon,
+.menu.ni-popup .ni-transport-button:disabled StLabel,
+.menu.ni-popup .ni-transport-button:disabled StIcon,
+.menu.ni-popup .ni-tab:disabled StLabel,
+.menu.ni-popup .ni-tab:disabled StIcon,
+.menu.ni-popup .ni-close:disabled StLabel,
+.menu.ni-popup .ni-close:disabled StIcon { color:#505d66; }
+
+.menu.ni-popup .ni-button:disabled:hover,
+.menu.ni-popup .ni-transport-button:disabled:hover,
+.menu.ni-popup .ni-tab:disabled:hover,
+.menu.ni-popup .ni-close:disabled:hover { background-color:#d7d9d4; color:#505d66; border-color:#697773; box-shadow:none; }
+
+.menu.ni-popup .ni-button:disabled:hover StLabel,
+.menu.ni-popup .ni-button:disabled:hover StIcon,
+.menu.ni-popup .ni-transport-button:disabled:hover StLabel,
+.menu.ni-popup .ni-transport-button:disabled:hover StIcon,
+.menu.ni-popup .ni-tab:disabled:hover StLabel,
+.menu.ni-popup .ni-tab:disabled:hover StIcon,
+.menu.ni-popup .ni-close:disabled:hover StLabel,
+.menu.ni-popup .ni-close:disabled:hover StIcon { color:#505d66; }
+
+.menu.ni-popup .ni-button:disabled:checked,
+.menu.ni-popup .ni-transport-button:disabled:checked,
+.menu.ni-popup .ni-tab:disabled:checked,
+.menu.ni-popup .ni-close:disabled:checked { background-color:#d7d9d4; color:#505d66; border-color:#697773; box-shadow:none; }
+
+.menu.ni-popup .ni-button:disabled:checked StLabel,
+.menu.ni-popup .ni-button:disabled:checked StIcon,
+.menu.ni-popup .ni-transport-button:disabled:checked StLabel,
+.menu.ni-popup .ni-transport-button:disabled:checked StIcon,
+.menu.ni-popup .ni-tab:disabled:checked StLabel,
+.menu.ni-popup .ni-tab:disabled:checked StIcon,
+.menu.ni-popup .ni-close:disabled:checked StLabel,
+.menu.ni-popup .ni-close:disabled:checked StIcon { color:#505d66; }
+
+.menu.ni-popup .ni-button:disabled:active,
+.menu.ni-popup .ni-transport-button:disabled:active,
+.menu.ni-popup .ni-tab:disabled:active,
+.menu.ni-popup .ni-close:disabled:active { background-color:#d7d9d4; color:#505d66; border-color:#697773; box-shadow:none; }
+
+.menu.ni-popup .ni-button:disabled:active StLabel,
+.menu.ni-popup .ni-button:disabled:active StIcon,
+.menu.ni-popup .ni-transport-button:disabled:active StLabel,
+.menu.ni-popup .ni-transport-button:disabled:active StIcon,
+.menu.ni-popup .ni-tab:disabled:active StLabel,
+.menu.ni-popup .ni-tab:disabled:active StIcon,
+.menu.ni-popup .ni-close:disabled:active StLabel,
+.menu.ni-popup .ni-close:disabled:active StIcon { color:#505d66; }
+
+.menu.ni-popup .ni-status,
+.menu.ni-popup .ni-record-tile,
+.menu.ni-popup .ni-weather-card { background-color:#356262; background-gradient-direction:none; color:#fbf8f1; border:1px solid #697773; }
+
+.menu.ni-popup .ni-status StLabel,
+.menu.ni-popup .ni-status StIcon,
+.menu.ni-popup .ni-record-tile StLabel,
+.menu.ni-popup .ni-record-tile StIcon,
+.menu.ni-popup .ni-weather-card StLabel,
+.menu.ni-popup .ni-weather-card StIcon { color:#fbf8f1; }
+
+.menu.ni-popup .ni-status:hover,
+.menu.ni-popup .ni-record-tile:hover,
+.menu.ni-popup .ni-weather-card:hover { background-color:#356262; color:#fbf8f1; }
+
+.menu.ni-popup .ni-status:hover StLabel,
+.menu.ni-popup .ni-status:hover StIcon,
+.menu.ni-popup .ni-record-tile:hover StLabel,
+.menu.ni-popup .ni-record-tile:hover StIcon,
+.menu.ni-popup .ni-weather-card:hover StLabel,
+.menu.ni-popup .ni-weather-card:hover StIcon { color:#fbf8f1; }
+
+.menu.ni-popup .ni-status:active,
+.menu.ni-popup .ni-record-tile:active,
+.menu.ni-popup .ni-weather-card:active { background-color:#356262; color:#fbf8f1; }
+
+.menu.ni-popup .ni-status:active StLabel,
+.menu.ni-popup .ni-status:active StIcon,
+.menu.ni-popup .ni-record-tile:active StLabel,
+.menu.ni-popup .ni-record-tile:active StIcon,
+.menu.ni-popup .ni-weather-card:active StLabel,
+.menu.ni-popup .ni-weather-card:active StIcon { color:#fbf8f1; }
+
+.menu.ni-popup .ni-status:checked,
+.menu.ni-popup .ni-record-tile:checked,
+.menu.ni-popup .ni-weather-card:checked { background-color:#356262; color:#fbf8f1; }
+
+.menu.ni-popup .ni-status:checked StLabel,
+.menu.ni-popup .ni-status:checked StIcon,
+.menu.ni-popup .ni-record-tile:checked StLabel,
+.menu.ni-popup .ni-record-tile:checked StIcon,
+.menu.ni-popup .ni-weather-card:checked StLabel,
+.menu.ni-popup .ni-weather-card:checked StIcon { color:#fbf8f1; }
+
+.menu.ni-popup .ni-status:checked:hover,
+.menu.ni-popup .ni-record-tile:checked:hover,
+.menu.ni-popup .ni-weather-card:checked:hover { background-color:#356262; color:#fbf8f1; }
+
+.menu.ni-popup .ni-status:checked:hover StLabel,
+.menu.ni-popup .ni-status:checked:hover StIcon,
+.menu.ni-popup .ni-record-tile:checked:hover StLabel,
+.menu.ni-popup .ni-record-tile:checked:hover StIcon,
+.menu.ni-popup .ni-weather-card:checked:hover StLabel,
+.menu.ni-popup .ni-weather-card:checked:hover StIcon { color:#fbf8f1; }
+
+.menu.ni-popup .ni-status:active:hover,
+.menu.ni-popup .ni-record-tile:active:hover,
+.menu.ni-popup .ni-weather-card:active:hover { background-color:#356262; color:#fbf8f1; }
+
+.menu.ni-popup .ni-status:active:hover StLabel,
+.menu.ni-popup .ni-status:active:hover StIcon,
+.menu.ni-popup .ni-record-tile:active:hover StLabel,
+.menu.ni-popup .ni-record-tile:active:hover StIcon,
+.menu.ni-popup .ni-weather-card:active:hover StLabel,
+.menu.ni-popup .ni-weather-card:active:hover StIcon { color:#fbf8f1; }
+
+.menu.ni-popup .ni-status:focus,
+.menu.ni-popup .ni-record-tile:focus,
+.menu.ni-popup .ni-weather-card:focus { border-color:#356262; box-shadow:inset 0 0 0 1px #356262; }
+
+.menu.ni-popup .ni-status:disabled,
+.menu.ni-popup .ni-record-tile:disabled,
+.menu.ni-popup .ni-weather-card:disabled { background-color:#d7d9d4; color:#505d66; border-color:#697773; box-shadow:none; }
+
+.menu.ni-popup .ni-status:disabled StLabel,
+.menu.ni-popup .ni-status:disabled StIcon,
+.menu.ni-popup .ni-record-tile:disabled StLabel,
+.menu.ni-popup .ni-record-tile:disabled StIcon,
+.menu.ni-popup .ni-weather-card:disabled StLabel,
+.menu.ni-popup .ni-weather-card:disabled StIcon { color:#505d66; }
+
+.menu.ni-popup .ni-status:disabled:hover,
+.menu.ni-popup .ni-record-tile:disabled:hover,
+.menu.ni-popup .ni-weather-card:disabled:hover { background-color:#d7d9d4; color:#505d66; border-color:#697773; box-shadow:none; }
+
+.menu.ni-popup .ni-status:disabled:hover StLabel,
+.menu.ni-popup .ni-status:disabled:hover StIcon,
+.menu.ni-popup .ni-record-tile:disabled:hover StLabel,
+.menu.ni-popup .ni-record-tile:disabled:hover StIcon,
+.menu.ni-popup .ni-weather-card:disabled:hover StLabel,
+.menu.ni-popup .ni-weather-card:disabled:hover StIcon { color:#505d66; }
+
+.menu.ni-popup .ni-status:disabled:checked,
+.menu.ni-popup .ni-record-tile:disabled:checked,
+.menu.ni-popup .ni-weather-card:disabled:checked { background-color:#d7d9d4; color:#505d66; border-color:#697773; box-shadow:none; }
+
+.menu.ni-popup .ni-status:disabled:checked StLabel,
+.menu.ni-popup .ni-status:disabled:checked StIcon,
+.menu.ni-popup .ni-record-tile:disabled:checked StLabel,
+.menu.ni-popup .ni-record-tile:disabled:checked StIcon,
+.menu.ni-popup .ni-weather-card:disabled:checked StLabel,
+.menu.ni-popup .ni-weather-card:disabled:checked StIcon { color:#505d66; }
+
+.menu.ni-popup .ni-status:disabled:active,
+.menu.ni-popup .ni-record-tile:disabled:active,
+.menu.ni-popup .ni-weather-card:disabled:active { background-color:#d7d9d4; color:#505d66; border-color:#697773; box-shadow:none; }
+
+.menu.ni-popup .ni-status:disabled:active StLabel,
+.menu.ni-popup .ni-status:disabled:active StIcon,
+.menu.ni-popup .ni-record-tile:disabled:active StLabel,
+.menu.ni-popup .ni-record-tile:disabled:active StIcon,
+.menu.ni-popup .ni-weather-card:disabled:active StLabel,
+.menu.ni-popup .ni-weather-card:disabled:active StIcon { color:#505d66; }
+
+.menu.ni-popup .ni-today { background-color:#356262; color:#fbf8f1; }
+
+.menu.ni-popup .slider.ni-slider { color:#356262; -slider-background-color:#d7d9d4; -slider-border-color:#697773; -slider-active-background-color:#356262; -slider-active-border-color:#356262; }

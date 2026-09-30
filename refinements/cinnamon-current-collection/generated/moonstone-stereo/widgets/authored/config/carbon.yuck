@@ -1,0 +1,98 @@
+;; Cinnamon adaptation of Failedex/CarbonMonoxide's dashboard, calendar,
+;; notes, timer, control panel and dock. Dashboard upstream credits tsukki9696.
+(defwidget dcal []
+  (box :class "card calendar-card" :orientation "v" :space-evenly false :spacing 14
+    (label :show-truncated false :class "eyebrow" :text "CALENDAR" :halign "start")
+    (calendar :show-details false :show-heading true :show-day-names true
+      :show-week-numbers false :day {s.day} :year {s.year})))
+
+(defwidget dnotes []
+  (box :class "card notes" :orientation "v" :space-evenly false :spacing 14
+    (box :space-evenly false
+      (label :show-truncated false :class "eyebrow" :text "NOTES" :hexpand true :halign "start")
+      (button :timeout "5s" :class "chip" :onclick "scripts/ui edit-notes" (label :show-truncated false :text "Edit")))
+    (scroll :hscroll false :vscroll true :height 190 :vexpand true
+      (label :text {s.notes} :wrap true :limit-width 40 :halign "start" :valign "start" :xalign 0))))
+
+(defwidget focus-timer []
+  (box :class "card focus" :orientation "v" :space-evenly false :spacing 12
+    (label :show-truncated false :class "eyebrow" :text "FOCUS TIMER" :halign "start")
+    (label :class "timer" :text {s.timer.text})
+    (box :spacing 8
+      (button :timeout "5s" :class "chip" :onclick "scripts/backend.py action timer -5" (label :show-truncated false :text "−5"))
+      (button :timeout "5s" :class "chip selected" :onclick "scripts/backend.py action timer toggle" {s.timer.running ? "Stop" : "Start"})
+      (button :timeout "5s" :class "chip" :onclick "scripts/backend.py action timer 5" (label :show-truncated false :text "+5"))
+      (button :timeout "5s" :class "chip" :onclick "scripts/backend.py action timer reset" (label :show-truncated false :text "Reset")))))
+
+(defwidget quick-controls []
+  (box :class "card" :orientation "v" :space-evenly false :spacing 12
+    (label :show-truncated false :class "eyebrow" :text "QUICK CONTROLS" :halign "start")
+    (box :spacing 10
+      (button :timeout "5s" :class {s.wifi ? "tile enabled" : "tile"} :onclick "scripts/backend.py action wifi"
+        (box :orientation "v" :spacing 6
+          (label :text "Wi-Fi")
+          (label :class "muted" :text {s.wifi ? s.network : "Off"} :limit-width 18)))
+      (button :timeout "5s" :class {s.notifications ? "tile" : "tile enabled"} :onclick "scripts/backend.py action dnd"
+        (box :orientation "v" :spacing 6
+          (label :text "Do not disturb")
+          (label :class "muted" :text {s.notifications ? "Off" : "On"}))))
+    (box :spacing 8
+      (button :timeout "5s" :class "chip" :onclick "scripts/ui network" (label :show-truncated false :text "Network"))
+      (button :timeout "5s" :class "chip" :onclick "scripts/ui appearance" (label :show-truncated false :text "Appearance"))
+      (button :timeout "5s" :class "chip" :onclick "scripts/ui screenshot" (label :show-truncated false :text "Screenshot")))
+    (box :spacing 8
+      (button :timeout "5s" :class "chip" :onclick "scripts/ui lock" (label :show-truncated false :text "Lock"))
+      (button :timeout "5s" :class "chip" :onclick "scripts/ui settings" (label :show-truncated false :text "Settings"))
+      (button :timeout "5s" :class "chip" :onclick "scripts/ui power" (label :show-truncated false :text "Power")))))
+
+(defwidget popup-header [title window]
+  (box :class "popup-header" :space-evenly false
+    (box :orientation "v" :space-evenly false :spacing 4 :hexpand true
+      (label :show-truncated false :class "heading" :text title :halign "start")
+      (label :show-truncated false :class "muted" :text "${s.hostname} / ${s.theme_label}" :halign "start"))
+    (button :timeout "5s" :class "close" :tooltip "Close" :onclick "scripts/ui close ${window}" (label :show-truncated false :text "×"))))
+
+(defwidget dashboard-content []
+  (box :class "popup" :orientation "v" :space-evenly false :spacing 16
+    (popup-header :title "RECEIVER DESK" :window "dashboard")
+    (box :spacing 16 :space-evenly true
+      (box :orientation "v" :space-evenly false :spacing 16 :width 420
+        (music-card)
+        (dcal))
+      (box :orientation "v" :space-evenly false :spacing 16 :width 420
+        (dnotes)
+        (focus-timer)))
+    (box :space-evenly false :spacing 14
+      (workspace-buttons)
+      (box :hexpand true)
+      (button :timeout "5s" :class "chip" :onclick "scripts/ui controls" (label :show-truncated false :text "Controls"))
+      (button :timeout "5s" :class "chip" :onclick "scripts/ui appearance" (label :show-truncated false :text "Appearance"))
+      (button :timeout "5s" :class "chip" :onclick "scripts/ui hide" (label :show-truncated false :text "Hide desktop cards")))))
+
+(defwidget controls-content []
+  (box :class "popup" :orientation "v" :space-evenly false :spacing 14
+    (popup-header :title "CONTROL DECK" :window "controls")
+    (quick-controls)
+    (audio-card)
+    (box :class "card" :orientation "v" :space-evenly false :spacing 10
+      (label :show-truncated false :class "eyebrow" :text "WORKSPACES" :halign "start")
+      (workspace-buttons))))
+
+(defwidget dock-content []
+  (box :class "card dock" :space-evenly false :spacing 10
+    (button :timeout "5s" :class "dock-button" :tooltip "Dashboard" :onclick "scripts/ui dashboard" (image :icon "view-grid-symbolic" :icon-size "dialog"))
+    (button :timeout "5s" :class "dock-button" :tooltip "Files" :onclick "scripts/ui files" (image :icon "system-file-manager" :icon-size "dialog"))
+    (button :timeout "5s" :class "dock-button" :tooltip "Browser" :onclick "scripts/ui browser" (image :icon "web-browser" :icon-size "dialog"))
+    (button :timeout "5s" :class "dock-button" :tooltip "Terminal" :onclick "scripts/ui terminal" (image :icon "utilities-terminal" :icon-size "dialog"))
+    (button :timeout "5s" :class "dock-button" :tooltip "Music" :onclick "scripts/ui music" (image :icon "audio-x-generic" :icon-size "dialog"))
+    (button :timeout "5s" :class "dock-button" :tooltip "Settings" :onclick "scripts/ui settings" (image :icon "preferences-system" :icon-size "dialog"))))
+
+(defwidget bar-content []
+  (box :class "card strip" :space-evenly false :spacing 18
+    (button :timeout "5s" :class "chip selected" :onclick "scripts/ui dashboard" {s.theme_short})
+    (workspace-buttons)
+    (button :timeout "5s" :hexpand true :onclick "scripts/ui music" :class "bar-title"
+      (label :text {s.media.title} :limit-width 40))
+    (button :timeout "5s" :onclick "scripts/ui controls" :tooltip "Control center" {s.network})
+    (button :timeout "5s" :onclick "scripts/ui system" (label :show-truncated false :text "RAM ${s.memory}% · BAT ${s.battery}%"))
+    (button :timeout "5s" :onclick "scripts/ui calendar" (label :show-truncated false :text "${s.clock} ${s.meridiem}"))))

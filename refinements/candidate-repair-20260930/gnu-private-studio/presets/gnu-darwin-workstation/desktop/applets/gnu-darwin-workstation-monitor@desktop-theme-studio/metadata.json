@@ -1,0 +1,7 @@
+{
+  "uuid": "gnu-darwin-workstation-monitor@desktop-theme-studio",
+  "name": "GNU-Darwin Workstation Monitor",
+  "description": "Four period-style CPU, memory, receive and transmit tiles using local /proc metrics.",
+  "max-instances": -1,
+  "version": "1.0.0"
+}

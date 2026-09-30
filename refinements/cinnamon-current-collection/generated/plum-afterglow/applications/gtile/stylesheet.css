@@ -1,0 +1,7 @@
+/* Plum Afterglow gTile appearance; geometry and key bindings remain untouched. */
+.grid-panel { background-color:#2d2838; border:1px solid #65566d; border-radius:10px; }
+.grid-title,.grid-panel .settings-label,.grid-panel .tile-label { color:#f0e7df; }
+.table-element,.settings-button { background-color:#393244; color:#f0e7df; border:1px solid #65566d; }
+.table-element:hover,.table-element:activate,.settings-button:hover,.settings-button:activate,.settings-button:activate:hover { background-color:#584459; color:#f0e7df; border-color:#d5a1aa; }
+.table-element:hover .tile-label,.table-element:activate .tile-label,.settings-button:hover .settings-label,.settings-button:activate .settings-label,.settings-button:activate:hover .settings-label { color:#f0e7df; }
+.grid-preview:activate { background-color:rgba(213,161,170,0.30); border:2px solid #d5a1aa; }

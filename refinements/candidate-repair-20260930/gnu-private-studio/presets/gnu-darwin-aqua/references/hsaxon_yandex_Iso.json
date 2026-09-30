@@ -1,0 +1,87 @@
+{
+  "alternate_locations": {
+    "servers": [
+      {
+        "server": "dn721906.ca.archive.org",
+        "dir": "/0/items/hsaxon_yandex_Iso"
+      }
+    ],
+    "workable": [
+      {
+        "server": "dn721906.ca.archive.org",
+        "dir": "/0/items/hsaxon_yandex_Iso"
+      }
+    ]
+  },
+  "created": 1790671077,
+  "d1": "ia600601.us.archive.org",
+  "d2": "ia800601.us.archive.org",
+  "dir": "/14/items/hsaxon_yandex_Iso",
+  "files": [
+    {
+      "name": "hsaxon_yandex_Iso_files.xml",
+      "source": "original",
+      "format": "Metadata",
+      "md5": "a0b38d527f398c2d091f37c81de6f62d",
+      "summation": "md5"
+    },
+    {
+      "name": "hsaxon_yandex_Iso_meta.sqlite",
+      "source": "original",
+      "mtime": "1512924987",
+      "size": "9216",
+      "md5": "bc06068516e2cb44d40ef63599d8c1ca",
+      "crc32": "a8e6b8ff",
+      "sha1": "c87c96b5bc76d930ae7c3c8cc7cc1d4216ccc885",
+      "format": "Metadata"
+    },
+    {
+      "name": "hsaxon_yandex_Iso_meta.xml",
+      "source": "original",
+      "mtime": "1550019816",
+      "size": "750",
+      "format": "Metadata",
+      "md5": "845915ab306dccf8c1629c6d929f4755",
+      "crc32": "5ff73931",
+      "sha1": "c472921ccf54beb89a0b99878defcc85c0e70265"
+    },
+    {
+      "name": "iso.zip",
+      "source": "original",
+      "mtime": "1512924954",
+      "size": "873569146",
+      "md5": "22d11122b5a8d4137fb1b1ce0d0fcf2b",
+      "crc32": "e57ecee3",
+      "sha1": "58646736d08a5785024131054172a209deda31ef",
+      "format": "ZIP",
+      "filecount": "4"
+    }
+  ],
+  "files_count": 4,
+  "item_last_updated": 1734478989,
+  "item_size": 873579112,
+  "metadata": {
+    "identifier": "hsaxon_yandex_Iso",
+    "mediatype": "software",
+    "collection": [
+      "cdromimages",
+      "vintagesoftware"
+    ],
+    "description": "gnu darwin iso images<br />",
+    "scanner": "Internet Archive HTML5 Uploader 1.6.3",
+    "subject": "gnudarwin",
+    "title": "gnudarwin iso images",
+    "publicdate": "2017-12-10 16:55:55",
+    "uploader": "hsaxon@yandex.com",
+    "addeddate": "2017-12-10 16:55:55",
+    "curation": "[curator]kaplan@archive.org[/curator][date]20181205182233[/date][state]un-dark[/state]",
+    "noarchivetorrent": "true",
+    "backup_location": "ia906602_24"
+  },
+  "server": "ia800601.us.archive.org",
+  "uniq": 329280362,
+  "workable_servers": [
+    "ia800601.us.archive.org",
+    "ia600601.us.archive.org"
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "isolated_gate": {
+    "contract": "legacy-default",
+    "fingerprint_exclusions": [],
+    "receipt_field": null,
+    "required_checks": [
+      "menu@cinnamon.org opens and closes",
+      "notifications@cinnamon.org opens and closes",
+      "sound@cinnamon.org opens and closes",
+      "Island actual \u00d7 close",
+      "Island actual Escape",
+      "Island outside click",
+      "Island ReloadXlet lifecycle",
+      "Cinnamon theme reload"
+    ],
+    "source_sha256": null
+  },
+  "must_not_touch": [
+    "enabled-applets",
+    "panel placement",
+    "custom music commands",
+    "shell configuration",
+    "Eww playback and system-control behavior",
+    "existing generic opacity service",
+    "Ocean-Silk-Glass theme tree"
+  ],
+  "narrow_assets": [
+    {
+      "from": "generated/quiet-sage/desktop/Quiet Sage",
+      "operation": "replace only this profile tree after backup",
+      "to": "~/.themes/Quiet Sage"
+    },
+    {
+      "from": "generated/quiet-sage/island/nothing-island@desktop-theme-studio/applet.js",
+      "operation": "replace palette-bearing source only",
+      "to": "~/.local/share/cinnamon/applets/nothing-island@desktop-theme-studio/applet.js"
+    },
+    {
+      "from": "generated/quiet-sage/island/nothing-island@desktop-theme-studio/stylesheet.css",
+      "operation": "replace palette-bearing source only",
+      "to": "~/.local/share/cinnamon/applets/nothing-island@desktop-theme-studio/stylesheet.css"
+    },
+    {
+      "from": "generated/quiet-sage/artwork/menu-logo.png",
+      "operation": "discover instance first; update only menu-icon value",
+      "to": "selected Cinabon menu-icon setting"
+    },
+    {
+      "from": "generated/quiet-sage/artwork/wallpaper.png",
+      "operation": "set only selected wallpaper URI",
+      "to": "org.cinnamon.desktop.background picture-uri"
+    },
+    {
+      "from": "generated/quiet-sage/widgets/eww-style.scss",
+      "operation": "install a reversible profile class-rule layer; preserve shared Yuck and playback behavior",
+      "to": "Eww shared stylesheet managed import"
+    }
+  ],
+  "policy": "Read-only plan. A coordinator must create a fresh receipt and recovery timer before applying this plan.",
+  "profile": "quiet-sage",
+  "requires": [
+    "fresh backup",
+    "300-second recovery timer",
+    "normal closure of Ptyxis and Tilda before related app preferences",
+    "one serial Cinnamon reload",
+    "fresh visual and application checks"
+  ],
+  "runtime_controller": "live.py provides receipt-backed desktop, application, and Eww appearance actions; trial.py performs serial verification and restore",
+  "settings_intent": {
+    "org.cinnamon.desktop.interface cursor-theme": "Quiet Sage cursors",
+    "org.cinnamon.desktop.interface gtk-theme": "Quiet Sage",
+    "org.cinnamon.desktop.interface icon-theme": "Quiet Sage icons",
+    "org.cinnamon.desktop.wm.preferences theme": "Quiet Sage",
+    "org.cinnamon.theme name": "Quiet Sage"
+  },
+  "status": "not executed by this collection builder"
+}

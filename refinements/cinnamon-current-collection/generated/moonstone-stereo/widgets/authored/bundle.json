@@ -1,0 +1,173 @@
+{
+  "files": {
+    "bin/eww-widgets": {
+      "mode": 493,
+      "sha256": "c926715f8765fe1f700d50e03007c8009856256e2f634d3b63ad7e929c12e610"
+    },
+    "config/assets/music.svg": {
+      "mode": 420,
+      "sha256": "677ffadb39cbd8dbc43d18c1da1640fcaa11d87dd2430733f71e3fd061b2fb36"
+    },
+    "config/audio_meter.py": {
+      "mode": 420,
+      "sha256": "4a1141c5639be2a8d1922b947046de5cef78783a88e182063f1f110aefd77d1b"
+    },
+    "config/carbon.yuck": {
+      "mode": 420,
+      "sha256": "473582b0b7f1a50dc3df3db7bbf43765d2a5c2700439557d40fcdadeee0bdd61"
+    },
+    "config/eww.scss": {
+      "mode": 420,
+      "sha256": "f2707562f067d76f247fedfa71782e6cd88eaa87d83fdcc7f9f5735fb5fab05b"
+    },
+    "config/eww.yuck": {
+      "mode": 420,
+      "sha256": "d8d3abf4a557b1bf263ec4dafeecac1f33e0ad8a14266d212e519563996afeb8"
+    },
+    "config/materials/aluminum.svg": {
+      "mode": 420,
+      "sha256": "885222eaa945ac773a300c2c9736063c034536aace35b692863bab2fcb4bdec1"
+    },
+    "config/materials/knob.svg": {
+      "mode": 420,
+      "sha256": "b34d5fdb2a1bf206f3c5c018ec36b73a6f1f0b8825dc0a5122b76c9a9407ea27"
+    },
+    "config/materials/meter-000.svg": {
+      "mode": 420,
+      "sha256": "c7baf78d160a3993ebe999932ab5055292108272e50e417e7b7449e3a1364c31"
+    },
+    "config/materials/meter-005.svg": {
+      "mode": 420,
+      "sha256": "1306b129545fea75fe226c0bc1396d2be19bd0a1b6b6180149643bb564eeb61b"
+    },
+    "config/materials/meter-010.svg": {
+      "mode": 420,
+      "sha256": "1fe74034aa23536ac56f32ba0a93e7daed0658dcbb19c044e0503dfdca5f6373"
+    },
+    "config/materials/meter-015.svg": {
+      "mode": 420,
+      "sha256": "fc053b4601d834cac8354cd1e5db0da4d6c51da8dde7f4b5ca0155a3c0a7ca91"
+    },
+    "config/materials/meter-020.svg": {
+      "mode": 420,
+      "sha256": "7814a7d59aa4b1580b117386bf07313e31b5fc8403355e1236a06c5cae6c26ed"
+    },
+    "config/materials/meter-025.svg": {
+      "mode": 420,
+      "sha256": "56d938173457fec38407bb6722e9c0a3fb3df4f03009a26c06e088c54352ec07"
+    },
+    "config/materials/meter-030.svg": {
+      "mode": 420,
+      "sha256": "df758b08c06b8ab0f4e0453d222a6f15b2bf6b67850162fcd100c31c92e49fd2"
+    },
+    "config/materials/meter-035.svg": {
+      "mode": 420,
+      "sha256": "3415d781629e589d36daca85dba147a7ef81b74f6f198e4f75e492b7248eaeb8"
+    },
+    "config/materials/meter-040.svg": {
+      "mode": 420,
+      "sha256": "2cc2b6d44a2b93ccac03d8fb6ec10e15db3772e190e22354d67ee87884887f65"
+    },
+    "config/materials/meter-045.svg": {
+      "mode": 420,
+      "sha256": "e47d4b6be2e22c96603ae3b2cc1c57e0fecdef67550ca540548c2483928646be"
+    },
+    "config/materials/meter-050.svg": {
+      "mode": 420,
+      "sha256": "ab926ef1ee8beb25b7076a8e7694efcb855dd255fb8c45c518f4710755c59ec2"
+    },
+    "config/materials/meter-055.svg": {
+      "mode": 420,
+      "sha256": "d87a19c1a5c0fa1c74082cca1fb653f873ac28c4d37e18062e58670d2b636937"
+    },
+    "config/materials/meter-060.svg": {
+      "mode": 420,
+      "sha256": "8b1d29b4bd1c8bee93c387f8ea9434d2c4439f7766746b1630e00b5756c09bf4"
+    },
+    "config/materials/meter-065.svg": {
+      "mode": 420,
+      "sha256": "817049b5b27c06fdab2fd4cc6b6d4ffe2e796ac8620f5778f09ab23cde90e598"
+    },
+    "config/materials/meter-070.svg": {
+      "mode": 420,
+      "sha256": "18b57b28364f4c2b79c58c9e84cf6ef77b67362e674018c747483b0dd0684e74"
+    },
+    "config/materials/meter-075.svg": {
+      "mode": 420,
+      "sha256": "58e44963f9846fff7d989d11b1ed6860713a9c565ac888a078745a6eaf07dc7f"
+    },
+    "config/materials/meter-080.svg": {
+      "mode": 420,
+      "sha256": "b9d04d562035babbc2582b5d9af6edf3bad86a821eea0904e7a9c601e6871afb"
+    },
+    "config/materials/meter-085.svg": {
+      "mode": 420,
+      "sha256": "c4759b3e876161a675f647aebe9069456153142e01d38c300c634e0b0b380ad0"
+    },
+    "config/materials/meter-090.svg": {
+      "mode": 420,
+      "sha256": "1171f79b21eaeff6c3b06338849c3b195b030cca9786ec4cf00f87dba2c8a599"
+    },
+    "config/materials/meter-095.svg": {
+      "mode": 420,
+      "sha256": "88b1c0587ba7aa4d332d538edd359967005cb474b4fa7afc81652b9db5233ccc"
+    },
+    "config/materials/meter-100.svg": {
+      "mode": 420,
+      "sha256": "d2a485f8f6b0ffc656f0fa58c43571ea70e83e293e506f9ef4cc52809a71a071"
+    },
+    "config/saimoom.yuck": {
+      "mode": 420,
+      "sha256": "01144bd07318a671e1e417fc0190e523f7204a2ce6b69093f58d6de15819cc70"
+    },
+    "config/scripts/backend.py": {
+      "mode": 493,
+      "sha256": "b24b103ca6e00306ac10ab74e7369b58511b1ef0bc9d49273c4059a6519069ec"
+    },
+    "config/scripts/ui": {
+      "mode": 493,
+      "sha256": "aea92487b2f510dc128b6406d96f17c5ebb5cd6696b1276fef015543f988b923"
+    },
+    "config/themes/palettes.json": {
+      "mode": 420,
+      "sha256": "9918ee1259eb0e21f755cb764674bb2a2eae71c0bd3021d60b390b87a82f8811"
+    },
+    "private/backend.py": {
+      "mode": 493,
+      "sha256": "042c31f137b0f47df4a318a0227651a2ad7835dd191091840c77ea2609675bc2"
+    },
+    "private/launch.py": {
+      "mode": 493,
+      "sha256": "1a28471970385c5b1743172e5a80e659764c081ab8f7d8d3ebfaf4fe64bfb49f"
+    },
+    "private/player/__init__.py": {
+      "mode": 420,
+      "sha256": "76d1020e5366d6b2ca09eed440d59db99a6d73f201b5d1cb13fbabe034530ee9"
+    },
+    "private/player/client.py": {
+      "mode": 420,
+      "sha256": "6c4898d31d3d959f2f837067eef3f282d0682f1fe2bf32dccead7b4ed8b41dc1"
+    },
+    "private/player/common.py": {
+      "mode": 420,
+      "sha256": "bed67b7fa873566bdcbb4bf642e5c2fc33496be34f2eec3a8d65b8ce564f78ae"
+    },
+    "private/player/launch.py": {
+      "mode": 493,
+      "sha256": "0fddf12984593f79447ec5768d1151d8d979ed4b69cc5842033ae47fbeba0c13"
+    },
+    "private/player/vendor/mpris.so": {
+      "mode": 420,
+      "sha256": "4a9622b06dbc784e91a1c5f911c4e503980732ea2d633683b8bca4eb430e9fab"
+    },
+    "private/player/vendor/mpv-mpris-copyright": {
+      "mode": 420,
+      "sha256": "d5c31c85da3f465e1484dbc4c5ab2ab4c57318ad296f9cd1acd057e19d84f1c9"
+    },
+    "private/ui.py": {
+      "mode": 493,
+      "sha256": "c7b7f35486d223269b9c9d5ac8b5fc02055a0c80b504d8955417d76f20fc3565"
+    }
+  },
+  "schema": 1
+}

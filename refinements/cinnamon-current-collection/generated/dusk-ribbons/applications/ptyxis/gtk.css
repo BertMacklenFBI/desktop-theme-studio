@@ -1,0 +1,46 @@
+/* Dusk Ribbons Ptyxis application chrome; load as a profile-specific append block. */
+@define-color theme_fg_color #f1e3df;
+@define-color theme_text_color #f1e3df;
+@define-color theme_bg_color #373950;
+@define-color theme_base_color #2d2c41;
+@define-color theme_selected_bg_color #bb8987;
+@define-color theme_selected_fg_color #2d2c41;
+@define-color window_fg_color #f1e3df;
+@define-color window_bg_color #373950;
+@define-color view_fg_color #f1e3df;
+@define-color view_bg_color #2d2c41;
+@define-color headerbar_fg_color #f1e3df;
+@define-color headerbar_bg_color #48445b;
+@define-color headerbar_backdrop_color #373950;
+@define-color headerbar_border_color #756172;
+@define-color accent_color #bb8987;
+@define-color accent_bg_color #bb8987;
+@define-color accent_fg_color #2d2c41;
+:root {
+  --accent-bg-color: #bb8987;
+  --accent-fg-color: #2d2c41;
+  --accent-color: #bb8987;
+  --window-bg-color: #373950;
+  --window-fg-color: #f1e3df;
+  --view-bg-color: #2d2c41;
+  --view-fg-color: #f1e3df;
+  --headerbar-bg-color: #48445b;
+  --headerbar-fg-color: #f1e3df;
+  --headerbar-backdrop-color: #373950;
+  --headerbar-border-color: #756172;
+  --sidebar-bg-color: #48445b;
+  --sidebar-fg-color: #f1e3df;
+  --sidebar-backdrop-color: #373950;
+  --card-bg-color: #48445b;
+  --card-fg-color: #f1e3df;
+  --dialog-bg-color: #373950;
+  --dialog-fg-color: #f1e3df;
+  --popover-bg-color: #373950;
+  --popover-fg-color: #f1e3df;
+}
+window { background-color: #373950; color: #f1e3df; }
+headerbar { background-color: #48445b; background-image: none; color: #f1e3df; border-color: #756172; }
+headerbar label, headerbar image, headerbar button, .titlebar label, .titlebar image, .titlebar button { color: #f1e3df; }
+headerbar button:checked, headerbar button:checked label, headerbar button:checked image { color: #2d2c41; }
+terminal, vte-terminal { background-color: #2d2c41; color: #f1e3df; }
+button:checked, button:active { background-color: #bb8987; color: #2d2c41; }

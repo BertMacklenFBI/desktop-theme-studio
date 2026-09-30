@@ -1,0 +1,452 @@
+{
+  "tool": "tools/design_lint.py",
+  "generated": "2026-09-29T09:25:26+00:00",
+  "design": "/home/bertmacklen/Documents/desktop-theme-studio/presets/gnu-darwin-workstation/design.json",
+  "design_sha256": "d7c546f407247567a5834a0cd300537be1b5ea6014749cb9524771b7333df520",
+  "preset": "gnu-darwin-workstation",
+  "palette_source": "palette",
+  "required_tokens": [
+    "desktop",
+    "background",
+    "surface",
+    "elevated",
+    "foreground",
+    "muted",
+    "disabled",
+    "accent",
+    "secondary",
+    "selection",
+    "selection_foreground",
+    "focus",
+    "border",
+    "control_border",
+    "success",
+    "warning",
+    "error",
+    "terminal",
+    "terminal_foreground",
+    "island_background",
+    "island_foreground",
+    "top_background",
+    "top_foreground"
+  ],
+  "accent_fill_only": false,
+  "errors": 0,
+  "warnings": 1,
+  "exit": 0,
+  "findings": [
+    {
+      "severity": "warning",
+      "check": "hue",
+      "path": "$.palette.accent",
+      "message": "accent #333641 (hue 227) is 13.7 deg from presets/gnu-darwin-aqua #4384D6"
+    }
+  ],
+  "contrast": [
+    {
+      "fg": "foreground",
+      "bg": "background",
+      "min": 4.5,
+      "fg_hex": "#101010",
+      "bg_hex": "#BEBEBE",
+      "ratio": 10.24,
+      "pass": true,
+      "severity": "error"
+    },
+    {
+      "fg": "foreground",
+      "bg": "surface",
+      "min": 4.5,
+      "fg_hex": "#101010",
+      "bg_hex": "#B3B2B0",
+      "ratio": 8.98,
+      "pass": true,
+      "severity": "error"
+    },
+    {
+      "fg": "foreground",
+      "bg": "elevated",
+      "min": 4.5,
+      "fg_hex": "#101010",
+      "bg_hex": "#D0D0D0",
+      "ratio": 12.34,
+      "pass": true,
+      "severity": "error"
+    },
+    {
+      "fg": "muted",
+      "bg": "background",
+      "min": 4.5,
+      "fg_hex": "#383838",
+      "bg_hex": "#BEBEBE",
+      "ratio": 6.31,
+      "pass": true,
+      "severity": "error"
+    },
+    {
+      "fg": "muted",
+      "bg": "surface",
+      "min": 4.5,
+      "fg_hex": "#383838",
+      "bg_hex": "#B3B2B0",
+      "ratio": 5.53,
+      "pass": true,
+      "severity": "error"
+    },
+    {
+      "fg": "muted",
+      "bg": "elevated",
+      "min": 4.5,
+      "fg_hex": "#383838",
+      "bg_hex": "#D0D0D0",
+      "ratio": 7.6,
+      "pass": true,
+      "severity": "error"
+    },
+    {
+      "fg": "selection_foreground",
+      "bg": "selection",
+      "min": 4.5,
+      "fg_hex": "#FFFFFF",
+      "bg_hex": "#333641",
+      "ratio": 12.04,
+      "pass": true,
+      "severity": "error"
+    },
+    {
+      "fg": "terminal_foreground",
+      "bg": "terminal",
+      "min": 4.5,
+      "fg_hex": "#FFFFFF",
+      "bg_hex": "#000000",
+      "ratio": 21.0,
+      "pass": true,
+      "severity": "error"
+    },
+    {
+      "fg": "control_border",
+      "bg": "background",
+      "min": 3.0,
+      "fg_hex": "#595959",
+      "bg_hex": "#BEBEBE",
+      "ratio": 3.77,
+      "pass": true,
+      "severity": "error"
+    },
+    {
+      "fg": "control_border",
+      "bg": "surface",
+      "min": 3.0,
+      "fg_hex": "#595959",
+      "bg_hex": "#B3B2B0",
+      "ratio": 3.31,
+      "pass": true,
+      "severity": "error"
+    },
+    {
+      "fg": "control_border",
+      "bg": "elevated",
+      "min": 3.0,
+      "fg_hex": "#595959",
+      "bg_hex": "#D0D0D0",
+      "ratio": 4.54,
+      "pass": true,
+      "severity": "error"
+    },
+    {
+      "fg": "focus",
+      "bg": "background",
+      "min": 3.0,
+      "fg_hex": "#333641",
+      "bg_hex": "#BEBEBE",
+      "ratio": 6.48,
+      "pass": true,
+      "severity": "error"
+    },
+    {
+      "fg": "focus",
+      "bg": "surface",
+      "min": 3.0,
+      "fg_hex": "#333641",
+      "bg_hex": "#B3B2B0",
+      "ratio": 5.68,
+      "pass": true,
+      "severity": "error"
+    },
+    {
+      "fg": "focus",
+      "bg": "elevated",
+      "min": 3.0,
+      "fg_hex": "#333641",
+      "bg_hex": "#D0D0D0",
+      "ratio": 7.8,
+      "pass": true,
+      "severity": "error"
+    },
+    {
+      "fg": "disabled",
+      "bg": "background",
+      "min": 3.0,
+      "fg_hex": "#595959",
+      "bg_hex": "#BEBEBE",
+      "ratio": 3.77,
+      "pass": true,
+      "severity": "error"
+    },
+    {
+      "fg": "disabled",
+      "bg": "surface",
+      "min": 3.0,
+      "fg_hex": "#595959",
+      "bg_hex": "#B3B2B0",
+      "ratio": 3.31,
+      "pass": true,
+      "severity": "error"
+    },
+    {
+      "fg": "disabled",
+      "bg": "elevated",
+      "min": 3.0,
+      "fg_hex": "#595959",
+      "bg_hex": "#D0D0D0",
+      "ratio": 4.54,
+      "pass": true,
+      "severity": "error"
+    },
+    {
+      "fg": "accent",
+      "bg": "background",
+      "min": 4.5,
+      "fg_hex": "#333641",
+      "bg_hex": "#BEBEBE",
+      "ratio": 6.48,
+      "pass": true,
+      "severity": "error"
+    }
+  ],
+  "ansi": [
+    {
+      "slot": 1,
+      "hex": "#DD7777",
+      "ratio": 6.98,
+      "pass": true
+    },
+    {
+      "slot": 2,
+      "hex": "#77CC77",
+      "ratio": 10.69,
+      "pass": true
+    },
+    {
+      "slot": 3,
+      "hex": "#CCCC77",
+      "ratio": 12.47,
+      "pass": true
+    },
+    {
+      "slot": 4,
+      "hex": "#8C9DDE",
+      "ratio": 7.99,
+      "pass": true
+    },
+    {
+      "slot": 5,
+      "hex": "#CC88CC",
+      "ratio": 7.96,
+      "pass": true
+    },
+    {
+      "slot": 6,
+      "hex": "#77CCCC",
+      "ratio": 11.29,
+      "pass": true
+    },
+    {
+      "slot": 7,
+      "hex": "#DDDDDD",
+      "ratio": 15.46,
+      "pass": true
+    },
+    {
+      "slot": 9,
+      "hex": "#FF9999",
+      "ratio": 10.27,
+      "pass": true
+    },
+    {
+      "slot": 10,
+      "hex": "#99EE99",
+      "ratio": 15.04,
+      "pass": true
+    },
+    {
+      "slot": 11,
+      "hex": "#EEEE99",
+      "ratio": 17.33,
+      "pass": true
+    },
+    {
+      "slot": 12,
+      "hex": "#ACBDFF",
+      "ratio": 11.48,
+      "pass": true
+    },
+    {
+      "slot": 13,
+      "hex": "#EEAAEE",
+      "ratio": 11.62,
+      "pass": true
+    },
+    {
+      "slot": 14,
+      "hex": "#99EEEE",
+      "ratio": 15.82,
+      "pass": true
+    },
+    {
+      "slot": 15,
+      "hex": "#FFFFFF",
+      "ratio": 21.0,
+      "pass": true
+    }
+  ],
+  "fonts": [
+    {
+      "key": "ui_family",
+      "family": "Liberation Sans",
+      "installed": true
+    },
+    {
+      "key": "title_family",
+      "family": "Liberation Sans",
+      "installed": true
+    },
+    {
+      "key": "clock_family",
+      "family": "Liberation Mono",
+      "installed": true
+    },
+    {
+      "key": "monospace_family",
+      "family": "Liberation Mono",
+      "installed": true
+    }
+  ],
+  "accent": {
+    "hex": "#333641",
+    "hue": 227.1,
+    "saturation": 0.121
+  },
+  "hue_census": [
+    {
+      "source": "presets/gnu-darwin-aqua",
+      "accent": "#4384D6",
+      "hue": 213.5,
+      "distance": 13.7
+    },
+    {
+      "source": "presets/indigo-lunchbox",
+      "accent": "#6157A3",
+      "hue": 247.9,
+      "distance": 20.8
+    },
+    {
+      "source": "presets/macintosh-soft",
+      "accent": "#507D7D",
+      "hue": 180.0,
+      "distance": 47.1
+    },
+    {
+      "source": "presets/amethyst-arcade",
+      "accent": "#CF7BF5",
+      "hue": 281.3,
+      "distance": 54.2
+    },
+    {
+      "source": "themes/SILO/config/mint-dashboard/theme.json",
+      "accent": "#1FC9A6",
+      "hue": 167.6,
+      "distance": 59.5
+    },
+    {
+      "source": "presets/moonstone-stereo",
+      "accent": "#8DB4A0",
+      "hue": 149.2,
+      "distance": 77.9
+    },
+    {
+      "source": "presets/marzipan-crown",
+      "accent": "#AD2C80",
+      "hue": 320.9,
+      "distance": 93.8
+    },
+    {
+      "source": "presets/peony-coronet",
+      "accent": "#EE60AA",
+      "hue": 328.7,
+      "distance": 101.6
+    },
+    {
+      "source": "themes/CATPUCCINO MOCHA/config/mint-dashboard/theme.json",
+      "accent": "#A6E3A1",
+      "hue": 115.5,
+      "distance": 111.7
+    },
+    {
+      "source": "presets/plum-afterglow",
+      "accent": "#D5A1AA",
+      "hue": 349.6,
+      "distance": 122.5
+    },
+    {
+      "source": "presets/pastel-leather",
+      "accent": "#DE999E",
+      "hue": 355.7,
+      "distance": 128.5
+    },
+    {
+      "source": "presets/quiet-sage",
+      "accent": "#A8B99A",
+      "hue": 92.9,
+      "distance": 134.2
+    },
+    {
+      "source": "presets/red-panda-overtime",
+      "accent": "#FF6257",
+      "hue": 3.9,
+      "distance": 136.8
+    },
+    {
+      "source": "presets/dot-matrix-pea",
+      "accent": "#8C9958",
+      "hue": 72.0,
+      "distance": 155.1
+    },
+    {
+      "source": "presets/tangerine-graphite",
+      "accent": "#E0915A",
+      "hue": 24.6,
+      "distance": 157.5
+    },
+    {
+      "source": "presets/tidal-observatory",
+      "accent": "#EFC58A",
+      "hue": 35.0,
+      "distance": 167.9
+    },
+    {
+      "source": "presets/carbon-typewriter",
+      "accent": "#D6D3D0",
+      "hue": 30.0,
+      "distance": null,
+      "note": "achromatic; hue not compared"
+    },
+    {
+      "source": "presets/gnuos-nt",
+      "accent": "#717980",
+      "hue": 208.0,
+      "distance": null,
+      "note": "achromatic; hue not compared"
+    }
+  ]
+}

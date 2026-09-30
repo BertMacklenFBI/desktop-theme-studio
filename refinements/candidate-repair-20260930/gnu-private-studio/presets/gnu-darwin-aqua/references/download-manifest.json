@@ -1,0 +1,22 @@
+{
+  "boot x86.txt": {
+    "url": "https://archive.org/download/gnu-darwin-cd-beta2.5-x86.iso/boot%20x86.txt",
+    "bytes": 4615,
+    "sha256": "3ca42cfb99fecf40cf9760d08dcfd86b77c543c9a505fd1c412902e6496a5aac"
+  },
+  "x86_install_notes.txt": {
+    "url": "https://archive.org/download/gnu-darwin-cd-beta2.5-x86.iso/x86_install_notes.txt",
+    "bytes": 4377,
+    "sha256": "f96e8d70c0af9ea3337a40f411bad4dc45f376948e6272d96b17edecd42b3af1"
+  },
+  "mactech_darwin.pdf": {
+    "url": "https://archive.org/download/gnu-darwin-cd-beta2.5-x86.iso/mactech_darwin.pdf",
+    "bytes": 93718,
+    "sha256": "88f70ae95d9ad597ad5f2a60f7d26c6d4b3267f0261eb11b7f10f386890a9b88"
+  },
+  "mactech_darwin_djvu.txt": {
+    "url": "https://archive.org/download/gnu-darwin-cd-beta2.5-x86.iso/mactech_darwin_djvu.txt",
+    "bytes": 17569,
+    "sha256": "a718d7df59218737300b3c72f8a19b738fcceaa4744474e999d5efb2f6e9f727"
+  }
+}

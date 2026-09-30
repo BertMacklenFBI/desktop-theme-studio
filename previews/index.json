@@ -1,0 +1,56 @@
+[
+  {
+    "caption": "Current private session at 2880x1800; authored desktop and panels",
+    "path": "previews/macintosh-soft.png",
+    "sha256": "e66730036e3e84b8910922d67ceaf8779060badd376fe5efd29940f81f20f4b8",
+    "slug": "macintosh-soft"
+  },
+  {
+    "caption": "Current private session at 2880x1800; authored desktop and panels",
+    "path": "previews/moonstone-stereo.png",
+    "sha256": "f841f96b4f90ea23827eb5f4fdbe5622d9cdd22366ff7efeb666aad9b8988dca",
+    "slug": "moonstone-stereo"
+  },
+  {
+    "caption": "Current private session at 2880x1800; authored desktop and panels",
+    "path": "previews/ocean-silk.png",
+    "sha256": "0e39a843e8808839adb7543b769ae2b764995680aaff04af5a10d23d4883827d",
+    "slug": "ocean-silk"
+  },
+  {
+    "caption": "Current private session at 2880x1800; authored desktop and panels",
+    "path": "previews/plum-afterglow.png",
+    "sha256": "72f5dc4ce27ea93f58ac3d269fbbd08b86a02f4682c5fb650393e769fb0bb21a",
+    "slug": "plum-afterglow"
+  },
+  {
+    "caption": "Current private session at 2880x1800; authored desktop and panels",
+    "path": "previews/dusk-ribbons.png",
+    "sha256": "c0ea3669bb283a9ecd48213ec57c539b054206801fee00bf87bb96fac21479a9",
+    "slug": "dusk-ribbons"
+  },
+  {
+    "caption": "Current private session at 2880x1800; authored desktop and panels",
+    "path": "previews/quiet-sage.png",
+    "sha256": "177d32356b8800f80917cdab02a6d562a0300a39c8e09aaa78ca47bd5a0f8a4d",
+    "slug": "quiet-sage"
+  },
+  {
+    "caption": "Current private session at 2880x1800; generic fixtures with actual host telemetry",
+    "path": "previews/gnu-darwin-aqua.png",
+    "sha256": "3a7f3613d80ebe05a2bbaa1c694c48c9507fa4221b318809e28e7c9f5162e623",
+    "slug": "gnu-darwin-aqua"
+  },
+  {
+    "caption": "Current private session at 2880x1800; generic fixtures with actual host telemetry",
+    "path": "previews/gnu-darwin-workstation.png",
+    "sha256": "6df74928d89b4f5cf2e810e6bc9961eebf461d7df1ddad203d52d5b9637edca8",
+    "slug": "gnu-darwin-workstation"
+  },
+  {
+    "caption": "Current private receiver fixture; owned-track-1.wav and default fixture notes",
+    "path": "previews/moonstone-receiver.png",
+    "sha256": "2a323bdf759477d24b1477052e76c97d79ce80b647c55b35eaf72f44e7983b90",
+    "slug": "moonstone-stereo"
+  }
+]

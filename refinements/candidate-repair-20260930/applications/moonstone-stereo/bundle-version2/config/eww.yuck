@@ -1,0 +1,76 @@
+(deflisten s :initial "{\"clock\": \"8:55\", \"meridiem\": \"AM\", \"date\": \"Saturday, September 19\", \"year\": 2026, \"day\": 19, \"month\": 9, \"hostname\": \"MacklenMobile\", \"timer\": {\"text\": \"25:00\", \"running\": false, \"minutes\": 25}, \"cpu\": 47, \"memory\": 52, \"memory_text\": \"8.1 / 15.5 GiB\", \"disk\": 48, \"disk_text\": \"216 GiB free\", \"battery\": 70, \"battery_status\": \"Discharging\", \"battery_present\": true, \"uptime\": \"13h uptime\", \"volume\": 22, \"mic\": 94, \"muted\": false, \"brightness\": 71, \"brightness_present\": true, \"notifications\": true, \"theme_label\": \"GRAPHITE / BRASS\", \"theme_short\": \"GB\", \"network\": \"Auto Maui2.4\", \"wifi\": true, \"weather\": \"22.6°C · Partly cloudy\", \"weather_place\": \"Omaha, NE\", \"media\": {\"title\": \"Nothing playing\", \"artist\": \"Open your music player\", \"album\": \"\", \"cover\": \"/home/bertmacklen/Documents/eww-graphite-brass/config/assets/music.svg\", \"playing\": false, \"progress\": 0, \"duration\": 0, \"position\": 0, \"elapsed\": \"0:00\", \"total\": \"0:00\", \"player\": \"\"}, \"notes\": \"A little space to think.\\n\\nClick Edit to keep your own notes here.\", \"workspaces\": [{\"id\": 0, \"name\": \"1\", \"active\": true}, {\"id\": 1, \"name\": \"2\", \"active\": false}, {\"id\": 2, \"name\": \"3\", \"active\": false}, {\"id\": 3, \"name\": \"4\", \"active\": false}]}" "scripts/backend.py")
+(deflisten vu :initial "{\"low\": 0, \"high\": 0, \"status\": \"INITIALIZING\", \"source\": \"initial\", \"low_face\": \"/home/bertmacklen/Documents/desktop-theme-studio/presets/moonstone-stereo/applications/receiver/materials/meter-000.svg\", \"high_face\": \"/home/bertmacklen/Documents/desktop-theme-studio/presets/moonstone-stereo/applications/receiver/materials/meter-000.svg\"}" "python3 /home/bertmacklen/Documents/desktop-theme-studio/presets/moonstone-stereo/applications/receiver/audio_meter.py")
+(include "saimoom.yuck")
+(include "carbon.yuck")
+
+(defwindow clock
+  :monitor 0
+  :geometry (geometry :x "0px" :y "-130px" :width "1220px" :height "290px" :anchor "bottom center")
+  :stacking "bg" :windowtype "desktop" :wm-ignore false
+  (clock-card))
+
+(defwindow music
+  :monitor 0
+  :geometry (geometry :x "40px" :y "360px" :width "430px" :height "255px" :anchor "top left")
+  :stacking "bg" :windowtype "desktop" :wm-ignore false
+  (music-card))
+
+(defwindow system
+  :monitor 0
+  :geometry (geometry :x "40px" :y "640px" :width "430px" :height "255px" :anchor "top left")
+  :stacking "bg" :windowtype "desktop" :wm-ignore false
+  (system-card))
+
+(defwindow launchers
+  :monitor 0
+  :geometry (geometry :x "40px" :y "945px" :width "430px" :height "65px" :anchor "top left")
+  :stacking "bg" :windowtype "desktop" :wm-ignore false
+  (utility-strip))
+
+(defwindow dashboard
+  :monitor 0
+  :geometry (geometry :x "0px" :y "0px" :width "950px" :height "710px" :anchor "center")
+  :stacking "fg" :windowtype "dock" :wm-ignore false
+  (dashboard-content))
+
+(defwindow controls
+  :monitor 0
+  :geometry (geometry :x "-30px" :y "100px" :width "460px" :height "650px" :anchor "top right")
+  :stacking "fg" :windowtype "dock" :wm-ignore false
+  (controls-content))
+
+(defwindow calendar
+  :monitor 0
+  :geometry (geometry :x "-40px" :y "120px" :width "430px" :height "330px" :anchor "top right")
+  :stacking "fg" :windowtype "dock" :wm-ignore false
+  (dcal))
+
+(defwindow notes
+  :monitor 0
+  :geometry (geometry :x "0px" :y "0px" :width "460px" :height "320px" :anchor "center")
+  :stacking "fg" :windowtype "dock" :wm-ignore false
+  (dnotes))
+
+(defwindow timer
+  :monitor 0
+  :geometry (geometry :x "0px" :y "0px" :width "430px" :height "230px" :anchor "center")
+  :stacking "fg" :windowtype "dock" :wm-ignore false
+  (focus-timer))
+
+(defwindow audio
+  :monitor 0
+  :geometry (geometry :x "-40px" :y "120px" :width "430px" :height "310px" :anchor "top right")
+  :stacking "fg" :windowtype "dock" :wm-ignore false
+  (audio-card))
+
+(defwindow dock
+  :monitor 0
+  :geometry (geometry :x "0px" :y "-100px" :width "460px" :height "80px" :anchor "bottom center")
+  :stacking "fg" :windowtype "dock" :wm-ignore false
+  (dock-content))
+
+(defwindow bar
+  :monitor 0
+  :geometry (geometry :x "0px" :y "105px" :width "1600px" :height "65px" :anchor "top center")
+  :stacking "fg" :windowtype "dock" :wm-ignore false
+  (bar-content))

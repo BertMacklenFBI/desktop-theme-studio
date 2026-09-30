@@ -1,0 +1,130 @@
+{
+  "name": "Ocean-Silk-Glass",
+  "id": "ocean-silk-current",
+  "status": "building",
+  "direction": "Original Ocean Silk blue-gray, mist, frost and ivory glass identity with current Nothing Island and all current desktop features.",
+  "source_concept": "proposals/2026-09-20/three-directions.md#3-macintosh-soft",
+  "palette": {
+    "desktop": "#354D64",
+    "background": "#E9EBE6",
+    "surface": "#E9EBE6",
+    "elevated": "#CBD7DA",
+    "foreground": "#304957",
+    "muted": "#475F6C",
+    "accent": "#6F94A4",
+    "selection": "#354D64",
+    "selection_foreground": "#E9EBE6",
+    "focus": "#354D64",
+    "border": "#93AAB4",
+    "control_border": "#647F8E",
+    "success": "#42665C",
+    "warning": "#755B30",
+    "error": "#874B4B",
+    "terminal": "#304957",
+    "terminal_foreground": "#E9EBE6",
+    "island_background": "#DEE7E6",
+    "island_foreground": "#304957",
+    "top_background": "#DEE7E6",
+    "top_foreground": "#304957"
+  },
+  "rainbow": [
+    "#354D64",
+    "#4B667E",
+    "#6F94A4",
+    "#CBD7DA",
+    "#DEE7E6",
+    "#E9EBE6"
+  ],
+  "typography": {
+    "ui_family": "Ubuntu",
+    "ui_size_pt": 11,
+    "title_family": "Ubuntu",
+    "title_size_pt": 11,
+    "title_weight": 600,
+    "clock_family": "Ubuntu",
+    "clock_size_pt": 10,
+    "clock_weight": 500,
+    "monospace_family": "Hack",
+    "monospace_size_pt": 11,
+    "verification": "Font availability checked; final actual-scale readability pending"
+  },
+  "geometry": {
+    "panel_height": 44,
+    "panel_position": "top menu / clock island / corner status; bottom dock",
+    "panel_groups": "top left menu then workspace indicator; center clock/date island; right status; bottom centered launchers/running apps only",
+    "app_radius": 4,
+    "widget_radius": 6,
+    "spacing": [
+      4,
+      8,
+      12,
+      16,
+      24
+    ],
+    "music_card_width": 320,
+    "cursor_size": 28,
+    "music_art_size": 184,
+    "bottom_panel_height": 54,
+    "composition": "Preserve live Nothing Island and eyes, top-left menu/workspaces, right status and bottom programs-only dock."
+  },
+  "materials": {
+    "text_surfaces": "opaque",
+    "shadow": "small soft neutral shadow",
+    "texture": "none on controls or text surfaces",
+    "motion": "existing Cinnamon transitions",
+    "wallpaper": "Original approved bluegray silk dunes and ivory Linux Mint logo, unchanged."
+  },
+  "artwork": {
+    "source": "/home/bertmacklen/Documents/ocean-silk-cinnamon",
+    "instruction": "Reuse exact approved wallpaper and transparent Ocean Silk logo; no regeneration."
+  },
+  "preserve": [
+    "cinabon menu name",
+    "custom music commands",
+    "fastfetch short and fastfetch long; plain fastfetch stays short",
+    "custom Local IP display 86.75-309",
+    "widget close, Escape, focus return and library reopen behavior",
+    "approved Plum Afterglow assets and recovery receipts"
+  ],
+  "first_milestone": [
+    "wallpaper",
+    "panel and menu",
+    "one real application",
+    "music popup"
+  ],
+  "verification": "Build, selection, visual, interaction and reboot evidence recorded separately. No live changes in identity phase.",
+  "terminal_ansi": [
+    "#8CA1AA",
+    "#D5A4A4",
+    "#AFC3B1",
+    "#D6C6A0",
+    "#ADC4D2",
+    "#C0B8D0",
+    "#A7CFD0",
+    "#E9EBE6",
+    "#B2C4C9",
+    "#E4BCB8",
+    "#C2D7C0",
+    "#E9D9B8",
+    "#C3D8E5",
+    "#D6CCE1",
+    "#C5E5E2",
+    "#F3F5EF"
+  ],
+  "semantic_rules": {
+    "small_accent_text": "Use focus #356262, not accent #507D7D",
+    "primary_buttons": "Selection fill plus selection_foreground text",
+    "borders": "control_border for essential input edges; border only decorative",
+    "rainbow": "Legacy field name retained for six green/gray/teal identity bands; no rainbow colors.",
+    "ansi_black": "ANSI slot 0 is readable gray; inspect applications that use it as background",
+    "alerts": "Muted semantic ANSI colors; decorative branding uses bluegray, mist and ivory."
+  },
+  "fastfetch_palette": [
+    "#CBD7DA",
+    "#ADC4D2",
+    "#DEE7E6",
+    "#AECBCD",
+    "#C6D9DD",
+    "#E9EBE6"
+  ]
+}

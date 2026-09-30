@@ -1,0 +1,18 @@
+{
+  "Plum Afterglow": {
+    "accent": "#d5a1aa",
+    "accent-hover": "#e4b6c0",
+    "base": "#211e29",
+    "battery": "#dcc291",
+    "border": "#65566d",
+    "indeterminate": "#beb0bb",
+    "label": "Plum Afterglow",
+    "muted": "#beb0bb",
+    "secondary": "#dcc291",
+    "short": "PA",
+    "surface0": "#2d2838",
+    "surface1": "#393244",
+    "text": "#f0e7df",
+    "tile": "#584459"
+  }
+}

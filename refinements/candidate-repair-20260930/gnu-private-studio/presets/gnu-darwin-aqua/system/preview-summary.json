@@ -1,0 +1,16 @@
+{
+  "status": "staged-not-installed",
+  "system_fixture_tests": 28,
+  "system_fixture_result": "PASS",
+  "plymouth_integrity": "PASS",
+  "preview_exit": 0,
+  "planned_files": 835,
+  "missing": [],
+  "wallpaper_sha256": "47c5600ea62e082a8ab94acc75bb71aaaac272c98d58e5b2a3d4a19a8e89560c",
+  "rendered_assets": 3,
+  "static_assets": 67,
+  "coverage_rows": 10,
+  "plymouthd_conf": "Absent; no active Tangerine override. Staged future Theme=gnu-darwin-aqua.",
+  "visual_evidence": "PIL simulated GRUB and Plymouth previews inspected, not live captures",
+  "real_boot_login_verified": false
+}

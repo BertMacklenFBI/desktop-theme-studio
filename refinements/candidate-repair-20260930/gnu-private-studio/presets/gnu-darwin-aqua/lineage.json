@@ -1,0 +1,72 @@
+{
+  "$comment": "Preset-local full controller; exact top bar and centered dock are cross-checked with canonical design.",
+  "schema": 1,
+  "desktop_control": {
+    "name": "GNU-Darwin Aqua",
+    "slug": "gnu-darwin-aqua",
+    "temp_tag": "gnu_darwin_aqua",
+    "panel": {
+      "panels_enabled": [
+        "1:0:top",
+        "2:0:bottom"
+      ],
+      "panels_height": [
+        "1:34",
+        "2:68"
+      ],
+      "enabled_applets": [
+        "panel1:left:0:menu@cinnamon.org:17",
+        "panel2:center:0:grouped-window-list@cinnamon.org:16",
+        "panel1:right:0:systray@cinnamon.org:3",
+        "panel1:right:1:xapp-status@cinnamon.org:4",
+        "panel1:right:2:keyboard@cinnamon.org:8",
+        "panel1:right:3:notifications@cinnamon.org:20",
+        "panel1:right:4:network@cinnamon.org:19",
+        "panel1:right:5:sound@cinnamon.org:11",
+        "panel1:right:6:power@cinnamon.org:21",
+        "panel1:right:7:calendar@cinnamon.org:new"
+      ],
+      "remove": [
+        "nothing-island@desktop-theme-studio:42",
+        "c-eyes@anaximeno:41",
+        "c-eyes@anaximeno:44",
+        "workspace-switcher@cinnamon.org:36"
+      ],
+      "new_instance": {
+        "uuid": "calendar@cinnamon.org",
+        "settings": {
+          "use-custom-format": true,
+          "custom-format": "%H:%M",
+          "custom-tooltip-format": "%A %-d %B %Y"
+        }
+      },
+      "zone_sizes": {
+        "1": {
+          "panel-zone-icon-sizes": {
+            "left": 20,
+            "center": 20,
+            "right": 20
+          },
+          "panel-zone-symbolic-icon-sizes": {
+            "left": 16,
+            "center": 16,
+            "right": 16
+          }
+        },
+        "2": {
+          "panel-zone-icon-sizes": {
+            "left": 44,
+            "center": 44,
+            "right": 44
+          },
+          "panel-zone-symbolic-icon-sizes": {
+            "left": 24,
+            "center": 24,
+            "right": 24
+          }
+        }
+      },
+      "enabled_desklets": []
+    }
+  }
+}

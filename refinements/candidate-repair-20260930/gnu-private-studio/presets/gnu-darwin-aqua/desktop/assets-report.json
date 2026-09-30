@@ -1,0 +1,140 @@
+{
+  "name": "GNU-Darwin Aqua",
+  "id": "gnu-darwin-aqua",
+  "built_on": "2026-09-29",
+  "design_sha256": "5743461cfd7533f963f30a11009d52d43bdbaa83f32aa8964aea4eb75230e0b8",
+  "tools": {
+    "renderer": "gi.repository.Rsvg + cairo",
+    "xcursorgen": "/usr/bin/xcursorgen",
+    "python": "3.12.3"
+  },
+  "sources": {
+    "icons": "/usr/share/icons/Papirus/64x64",
+    "icons_fallback": "/usr/share/icons/Papirus/64x64",
+    "cursors": "/usr/share/icons/Bibata-Modern-Classic",
+    "aliases": "/usr/share/icons/Bibata-Modern-Classic/cursors"
+  },
+  "colour_map": {
+    "icons": {
+      "#5294e2": "#4384D6",
+      "#4877b1": "#245FA8",
+      "#1b83d4": "#4384D6",
+      "#3b9ce6": "#82B9E6",
+      "#7ad2f9": "#A8D5F2",
+      "#e4e4e4": "#F8F9FA",
+      "#1d344f": "#265098",
+      "#8e8e8e": "#747A83",
+      "#4f4f4f": "#E2E4E7"
+    },
+    "apps": {
+      "#5294e2": "#4384D6",
+      "#4877b1": "#245FA8",
+      "#1b83d4": "#4384D6"
+    },
+    "cursors": {},
+    "tile": {
+      "gradient_top": "#F8F9FA",
+      "gradient_bottom": "#E2E4E7",
+      "border": "#A6ABB2",
+      "highlight": "#265098 @ .55",
+      "dash": "#4384D6",
+      "shadow": "#265098 @ .3",
+      "rx": 12
+    }
+  },
+  "icons": {
+    "counts": {
+      "apps": 346,
+      "places": 22,
+      "devices": 16,
+      "mimetypes": 10
+    },
+    "total": 394,
+    "svg_parsed": 394,
+    "inherited_application_icons": [
+      "akonadi-ews",
+      "akonadiconsole",
+      "applications-system-symbolic",
+      "bookmarks-organize",
+      "chatgpt",
+      "claude-desktop",
+      "co.anysphere.cursor",
+      "codex",
+      "cs-nightlight",
+      "cs-thunderbolt",
+      "get-hot-new-stuff",
+      "gtk-select-color",
+      "im-google",
+      "input-keyboard-virtual",
+      "map-globe",
+      "mark-location-symbolic",
+      "mintstick-logo-linuxmint",
+      "nbsdgames",
+      "org.localsend.localsend_app",
+      "ox",
+      "picmi",
+      "plasma-browser-integration",
+      "preferences-desktop-display-nightcolor",
+      "preferences-desktop-display-randr",
+      "preferences-desktop-keyboard-shortcut",
+      "reload",
+      "steam_icon_1062090",
+      "steam_icon_208580",
+      "steam_icon_239030",
+      "steam_icon_297000",
+      "steam_icon_2980270",
+      "steam_icon_3241660",
+      "steam_icon_3706990",
+      "steam_icon_4404450",
+      "steam_icon_6020",
+      "steam_icon_6060",
+      "system-run",
+      "text-directory",
+      "text-x-vcard",
+      "tools-check-spelling",
+      "tools-report-bug",
+      "xsi-cog-symbolic"
+    ],
+    "missing_subset_sources": [
+      "places/folder-trash",
+      "devices/drive-harddisk-solidstate"
+    ],
+    "papirus_blue_hits": 0,
+    "index_theme_sha256": "c3315c616de17b1123138f26ccf1c07f1d0b658fd819bd464e36c9ba22e1a89e"
+  },
+  "cursors": {
+    "shapes": 57,
+    "aliases": 88,
+    "sizes": [
+      22,
+      24,
+      28,
+      32,
+      40,
+      48,
+      56,
+      64,
+      72,
+      80,
+      88,
+      96
+    ],
+    "default_sizes": [
+      22,
+      24,
+      28,
+      32,
+      40,
+      48,
+      56,
+      64,
+      72,
+      80,
+      88,
+      96
+    ],
+    "source": "/usr/share/icons/Bibata-Modern-Classic",
+    "recolored": false
+  },
+  "preview": "/home/bertmacklen/Documents/desktop-theme-studio/presets/gnu-darwin-aqua/desktop/.build/preview-assets.png"
+}

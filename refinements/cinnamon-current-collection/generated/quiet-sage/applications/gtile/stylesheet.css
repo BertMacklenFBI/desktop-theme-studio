@@ -1,0 +1,7 @@
+/* Quiet Sage gTile appearance; geometry and key bindings remain untouched. */
+.grid-panel { background-color:#2e332d; border:1px solid #4b5346; border-radius:6px; }
+.grid-title,.grid-panel .settings-label,.grid-panel .tile-label { color:#ede8dc; }
+.table-element,.settings-button { background-color:#383f35; color:#ede8dc; border:1px solid #4b5346; }
+.table-element:hover,.table-element:activate,.settings-button:hover,.settings-button:activate,.settings-button:activate:hover { background-color:#52684b; color:#ede8dc; border-color:#a8b99a; }
+.table-element:hover .tile-label,.table-element:activate .tile-label,.settings-button:hover .settings-label,.settings-button:activate .settings-label,.settings-button:activate:hover .settings-label { color:#ede8dc; }
+.grid-preview:activate { background-color:rgba(168,185,154,0.30); border:2px solid #a8b99a; }

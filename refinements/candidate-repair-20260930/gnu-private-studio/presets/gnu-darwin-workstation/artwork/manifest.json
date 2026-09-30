@@ -1,0 +1,32 @@
+{
+  "name": "GNU-Darwin Workstation",
+  "wallpaper_source": "New solid palette black, matching uncovered reference pixels; no branding",
+  "menu_source": "/home/bertmacklen/Documents/desktop-theme-studio/proposals/gnu-darwin-archive/windowmaker-assets/extracted/usr/share/WindowMaker/Icons/GNUstepGlow.xpm",
+  "menu_source_sha256": "3812d3f4056f6a5454d497e3e15366d706cb49ad038ee822e14c21faee9498de",
+  "menu_author": "Banlu Kemiyatorn, 2000",
+  "menu_license": "WTFPL-1; see desktop icon copyright",
+  "historical_limit": "Modern Window Maker package artwork; not proven identical to 2002 screenshot bytes",
+  "files": {
+    "preview.png": {
+      "sha256": "bfe16b5f96291adec932ba15577ecdcd9811c327a9900e27840f7b0629bcbb7f",
+      "size": [
+        1440,
+        900
+      ]
+    },
+    "wallpaper.png": {
+      "sha256": "8c60777fa516815d301288ae4b92ae70505864893474ec88abccc75651d01ff6",
+      "size": [
+        2880,
+        1800
+      ]
+    },
+    "menu-logo.png": {
+      "sha256": "449767fe12347c85ea669acd5b7d20d9c6d475fda2108b24e9f2c86aa817fc53",
+      "size": [
+        64,
+        64
+      ]
+    }
+  }
+}

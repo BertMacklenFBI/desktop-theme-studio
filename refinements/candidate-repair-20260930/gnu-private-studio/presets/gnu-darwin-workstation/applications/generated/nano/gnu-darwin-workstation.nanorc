@@ -1,0 +1,13 @@
+## GNU-Darwin Workstation interface colors for nano 7.x (merged key by key into ~/.nanorc)
+set titlecolor bold,#FFFFFF,#333641
+set statuscolor #101010,#B3B2B0
+set errorcolor #FFFFFF,#7A1818
+set promptcolor #101010,#B3B2B0
+set selectedcolor #FFFFFF,#333641
+set stripecolor ,#B3B2B0
+set numbercolor #999999
+set keycolor #FFFFFF
+set functioncolor #DDDDDD
+set scrollercolor #999999
+set spotlightcolor #FFFFFF,#353B50
+set minicolor #DDDDDD

@@ -1,0 +1,30 @@
+{
+  "scope": "GTK2 unfocused selection only",
+  "root_cause": "Missing text[ACTIVE]/base[ACTIVE] inherited GTK2 defaultwhite onmediumgray for unfocusedselectedtree/layer",
+  "headless_default_style_probe": "GTK2 default ACTIVE text=#ffffff base=#9c9a94",
+  "default_contrast": 2.81,
+  "fixed_active_selection": {
+    "text": "#FFFFFF",
+    "base": "#333641",
+    "contrast": 12.04
+  },
+  "files": {
+    "desktop/build.py": "f2fbce6fb160a29dc049809e6ed420b07a6a849068d99613f480da6febaae605",
+    "desktop/GNU-Darwin Workstation/gtk-2.0/gtkrc": "3b707995e6381927d120730de7d0be4f8c83a0a9ee743c2b0cf4e361ee16a15b"
+  },
+  "rc_parser": {
+    "exit": 0,
+    "diagnostics": "",
+    "display_opened": false
+  },
+  "preserved": [
+    "Normalcontentbase unchanged",
+    "ACTIVEbuttonbackground/foreground unchanged",
+    "Insensitivecolors unchanged",
+    "ModernGTK/Cinnamon/artwork/icons unchanged"
+  ],
+  "limits": [
+    "GIMPtoolboxiconissue belongs to appiconresolution lane",
+    "RealGIMP unfocusedlayer capture pending coordinator"
+  ]
+}

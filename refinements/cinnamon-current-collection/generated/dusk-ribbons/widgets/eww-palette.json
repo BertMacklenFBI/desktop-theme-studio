@@ -1,0 +1,18 @@
+{
+  "Dusk-Ribbons": {
+    "accent": "#bb8987",
+    "accent-hover": "#d3adb0",
+    "base": "#2d2c41",
+    "battery": "#f1e3df",
+    "border": "#756172",
+    "indeterminate": "#946d77",
+    "label": "DUSK / RIBBONS",
+    "muted": "#d3adb0",
+    "secondary": "#d3adb0",
+    "short": "DR",
+    "surface0": "#373950",
+    "surface1": "#48445b",
+    "text": "#f1e3df",
+    "tile": "#4c465b"
+  }
+}

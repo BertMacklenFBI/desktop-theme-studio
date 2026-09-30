@@ -1,0 +1,332 @@
+{
+  "name": "GNU-Darwin Aqua",
+  "theme": "/home/bertmacklen/Documents/desktop-theme-studio/presets/gnu-darwin-aqua/desktop/GNU-Darwin Aqua",
+  "base": "/home/bertmacklen/Documents/desktop-theme-studio/presets/gnu-darwin-aqua/desktop/base",
+  "base_files": 525,
+  "design_sha256": "5743461cfd7533f963f30a11009d52d43bdbaa83f32aa8964aea4eb75230e0b8",
+  "files_per_dir": {
+    "cinnamon": 39,
+    "gtk-2.0": 1,
+    "gtk-3.0": 84,
+    "gtk-4.0": 78,
+    "metacity-1": 12
+  },
+  "css_lines": {
+    "gtk-3.0/gtk.css": 4330,
+    "gtk-4.0/gtk.css": 3372,
+    "cinnamon/cinnamon.css": 2210,
+    "gtk-2.0/gtkrc": 32
+  },
+  "svg_control_assets": 157,
+  "xml_svg_parsed": 203,
+  "missing_assets": [],
+  "gtk_raster_assets": 0,
+  "metacity_disc_draw_ops": 16,
+  "thumbnails": "regenerated from palette (PIL)",
+  "role_map": {
+    "desktop": {
+      "token": "#265098",
+      "mint_y_hexes": [
+        "#080808",
+        "#050506",
+        "#0f0f0f",
+        "#0f0f10",
+        "#111113",
+        "#141416",
+        "#161616",
+        "#161619",
+        "#171717",
+        "#1a1a1a",
+        "#1b1b1b",
+        "#1b1b1e",
+        "#1c1c1c",
+        "#1d1d21",
+        "#18181b",
+        "#161a26",
+        "#0f1116",
+        "#1b1c21"
+      ]
+    },
+    "background": {
+      "token": "#EEF0F2",
+      "mint_y_hexes": [
+        "#202023",
+        "#222226",
+        "#212121",
+        "#222222",
+        "#242429",
+        "#25252a",
+        "#26262a",
+        "#27272b",
+        "#29292e",
+        "#2a2a2f",
+        "#2b2b2b",
+        "#202020",
+        "#252a35"
+      ]
+    },
+    "surface": {
+      "token": "#E2E4E7",
+      "mint_y_hexes": [
+        "#2e2e33",
+        "#303036",
+        "#2c2c31",
+        "#2c2c30",
+        "#333339",
+        "#333338",
+        "#343439",
+        "#383838",
+        "#353535",
+        "#303030",
+        "#373737",
+        "#2f2f2f",
+        "#383c4a",
+        "#323644",
+        "#353945",
+        "#2b2f3b",
+        "#3c4049",
+        "#353537"
+      ]
+    },
+    "elevated": {
+      "token": "#F8F9FA",
+      "mint_y_hexes": [
+        "#3c3c44",
+        "#44444c",
+        "#38383e",
+        "#494951",
+        "#3f3f46",
+        "#404040",
+        "#3e3e3e",
+        "#3a3a41",
+        "#46464e",
+        "#474747",
+        "#4a4a4a",
+        "#4c4c50",
+        "#3b3c3e",
+        "#434343"
+      ]
+    },
+    "border": {
+      "token": "#A6ABB2",
+      "mint_y_hexes": [
+        "#55555f",
+        "#555559",
+        "#5c5c5c",
+        "#5c616c",
+        "#5e5e69",
+        "#4d4f52",
+        "#525252",
+        "#5b5b5b"
+      ]
+    },
+    "control_border": {
+      "token": "#747A83",
+      "mint_y_hexes": [
+        "#616166",
+        "#6a6a77",
+        "#797987"
+      ]
+    },
+    "disabled": {
+      "token": "#747A83",
+      "mint_y_hexes": [
+        "#666666",
+        "#676767"
+      ]
+    },
+    "muted": {
+      "token": "#535A64",
+      "mint_y_hexes": [
+        "#7f7f7f",
+        "#808080",
+        "#838383",
+        "#909090",
+        "#949498",
+        "#9d9d9d",
+        "#a0a0a0",
+        "#a1a1a1",
+        "#a8a8a8",
+        "#a7a7ab",
+        "#aeaeae",
+        "#b6b6b6",
+        "#bababa",
+        "#bebebe",
+        "#c3c3c3",
+        "#c4c7cc",
+        "#c7c7c7",
+        "#c8c8c8",
+        "#d4d4d4"
+      ]
+    },
+    "foreground": {
+      "token": "#202328",
+      "mint_y_hexes": [
+        "#ffffff",
+        "#e1e1e1",
+        "#dbdbdb",
+        "#dadada",
+        "#d3d3d3",
+        "#d7d7d7",
+        "#d9d9d9",
+        "#e2e2e2",
+        "#eeeeee",
+        "#f4f4f4",
+        "#f8f8f8",
+        "#fdfdfd"
+      ]
+    },
+    "selection": {
+      "token": "#245FA8",
+      "mint_y_hexes": [
+        "#35a854",
+        "#6db442",
+        "#30974c",
+        "#30984c"
+      ]
+    },
+    "selection_hover": {
+      "token": "#265098",
+      "mint_y_hexes": [
+        "#3bbb5e",
+        "#88c663",
+        "#4ac66b",
+        "#71d28b",
+        "#5acb78",
+        "#3ab85c"
+      ]
+    },
+    "selection_active": {
+      "token": "#1f518f",
+      "mint_y_hexes": [
+        "#298141",
+        "#2f954a",
+        "#568f34",
+        "#1d5a2d",
+        "#236e37"
+      ]
+    },
+    "selection_pale": {
+      "token": "#A8D5F2",
+      "mint_y_hexes": [
+        "#9ad4aa",
+        "#a4d8b2",
+        "#98deab",
+        "#86cb98",
+        "#aedcbb",
+        "#c2e5cc"
+      ]
+    },
+    "selection_foreground": {
+      "token": "#FFFFFF",
+      "mint_y_hexes": [
+        "#d7eedd",
+        "#e1f2e5",
+        "#ebf6ee"
+      ]
+    },
+    "error": {
+      "token": "#A52925",
+      "mint_y_hexes": [
+        "#f04a50",
+        "#fc4138",
+        "#c01c28",
+        "#d61f2d",
+        "#ec1b22",
+        "#e12e3b",
+        "#f4797e",
+        "#ff4d4d",
+        "#ff6666",
+        "#ee878f",
+        "#f70505",
+        "#f75a61",
+        "#ff7a80",
+        "#ef2929",
+        "#ff0b00"
+      ]
+    },
+    "error_active": {
+      "token": "#84211e",
+      "mint_y_hexes": [
+        "#aa3936",
+        "#a53531",
+        "#d8354a"
+      ]
+    },
+    "warning": {
+      "token": "#805200",
+      "mint_y_hexes": [
+        "#f27835",
+        "#fbeaa0",
+        "#f57900"
+      ]
+    },
+    "warning_active": {
+      "token": "#664200",
+      "mint_y_hexes": [
+        "#a45a34",
+        "#9f562f"
+      ]
+    },
+    "secondary": {
+      "token": "#265098",
+      "mint_y_hexes": [
+        "#5294e2",
+        "#7eafe9",
+        "#55c1ec",
+        "#001aff"
+      ]
+    },
+    "secondary_dark": {
+      "token": "#17305b",
+      "mint_y_hexes": [
+        "#102b68"
+      ]
+    },
+    "success": {
+      "token": "#276235",
+      "mint_y_hexes": [
+        "#73d216"
+      ]
+    }
+  },
+  "derived_tokens": {
+    "success_hover": "#235830",
+    "success_active": "#1f4e2a",
+    "error_hover": "#942521",
+    "warning_hover": "#734a00",
+    "selection_hover": "#265098",
+    "selection_active": "#1f518f",
+    "selection_pale": "#A8D5F2",
+    "accent_hover": "#5a93db",
+    "accent_active": "#3970b6",
+    "secondary_hover": "#4065a4",
+    "secondary_active": "#204481",
+    "secondary_dark": "#17305b",
+    "muted_hover": "#686e77",
+    "muted_active": "#474c55",
+    "error_active": "#84211e",
+    "warning_active": "#664200",
+    "disabled": "#747A83",
+    "highlight": "#d2d5d8",
+    "highlight_rgba": "rgba(32,35,40,0.08)",
+    "popup": "#F8F9FA",
+    "popup_top": "#d6d8dc",
+    "shadow": "rgba(0,0,0,0.20)"
+  },
+  "window_controls": {
+    "minimize": "#805200",
+    "maximize": "#276235",
+    "close": "#A52925",
+    "glyph_ink": "#FFFFFF",
+    "unfocused_disc": "#A6ABB2",
+    "unfocused_ink": "#535A64"
+  },
+  "applied": false,
+  "limitations": [
+    "libadwaita-1.x, openbox-3 and xfwm4 directories dropped as in the Quiet Sage lineage; libadwaita apps keep their own palette.",
+    "Popup/OSD surfaces are opaque; transparent bottom panel actor requires private compositor verification.",
+    "Icons and cursors are built by desktop/build_assets.py; app-specific icon fallbacks retain source branding.",
+    "Lock/login, per-application GTK4 and interaction verification belong to the coordinator."
+  ]
+}

@@ -1,0 +1,61 @@
+(defwidget music-card []
+  (box :class "music-card" :space-evenly false :spacing 26
+    (box :class "album-frame" :valign "center"
+      (image :path {s.media.cover} :image-width 184 :image-height 184))
+    (box :class "music-detail" :orientation "v" :space-evenly false :spacing 12 :hexpand true
+      (label :class "eyebrow" :show-truncated false :text {s.media.player != "" ? "NOW PLAYING" : "YOUR EVENING SOUNDTRACK"} :halign "start")
+      (label :class "track-title" :text {s.media.player != "" ? s.media.title : "Find something to unwind to"} :limit-width 38 :halign "start")
+      (label :class "muted" :text {s.media.player != "" ? s.media.artist : "Choose a track or album from your library"} :limit-width 44 :halign "start")
+      (box :orientation "v" :space-evenly false :spacing 2
+        (scale :min 0 :max 100 :value {s.media.progress} :active {s.media.duration > 0} :onchange "scripts/backend.py action media seek {}")
+        (box :space-evenly false
+          (label :class "elapsed" :show-truncated false :text {s.media.elapsed} :halign "start" :hexpand true)
+          (label :class "elapsed" :show-truncated false :text {s.media.total} :halign "end")))
+      (box :spacing 10 :space-evenly false
+        (button :active {s.media.player != ""} :tooltip "Previous track" :onclick "scripts/backend.py action media previous" (label :show-truncated false :text "Previous"))
+        (button :class "selected" :active {s.media.player != ""} :tooltip {s.media.player != "" ? "Play or pause the current player" : "Choose music from the library first"} :onclick "scripts/backend.py action media toggle" (label :show-truncated false :text {s.media.playing ? "Pause" : "Play"}))
+        (button :active {s.media.player != ""} :tooltip "Next track" :onclick "scripts/backend.py action media next" (label :show-truncated false :text "Next"))
+        (button :class "library-link" :hexpand true :onclick "/usr/bin/python3 /home/bertmacklen/Documents/desktop-theme-studio/presets/plum-afterglow/native_visibility.py show && scripts/ui hide" (label :show-truncated false :text "Library"))))))
+(defwidget system-card []
+  (box :class "card" :orientation "v" :space-evenly false :spacing 14
+    (label :class "eyebrow" :text "System" :show-truncated false)
+    (label :show-truncated false :text "Processor ${s.cpu}%" )
+    (progress :value {s.cpu})
+    (label :show-truncated false :text "Memory ${s.memory_text}" )
+    (progress :value {s.memory})
+    (label :show-truncated false :text "Battery ${s.battery}% / ${s.battery_status}" )
+    (progress :value {s.battery})
+    (label :text {s.disk_text} :show-truncated false)))
+
+(defwidget audio-card []
+  (box :class "card" :orientation "v" :space-evenly false :spacing 14
+    (label :show-truncated false :class "eyebrow" :text "SOUND & DISPLAY" :halign "start")
+    (slider-row :title {s.muted ? "Speaker · muted" : "Speaker"} :value {s.volume} :command "scripts/backend.py action volume {}")
+    (slider-row :title "Microphone" :value {s.mic} :command "scripts/backend.py action mic {}")
+    (box :visible {s.brightness_present}
+      (slider-row :title "Brightness" :value {s.brightness} :command "scripts/backend.py action brightness {}"))
+    (box :spacing 8
+      (button :timeout "5s" :class "chip" :onclick "scripts/backend.py action mute" (label :show-truncated false :text "Mute speaker"))
+      (button :timeout "5s" :class "chip" :onclick "scripts/backend.py action mic-mute" (label :show-truncated false :text "Mute mic")))))
+
+(defwidget slider-row [title value command]
+  (box :orientation "v" :space-evenly false :spacing 8 :hexpand true
+    (box :space-evenly false
+      (label :text title :hexpand true :halign "start")
+      (label :class "muted" :text "${value}%"))
+    (scale :timeout "3s" :min 0 :max 100 :value value :onchange command)))
+
+(defwidget workspace-buttons []
+  (box :class "workspaces" :space-evenly false :spacing 6
+    (for ws in {s.workspaces}
+      (button :timeout "5s" :class {ws.active ? "workspace selected" : "workspace"}
+        :onclick "scripts/backend.py action workspace ${ws.id}" {ws.name}))))
+
+
+
+(defwidget utility-strip []
+  (box :class "card strip" :spacing 8
+    (button :timeout "5s" :onclick "scripts/ui dashboard" (label :show-truncated false :text "Dashboard"))
+    (button :timeout "5s" :onclick "scripts/ui controls" (label :show-truncated false :text "Controls"))
+    (button :timeout "5s" :onclick "scripts/ui calendar" (label :show-truncated false :text "Date"))
+    (button :timeout "5s" :onclick "scripts/ui timer" (label :show-truncated false :text "Focus"))))

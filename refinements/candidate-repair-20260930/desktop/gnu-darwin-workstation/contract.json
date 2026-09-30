@@ -1,0 +1,297 @@
+{
+  "schema": 1,
+  "slug": "gnu-darwin-workstation",
+  "sources": {
+    "theme": "/home/bertmacklen/Documents/desktop-theme-studio/presets/gnu-darwin-workstation/desktop/GNU-Darwin Workstation",
+    "icon": "/home/bertmacklen/Documents/desktop-theme-studio/presets/gnu-darwin-workstation/desktop/GNU-Darwin Workstation icons",
+    "cursor": "/home/bertmacklen/Documents/desktop-theme-studio/presets/gnu-darwin-workstation/desktop/GNU-Darwin Workstation cursors",
+    "wallpaper": "/home/bertmacklen/Documents/desktop-theme-studio/presets/gnu-darwin-workstation/artwork/wallpaper.png",
+    "menu_logo": "/home/bertmacklen/Documents/desktop-theme-studio/presets/gnu-darwin-workstation/artwork/menu-logo.png",
+    "fastfetch_logo": "/home/bertmacklen/Documents/desktop-theme-studio/presets/gnu-darwin-workstation/artwork/fastfetch-lm-apple.png",
+    "monitor": "/home/bertmacklen/Documents/desktop-theme-studio/presets/gnu-darwin-workstation/desktop/applets/gnu-darwin-workstation-monitor@desktop-theme-studio"
+  },
+  "source_records_sha256": "115bc5cd73d1697cfd2db3e9892c136778fa7d6c7e5fbe2920de5123fc37b1d4",
+  "palette_sha256": "1ca039e41dcbca524a082d8dfcf0272d77f467e3e8e6c85a8bab6f3b80ff10c6",
+  "source_assets_changed": false,
+  "artwork_regenerated": false,
+  "native_accepted": false,
+  "design_source": "/home/bertmacklen/Documents/desktop-theme-studio/presets/gnu-darwin-workstation/design.json",
+  "design_sha256": "4567edbadcea74d60c5c5ec37292527cf3b217ea642d0632ffe027da8bf0fda8",
+  "existing_gate_files": {
+    "/home/bertmacklen/Documents/desktop-theme-studio/presets/gnu-darwin-workstation/release-manifest.json": "37152c2ddb6039fc54dc08036d7217c97d834a7d87c40523a1ae5a2aede47ae4",
+    "/home/bertmacklen/Documents/desktop-theme-studio/presets/gnu-darwin-workstation/verification/isolated-latest.json": "254cf071597fef930e4b4c3b3e1450531445a3c275ee6d25d8654490438184f5",
+    "/home/bertmacklen/Documents/desktop-theme-studio/presets/gnu-darwin-workstation/verification/picker-logo-final.json": "24641e751ba8058a4ce555a82f31a9daa4e171f6aed9103e9d510eb915bcd901",
+    "/home/bertmacklen/Documents/desktop-theme-studio/presets/gnu-darwin-workstation/desktop/build-report.json": "d9bc01d84fbb66768519b5bd57dc48a868778ed1710008c31ef1e7ea2a2bbf06",
+    "/home/bertmacklen/Documents/desktop-theme-studio/presets/gnu-darwin-workstation/artwork/manifest.json": "9597164c0febc9cb9c501c2170bf541f213fcab4382738b49ab077eba89982ab",
+    "/home/bertmacklen/Documents/desktop-theme-studio/presets/gnu-darwin-workstation/isolate.py": "b40a0a420c726961ec613b81b4733ec52fba404818ffe47313c7e3525ede1fc2",
+    "/home/bertmacklen/Documents/desktop-theme-studio/presets/gnu-darwin-workstation/desktop_control.py": "9833702d4d90093897b996a74568144d588fdc8f4aaede722802067fc07e75b8"
+  },
+  "artwork_sha256": {
+    "wallpaper": "8c60777fa516815d301288ae4b92ae70505864893474ec88abccc75651d01ff6",
+    "menu_logo": "449767fe12347c85ea669acd5b7d20d9c6d475fda2108b24e9f2c86aa817fc53",
+    "fastfetch_logo": "5dc30eb394fd3ed8dcaf2dd5e2f64609083e1024343d305d326ea3b1b0b444e9"
+  },
+  "required_native_acceptance": [
+    "actual2880x1800",
+    "original panel composition",
+    "source-bound native paint and lifecycle",
+    "current restore and containment evidence",
+    "preserved64px workspace circles/all8states/four physical clicks",
+    "64px rail/bottom corner ownership",
+    "real monitor sampling and disposed timer"
+  ],
+  "source_status": "assets complete; source package remains read-only",
+  "name": "GNU-Darwin Workstation",
+  "theme": "GNU-Darwin Workstation",
+  "icons": "GNU-Darwin Workstation icons",
+  "cursor": "GNU-Darwin Workstation cursors",
+  "palette": {
+    "desktop": "#000000",
+    "background": "#BEBEBE",
+    "surface": "#B3B2B0",
+    "elevated": "#D0D0D0",
+    "foreground": "#101010",
+    "muted": "#383838",
+    "disabled": "#595959",
+    "accent": "#333641",
+    "secondary": "#353B50",
+    "selection": "#333641",
+    "selection_foreground": "#FFFFFF",
+    "focus": "#333641",
+    "border": "#808080",
+    "control_border": "#595959",
+    "success": "#174A20",
+    "warning": "#5C3A00",
+    "error": "#7A1818",
+    "terminal": "#000000",
+    "terminal_foreground": "#FFFFFF",
+    "island_background": "#333641",
+    "island_foreground": "#FFFFFF",
+    "top_background": "#BEBEBE",
+    "top_foreground": "#101010"
+  },
+  "typography": {
+    "ui_family": "Liberation Sans",
+    "ui_size_pt": 10,
+    "title_family": "Liberation Sans",
+    "title_size_pt": 10,
+    "title_weight": 700,
+    "clock_family": "Liberation Mono",
+    "clock_size_pt": 9,
+    "clock_weight": 400,
+    "monospace_family": "Liberation Mono",
+    "monospace_size_pt": 10,
+    "verification": "fc-list confirms Liberation Sans/Mono. Screenshot does not establish original font names; neutral compact installed substitutes approximate bitmap-era metrics. Antialiasing may differ; no font installation."
+  },
+  "geometry": {
+    "panel_height": 64,
+    "panel_position": "right and bottom; no top panel",
+    "panel_groups": "right vertical launcher/task tiles; bottom square application/status tiles. No centered floating dock or top menu bar.",
+    "app_radius": 0,
+    "widget_radius": 0,
+    "spacing": [
+      2,
+      4,
+      6,
+      8,
+      12
+    ],
+    "cursor_size": 24,
+    "bottom_panel_height": 64,
+    "geometry_note": "Screenshot1280x1024: rightmost64px column and bottom64px row. Preserve logical64px tile pitch with48px icon artwork, no scaling inflation. Cinnamon right panel may reserve a monitor-edge strip and intersect bottom panel; integration must explicitly assign the corner once.",
+    "composition": "Black uncovered workspace. Rectangular gray applications use 1px light top/left and dark bottom/right bevels, compact menu rows and square controls. Inactive slate-gray titlebars; active near-black slate titlebars with white centered titles, minimize at left and close at right. A continuous sequence of64px square icon tiles hugs the right edge; individual running-app/status tiles occupy the bottom edge with empty black space between groups. No Aqua pinstripes, blue waves, traffic lights, glass or global top panel. The user-requested workspace picker alone uses an elongated rounded strip and circular numbered indicators; launcher, task and status tiles remain square.",
+    "titlebar_height": 22,
+    "control_height": 24,
+    "dock_tile_size": 64,
+    "dock_icon_size": 48,
+    "button_layout": "minimize:close",
+    "titlebar_inactive": "#9EA0AC",
+    "titlebar_active": "#21232B",
+    "titlebar_active_end": "#0E0F13",
+    "workspace_selector": {
+      "shape": "elongated fully rounded strip with native numbered workspace circles",
+      "indicator_content_width_px": 60,
+      "indicator_border_px": 2,
+      "indicator_outer_width_px": 64,
+      "indicator_radius_px": 999,
+      "indicator_height": "native panel allocation; no horizontal height constraints",
+      "strip_vertical_padding_px": 0,
+      "strip_border_px": 0,
+      "strip_radius_px": 999,
+      "indicator_spacing_px": 4,
+      "scope": "native workspace-switcher only; horizontal top/bottom in Jesta/Cryostat; both orientations in Workstation",
+      "states": "unchanged geometry and foreground/background pairs in all eight native state combinations",
+      "preservation": "numbers, names/tooltips, click/scroll/keyboard/accessibility behavior and global workspace count/names unchanged",
+      "acceptance": "pending fresh actual allocation/pixels/labels/containment/click evidence at 2880x1800",
+      "vertical_indicator_content_height_px": 60
+    }
+  },
+  "panel_layout": {
+    "comment": "Source-led right dock and bottom app/status row. Three newly allocated applet instances (panel-launchers, calendar and the workstation monitor) need independent journaled allocation/restore. Keep exact le cinabon label on bottom horizontal menu.",
+    "panels-enabled": [
+      "1:0:right",
+      "2:0:bottom"
+    ],
+    "panels-height": [
+      "1:64",
+      "2:64"
+    ],
+    "enabled-applets": [
+      "panel1:left:0:panel-launchers@cinnamon.org:new",
+      "panel2:left:0:menu@cinnamon.org:17",
+      "panel2:left:1:grouped-window-list@cinnamon.org:16",
+      "panel2:right:0:gnu-darwin-workstation-monitor@desktop-theme-studio:new",
+      "panel2:right:1:systray@cinnamon.org:3",
+      "panel2:right:2:xapp-status@cinnamon.org:4",
+      "panel2:right:3:keyboard@cinnamon.org:8",
+      "panel2:right:4:notifications@cinnamon.org:20",
+      "panel2:right:5:network@cinnamon.org:19",
+      "panel2:right:6:sound@cinnamon.org:11",
+      "panel2:right:7:power@cinnamon.org:21",
+      "panel2:right:8:calendar@cinnamon.org:new"
+    ],
+    "removed_for_this_preset_only": [
+      "panel1:center:1:nothing-island@desktop-theme-studio:42:orient",
+      "panel1:center:2:c-eyes@anaximeno:41",
+      "panel1:center:0:c-eyes@anaximeno:44",
+      "panel1:left:1:workspace-switcher@cinnamon.org:36"
+    ],
+    "applet_settings": {
+      "calendar@cinnamon.org:new": {
+        "use-custom-format": true,
+        "custom-format": "%H:%M",
+        "custom-tooltip-format": "%A %-d %B %Y"
+      }
+    },
+    "icon_sizes": {
+      "panel-zone-icon-sizes": {
+        "left": 48,
+        "center": 48,
+        "right": 48
+      },
+      "panel-zone-symbolic-icon-sizes": {
+        "left": 20,
+        "center": 20,
+        "right": 20
+      }
+    },
+    "enabled_desklets": [],
+    "restore": "Journal all three new applet IDs and settings paths independently, allocate from current next-applet-id, restore removed multi-instance settings byte-exact before original panel arrays/applets, remove only newly allocated instance settings after original layout restored, preserve monotonic next-applet-id, and restore exact menu through menu receipt. Rehearse two-panel right/bottom corner ownership before any host activation.",
+    "icon_sizes_by_panel": {
+      "1": {
+        "panel-zone-icon-sizes": {
+          "left": 48,
+          "center": 48,
+          "right": 48
+        },
+        "panel-zone-symbolic-icon-sizes": {
+          "left": 20,
+          "center": 20,
+          "right": 20
+        }
+      },
+      "2": {
+        "panel-zone-icon-sizes": {
+          "left": 48,
+          "center": 48,
+          "right": 48
+        },
+        "panel-zone-symbolic-icon-sizes": {
+          "left": 20,
+          "center": 20,
+          "right": 20
+        }
+      }
+    },
+    "launcher_policy": "Coordinator resolves installed application desktop IDs and explicit launcherList before build, preserving stable screenshot functional sequence where installed: terminal, browser, office, editor, scientific graphics, image editor, PDF, file manager. No guessed missing desktop IDs; record mapping/provenance.",
+    "corner_policy": "Bottom panel owns lower-right corner; right dock rail ends above bottom64px row. Bottom center stays empty black.",
+    "task_policy": "Stock grouped-window-list tiles represent running windows, not solely minimized windows or free-positioned WindowMaker miniwindows."
+  },
+  "overrides": {},
+  "panel_composition": {
+    "panels": [
+      {
+        "id": 1,
+        "edge": "right",
+        "height_px": 64
+      },
+      {
+        "id": 2,
+        "edge": "bottom",
+        "height_px": 64
+      }
+    ],
+    "layout_assembly_owner": "coordinator; retain preset journaled layout adapter and corner policy"
+  },
+  "island": {
+    "included": false,
+    "reason": "Authored composition removes Nothing Island; preserve calendar/status or workstation monitor instead."
+  },
+  "source_contract_action": "preserve reviewed existing source assets and layout; no new overlay required",
+  "workspace_geometry": {
+    "shape": "circle",
+    "minimum_gap": 4
+  },
+  "workspace_style": {
+    "shape": "elongated fully rounded strip with native numbered workspace circles",
+    "indicator_content_width_px": 60,
+    "indicator_border_px": 2,
+    "indicator_outer_width_px": 64,
+    "indicator_radius_px": 999,
+    "indicator_height": "native panel allocation; no horizontal height constraints",
+    "strip_vertical_padding_px": 0,
+    "strip_border_px": 0,
+    "strip_radius_px": 999,
+    "indicator_spacing_px": 4,
+    "scope": "native workspace-switcher only; horizontal top/bottom in Jesta/Cryostat; both orientations in Workstation",
+    "states": "unchanged geometry and foreground/background pairs in all eight native state combinations",
+    "preservation": "numbers, names/tooltips, click/scroll/keyboard/accessibility behavior and global workspace count/names unchanged",
+    "acceptance": "pending fresh actual allocation/pixels/labels/containment/click evidence at 2880x1800",
+    "vertical_indicator_content_height_px": 60
+  },
+  "workspace_policy": "retain existing native64px circles and4px gaps in both orientations; retain journaled preset picker insertion, number/tooltips and current runtime",
+  "required_runtime": "/home/bertmacklen/Documents/desktop-theme-studio/refinements/cinnamon-current-collection/runtime/workspace-switcher@cinnamon.org",
+  "monitor_source": "/home/bertmacklen/Documents/desktop-theme-studio/presets/gnu-darwin-workstation/desktop/applets/gnu-darwin-workstation-monitor@desktop-theme-studio",
+  "resource_monitor": {
+    "uuid": "gnu-darwin-workstation-monitor@desktop-theme-studio",
+    "placement": "panel2:right:0; before unchanged relative status/clock order",
+    "size": {
+      "width": 256,
+      "height": 64,
+      "tile_width": 64,
+      "tile_height": 64,
+      "tiles": 4
+    },
+    "tiles": [
+      "CPU",
+      "MEM",
+      "RX",
+      "TX"
+    ],
+    "appearance": {
+      "bezel": "Existing surface #B3B2B0; square white upper-left and control_border #595959 lower-right bevel; radius0",
+      "inset": "#000000; 4px outer bezel;56px inner width",
+      "font": "Liberation Mono, labels9px bold and values10px regular; no fractional scaling required",
+      "layout": "Each64px tile: 4px bezel; label y6..17; value y19..31; graph y35..57, width54px. No labels over graphs. Tooltip expands full metric/interface/unit details.",
+      "foreground": "#DDDDDD",
+      "cpu_graph": "#77CC77",
+      "memory_graph": "#CCCC77",
+      "network_graph": "#77CCCC",
+      "warning": "#DD7777",
+      "graph_style": "54 one-pixel columns, one new sample per second, no glow/smoothing; dark unused graph pixels. Colour is supplemented by CPU/MEM/RX/TX labels and numeric values."
+    },
+    "sampling": {
+      "interval_seconds": 1,
+      "method": "Single shared GLib timeout; read /proc/stat, /proc/meminfo and /proc/net/dev through in-process file APIs; no subprocess polling, shell loops, external services or network requests. Remove timer on applet removal.",
+      "cpu": "Aggregate CPU utilization from successive total/idle+iowait counter deltas; exclude guest fields already included in user/nice. Show rounded0..100%. First sample or nonpositive total delta => -- and graph gap; never fabricated zero.",
+      "memory": "(MemTotal-MemAvailable)/MemTotal, clamp0..100; rounded percent. Missing MemAvailable => -- rather than counting cache as used or inventing a fallback. Tooltip shows used/total bytes and definition.",
+      "network": "Select one active default-route interface from /proc/net/route (lowest metric; stable name tie-break), excluding loopback. If no IPv4 route, support IPv6 default route via /proc/net/ipv6_route. Do not sum virtual/physical interfaces and double-count traffic. RX/TX from that interface counters divided by actual monotonic elapsed time; interface name in tooltip.",
+      "rate_format": "ASCII compact bytes/second: 0B/s,999B/s,1.0K/s,999K/s,1.0M/s,999M/s,1.0G/s; K/M/G binary1024 units, tooltip spells KiB/s etc. Maximum6 visible characters for typical rates; at >=1000GiB/s use >999G with exact tooltip.",
+      "graphs": "CPU/MEM fixed0..100% scale. RX/TX share a rolling54-sample ceiling, minimum1KiB/s, labelled scale in tooltip; auto scale is visual only, numeric rate always actual. Reset history when interface changes.",
+      "errors": "Missing/read-error/no usable interface => -- with tooltip reason and empty graph, no repeated alerts. Counter decrease/interface change => baseline/reset gap, never negative or huge spike. Actual valid zero => 0% or0B/s. On long interval >5s discard CPU/network delta and rebaseline; retain memory snapshot.",
+      "warnings": "CPU or memory >=90% uses warning ink plus ! in label (CPU!/MEM!), no flashing; CPU! reads current high usage rather than a fault. Network has no arbitrary danger threshold. Missing/reset state uses --, not error colour alone."
+    },
+    "provenance": "WMMon/WMNet-style descriptive period adaptation requested by user; not a claim of exact screenshot app identity, asset bytes or original widget code. All monitor graph/control drawing newly authored with existing palette/ANSI colours.",
+    "verification_api": "Expose read-only getMetricsSnapshot() returning sequence, monotonic timestamp, cpuPercent, memoryPercent, rxBytesPerSec, txBytesPerSec, interfaceName, disposed and sourceId; unavailable numbers null. Snapshot must be copied data, no side effects. Private harness checks two advancing real samples, then retains applet reference across removal and verifies disposed=true/sourceId=0/no further sequence advance."
+  }
+}

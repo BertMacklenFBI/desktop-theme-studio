@@ -1,0 +1,55 @@
+{
+  "name": "GNU-Darwin Workstation",
+  "amendment": "resource_monitor",
+  "design_sha256": "d7c546f407247567a5834a0cd300537be1b5ea6014749cb9524771b7333df520",
+  "files": {
+    "desktop/applets/gnu-darwin-workstation-monitor@desktop-theme-studio/README.md": "7352968de14040da177e96b4cbc6d8009a5acc39f4fffce4ca447b9219dd7317",
+    "desktop/applets/gnu-darwin-workstation-monitor@desktop-theme-studio/applet.js": "338e638ba171ae8bcbe5d0d3619ecc957afb6e0b7aa8ddeaae916c47634bfe1f",
+    "desktop/applets/gnu-darwin-workstation-monitor@desktop-theme-studio/metadata.json": "42f6b424e4d5f00e1cb5411614e352a42d660ff66fdcae4c46f855c8f7dad69d",
+    "desktop/applets/gnu-darwin-workstation-monitor@desktop-theme-studio/metrics.js": "f50ca35a68155dddc711b52a6da3a10a2c8c21585fbd37a3c4ceac4af4c538ae",
+    "desktop/applets/gnu-darwin-workstation-monitor@desktop-theme-studio/settings-schema.json": "98fef1a1a59506e236d65eabce76b28635fe1a5417a6355e2566aae285d14f5f",
+    "desktop/applets/gnu-darwin-workstation-monitor@desktop-theme-studio/style.js": "3ddbd3040e49100d38616fd59ac48ad1e67300b9abfdd8e0b96a5d037db52824",
+    "desktop/applets/gnu-darwin-workstation-monitor@desktop-theme-studio/stylesheet.css": "5cae75d129834b290a78714de8da3722f117bbc1dc3e214f86b6ea50f7d91530",
+    "desktop/applets/gnu-darwin-workstation-monitor@desktop-theme-studio/test_metrics.js": "177fd1cf206f5b5cbc1a8ffc82dc830c29a74ce594be18c998614a1f346295d9"
+  },
+  "fixture": {
+    "command": "gjs test_metrics.js",
+    "workdir": "/home/bertmacklen/Documents/desktop-theme-studio/presets/gnu-darwin-workstation/desktop/applets/gnu-darwin-workstation-monitor@desktop-theme-studio",
+    "exit_code": 0,
+    "assertions": 61,
+    "gui": false,
+    "real_timer": false,
+    "memory_only_cairo": true
+  },
+  "provenance": "New authored period-style adaptation, not historical source code or official artwork",
+  "colors": "style.js derives bezel/light/edge/inset from palette and text/traces/warning from terminal_ansi slots7/2/3/6/1",
+  "snapshot_keys": [
+    "sequence",
+    "timestamp",
+    "cpuPercent",
+    "memoryPercent",
+    "rxBytesPerSec",
+    "txBytesPerSec",
+    "interfaceName",
+    "disposed",
+    "sourceId",
+    "memoryUsedBytes",
+    "memoryTotalBytes",
+    "networkScale",
+    "reason"
+  ],
+  "integration_boundaries": [
+    "No GTK/icon regeneration for amendment",
+    "Coordinator installs exact applet tree transactionally and journals numbered settings instance",
+    "No live or private GUI action performed by builder",
+    "Private geometry and actual sampling/disposal pending coordinator"
+  ],
+  "frozen": true,
+  "format_examples": {
+    "1000 B/s": "1.0K/s",
+    "1023 B/s": "1.0K/s",
+    "9.999 KiB/s": "10K/s",
+    "1000 KiB/s": "1.0M/s",
+    "1024 B/s": "1.0K/s"
+  }
+}

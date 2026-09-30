@@ -1,0 +1,15 @@
+# Development layout and boundaries
+
+The repository mirrors selected relative paths from the original Studio checkout. Six built candidates are under refinements/cinnamon-current-collection/generated/. Their exact disabled profile objects are preserved in profiles.json. GNU authored presets are under refinements/candidate-repair-20260930/gnu-private-studio/presets/ with their private Studio topology preserved. Application repairs under refinements/candidate-repair-20260930/applications/ remain separate from the reviewed GNU preset adapters and Quiet Sage's original configuration.
+
+Source scripts, candidate runtime, workspace installation/restore guards, staged styles and adapters are included for review. They reject unexpected prompt, launcher and include layouts; do not relax those protections to make a plan pass. This is a bounded source snapshot, with no advertised one-command installation or complete rebuild.
+
+Git records file contents and executable bits, not every POSIX permission bit. Both Moonstone exported V2 bundle manifests describe the independently copied files with normalized 0644/0755 permissions; the original manifest with source 0664/0775 modes is retained under provenance/source-manifests/. File bytes are unchanged. A future private replay must materialize the declared modes in its owned tree and refresh its bundle/source bindings; original source acceptance is not transferred to the export.
+
+Original code, bundle commands, profile source paths and manifests contain absolute paths from the source workstation. export-manifest.json records origin paths and aliases materialized as independent files. They need deliberate relocation and new validation on another host; no path substitution has been applied to accepted source. Some external legacy sources and host applications are intentionally absent. Never run a host-bound apply command merely to browse these assets.
+
+Typical development dependencies include Python 3, Linux Mint Cinnamon, GTK, X11/Xephyr, D-Bus, gsettings/dconf, xdotool, ImageMagick, xcursorgen and installed toolkit/application packages. Moonstone's private receiver also needs Eww, mpv, its separately attributed MPRIS plugin, and an owned private D-Bus/player session. External Eww launchers/toolchains, private .config trees and package archives are not bundled. GNU-Darwin Workstation's historic research screenshot is omitted; installed authored artwork is retained.
+
+No live theme installation, boot/login action, original application action or shortcut switch is performed by this export. Deployment remains coordinator-owned, with fresh backup, inventory, reviewed narrow adapters and guarded restore evidence. Protect unrelated appearance preferences, music/shell commands, and the exact menu label le cinabon.
+
+Run the read-only integrity tool with /usr/bin/python3 -B tools/verify_export.py. It checks manifest bytes, regular independent files, size limits, forbidden runtime paths and disabled status. Native private-session checks must be repeated only after dependencies and relocation are reviewed, with GUI sessions serialized.

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<style-scheme id="cinnamon-current-moonstone-stereo" name="Moonstone Stereo" version="1.0"><author>Desktop Theme Studio</author>
+<style name="text" foreground="#302e29" background="#f3eddd"/>
+<style name="selection" foreground="#302e29" background="#cedbd0"/>
+<style name="current-line" background="#fffaf0"/>
+<style name="line-numbers" foreground="#716a5d" background="#fffaf0"/>
+<style name="def:comment" foreground="#716a5d"/>
+<style name="def:keyword" foreground="#8db4a0"/>
+<style name="def:string" foreground="#46705c"/>
+<style name="def:number" foreground="#936931"/>
+<style name="def:error" foreground="#9e4e42"/>
+</style-scheme>

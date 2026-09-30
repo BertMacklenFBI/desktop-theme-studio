@@ -1,0 +1,6 @@
+{
+  "behavior": "Preserve the shared Eww Yuck, playback and system-control behavior, and current top-right close affordance. Optional profile SCSS adds class rules only; the controller applies palette variables and the selected style import.",
+  "palette_key": "Moonstone Stereo",
+  "style_bundle": null,
+  "verification_boundary": "This is a built palette/style contract. Fresh per-profile interaction evidence is recorded separately in runtime-widgets/runs/."
+}

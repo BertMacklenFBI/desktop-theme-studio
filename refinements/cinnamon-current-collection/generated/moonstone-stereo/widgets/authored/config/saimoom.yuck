@@ -1,0 +1,100 @@
+;; Original Moonstone Stereo receiver. Existing media actions are preserved.
+(defwidget clock-card []
+  (box :class "receiver-case" :orientation "v" :space-evenly false :valign "start"
+    (box :class "receiver-face" :orientation "v" :space-evenly false :spacing 16
+      (box :class "receiver-brand-row" :space-evenly false :spacing 12
+        (label :class "power-lamp" :text "●" :show-truncated false)
+        (label :class "receiver-brand" :text "MOONSTONE STEREO" :show-truncated false :halign "start")
+        (label :class "receiver-model" :text "INTEGRATED DESKTOP RECEIVER" :show-truncated false :hexpand true :halign "end")
+        (label :class "receiver-screw" :text "⊖" :show-truncated false))
+      (box :class "receiver-instruments" :space-evenly false :spacing 20
+        (image :class "receiver-artwork" :path {s.media.cover} :image-width 112 :image-height 112)
+        (box :class "receiver-track" :orientation "v" :space-evenly false :spacing 10 :width 292 :hexpand true
+          (box :class "receiver-display" :orientation "v" :space-evenly false :spacing 7
+            (label :class "receiver-source" :text {s.media.playing ? "PLAYBACK ACTIVE" : "READY"} :show-truncated false :halign "start")
+            (label :class "receiver-title" :text {s.media.title} :limit-width 28 :halign "start" :tooltip {s.media.title})
+            (label :class "receiver-artist" :text {s.media.artist} :limit-width 34 :halign "start"))
+          (scale :class "receiver-seek" :timeout "3s" :min 0 :max 100 :value {s.media.progress} :active {s.media.duration > 0}
+            :onchange "scripts/backend.py action media seek {}")
+          (box :space-evenly false :spacing 6
+            (label :class "receiver-elapsed" :text "${s.media.elapsed} / ${s.media.total}" :show-truncated false :halign "start" :hexpand true)
+            (button :class "receiver-key" :timeout "5s" :tooltip "Previous track" :onclick "scripts/backend.py action media previous" (label :show-truncated false :text "⏮"))
+            (button :class "receiver-key receiver-play" :timeout "5s" :tooltip "Play / pause" :onclick "scripts/backend.py action media toggle" {s.media.playing ? "Ⅱ" : "▶"})
+            (button :class "receiver-key" :timeout "5s" :tooltip "Next track" :onclick "scripts/backend.py action media next" (label :show-truncated false :text "⏭"))))
+        (box :class "receiver-meter-deck" :orientation "v" :space-evenly false :spacing 7
+          (box :space-evenly false :spacing 7
+            (box :orientation "v" :space-evenly false :spacing 4
+              (image :path {vu.low_face} :image-width 174 :image-height 114 :tooltip "Live Cava low-frequency spectrum level; not a stereo channel or calibrated dB")
+              (label :class "receiver-meter-label" :text "LOW BAND" :show-truncated false))
+            (box :orientation "v" :space-evenly false :spacing 4
+              (image :path {vu.high_face} :image-width 174 :image-height 114 :tooltip "Live Cava high-frequency spectrum level; not a stereo channel or calibrated dB")
+              (label :class "receiver-meter-label" :text "HIGH BAND" :show-truncated false)))
+          (label :class "receiver-signal" :text {vu.status} :show-truncated false))
+        (box :class "receiver-clock-deck" :orientation "v" :space-evenly false :spacing 8 :width 150
+          (label :class "receiver-clock" :text {s.clock} :show-truncated false)
+          (label :class "receiver-period" :text {s.meridiem} :show-truncated false)
+          (button :class "receiver-date" :timeout "5s" :tooltip {s.date} :onclick "scripts/ui calendar"
+            (label :text "${s.month} / ${s.day}" :show-truncated false))
+          (button :class "receiver-tuning" :timeout "5s" :tooltip "Sound and display controls" :onclick "scripts/ui audio" (image :path "/home/bertmacklen/Documents/desktop-theme-studio/presets/moonstone-stereo/applications/receiver/materials/knob.svg" :image-width 58 :image-height 58)))))
+    (box :class "receiver-lower-rail" :space-evenly false :spacing 8
+      (button :class "receiver-selector" :timeout "5s" :onclick "scripts/ui dashboard" (label :show-truncated false :text "DASHBOARD"))
+      (button :class "receiver-selector" :timeout "5s" :onclick "scripts/ui controls" (label :show-truncated false :text "CONTROLS"))
+      (button :class "receiver-selector" :timeout "5s" :onclick "scripts/ui notes" (label :show-truncated false :text "NOTES"))
+      (button :class "receiver-selector" :timeout "5s" :onclick "scripts/ui timer" (label :show-truncated false :text "FOCUS"))
+      (label :class "receiver-readout" :text "CPU ${s.cpu}%  /  RAM ${s.memory}%  /  BAT ${s.battery}%" :show-truncated false :halign "end" :hexpand true)
+      (workspace-buttons))))
+
+(defwidget music-card []
+  (box :class "receiver-pop-card" :orientation "v" :space-evenly false :spacing 12
+    (label :class "receiver-popup-heading" :text "PLAYBACK" :show-truncated false)
+    (image :path {s.media.cover} :image-width 90 :image-height 90)
+    (label :text {s.media.title} :limit-width 32)
+    (label :class "muted" :text {s.media.artist} :limit-width 32)
+    (box :spacing 8
+      (button :class "receiver-key" :timeout "5s" :onclick "scripts/backend.py action media previous" (label :show-truncated false :text "⏮"))
+      (button :class "receiver-key receiver-play" :timeout "5s" :onclick "scripts/backend.py action media toggle" {s.media.playing ? "Ⅱ" : "▶"})
+      (button :class "receiver-key" :timeout "5s" :onclick "scripts/backend.py action media next" (label :show-truncated false :text "⏭")))))
+
+(defwidget system-card []
+  (box :class "receiver-pop-card" :orientation "v" :space-evenly false :spacing 14
+    (label :class "receiver-popup-heading" :text "SYSTEM INSTRUMENTS" :show-truncated false)
+    (label :text "Processor ${s.cpu}%" :show-truncated false)
+    (progress :value {s.cpu})
+    (label :text "Memory ${s.memory_text}" :show-truncated false)
+    (progress :value {s.memory})
+    (label :text "Battery ${s.battery}% / ${s.battery_status}" :show-truncated false)
+    (progress :value {s.battery})
+    (label :text {s.disk_text} :show-truncated false)))
+
+(defwidget audio-card []
+  (box :class "card" :orientation "v" :space-evenly false :spacing 14
+    (label :show-truncated false :class "eyebrow" :text "SOUND & DISPLAY" :halign "start")
+    (slider-row :title {s.muted ? "Speaker · muted" : "Speaker"} :value {s.volume} :command "scripts/backend.py action volume {}")
+    (slider-row :title "Microphone" :value {s.mic} :command "scripts/backend.py action mic {}")
+    (box :visible {s.brightness_present}
+      (slider-row :title "Brightness" :value {s.brightness} :command "scripts/backend.py action brightness {}"))
+    (box :spacing 8
+      (button :timeout "5s" :class "chip" :onclick "scripts/backend.py action mute" (label :show-truncated false :text "Mute speaker"))
+      (button :timeout "5s" :class "chip" :onclick "scripts/backend.py action mic-mute" (label :show-truncated false :text "Mute mic")))))
+
+(defwidget slider-row [title value command]
+  (box :orientation "v" :space-evenly false :spacing 8 :hexpand true
+    (box :space-evenly false
+      (label :text title :hexpand true :halign "start")
+      (label :class "muted" :text "${value}%"))
+    (scale :timeout "3s" :min 0 :max 100 :value value :onchange command)))
+
+(defwidget workspace-buttons []
+  (box :class "workspaces" :space-evenly false :spacing 6
+    (for ws in {s.workspaces}
+      (button :timeout "5s" :class {ws.active ? "workspace selected" : "workspace"}
+        :onclick "scripts/backend.py action workspace ${ws.id}" {ws.name}))))
+
+
+
+(defwidget utility-strip []
+  (box :class "card strip" :spacing 8
+    (button :timeout "5s" :onclick "scripts/ui dashboard" (label :show-truncated false :text "Dashboard"))
+    (button :timeout "5s" :onclick "scripts/ui controls" (label :show-truncated false :text "Controls"))
+    (button :timeout "5s" :onclick "scripts/ui calendar" (label :show-truncated false :text "Date"))
+    (button :timeout "5s" :onclick "scripts/ui timer" (label :show-truncated false :text "Focus"))))

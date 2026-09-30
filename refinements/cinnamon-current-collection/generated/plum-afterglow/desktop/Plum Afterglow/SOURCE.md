@@ -1,0 +1,1 @@
+Packaged Mint-Y-Dark snapshot (mint-themes copyright retained), packaged Mint-Y Metacity. Plum Afterglow flat state SVGs replace every referenced GTK3/4 PNG; GTK2 native Murrine rules use no pixmaps. Flat shell and control styling authored for this preset.

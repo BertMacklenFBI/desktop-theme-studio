@@ -1,0 +1,46 @@
+/* Macintosh Soft Ptyxis application chrome; load as a profile-specific append block. */
+@define-color theme_fg_color #293238;
+@define-color theme_text_color #293238;
+@define-color theme_bg_color #ebe9e1;
+@define-color theme_base_color #293238;
+@define-color theme_selected_bg_color #356262;
+@define-color theme_selected_fg_color #fbf8f1;
+@define-color window_fg_color #293238;
+@define-color window_bg_color #ebe9e1;
+@define-color view_fg_color #ebe9e1;
+@define-color view_bg_color #293238;
+@define-color headerbar_fg_color #293238;
+@define-color headerbar_bg_color #d7d9d4;
+@define-color headerbar_backdrop_color #ebe9e1;
+@define-color headerbar_border_color #a5aba8;
+@define-color accent_color #507d7d;
+@define-color accent_bg_color #356262;
+@define-color accent_fg_color #fbf8f1;
+:root {
+  --accent-bg-color: #356262;
+  --accent-fg-color: #fbf8f1;
+  --accent-color: #507d7d;
+  --window-bg-color: #ebe9e1;
+  --window-fg-color: #293238;
+  --view-bg-color: #293238;
+  --view-fg-color: #ebe9e1;
+  --headerbar-bg-color: #d7d9d4;
+  --headerbar-fg-color: #293238;
+  --headerbar-backdrop-color: #ebe9e1;
+  --headerbar-border-color: #a5aba8;
+  --sidebar-bg-color: #d7d9d4;
+  --sidebar-fg-color: #293238;
+  --sidebar-backdrop-color: #ebe9e1;
+  --card-bg-color: #d7d9d4;
+  --card-fg-color: #293238;
+  --dialog-bg-color: #ebe9e1;
+  --dialog-fg-color: #293238;
+  --popover-bg-color: #ebe9e1;
+  --popover-fg-color: #293238;
+}
+window { background-color: #ebe9e1; color: #293238; }
+headerbar { background-color: #d7d9d4; background-image: none; color: #293238; border-color: #a5aba8; }
+headerbar label, headerbar image, headerbar button, .titlebar label, .titlebar image, .titlebar button { color: #293238; }
+headerbar button:checked, headerbar button:checked label, headerbar button:checked image { color: #fbf8f1; }
+terminal, vte-terminal { background-color: #293238; color: #ebe9e1; }
+button:checked, button:active { background-color: #356262; color: #fbf8f1; }

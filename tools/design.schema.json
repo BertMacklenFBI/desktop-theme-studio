@@ -1,0 +1,100 @@
+{
+  "$comment": "Structural schema for presets/<id>/design.json, checked by tools/design_lint.py with a small stdlib validator. Supported keywords: type, required, properties, additionalProperties, items, minItems, maxItems, pattern, minimum, $ref (local #/$defs/...). Required palette tokens are NOT listed here: the linter reads them from presets/_template/design.json at run time so the two stay in sync.",
+  "$defs": {
+    "hex": {
+      "type": "string",
+      "pattern": "^#?[0-9A-Fa-f]{6}$"
+    },
+    "nonempty_string": {
+      "type": "string",
+      "pattern": "\\S"
+    }
+  },
+  "type": "object",
+  "required": [
+    "name",
+    "id",
+    "status",
+    "palette",
+    "rainbow",
+    "typography",
+    "geometry",
+    "preserve",
+    "terminal_ansi",
+    "semantic_rules"
+  ],
+  "properties": {
+    "name": {"$ref": "#/$defs/nonempty_string"},
+    "id": {"type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"},
+    "status": {"$ref": "#/$defs/nonempty_string"},
+    "direction": {"type": "string"},
+    "source_concept": {"type": "string"},
+    "palette": {
+      "type": "object",
+      "additionalProperties": {"$ref": "#/$defs/hex"}
+    },
+    "rainbow": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"$ref": "#/$defs/hex"}
+    },
+    "typography": {
+      "type": "object",
+      "required": [
+        "ui_family",
+        "ui_size_pt",
+        "title_family",
+        "title_size_pt",
+        "clock_family",
+        "clock_size_pt",
+        "monospace_family",
+        "monospace_size_pt"
+      ],
+      "properties": {
+        "ui_family": {"$ref": "#/$defs/nonempty_string"},
+        "title_family": {"$ref": "#/$defs/nonempty_string"},
+        "clock_family": {"$ref": "#/$defs/nonempty_string"},
+        "monospace_family": {"$ref": "#/$defs/nonempty_string"},
+        "ui_size_pt": {"type": "number", "minimum": 1},
+        "title_size_pt": {"type": "number", "minimum": 1},
+        "clock_size_pt": {"type": "number", "minimum": 1},
+        "monospace_size_pt": {"type": "number", "minimum": 1},
+        "title_weight": {"type": "integer", "minimum": 100},
+        "clock_weight": {"type": "integer", "minimum": 100},
+        "verification": {"type": "string"}
+      }
+    },
+    "geometry": {
+      "type": "object",
+      "properties": {
+        "panel_height": {"type": "integer", "minimum": 0},
+        "bottom_panel_height": {"type": "integer", "minimum": 0},
+        "app_radius": {"type": "number", "minimum": 0},
+        "widget_radius": {"type": "number", "minimum": 0},
+        "cursor_size": {"type": "integer", "minimum": 1},
+        "spacing": {"type": "array", "items": {"type": "number"}},
+        "panel_position": {"type": "string"},
+        "panel_groups": {"type": "string"},
+        "composition": {"type": "string"}
+      }
+    },
+    "materials": {"type": "object"},
+    "artwork": {"type": "object"},
+    "preserve": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"$ref": "#/$defs/nonempty_string"}
+    },
+    "verification": {"type": "string"},
+    "terminal_ansi": {
+      "type": "array",
+      "minItems": 16,
+      "maxItems": 16,
+      "items": {"$ref": "#/$defs/hex"}
+    },
+    "semantic_rules": {
+      "type": "object",
+      "additionalProperties": {"type": "string"}
+    }
+  }
+}

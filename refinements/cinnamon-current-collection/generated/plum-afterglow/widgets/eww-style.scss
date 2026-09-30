@@ -1,0 +1,33 @@
+* { all:unset; font-family:Ubuntu; font-size:15px; color:$text; }
+window { background:transparent; }
+.popup { background:$base; border:1px solid $border; border-radius:10px; padding:22px; }
+.card { background:$surface0; border-radius:6px; padding:16px; }
+.heading { font-size:19px;font-weight:600; }
+.track-title { font-size:19px;font-weight:500; }
+.muted { color:$muted;font-size:14px; }
+.eyebrow { color:$muted;font-size:14px; }
+button { background:$surface1;border:1px solid $border;border-radius:5px;padding:9px 12px; }
+button:hover { background:$tile; }
+button:focus { border-color:$accent; }
+button.selected { background:$tile; }
+button.close { background:$surface0;border:1px solid $border;font-size:22px;min-width:28px;min-height:28px;padding:6px; }
+button:disabled { color:$muted;background:$surface0;border-color:$surface0; }
+button:disabled label { color:$muted; }
+button.library-link { color:$accent; }
+scale { padding:8px 0; }
+scale trough, progressbar trough { background:$surface1;min-height:5px;border-radius:3px; }
+scale highlight,progressbar progress { background:$accent;min-height:5px;border-radius:3px; }
+scale slider { background:$text;min-width:12px;min-height:12px;border-radius:6px; }
+calendar { background:$surface0;color:$text;padding:12px; }
+calendar:selected { background:$tile;color:$text; }
+calendar.header,calendar.button { color:$accent; }
+.timer { font-family:Hack;font-size:36px; }
+
+.music-card { padding:4px 0; }
+.album-frame { background:$surface0;border:1px solid $border;border-radius:8px;padding:8px; }
+.track-title { font-size:22px; }
+.eyebrow { color:$secondary;font-size:12px;letter-spacing:1px; }
+.elapsed { color:$muted;font-family:Hack;font-size:12px; }
+button.library-link { background:$surface0;border-color:$secondary; }
+button.library-link label { color:$secondary; }
+button:focus { border-color:$accent-hover;box-shadow:0 0 0 1px $accent-hover; }

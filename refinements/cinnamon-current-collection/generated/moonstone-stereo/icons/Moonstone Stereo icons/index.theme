@@ -1,0 +1,33 @@
+[Icon Theme]
+Name=Moonstone Stereo Icons
+Comment=Palette-coordinated applications and folders
+Inherits=Papirus,hicolor
+Directories=scalable/apps,scalable/places,scalable/devices,scalable/mimetypes
+
+[scalable/apps]
+Size=64
+Type=Scalable
+MinSize=24
+MaxSize=256
+Context=Applications
+
+[scalable/places]
+Size=64
+Type=Scalable
+MinSize=24
+MaxSize=256
+Context=Places
+
+[scalable/devices]
+Size=64
+Type=Scalable
+MinSize=24
+MaxSize=256
+Context=Devices
+
+[scalable/mimetypes]
+Size=64
+Type=Scalable
+MinSize=24
+MaxSize=256
+Context=MimeTypes

@@ -1,0 +1,9 @@
+# Plum Afterglow Nano color fragment; do not replace non-color user preferences.
+set titlecolor bold,#211e29,#adc1a0
+set statuscolor #f0e7df,#211e29
+set errorcolor #211e29,#e7a29c
+set promptcolor #f0e7df,#211e29
+set selectedcolor #f0e7df,#584459
+set numbercolor #beb0bb
+set keycolor #d5a1aa
+set functioncolor #f0e7df

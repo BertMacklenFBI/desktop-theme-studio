@@ -1,0 +1,24 @@
+{
+  "uuid": "78279a9d-5524-58d6-bbbe-79dd9077c4d7",
+  "schema": "org.gnome.Terminal.Legacy.Profile:/org/gnome/terminal/legacy/profiles:/:78279a9d-5524-58d6-bbbe-79dd9077c4d7/",
+  "keys": {
+    "visible-name": "'GNU-Darwin Workstation'",
+    "background-color": "'#000000'",
+    "foreground-color": "'#FFFFFF'",
+    "palette": "['#707070', '#DD7777', '#77CC77', '#CCCC77', '#8C9DDE', '#CC88CC', '#77CCCC', '#DDDDDD', '#999999', '#FF9999', '#99EE99', '#EEEE99', '#ACBDFF', '#EEAAEE', '#99EEEE', '#FFFFFF']",
+    "use-theme-colors": "false",
+    "use-theme-transparency": "false",
+    "use-transparent-background": "false",
+    "background-transparency-percent": "0",
+    "use-system-font": "false",
+    "font": "'Liberation Mono 10'",
+    "cursor-colors-set": "true",
+    "cursor-background-color": "'#FFFFFF'",
+    "cursor-foreground-color": "'#000000'",
+    "bold-color-same-as-fg": "true",
+    "bold-is-bright": "false",
+    "highlight-colors-set": "true",
+    "highlight-background-color": "'#333641'",
+    "highlight-foreground-color": "'#FFFFFF'"
+  }
+}

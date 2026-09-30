@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64"><defs><linearGradient id="tile" x2="0" y2="1"><stop stop-color="#F8F9FA"/><stop offset="1" stop-color="#E2E4E7"/></linearGradient></defs><rect x="3" y="4" width="58" height="58" rx="12" fill="#265098" opacity=".3"/><rect x="3" y="2" width="58" height="58" rx="12" fill="url(#tile)" stroke="#A6ABB2" stroke-width="1"/><path d="M14 3.5h36" stroke="#265098" stroke-opacity=".55" stroke-width="1" stroke-linecap="round"/><svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" version="1" viewBox="0 0 64 64" x="10" y="9">
+ <path style="opacity:0.2" d="M 4,17.46 V 57.800782 C 4,59.574782 5.4264188,61 7.1992186,61 H 60 V 17.46 Z" />
+ <path style="fill:#e4e4e4" d="M 4,16.46 V 56.800782 C 4,58.574782 5.4264188,60 7.1992186,60 H 60 V 16.46 Z" />
+ <path style="fill:#636e73" d="M 7.1992186,4 C 5.4264188,4 4,5.4252188 4,7.1992186 V 20 H 60 V 4 Z" />
+ <circle style="opacity:0.2" cx="12" cy="13" r="4" />
+ <circle style="fill:#ffffff" cx="12" cy="12" r="4" />
+ <circle style="opacity:0.2" cx="24" cy="13" r="4" />
+ <circle style="fill:#ffffff" cx="24" cy="12" r="4" />
+ <circle style="opacity:0.2" cx="36" cy="13" r="4" />
+ <circle style="fill:#ffffff" cx="36" cy="12" r="4" />
+ <path style="opacity:0.1;fill:#ffffff" d="M 7.1992188 4 C 5.426419 4 4 5.425219 4 7.1992188 L 4 8.1992188 C 4 6.425219 5.426419 5 7.1992188 5 L 60 5 L 60 4 L 7.1992188 4 z" />
+</svg><path d="M25 56h14" stroke="#4384D6" stroke-linecap="round" stroke-width="2"/></svg>

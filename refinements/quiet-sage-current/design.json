@@ -1,0 +1,130 @@
+{
+  "name": "Quiet Sage",
+  "id": "quiet-sage-current",
+  "status": "building",
+  "direction": "Quiet Sage original warm charcoal, muted sage and cream identity with current Nothing Island, eyes,44px top groups,54px bottom dock and all existing music/application features.",
+  "source_concept": "proposals/2026-09-20/three-directions.md#3-macintosh-soft",
+  "palette": {
+    "desktop": "#242722",
+    "background": "#242722",
+    "surface": "#2e332d",
+    "elevated": "#383f35",
+    "foreground": "#ede8dc",
+    "muted": "#b3b6a7",
+    "accent": "#a8b99a",
+    "selection": "#52684b",
+    "selection_foreground": "#ede8dc",
+    "focus": "#bac8ab",
+    "border": "#4b5346",
+    "control_border": "#85927B",
+    "success": "#a8b99a",
+    "warning": "#d1bc8a",
+    "error": "#d49b91",
+    "terminal": "#242722",
+    "terminal_foreground": "#ede8dc",
+    "island_background": "#242722",
+    "island_foreground": "#a8b99a",
+    "top_background": "#242722",
+    "top_foreground": "#a8b99a"
+  },
+  "rainbow": [
+    "#78906B",
+    "#8F9E82",
+    "#A8B99A",
+    "#B3B6A7",
+    "#BAC8AB",
+    "#EDE8DC"
+  ],
+  "typography": {
+    "ui_family": "Ubuntu",
+    "ui_size_pt": 11,
+    "title_family": "Ubuntu",
+    "title_size_pt": 11,
+    "title_weight": 600,
+    "clock_family": "Ubuntu",
+    "clock_size_pt": 10,
+    "clock_weight": 500,
+    "monospace_family": "Hack",
+    "monospace_size_pt": 11,
+    "verification": "Font availability checked; final actual-scale readability pending"
+  },
+  "geometry": {
+    "panel_height": 44,
+    "panel_position": "top menu / clock island / corner status; bottom dock",
+    "panel_groups": "top left menu then workspace indicator; center clock/date island; right status; bottom centered launchers/running apps only",
+    "app_radius": 4,
+    "widget_radius": 6,
+    "spacing": [
+      4,
+      8,
+      12,
+      16,
+      24
+    ],
+    "music_card_width": 320,
+    "cursor_size": 28,
+    "music_art_size": 184,
+    "bottom_panel_height": 54,
+    "composition": "Preserve live Nothing Island and eyes, top-left menu/workspaces, right status and bottom programs-only dock."
+  },
+  "materials": {
+    "text_surfaces": "opaque",
+    "shadow": "small soft neutral shadow",
+    "texture": "none on controls or text surfaces",
+    "motion": "existing Cinnamon transitions",
+    "wallpaper": "Quiet warmcharcoal field with subtle small centered supplied Apple/LM silhouette in muted sage; no wood, metal or medallion."
+  },
+  "artwork": {
+    "source": "/home/bertmacklen/Documents/desktop-theme-studio/presets/quiet-sage/artwork",
+    "instruction": "Reuse exact approved Quiet Sage wallpaper/menu logo; never regenerate or overwrite original artwork."
+  },
+  "preserve": [
+    "cinabon menu name",
+    "custom music commands",
+    "fastfetch short and fastfetch long; plain fastfetch stays short",
+    "custom Local IP display 86.75-309",
+    "widget close, Escape, focus return and library reopen behavior",
+    "approved Plum Afterglow assets and recovery receipts"
+  ],
+  "first_milestone": [
+    "wallpaper",
+    "panel and menu",
+    "one real application",
+    "music popup"
+  ],
+  "verification": "Build, selection, visual, interaction and reboot evidence recorded separately. No live changes in identity phase.",
+  "terminal_ansi": [
+    "#242722",
+    "#d49b91",
+    "#a8b99a",
+    "#d1bc8a",
+    "#9aafb0",
+    "#b7a7be",
+    "#9bbdb1",
+    "#d7d5c8",
+    "#7c8475",
+    "#e0afa5",
+    "#bacbab",
+    "#e1cda4",
+    "#aec3c3",
+    "#c9bad0",
+    "#b1d1c2",
+    "#ede8dc"
+  ],
+  "semantic_rules": {
+    "small_accent_text": "Use focus #356262, not accent #507D7D",
+    "primary_buttons": "Selection fill plus selection_foreground text",
+    "borders": "control_border for essential input edges; border only decorative",
+    "rainbow": "Legacy field name retained for six green/gray/teal identity bands; no rainbow colors.",
+    "ansi_black": "ANSI slot 0 is readable gray; inspect applications that use it as background",
+    "alerts": "Original Quiet Sage semantic ANSI colors are retained; decorative identity is muted sage and cream."
+  },
+  "fastfetch_palette": [
+    "#BAC8AB",
+    "#B3B6A7",
+    "#A8B99A",
+    "#CDD3C0",
+    "#9BBDB1",
+    "#EDE8DC"
+  ]
+}

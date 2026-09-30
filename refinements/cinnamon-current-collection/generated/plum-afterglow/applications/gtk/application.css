@@ -1,0 +1,8 @@
+/* Plum Afterglow GTK application surface. */
+window, dialog, .background { background-color: #2d2838; color: #f0e7df; }
+headerbar { background-color: #393244; color: #f0e7df; border-color: #65566d; }
+entry, textview, .view { background-color: #211e29; color: #f0e7df; caret-color: #d5a1aa; }
+button { background-color: #393244; color: #f0e7df; border-color: #65566d; }
+button:hover { background-color: #e4b6c0; }
+button:checked, button:active { background-color: #584459; color: #f0e7df; }
+selection { background-color: #584459; color: #f0e7df; }

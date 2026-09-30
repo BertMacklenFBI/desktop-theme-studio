@@ -1,0 +1,8 @@
+/* Ocean Silk GTK application surface. */
+window, dialog, .background { background-color: #e9ebe6; color: #304957; }
+headerbar { background-color: #cbd7da; color: #304957; border-color: #93aab4; }
+entry, textview, .view { background-color: #304957; color: #e9ebe6; caret-color: #6f94a4; }
+button { background-color: #cbd7da; color: #304957; border-color: #93aab4; }
+button:hover { background-color: #354D64; }
+button:checked, button:active { background-color: #354d64; color: #e9ebe6; }
+selection { background-color: #354d64; color: #e9ebe6; }

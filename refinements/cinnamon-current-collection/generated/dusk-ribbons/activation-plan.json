@@ -1,0 +1,72 @@
+{
+  "isolated_gate": {
+    "contract": "legacy-default",
+    "fingerprint_exclusions": [],
+    "receipt_field": null,
+    "required_checks": [
+      "menu@cinnamon.org opens and closes",
+      "notifications@cinnamon.org opens and closes",
+      "sound@cinnamon.org opens and closes",
+      "Island actual \u00d7 close",
+      "Island actual Escape",
+      "Island outside click",
+      "Island ReloadXlet lifecycle",
+      "Cinnamon theme reload"
+    ],
+    "source_sha256": null
+  },
+  "must_not_touch": [
+    "enabled-applets",
+    "panel placement",
+    "custom music commands",
+    "shell configuration",
+    "Eww playback and system-control behavior",
+    "existing generic opacity service",
+    "Ocean-Silk-Glass theme tree"
+  ],
+  "narrow_assets": [
+    {
+      "from": "generated/dusk-ribbons/desktop/Dusk-Ribbons",
+      "operation": "replace only this profile tree after backup",
+      "to": "~/.themes/Dusk-Ribbons"
+    },
+    {
+      "from": "generated/dusk-ribbons/island/nothing-island@desktop-theme-studio/applet.js",
+      "operation": "replace palette-bearing source only",
+      "to": "~/.local/share/cinnamon/applets/nothing-island@desktop-theme-studio/applet.js"
+    },
+    {
+      "from": "generated/dusk-ribbons/island/nothing-island@desktop-theme-studio/stylesheet.css",
+      "operation": "replace palette-bearing source only",
+      "to": "~/.local/share/cinnamon/applets/nothing-island@desktop-theme-studio/stylesheet.css"
+    },
+    {
+      "from": "generated/dusk-ribbons/artwork/menu-logo.png",
+      "operation": "discover instance first; update only menu-icon value",
+      "to": "selected Cinabon menu-icon setting"
+    },
+    {
+      "from": "generated/dusk-ribbons/artwork/wallpaper.png",
+      "operation": "set only selected wallpaper URI",
+      "to": "org.cinnamon.desktop.background picture-uri"
+    }
+  ],
+  "policy": "Read-only plan. A coordinator must create a fresh receipt and recovery timer before applying this plan.",
+  "profile": "dusk-ribbons",
+  "requires": [
+    "fresh backup",
+    "300-second recovery timer",
+    "normal closure of Ptyxis and Tilda before related app preferences",
+    "one serial Cinnamon reload",
+    "fresh visual and application checks"
+  ],
+  "runtime_controller": "live.py provides receipt-backed desktop, application, and Eww appearance actions; trial.py performs serial verification and restore",
+  "settings_intent": {
+    "org.cinnamon.desktop.interface cursor-theme": "Dusk-Ribbons-Cursors",
+    "org.cinnamon.desktop.interface gtk-theme": "Dusk-Ribbons",
+    "org.cinnamon.desktop.interface icon-theme": "Dusk-Ribbons-Icons",
+    "org.cinnamon.desktop.wm.preferences theme": "Dusk-Ribbons",
+    "org.cinnamon.theme name": "Dusk-Ribbons"
+  },
+  "status": "not executed by this collection builder"
+}

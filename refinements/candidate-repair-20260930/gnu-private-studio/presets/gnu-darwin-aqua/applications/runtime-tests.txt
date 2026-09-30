@@ -1,0 +1,189 @@
+test_chained_layers_validate_each_transition (test_composed.ComposedTests.test_chained_layers_validate_each_transition) ... ok
+test_context_leaves_originals_immutable_and_removes_copies (test_composed.ComposedTests.test_context_leaves_originals_immutable_and_removes_copies) ... ok
+test_core_file_mode_and_before_preserved (test_composed.ComposedTests.test_core_file_mode_and_before_preserved) ... ok
+test_file_then_text_preserves_unmodified_bytes (test_composed.ComposedTests.test_file_then_text_preserves_unmodified_bytes) ... ok
+test_gsetting_overlap_is_precise (test_composed.ComposedTests.test_gsetting_overlap_is_precise) ... ok
+test_ini_file_overlay_preserves_other_sections_and_keys (test_composed.ComposedTests.test_ini_file_overlay_preserves_other_sections_and_keys) ... ok
+test_json_ancestor_replacement_handles_removed_old_fields (test_composed.ComposedTests.test_json_ancestor_replacement_handles_removed_old_fields) ... ok
+test_json_descendant_preserves_unrelated_expected_fields (test_composed.ComposedTests.test_json_descendant_preserves_unrelated_expected_fields) ... ok
+test_prompt_projection_preserves_suffix_before_and_original_receipt (test_composed.ComposedTests.test_prompt_projection_preserves_suffix_before_and_original_receipt) ... ok
+test_prompt_projection_rejects_before_body_or_declared_hash_drift (test_composed.ComposedTests.test_prompt_projection_rejects_before_body_or_declared_hash_drift) ... ok
+test_prompt_projection_rejects_narrow_action_without_full_file (test_composed.ComposedTests.test_prompt_projection_rejects_narrow_action_without_full_file) ... ok
+test_prompt_projection_rejects_removed_or_moved_suffix (test_composed.ComposedTests.test_prompt_projection_rejects_removed_or_moved_suffix) ... ok
+test_prompt_projection_requires_exact_path_allowlist (test_composed.ComposedTests.test_prompt_projection_requires_exact_path_allowlist) ... ok
+test_protected_hash_requires_allowlist_and_provable_transition (test_composed.ComposedTests.test_protected_hash_requires_allowlist_and_provable_transition) ... ok
+test_text_then_file_promotes_to_strict_full_content (test_composed.ComposedTests.test_text_then_file_promotes_to_strict_full_content) ... ok
+test_whole_json_file_retains_unrelated_drift_detection (test_composed.ComposedTests.test_whole_json_file_retains_unrelated_drift_detection) ... ok
+test_aggregate_failure_blocks_after_core_restored (test_guard.GuardTests.test_aggregate_failure_blocks_after_core_restored) ... ok
+test_interactive_conflict_fails_without_waiting (test_guard.GuardTests.test_interactive_conflict_fails_without_waiting) ... ok
+test_nested_same_process_does_not_deadlock (test_guard.GuardTests.test_nested_same_process_does_not_deadlock) ... ok
+test_other_owner_blocked_and_owner_recovery_allowed (test_guard.GuardTests.test_other_owner_blocked_and_owner_recovery_allowed) ... ok
+test_supplement_marker_blocks_new_trial (test_guard.GuardTests.test_supplement_marker_blocks_new_trial) ... ok
+test_timer_waits_for_command_then_proceeds (test_guard.GuardTests.test_timer_waits_for_command_then_proceeds) ... ok
+test_attempted_missing_receipt_remains_recovery_required (test_recovery.Recovery.test_attempted_missing_receipt_remains_recovery_required) ... ok
+test_check_composes_core_then_stages (test_recovery.Recovery.test_check_composes_core_then_stages) ... ok
+test_missing_required_stage_fails_before_checks (test_recovery.Recovery.test_missing_required_stage_fails_before_checks) ... ok
+test_overlay_projection_still_detects_unrelated_edits (test_recovery.Recovery.test_overlay_projection_still_detects_unrelated_edits) ... ok
+test_panel_layout_is_never_a_written_setting (test_recovery.Recovery.test_panel_layout_is_never_a_written_setting) ... 
+(process:8): dconf-CRITICAL **: 03:12:18.074: unable to create file '/run/user/1000/dconf/user': Read-only file system.  dconf will not work properly.
+
+(process:8): dconf-CRITICAL **: 03:12:18.075: unable to create file '/run/user/1000/dconf/user': Read-only file system.  dconf will not work properly.
+
+(process:8): dconf-CRITICAL **: 03:12:18.082: unable to create file '/run/user/1000/dconf/user': Read-only file system.  dconf will not work properly.
+
+(process:8): dconf-CRITICAL **: 03:12:18.084: unable to create file '/run/user/1000/dconf/user': Read-only file system.  dconf will not work properly.
+
+(process:8): dconf-CRITICAL **: 03:12:18.084: unable to create file '/run/user/1000/dconf/user': Read-only file system.  dconf will not work properly.
+
+(process:8): dconf-CRITICAL **: 03:12:18.085: unable to create file '/run/user/1000/dconf/user': Read-only file system.  dconf will not work properly.
+
+(process:8): dconf-CRITICAL **: 03:12:18.085: unable to create file '/run/user/1000/dconf/user': Read-only file system.  dconf will not work properly.
+
+(process:8): dconf-CRITICAL **: 03:12:18.085: unable to create file '/run/user/1000/dconf/user': Read-only file system.  dconf will not work properly.
+
+(process:8): dconf-CRITICAL **: 03:12:18.086: unable to create file '/run/user/1000/dconf/user': Read-only file system.  dconf will not work properly.
+
+(process:8): dconf-CRITICAL **: 03:12:18.086: unable to create file '/run/user/1000/dconf/user': Read-only file system.  dconf will not work properly.
+
+(process:8): dconf-CRITICAL **: 03:12:18.086: unable to create file '/run/user/1000/dconf/user': Read-only file system.  dconf will not work properly.
+
+(process:8): dconf-CRITICAL **: 03:12:18.087: unable to create file '/run/user/1000/dconf/user': Read-only file system.  dconf will not work properly.
+
+(process:8): dconf-CRITICAL **: 03:12:18.087: unable to create file '/run/user/1000/dconf/user': Read-only file system.  dconf will not work properly.
+
+(process:8): dconf-CRITICAL **: 03:12:18.087: unable to create file '/run/user/1000/dconf/user': Read-only file system.  dconf will not work properly.
+
+(process:8): dconf-CRITICAL **: 03:12:18.088: unable to create file '/run/user/1000/dconf/user': Read-only file system.  dconf will not work properly.
+
+(process:8): dconf-CRITICAL **: 03:12:18.088: unable to create file '/run/user/1000/dconf/user': Read-only file system.  dconf will not work properly.
+
+(process:8): dconf-CRITICAL **: 03:12:18.088: unable to create file '/run/user/1000/dconf/user': Read-only file system.  dconf will not work properly.
+
+(process:8): dconf-CRITICAL **: 03:12:18.089: unable to create file '/run/user/1000/dconf/user': Read-only file system.  dconf will not work properly.
+
+(process:8): dconf-CRITICAL **: 03:12:18.089: unable to create file '/run/user/1000/dconf/user': Read-only file system.  dconf will not work properly.
+
+(process:8): dconf-CRITICAL **: 03:12:18.090: unable to create file '/run/user/1000/dconf/user': Read-only file system.  dconf will not work properly.
+
+(process:8): dconf-CRITICAL **: 03:12:18.091: unable to create file '/run/user/1000/dconf/user': Read-only file system.  dconf will not work properly.
+
+(process:8): dconf-CRITICAL **: 03:12:18.091: unable to create file '/run/user/1000/dconf/user': Read-only file system.  dconf will not work properly.
+
+(process:8): dconf-CRITICAL **: 03:12:18.091: unable to create file '/run/user/1000/dconf/user': Read-only file system.  dconf will not work properly.
+
+(process:8): dconf-CRITICAL **: 03:12:18.091: unable to create file '/run/user/1000/dconf/user': Read-only file system.  dconf will not work properly.
+
+(process:8): dconf-CRITICAL **: 03:12:18.091: unable to create file '/run/user/1000/dconf/user': Read-only file system.  dconf will not work properly.
+
+(process:8): dconf-CRITICAL **: 03:12:18.091: unable to create file '/run/user/1000/dconf/user': Read-only file system.  dconf will not work properly.
+
+(process:8): dconf-CRITICAL **: 03:12:18.091: unable to create file '/run/user/1000/dconf/user': Read-only file system.  dconf will not work properly.
+
+(process:8): dconf-CRITICAL **: 03:12:18.091: unable to create file '/run/user/1000/dconf/user': Read-only file system.  dconf will not work properly.
+
+(process:8): dconf-CRITICAL **: 03:12:18.092: unable to create file '/run/user/1000/dconf/user': Read-only file system.  dconf will not work properly.
+
+(process:8): dconf-CRITICAL **: 03:12:18.092: unable to create file '/run/user/1000/dconf/user': Read-only file system.  dconf will not work properly.
+
+(process:8): dconf-CRITICAL **: 03:12:18.092: unable to create file '/run/user/1000/dconf/user': Read-only file system.  dconf will not work properly.
+
+(process:8): dconf-CRITICAL **: 03:12:18.092: unable to create file '/run/user/1000/dconf/user': Read-only file system.  dconf will not work properly.
+
+(process:8): dconf-CRITICAL **: 03:12:18.092: unable to create file '/run/user/1000/dconf/user': Read-only file system.  dconf will not work properly.
+
+(process:8): dconf-CRITICAL **: 03:12:18.093: unable to create file '/run/user/1000/dconf/user': Read-only file system.  dconf will not work properly.
+
+(process:8): dconf-CRITICAL **: 03:12:18.093: unable to create file '/run/user/1000/dconf/user': Read-only file system.  dconf will not work properly.
+
+(process:8): dconf-CRITICAL **: 03:12:18.093: unable to create file '/run/user/1000/dconf/user': Read-only file system.  dconf will not work properly.
+
+(process:8): dconf-CRITICAL **: 03:12:18.093: unable to create file '/run/user/1000/dconf/user': Read-only file system.  dconf will not work properly.
+
+(process:8): dconf-CRITICAL **: 03:12:18.093: unable to create file '/run/user/1000/dconf/user': Read-only file system.  dconf will not work properly.
+
+(process:8): dconf-CRITICAL **: 03:12:18.093: unable to create file '/run/user/1000/dconf/user': Read-only file system.  dconf will not work properly.
+
+(process:8): dconf-CRITICAL **: 03:12:18.093: unable to create file '/run/user/1000/dconf/user': Read-only file system.  dconf will not work properly.
+
+(process:8): dconf-CRITICAL **: 03:12:18.094: unable to create file '/run/user/1000/dconf/user': Read-only file system.  dconf will not work properly.
+
+(process:8): dconf-CRITICAL **: 03:12:18.094: unable to create file '/run/user/1000/dconf/user': Read-only file system.  dconf will not work properly.
+
+(process:8): dconf-CRITICAL **: 03:12:18.094: unable to create file '/run/user/1000/dconf/user': Read-only file system.  dconf will not work properly.
+
+(process:8): dconf-CRITICAL **: 03:12:18.094: unable to create file '/run/user/1000/dconf/user': Read-only file system.  dconf will not work properly.
+
+(process:8): dconf-CRITICAL **: 03:12:18.094: unable to create file '/run/user/1000/dconf/user': Read-only file system.  dconf will not work properly.
+
+(process:8): dconf-CRITICAL **: 03:12:18.094: unable to create file '/run/user/1000/dconf/user': Read-only file system.  dconf will not work properly.
+
+(process:8): dconf-CRITICAL **: 03:12:18.094: unable to create file '/run/user/1000/dconf/user': Read-only file system.  dconf will not work properly.
+
+(process:8): dconf-CRITICAL **: 03:12:18.095: unable to create file '/run/user/1000/dconf/user': Read-only file system.  dconf will not work properly.
+
+(process:8): dconf-CRITICAL **: 03:12:18.095: unable to create file '/run/user/1000/dconf/user': Read-only file system.  dconf will not work properly.
+
+(process:8): dconf-CRITICAL **: 03:12:18.095: unable to create file '/run/user/1000/dconf/user': Read-only file system.  dconf will not work properly.
+
+(process:8): dconf-CRITICAL **: 03:12:18.095: unable to create file '/run/user/1000/dconf/user': Read-only file system.  dconf will not work properly.
+
+(process:8): dconf-CRITICAL **: 03:12:18.095: unable to create file '/run/user/1000/dconf/user': Read-only file system.  dconf will not work properly.
+
+(process:8): dconf-CRITICAL **: 03:12:18.095: unable to create file '/run/user/1000/dconf/user': Read-only file system.  dconf will not work properly.
+
+(process:8): dconf-CRITICAL **: 03:12:18.095: unable to create file '/run/user/1000/dconf/user': Read-only file system.  dconf will not work properly.
+
+(process:8): dconf-CRITICAL **: 03:12:18.096: unable to create file '/run/user/1000/dconf/user': Read-only file system.  dconf will not work properly.
+
+(process:8): dconf-CRITICAL **: 03:12:18.096: unable to create file '/run/user/1000/dconf/user': Read-only file system.  dconf will not work properly.
+
+(process:8): dconf-CRITICAL **: 03:12:18.096: unable to create file '/run/user/1000/dconf/user': Read-only file system.  dconf will not work properly.
+
+(process:8): dconf-CRITICAL **: 03:12:18.096: unable to create file '/run/user/1000/dconf/user': Read-only file system.  dconf will not work properly.
+
+(process:8): dconf-CRITICAL **: 03:12:18.096: unable to create file '/run/user/1000/dconf/user': Read-only file system.  dconf will not work properly.
+
+(process:8): dconf-CRITICAL **: 03:12:18.096: unable to create file '/run/user/1000/dconf/user': Read-only file system.  dconf will not work properly.
+
+(process:8): dconf-CRITICAL **: 03:12:18.096: unable to create file '/run/user/1000/dconf/user': Read-only file system.  dconf will not work properly.
+
+(process:8): dconf-CRITICAL **: 03:12:18.097: unable to create file '/run/user/1000/dconf/user': Read-only file system.  dconf will not work properly.
+
+(process:8): dconf-CRITICAL **: 03:12:18.097: unable to create file '/run/user/1000/dconf/user': Read-only file system.  dconf will not work properly.
+
+(process:8): dconf-CRITICAL **: 03:12:18.097: unable to create file '/run/user/1000/dconf/user': Read-only file system.  dconf will not work properly.
+
+(process:8): dconf-CRITICAL **: 03:12:18.097: unable to create file '/run/user/1000/dconf/user': Read-only file system.  dconf will not work properly.
+
+(process:8): dconf-CRITICAL **: 03:12:18.097: unable to create file '/run/user/1000/dconf/user': Read-only file system.  dconf will not work properly.
+
+(process:8): dconf-CRITICAL **: 03:12:18.097: unable to create file '/run/user/1000/dconf/user': Read-only file system.  dconf will not work properly.
+
+(process:8): dconf-CRITICAL **: 03:12:18.097: unable to create file '/run/user/1000/dconf/user': Read-only file system.  dconf will not work properly.
+
+(process:8): dconf-CRITICAL **: 03:12:18.097: unable to create file '/run/user/1000/dconf/user': Read-only file system.  dconf will not work properly.
+
+(process:8): dconf-CRITICAL **: 03:12:18.098: unable to create file '/run/user/1000/dconf/user': Read-only file system.  dconf will not work properly.
+
+(process:8): dconf-CRITICAL **: 03:12:18.098: unable to create file '/run/user/1000/dconf/user': Read-only file system.  dconf will not work properly.
+
+(process:8): dconf-CRITICAL **: 03:12:18.098: unable to create file '/run/user/1000/dconf/user': Read-only file system.  dconf will not work properly.
+
+(process:8): dconf-CRITICAL **: 03:12:18.098: unable to create file '/run/user/1000/dconf/user': Read-only file system.  dconf will not work properly.
+
+(process:8): dconf-CRITICAL **: 03:12:18.099: unable to create file '/run/user/1000/dconf/user': Read-only file system.  dconf will not work properly.
+
+(process:8): dconf-CRITICAL **: 03:12:18.099: unable to create file '/run/user/1000/dconf/user': Read-only file system.  dconf will not work properly.
+
+(process:8): dconf-CRITICAL **: 03:12:18.099: unable to create file '/run/user/1000/dconf/user': Read-only file system.  dconf will not work properly.
+
+(process:8): dconf-CRITICAL **: 03:12:18.099: unable to create file '/run/user/1000/dconf/user': Read-only file system.  dconf will not work properly.
+ok
+test_settled_release_ignores_stray_timer (test_recovery.Recovery.test_settled_release_ignores_stray_timer) ... ok
+test_supplement_failure_survives_core_success_and_retries (test_recovery.Recovery.test_supplement_failure_survives_core_success_and_retries) ... ok
+test_unattempted_stage_is_not_missing_during_partial_apply (test_recovery.Recovery.test_unattempted_stage_is_not_missing_during_partial_apply) ... ok
+
+----------------------------------------------------------------------
+Ran 30 tests in 0.515s
+
+OK

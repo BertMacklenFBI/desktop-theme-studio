@@ -1,0 +1,18 @@
+{
+  "Ocean-Silk-Glass": {
+    "accent": "#354D64",
+    "accent-hover": "#354D64",
+    "base": "#E9EBE6",
+    "battery": "#42665C",
+    "border": "#647F8E",
+    "indeterminate": "#475F6C",
+    "label": "Ocean-Silk-Glass",
+    "muted": "#475F6C",
+    "secondary": "#6F94A4",
+    "short": "OS",
+    "surface0": "#E9EBE6",
+    "surface1": "#CBD7DA",
+    "text": "#304957",
+    "tile": "#354D64"
+  }
+}

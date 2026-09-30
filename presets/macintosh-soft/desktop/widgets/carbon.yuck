@@ -1,0 +1,56 @@
+;; Cinnamon adaptation of Failedex/CarbonMonoxide's dashboard, calendar,
+;; notes, timer, control panel and dock. Dashboard upstream credits tsukki9696.
+(defwidget dcal []
+  (box :class "calendar-card" :orientation "v" :space-evenly false :spacing 14
+    (label :show-truncated false :class "eyebrow" :text "CALENDAR" :halign "start")
+    (calendar :show-details false :show-heading true :show-day-names true
+      :show-week-numbers false :day {s.day} :year {s.year})))
+
+(defwidget dnotes []
+  (box :class "card notes" :orientation "v" :space-evenly false :spacing 14
+    (box :space-evenly false
+      (label :show-truncated false :class "eyebrow" :text "NOTES" :hexpand true :halign "start")
+      (button :timeout "5s" :class "chip" :onclick "scripts/ui edit-notes" (label :show-truncated false :text "Edit")))
+    (scroll :hscroll false :vscroll true :height 190 :vexpand true
+      (label :text {s.notes} :wrap true :limit-width 40 :halign "start" :valign "start" :xalign 0))))
+
+(defwidget focus-timer []
+  (box :class "card focus" :orientation "v" :space-evenly false :spacing 12
+    (label :show-truncated false :class "eyebrow" :text "FOCUS TIMER" :halign "start")
+    (label :class "timer" :text {s.timer.text})
+    (box :spacing 8
+      (button :timeout "5s" :class "chip" :onclick "scripts/backend.py action timer -5" (label :show-truncated false :text "−5"))
+      (button :timeout "5s" :class "chip selected" :onclick "scripts/backend.py action timer toggle" (label :show-truncated false :text {s.timer.running ? "Stop" : "Start"}))
+      (button :timeout "5s" :class "chip" :onclick "scripts/backend.py action timer 5" (label :show-truncated false :text "+5"))
+      (button :timeout "5s" :class "chip" :onclick "scripts/backend.py action timer reset" (label :show-truncated false :text "Reset")))))
+
+(defwidget quick-controls []
+  (box :class "card" :orientation "v" :space-evenly false :spacing 12
+    (label :show-truncated false :class "eyebrow" :text "QUICK CONTROLS" :halign "start")
+    (box :spacing 10
+      (button :timeout "5s" :class {s.wifi ? "tile enabled" : "tile"} :onclick "scripts/backend.py action wifi"
+        (box :orientation "v" :spacing 6
+          (label :show-truncated false :text "Wi-Fi")
+          (label :class "muted" :text {s.wifi ? s.network : "Off"} :limit-width 18)))
+      (button :timeout "5s" :class {s.notifications ? "tile" : "tile enabled"} :onclick "scripts/backend.py action dnd"
+        (box :orientation "v" :spacing 6
+          (label :show-truncated false :text "Do not disturb")
+          (label :class "muted" :text {s.notifications ? "Off" : "On"}))))
+    (box :spacing 8
+      (button :timeout "5s" :class "chip" :onclick "scripts/ui network" (label :show-truncated false :text "Network"))
+      (button :timeout "5s" :class "chip" :onclick "scripts/ui appearance" (label :show-truncated false :text "Appearance"))
+      (button :timeout "5s" :class "chip" :onclick "scripts/ui screenshot" (label :show-truncated false :text "Screenshot")))
+    (box :spacing 8
+      (button :timeout "5s" :class "chip" :onclick "scripts/ui lock" (label :show-truncated false :text "Lock"))
+      (button :timeout "5s" :class "chip" :onclick "scripts/ui settings" (label :show-truncated false :text "Settings"))
+      (button :timeout "5s" :class "chip" :onclick "scripts/ui power" (label :show-truncated false :text "Power")))))
+
+(defwidget popup-header [title window]
+  (box :class "popup-header" :space-evenly false
+    (box :orientation "v" :space-evenly false :spacing 4 :hexpand true
+      (label :show-truncated false :class "heading" :text title :halign "start")
+      (label :show-truncated false :class "muted" :text "Macintosh Soft" :halign "start"))
+    (button :timeout "15s" :class "close" :tooltip "Close" :onclick "/usr/bin/python3 /home/bertmacklen/Documents/desktop-theme-studio/presets/macintosh-soft/desktop/flow.py close ${window}" (label :show-truncated false :text "×"))))
+
+(defwidget controls-content [] (box :orientation "v" :space-evenly false :spacing 18 (audio-card) (box :spacing 10 (button :onclick "scripts/ui network" (label :show-truncated false :text "Network")) (button :onclick "scripts/ui settings" (label :show-truncated false :text "Settings")))))
+(defwidget macintosh-dashboard [] (box :orientation "v" :space-evenly false :spacing 12 (music-card) (box :class "utility-row" :spacing 4 (button :onclick "scripts/ui notes" (label :show-truncated false :text "Notes")) (button :onclick "scripts/ui timer" (label :show-truncated false :text "Focus")) (button :onclick "scripts/ui controls" (label :show-truncated false :text "Controls")))))

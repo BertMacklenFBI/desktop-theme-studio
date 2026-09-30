@@ -1,0 +1,18 @@
+{
+  "Macintosh Soft": {
+    "accent": "#356262",
+    "accent-hover": "#356262",
+    "base": "#EBE9E1",
+    "battery": "#356247",
+    "border": "#697773",
+    "indeterminate": "#505D66",
+    "label": "Macintosh Soft",
+    "muted": "#505D66",
+    "secondary": "#356262",
+    "short": "MS",
+    "surface0": "#EBE9E1",
+    "surface1": "#D7D9D4",
+    "text": "#293238",
+    "tile": "#356262"
+  }
+}

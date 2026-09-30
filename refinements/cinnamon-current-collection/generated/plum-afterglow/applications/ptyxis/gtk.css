@@ -1,0 +1,46 @@
+/* Plum Afterglow Ptyxis application chrome; load as a profile-specific append block. */
+@define-color theme_fg_color #f0e7df;
+@define-color theme_text_color #f0e7df;
+@define-color theme_bg_color #2d2838;
+@define-color theme_base_color #211e29;
+@define-color theme_selected_bg_color #584459;
+@define-color theme_selected_fg_color #f0e7df;
+@define-color window_fg_color #f0e7df;
+@define-color window_bg_color #2d2838;
+@define-color view_fg_color #f0e7df;
+@define-color view_bg_color #211e29;
+@define-color headerbar_fg_color #f0e7df;
+@define-color headerbar_bg_color #393244;
+@define-color headerbar_backdrop_color #2d2838;
+@define-color headerbar_border_color #65566d;
+@define-color accent_color #d5a1aa;
+@define-color accent_bg_color #584459;
+@define-color accent_fg_color #f0e7df;
+:root {
+  --accent-bg-color: #584459;
+  --accent-fg-color: #f0e7df;
+  --accent-color: #d5a1aa;
+  --window-bg-color: #2d2838;
+  --window-fg-color: #f0e7df;
+  --view-bg-color: #211e29;
+  --view-fg-color: #f0e7df;
+  --headerbar-bg-color: #393244;
+  --headerbar-fg-color: #f0e7df;
+  --headerbar-backdrop-color: #2d2838;
+  --headerbar-border-color: #65566d;
+  --sidebar-bg-color: #393244;
+  --sidebar-fg-color: #f0e7df;
+  --sidebar-backdrop-color: #2d2838;
+  --card-bg-color: #393244;
+  --card-fg-color: #f0e7df;
+  --dialog-bg-color: #2d2838;
+  --dialog-fg-color: #f0e7df;
+  --popover-bg-color: #2d2838;
+  --popover-fg-color: #f0e7df;
+}
+window { background-color: #2d2838; color: #f0e7df; }
+headerbar { background-color: #393244; background-image: none; color: #f0e7df; border-color: #65566d; }
+headerbar label, headerbar image, headerbar button, .titlebar label, .titlebar image, .titlebar button { color: #f0e7df; }
+headerbar button:checked, headerbar button:checked label, headerbar button:checked image { color: #f0e7df; }
+terminal, vte-terminal { background-color: #211e29; color: #f0e7df; }
+button:checked, button:active { background-color: #584459; color: #f0e7df; }

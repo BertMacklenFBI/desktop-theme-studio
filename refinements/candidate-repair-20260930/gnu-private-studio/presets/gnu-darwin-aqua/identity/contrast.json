@@ -1,0 +1,447 @@
+{
+  "tool": "tools/design_lint.py",
+  "generated": "2026-09-29T08:08:12+00:00",
+  "design": "/home/bertmacklen/Documents/desktop-theme-studio/presets/gnu-darwin-aqua/design.json",
+  "design_sha256": "5743461cfd7533f963f30a11009d52d43bdbaa83f32aa8964aea4eb75230e0b8",
+  "preset": "gnu-darwin-aqua",
+  "palette_source": "palette",
+  "required_tokens": [
+    "desktop",
+    "background",
+    "surface",
+    "elevated",
+    "foreground",
+    "muted",
+    "disabled",
+    "accent",
+    "secondary",
+    "selection",
+    "selection_foreground",
+    "focus",
+    "border",
+    "control_border",
+    "success",
+    "warning",
+    "error",
+    "terminal",
+    "terminal_foreground",
+    "island_background",
+    "island_foreground",
+    "top_background",
+    "top_foreground"
+  ],
+  "accent_fill_only": true,
+  "errors": 0,
+  "warnings": 0,
+  "exit": 0,
+  "findings": [
+    {
+      "severity": "info",
+      "check": "contrast",
+      "path": "$.palette.accent",
+      "message": "accent #4384D6 on background #EEF0F2 = 3.34:1 (< 4.5)"
+    }
+  ],
+  "contrast": [
+    {
+      "fg": "foreground",
+      "bg": "background",
+      "min": 4.5,
+      "fg_hex": "#202328",
+      "bg_hex": "#EEF0F2",
+      "ratio": 13.8,
+      "pass": true,
+      "severity": "error"
+    },
+    {
+      "fg": "foreground",
+      "bg": "surface",
+      "min": 4.5,
+      "fg_hex": "#202328",
+      "bg_hex": "#E2E4E7",
+      "ratio": 12.37,
+      "pass": true,
+      "severity": "error"
+    },
+    {
+      "fg": "foreground",
+      "bg": "elevated",
+      "min": 4.5,
+      "fg_hex": "#202328",
+      "bg_hex": "#F8F9FA",
+      "ratio": 14.95,
+      "pass": true,
+      "severity": "error"
+    },
+    {
+      "fg": "muted",
+      "bg": "background",
+      "min": 4.5,
+      "fg_hex": "#535A64",
+      "bg_hex": "#EEF0F2",
+      "ratio": 6.1,
+      "pass": true,
+      "severity": "error"
+    },
+    {
+      "fg": "muted",
+      "bg": "surface",
+      "min": 4.5,
+      "fg_hex": "#535A64",
+      "bg_hex": "#E2E4E7",
+      "ratio": 5.47,
+      "pass": true,
+      "severity": "error"
+    },
+    {
+      "fg": "muted",
+      "bg": "elevated",
+      "min": 4.5,
+      "fg_hex": "#535A64",
+      "bg_hex": "#F8F9FA",
+      "ratio": 6.61,
+      "pass": true,
+      "severity": "error"
+    },
+    {
+      "fg": "selection_foreground",
+      "bg": "selection",
+      "min": 4.5,
+      "fg_hex": "#FFFFFF",
+      "bg_hex": "#245FA8",
+      "ratio": 6.41,
+      "pass": true,
+      "severity": "error"
+    },
+    {
+      "fg": "terminal_foreground",
+      "bg": "terminal",
+      "min": 4.5,
+      "fg_hex": "#202328",
+      "bg_hex": "#F8F9FA",
+      "ratio": 14.95,
+      "pass": true,
+      "severity": "error"
+    },
+    {
+      "fg": "control_border",
+      "bg": "background",
+      "min": 3.0,
+      "fg_hex": "#747A83",
+      "bg_hex": "#EEF0F2",
+      "ratio": 3.79,
+      "pass": true,
+      "severity": "error"
+    },
+    {
+      "fg": "control_border",
+      "bg": "surface",
+      "min": 3.0,
+      "fg_hex": "#747A83",
+      "bg_hex": "#E2E4E7",
+      "ratio": 3.4,
+      "pass": true,
+      "severity": "error"
+    },
+    {
+      "fg": "control_border",
+      "bg": "elevated",
+      "min": 3.0,
+      "fg_hex": "#747A83",
+      "bg_hex": "#F8F9FA",
+      "ratio": 4.1,
+      "pass": true,
+      "severity": "error"
+    },
+    {
+      "fg": "focus",
+      "bg": "background",
+      "min": 3.0,
+      "fg_hex": "#245FA8",
+      "bg_hex": "#EEF0F2",
+      "ratio": 5.61,
+      "pass": true,
+      "severity": "error"
+    },
+    {
+      "fg": "focus",
+      "bg": "surface",
+      "min": 3.0,
+      "fg_hex": "#245FA8",
+      "bg_hex": "#E2E4E7",
+      "ratio": 5.03,
+      "pass": true,
+      "severity": "error"
+    },
+    {
+      "fg": "focus",
+      "bg": "elevated",
+      "min": 3.0,
+      "fg_hex": "#245FA8",
+      "bg_hex": "#F8F9FA",
+      "ratio": 6.08,
+      "pass": true,
+      "severity": "error"
+    },
+    {
+      "fg": "disabled",
+      "bg": "background",
+      "min": 3.0,
+      "fg_hex": "#747A83",
+      "bg_hex": "#EEF0F2",
+      "ratio": 3.79,
+      "pass": true,
+      "severity": "error"
+    },
+    {
+      "fg": "disabled",
+      "bg": "surface",
+      "min": 3.0,
+      "fg_hex": "#747A83",
+      "bg_hex": "#E2E4E7",
+      "ratio": 3.4,
+      "pass": true,
+      "severity": "error"
+    },
+    {
+      "fg": "disabled",
+      "bg": "elevated",
+      "min": 3.0,
+      "fg_hex": "#747A83",
+      "bg_hex": "#F8F9FA",
+      "ratio": 4.1,
+      "pass": true,
+      "severity": "error"
+    },
+    {
+      "fg": "accent",
+      "bg": "background",
+      "min": 4.5,
+      "fg_hex": "#4384D6",
+      "bg_hex": "#EEF0F2",
+      "ratio": 3.34,
+      "pass": false,
+      "severity": "info",
+      "note": "fill-only accent: reported, not enforced"
+    }
+  ],
+  "ansi": [
+    {
+      "slot": 1,
+      "hex": "#A52925",
+      "ratio": 6.77,
+      "pass": true
+    },
+    {
+      "slot": 2,
+      "hex": "#276235",
+      "ratio": 6.91,
+      "pass": true
+    },
+    {
+      "slot": 3,
+      "hex": "#805200",
+      "ratio": 6.38,
+      "pass": true
+    },
+    {
+      "slot": 4,
+      "hex": "#245FA8",
+      "ratio": 6.08,
+      "pass": true
+    },
+    {
+      "slot": 5,
+      "hex": "#754191",
+      "ratio": 6.82,
+      "pass": true
+    },
+    {
+      "slot": 6,
+      "hex": "#17666E",
+      "ratio": 6.3,
+      "pass": true
+    },
+    {
+      "slot": 7,
+      "hex": "#515861",
+      "ratio": 6.83,
+      "pass": true
+    },
+    {
+      "slot": 9,
+      "hex": "#A53231",
+      "ratio": 6.43,
+      "pass": true
+    },
+    {
+      "slot": 10,
+      "hex": "#35683D",
+      "ratio": 6.23,
+      "pass": true
+    },
+    {
+      "slot": 11,
+      "hex": "#865500",
+      "ratio": 6.01,
+      "pass": true
+    },
+    {
+      "slot": 12,
+      "hex": "#2864AC",
+      "ratio": 5.68,
+      "pass": true
+    },
+    {
+      "slot": 13,
+      "hex": "#7D4597",
+      "ratio": 6.28,
+      "pass": true
+    },
+    {
+      "slot": 14,
+      "hex": "#236D75",
+      "ratio": 5.67,
+      "pass": true
+    },
+    {
+      "slot": 15,
+      "hex": "#535A64",
+      "ratio": 6.61,
+      "pass": true
+    }
+  ],
+  "fonts": [
+    {
+      "key": "ui_family",
+      "family": "Liberation Sans",
+      "installed": true
+    },
+    {
+      "key": "title_family",
+      "family": "Liberation Sans",
+      "installed": true
+    },
+    {
+      "key": "clock_family",
+      "family": "Liberation Sans",
+      "installed": true
+    },
+    {
+      "key": "monospace_family",
+      "family": "Liberation Mono",
+      "installed": true
+    }
+  ],
+  "accent": {
+    "hex": "#4384D6",
+    "hue": 213.5,
+    "saturation": 0.642
+  },
+  "hue_census": [
+    {
+      "source": "presets/macintosh-soft",
+      "accent": "#507D7D",
+      "hue": 180.0,
+      "distance": 33.5
+    },
+    {
+      "source": "presets/indigo-lunchbox",
+      "accent": "#6157A3",
+      "hue": 247.9,
+      "distance": 34.4
+    },
+    {
+      "source": "themes/SILO/config/mint-dashboard/theme.json",
+      "accent": "#1FC9A6",
+      "hue": 167.6,
+      "distance": 45.8
+    },
+    {
+      "source": "presets/moonstone-stereo",
+      "accent": "#8DB4A0",
+      "hue": 149.2,
+      "distance": 64.2
+    },
+    {
+      "source": "presets/amethyst-arcade",
+      "accent": "#CF7BF5",
+      "hue": 281.3,
+      "distance": 67.8
+    },
+    {
+      "source": "themes/CATPUCCINO MOCHA/config/mint-dashboard/theme.json",
+      "accent": "#A6E3A1",
+      "hue": 115.5,
+      "distance": 98.0
+    },
+    {
+      "source": "presets/marzipan-crown",
+      "accent": "#AD2C80",
+      "hue": 320.9,
+      "distance": 107.5
+    },
+    {
+      "source": "presets/peony-coronet",
+      "accent": "#EE60AA",
+      "hue": 328.7,
+      "distance": 115.3
+    },
+    {
+      "source": "presets/quiet-sage",
+      "accent": "#A8B99A",
+      "hue": 92.9,
+      "distance": 120.6
+    },
+    {
+      "source": "presets/plum-afterglow",
+      "accent": "#D5A1AA",
+      "hue": 349.6,
+      "distance": 136.1
+    },
+    {
+      "source": "presets/dot-matrix-pea",
+      "accent": "#8C9958",
+      "hue": 72.0,
+      "distance": 141.5
+    },
+    {
+      "source": "presets/pastel-leather",
+      "accent": "#DE999E",
+      "hue": 355.7,
+      "distance": 142.2
+    },
+    {
+      "source": "presets/red-panda-overtime",
+      "accent": "#FF6257",
+      "hue": 3.9,
+      "distance": 150.5
+    },
+    {
+      "source": "presets/tangerine-graphite",
+      "accent": "#E0915A",
+      "hue": 24.6,
+      "distance": 171.2
+    },
+    {
+      "source": "presets/tidal-observatory",
+      "accent": "#EFC58A",
+      "hue": 35.0,
+      "distance": 178.4
+    },
+    {
+      "source": "presets/carbon-typewriter",
+      "accent": "#D6D3D0",
+      "hue": 30.0,
+      "distance": null,
+      "note": "achromatic; hue not compared"
+    },
+    {
+      "source": "presets/gnuos-nt",
+      "accent": "#717980",
+      "hue": 208.0,
+      "distance": null,
+      "note": "achromatic; hue not compared"
+    }
+  ]
+}

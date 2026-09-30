@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=GNU-Darwin Workstation
+Comment=Faithful reconstruction of selected original gray GNU-Darwin scientific workstation screenshot: flat gray controls, square bevels, slate titles, black workspace, right and bottom 64px square dock tiles.
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=GNU-Darwin Workstation
+MetacityTheme=GNU-Darwin Workstation
+IconTheme=GNU-Darwin Workstation icons
+CursorTheme=GNU-Darwin Workstation cursors
+ButtonLayout=minimize:close

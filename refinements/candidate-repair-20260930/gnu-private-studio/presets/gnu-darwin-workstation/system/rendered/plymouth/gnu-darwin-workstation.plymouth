@@ -1,0 +1,8 @@
+[Plymouth Theme]
+Name=GNU-Darwin Workstation
+Description=Black workspace, square gray controls and slate progress bar
+ModuleName=script
+
+[script]
+ImageDir=/usr/share/plymouth/themes/gnu-darwin-workstation
+ScriptFile=/usr/share/plymouth/themes/gnu-darwin-workstation/gnu-darwin-workstation.script

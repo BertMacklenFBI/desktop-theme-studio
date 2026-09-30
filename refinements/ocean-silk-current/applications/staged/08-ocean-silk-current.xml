@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<style-scheme id="ocean-silk-current" name="Ocean-Silk-Glass" version="1.0"><author>Desktop Theme Studio</author>
+<style name="text" foreground="#304957" background="#E9EBE6"/>
+<style name="selection" foreground="#E9EBE6" background="#354D64"/>
+<style name="current-line" background="#CBD7DA"/>
+<style name="line-numbers" foreground="#475F6C" background="#CBD7DA"/>
+<style name="def:comment" foreground="#475F6C"/>
+<style name="def:keyword" foreground="#354D64"/>
+<style name="def:string" foreground="#42665C"/>
+<style name="def:number" foreground="#755B30"/>
+<style name="def:type" foreground="#354D64"/>
+<style name="def:error" foreground="#874B4B"/>
+</style-scheme>

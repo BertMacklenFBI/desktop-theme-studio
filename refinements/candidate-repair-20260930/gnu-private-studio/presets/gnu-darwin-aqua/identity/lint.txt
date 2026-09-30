@@ -1,0 +1,56 @@
+design_lint: /home/bertmacklen/Documents/desktop-theme-studio/presets/gnu-darwin-aqua/design.json
+
+Contrast (WCAG 2.x)
+fg                    bg          fg hex   bg hex   ratio  min  status
+--------------------  ----------  -------  -------  -----  ---  ------
+foreground            background  #202328  #EEF0F2  13.80  4.5  ok
+foreground            surface     #202328  #E2E4E7  12.37  4.5  ok
+foreground            elevated    #202328  #F8F9FA  14.95  4.5  ok
+muted                 background  #535A64  #EEF0F2  6.10   4.5  ok
+muted                 surface     #535A64  #E2E4E7  5.47   4.5  ok
+muted                 elevated    #535A64  #F8F9FA  6.61   4.5  ok
+selection_foreground  selection   #FFFFFF  #245FA8  6.41   4.5  ok
+terminal_foreground   terminal    #202328  #F8F9FA  14.95  4.5  ok
+control_border        background  #747A83  #EEF0F2  3.79   3.0  ok
+control_border        surface     #747A83  #E2E4E7  3.40   3.0  ok
+control_border        elevated    #747A83  #F8F9FA  4.10   3.0  ok
+focus                 background  #245FA8  #EEF0F2  5.61   3.0  ok
+focus                 surface     #245FA8  #E2E4E7  5.03   3.0  ok
+focus                 elevated    #245FA8  #F8F9FA  6.08   3.0  ok
+disabled              background  #747A83  #EEF0F2  3.79   3.0  ok
+disabled              surface     #747A83  #E2E4E7  3.40   3.0  ok
+disabled              elevated    #747A83  #F8F9FA  4.10   3.0  ok
+accent                background  #4384D6  #EEF0F2  3.34   4.5  info
+
+ANSI on terminal: 14/14 slots >= 3.0:1 (slots 0 and 8 exempt)
+
+Fonts: ui_family=Liberation Sans (ok), title_family=Liberation Sans (ok), clock_family=Liberation Sans (ok), monospace_family=Liberation Mono (ok)
+
+Hue census: accent #4384D6 hue 214 deg
+source                                                    accent   hue  dist   status
+--------------------------------------------------------  -------  ---  -----  ----------------------------
+presets/macintosh-soft                                    #507D7D  180  33.5   ok
+presets/indigo-lunchbox                                   #6157A3  248  34.4   ok
+themes/SILO/config/mint-dashboard/theme.json              #1FC9A6  168  45.8   ok
+presets/moonstone-stereo                                  #8DB4A0  149  64.2   ok
+presets/amethyst-arcade                                   #CF7BF5  281  67.8   ok
+themes/CATPUCCINO MOCHA/config/mint-dashboard/theme.json  #A6E3A1  116  98.0   ok
+presets/marzipan-crown                                    #AD2C80  321  107.5  ok
+presets/peony-coronet                                     #EE60AA  329  115.3  ok
+presets/quiet-sage                                        #A8B99A  93   120.6  ok
+presets/plum-afterglow                                    #D5A1AA  350  136.1  ok
+presets/dot-matrix-pea                                    #8C9958  72   141.5  ok
+presets/pastel-leather                                    #DE999E  356  142.2  ok
+presets/red-panda-overtime                                #FF6257  4    150.5  ok
+presets/tangerine-graphite                                #E0915A  25   171.2  ok
+presets/tidal-observatory                                 #EFC58A  35   178.4  ok
+presets/carbon-typewriter                                 #D6D3D0  30   -      achromatic; hue not compared
+presets/gnuos-nt                                          #717980  208  -      achromatic; hue not compared
+
+Findings
+severity  check     path              message
+--------  --------  ----------------  -----------------------------------------------------
+info      contrast  $.palette.accent  accent #4384D6 on background #EEF0F2 = 3.34:1 (< 4.5)
+
+Result: 0 error(s), 0 warning(s) -> exit 0
+Wrote /home/bertmacklen/Documents/desktop-theme-studio/presets/gnu-darwin-aqua/identity/contrast.json

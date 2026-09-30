@@ -1,0 +1,8 @@
+/* Moonstone Stereo GTK application surface. */
+window, dialog, .background { background-color: #f3eddd; color: #302e29; }
+headerbar { background-color: #fffaf0; color: #302e29; border-color: #b6ac97; }
+entry, textview, .view { background-color: #e7e1d3; color: #302e29; caret-color: #8db4a0; }
+button { background-color: #fffaf0; color: #302e29; border-color: #b6ac97; }
+button:hover { background-color: #526f64; }
+button:checked, button:active { background-color: #cedbd0; color: #302e29; }
+selection { background-color: #cedbd0; color: #302e29; }

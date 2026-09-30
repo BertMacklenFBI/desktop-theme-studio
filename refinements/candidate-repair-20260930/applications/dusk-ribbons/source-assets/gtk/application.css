@@ -1,0 +1,8 @@
+/* Dusk Ribbons GTK application surface. */
+window, dialog, .background { background-color: #373950; color: #f1e3df; }
+headerbar { background-color: #48445b; color: #f1e3df; border-color: #756172; }
+entry, textview, .view { background-color: #2d2c41; color: #f1e3df; caret-color: #bb8987; }
+button { background-color: #48445b; color: #f1e3df; border-color: #756172; }
+button:hover { background-color: #d3adb0; }
+button:checked, button:active { background-color: #bb8987; color: #2d2c41; }
+selection { background-color: #bb8987; color: #2d2c41; }

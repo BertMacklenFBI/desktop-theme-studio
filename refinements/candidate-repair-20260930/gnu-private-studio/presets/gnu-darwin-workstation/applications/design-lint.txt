@@ -1,0 +1,56 @@
+design_lint: /home/bertmacklen/Documents/desktop-theme-studio/presets/gnu-darwin-workstation/design.json
+
+Contrast (WCAG 2.x)
+fg                    bg          fg hex   bg hex   ratio  min  status
+--------------------  ----------  -------  -------  -----  ---  ------
+foreground            background  #101010  #BEBEBE  10.24  4.5  ok
+foreground            surface     #101010  #B3B2B0  8.98   4.5  ok
+foreground            elevated    #101010  #D0D0D0  12.34  4.5  ok
+muted                 background  #383838  #BEBEBE  6.31   4.5  ok
+muted                 surface     #383838  #B3B2B0  5.53   4.5  ok
+muted                 elevated    #383838  #D0D0D0  7.60   4.5  ok
+selection_foreground  selection   #FFFFFF  #333641  12.04  4.5  ok
+terminal_foreground   terminal    #FFFFFF  #000000  21.00  4.5  ok
+control_border        background  #595959  #BEBEBE  3.77   3.0  ok
+control_border        surface     #595959  #B3B2B0  3.31   3.0  ok
+control_border        elevated    #595959  #D0D0D0  4.54   3.0  ok
+focus                 background  #333641  #BEBEBE  6.48   3.0  ok
+focus                 surface     #333641  #B3B2B0  5.68   3.0  ok
+focus                 elevated    #333641  #D0D0D0  7.80   3.0  ok
+disabled              background  #595959  #BEBEBE  3.77   3.0  ok
+disabled              surface     #595959  #B3B2B0  3.31   3.0  ok
+disabled              elevated    #595959  #D0D0D0  4.54   3.0  ok
+accent                background  #333641  #BEBEBE  6.48   4.5  ok
+
+ANSI on terminal: 14/14 slots >= 3.0:1 (slots 0 and 8 exempt)
+
+Fonts: ui_family=Liberation Sans (ok), title_family=Liberation Sans (ok), clock_family=Liberation Mono (ok), monospace_family=Liberation Mono (ok)
+
+Hue census: accent #333641 hue 227 deg
+source                                                    accent   hue  dist   status
+--------------------------------------------------------  -------  ---  -----  ----------------------------
+presets/gnu-darwin-aqua                                   #4384D6  214  13.7   CLOSE
+presets/indigo-lunchbox                                   #6157A3  248  20.8   ok
+presets/macintosh-soft                                    #507D7D  180  47.1   ok
+presets/amethyst-arcade                                   #CF7BF5  281  54.2   ok
+themes/SILO/config/mint-dashboard/theme.json              #1FC9A6  168  59.5   ok
+presets/moonstone-stereo                                  #8DB4A0  149  77.9   ok
+presets/marzipan-crown                                    #AD2C80  321  93.8   ok
+presets/peony-coronet                                     #EE60AA  329  101.6  ok
+themes/CATPUCCINO MOCHA/config/mint-dashboard/theme.json  #A6E3A1  116  111.7  ok
+presets/plum-afterglow                                    #D5A1AA  350  122.5  ok
+presets/pastel-leather                                    #DE999E  356  128.5  ok
+presets/quiet-sage                                        #A8B99A  93   134.2  ok
+presets/red-panda-overtime                                #FF6257  4    136.8  ok
+presets/dot-matrix-pea                                    #8C9958  72   155.1  ok
+presets/tangerine-graphite                                #E0915A  25   157.5  ok
+presets/tidal-observatory                                 #EFC58A  35   167.9  ok
+presets/carbon-typewriter                                 #D6D3D0  30   -      achromatic; hue not compared
+presets/gnuos-nt                                          #717980  208  -      achromatic; hue not compared
+
+Findings
+severity  check  path              message
+--------  -----  ----------------  -------------------------------------------------------------------------
+warning   hue    $.palette.accent  accent #333641 (hue 227) is 13.7 deg from presets/gnu-darwin-aqua #4384D6
+
+Result: 0 error(s), 1 warning(s) -> exit 0

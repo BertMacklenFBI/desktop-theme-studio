@@ -1,0 +1,226 @@
+{
+  "schema": 1,
+  "slug": "ocean-silk",
+  "palette_sha256": "9998a52d58055d378b7af160c3ac2189924d5f05ff5100c7a4f7c2dda0abcd95",
+  "palette": {
+    "accent": "#6f94a4",
+    "background": "#e9ebe6",
+    "border": "#93aab4",
+    "error": "#874b4b",
+    "foreground": "#304957",
+    "hover": "#354D64",
+    "muted": "#475f6c",
+    "raised": "#cbd7da",
+    "selection": "#354d64",
+    "selection_foreground": "#e9ebe6",
+    "success": "#42665c",
+    "surface": "#e9ebe6",
+    "terminal": "#304957",
+    "terminal_foreground": "#e9ebe6",
+    "warning": "#755b30"
+  },
+  "authored_palette_sha256": "76cf12e1ad1ea7e09519795cf54533b0bd6f0e759f26e22f68388a272966cf59",
+  "design_source": "/home/bertmacklen/Documents/desktop-theme-studio/refinements/ocean-silk-current/design.json",
+  "design_sha256": "283d44364b1aa9112626b45588bfaed6db95569317df105de78c3376608109af",
+  "workspace_geometry": {
+    "shape": "circle",
+    "minimum_gap": 4
+  },
+  "workspace_style": {
+    "width_px": 44,
+    "gap_px": 6,
+    "backing_radius_px": 9999,
+    "button_radius_px": 9999,
+    "height_constraints": "none; cross-axis allocation belongs to reviewed native runtime",
+    "panel_heights": [
+      44,
+      54
+    ]
+  },
+  "state_colors": {
+    "width": 44,
+    "shape": "circle",
+    "panels": [
+      44,
+      54
+    ],
+    "strip": "#DEE7E6",
+    "normal_fill": "#cbd7da",
+    "normal_ink": "#304957",
+    "hover_fill": "#354d64",
+    "hover_ink": "#e9ebe6",
+    "active_fill": "#354d64",
+    "active_ink": "#e9ebe6",
+    "compact_fill": "#DEE7E6",
+    "compact_ink": "#304957",
+    "control": "#354D64",
+    "focus": "#354D64",
+    "muted": "#475f6c",
+    "disabled_ink": "#475f6c",
+    "status_fill": "#354d64",
+    "status_ink": "#e9ebe6"
+  },
+  "style_updates": {
+    "island_alpha": 1.0,
+    "card_alpha": 1.0,
+    "popup_alpha": 1.0
+  },
+  "overrides": {
+    "cinnamon_css": "/home/bertmacklen/Documents/desktop-theme-studio/refinements/candidate-repair-20260930/desktop/ocean-silk/workspace.css",
+    "island_css": "/home/bertmacklen/Documents/desktop-theme-studio/refinements/candidate-repair-20260930/desktop/ocean-silk/island.css"
+  },
+  "retained_cinnamon_correction": null,
+  "artwork_sha256_before": {
+    "wallpaper": "47c672c90403b254198d2000717173144a6becdd16c595a8d078ef5eb57cd98d",
+    "menu_logo": "50c72309586af55ff823a1da24fef5e9f196e4f497f0ea9cbf5879848ac242f8",
+    "fastfetch_logo": "50c72309586af55ff823a1da24fef5e9f196e4f497f0ea9cbf5879848ac242f8"
+  },
+  "artwork_sha256_after": {
+    "wallpaper": "47c672c90403b254198d2000717173144a6becdd16c595a8d078ef5eb57cd98d",
+    "menu_logo": "50c72309586af55ff823a1da24fef5e9f196e4f497f0ea9cbf5879848ac242f8",
+    "fastfetch_logo": "50c72309586af55ff823a1da24fef5e9f196e4f497f0ea9cbf5879848ac242f8"
+  },
+  "required_native_acceptance": [
+    "actual2880x1800",
+    "declared original panel composition",
+    "native panel/strip/button/label containment",
+    "all8workspace pseudo-states",
+    "four physical workspace clicks",
+    "compact actual ink",
+    "expanded normal/selected/hover/disabled actual ink",
+    "popup dismissal/reload"
+  ],
+  "source_assets_changed": "identity metadata only: four files",
+  "artwork_regenerated": false,
+  "native_accepted": false,
+  "unique_identity": {
+    "theme": "Ocean-Silk",
+    "icons": "Ocean-Silk-Icons",
+    "cursor": "Ocean-Silk-Cursors",
+    "no_glass_aliases": true
+  },
+  "source_updates": {
+    "theme": "/home/bertmacklen/Documents/desktop-theme-studio/refinements/candidate-repair-20260930/desktop/ocean-silk/desktop/Ocean-Silk",
+    "icon": "/home/bertmacklen/Documents/desktop-theme-studio/refinements/candidate-repair-20260930/desktop/ocean-silk/icons/Ocean-Silk-Icons",
+    "cursor": "/home/bertmacklen/Documents/desktop-theme-studio/refinements/candidate-repair-20260930/desktop/ocean-silk/cursors/Ocean-Silk-Cursors",
+    "wallpaper": "/home/bertmacklen/Documents/desktop-theme-studio/refinements/candidate-repair-20260930/desktop/ocean-silk/artwork/wallpaper.png",
+    "menu_logo": "/home/bertmacklen/Documents/desktop-theme-studio/refinements/candidate-repair-20260930/desktop/ocean-silk/artwork/menu-logo.png",
+    "fastfetch_logo": "/home/bertmacklen/Documents/desktop-theme-studio/refinements/candidate-repair-20260930/desktop/ocean-silk/artwork/macklenmobile-logo-ocean-silk.png"
+  },
+  "identity_metadata_changes": [
+    {
+      "kind": "theme",
+      "relative": "index.theme",
+      "before_sha256": "e27e9c41b18fdd727d741aa269dc3b41fdb8c7cea7e945bc094939416b53f30e",
+      "after_sha256": "e47c4b7a3d4b2eaa53438ccaec8288f070fedc3d0129e80b673f0f9052633106"
+    },
+    {
+      "kind": "theme",
+      "relative": "metacity-1/metacity-theme-3.xml",
+      "before_sha256": "df2cb057ba5dc0a3bd358e6a8424fbd1b1fa1e50a692289167fd28c0cb4e65bc",
+      "after_sha256": "78abe936ab4e414bcfd1fb46bb8d015a4b61fc48e22a3b90bdff5cbc3bd86aee"
+    },
+    {
+      "kind": "icon",
+      "relative": "index.theme",
+      "before_sha256": "c04bd009eac6038d44eedd3107dedcc93e57ba7b2fa41ab29cdf09769b362148",
+      "after_sha256": "4b0db23eb1b4bb9ee6f0c904a6c860971eca7d8aa5976b5225e3724205b387bd"
+    },
+    {
+      "kind": "cursor",
+      "relative": "index.theme",
+      "before_sha256": "087e2a989070f319e743fa1f63ee96d2ae85838e1d88949931bc6d6cba698101",
+      "after_sha256": "38e25b23cdcec471c03d4ab6922a0666310b63309fa6e84e09c552792b0016c6"
+    }
+  ],
+  "source_lineage": {
+    "original_sources": {
+      "cursor": "/home/bertmacklen/Documents/desktop-theme-studio/refinements/cinnamon-current-collection/contributions/all-theme-plan/pipeline/staged-refresh-20260922/ocean-silk/cursors/Ocean-Silk-Glass cursors",
+      "eww_stylesheet": "/home/bertmacklen/Documents/desktop-theme-studio/refinements/ocean-silk-current/widgets/eww.scss",
+      "fastfetch_logo": "/home/bertmacklen/Documents/desktop-theme-studio/refinements/cinnamon-current-collection/contributions/all-theme-plan/pipeline/staged-refresh-20260922/ocean-silk/artwork/macklenmobile-logo-ocean-silk.png",
+      "icon": "/home/bertmacklen/Documents/desktop-theme-studio/refinements/cinnamon-current-collection/contributions/all-theme-plan/pipeline/staged-refresh-20260922/ocean-silk/icons/Ocean-Silk-Glass icons",
+      "menu_logo": "/home/bertmacklen/Documents/desktop-theme-studio/refinements/cinnamon-current-collection/contributions/all-theme-plan/pipeline/staged-refresh-20260922/ocean-silk/artwork/menu-logo.png",
+      "theme": "/home/bertmacklen/Documents/desktop-theme-studio/refinements/cinnamon-current-collection/contributions/all-theme-plan/pipeline/staged-refresh-20260922/ocean-silk/desktop/Ocean-Silk-Glass",
+      "wallpaper": "/home/bertmacklen/Documents/desktop-theme-studio/refinements/cinnamon-current-collection/contributions/all-theme-plan/pipeline/staged-refresh-20260922/ocean-silk/artwork/wallpaper.png"
+    },
+    "original_tree_hashes": {
+      "theme": "22b501b6ee56786ec448c61e091297d0e7f9940b51834254b620d21d19178346",
+      "icon": "bdec3959462e1ee1f75b1a8e8cb1d49951d192057386d9fdb96f8af8ec052955",
+      "cursor": "066ccb8532d65d76637d019263aacbd226be9773dc3c97fa19ba445f17c83499"
+    },
+    "retained_notices": "All original SOURCE/COPYRIGHT/LICENSE files retained verbatim; historical Glass source references describe lineage only, not install aliases."
+  },
+  "island_inline_style_updates": {
+    "actor": "background-color:transparent; color:#304957; border-radius:18px; box-shadow:none; padding:0; margin:0;",
+    "compact": "background-color:#DEE7E6;",
+    "compact_weather": "color:#304957;",
+    "compact_clock": "color:#304957;",
+    "compact_status": "color:#304957;"
+  },
+  "island_inline_style_reason": "Generated applet.js sets compact actor, fill and label styles inline. Root-owned assembly must update those exact appearance values; CSS selectors alone do not override inline styles.",
+  "panel_composition": {
+    "panels": [
+      {
+        "id": 1,
+        "edge": "top",
+        "height_px": 44
+      },
+      {
+        "id": 2,
+        "edge": "bottom",
+        "height_px": 54
+      }
+    ],
+    "source": "reviewed original candidate composition",
+    "layout_assembly_owner": "coordinator"
+  },
+  "candidate_layout": {
+    "kind": "two-panel",
+    "top_height": 44,
+    "bottom_height": 54
+  },
+  "island_paints": {
+    "compact_background": "#DEE7E6",
+    "compact_clock": "#304957",
+    "compact_side": "#304957",
+    "meter_active": "#354D64",
+    "meter_track": "#e9ebe6",
+    "wave_active": "#354D64",
+    "wave_idle": "#e9ebe6"
+  },
+  "inline_paint_integration": {
+    "owner": "coordinator",
+    "required": true,
+    "do_not_assume_css_overrides_inline": true,
+    "source_literals": [
+      "this._compact.set_style('background-color:transparent;');",
+      "this._compactClock.set_style('color:#354D64;');",
+      "this._compactWeather.set_style('color:#304957;');",
+      "this._compactStatus.set_style('color:#304957;');"
+    ],
+    "required_count_each": 1,
+    "transform_order": "replace exact known literals with temporary role placeholders before recolor_ocean; substitute existing target palette colors after recoloring",
+    "drawing_literals": [
+      {
+        "prefix": "",
+        "literal": ".314,.365,.4,1",
+        "role": "meter_track"
+      },
+      {
+        "prefix": "if(Number.isFinite(value)){",
+        "literal": ".616,.776,.765,1",
+        "role": "meter_active"
+      },
+      {
+        "prefix": "if(i/bars<progress)",
+        "literal": ".616,.776,.765,1",
+        "role": "wave_active"
+      },
+      {
+        "prefix": "else ",
+        "literal": ".412,.467,.451,1",
+        "role": "wave_idle"
+      }
+    ]
+  }
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<style-scheme id="cinnamon-current-dusk-ribbons" name="Dusk Ribbons" version="1.0"><author>Desktop Theme Studio</author>
+<style name="text" foreground="#f1e3df" background="#373950"/>
+<style name="selection" foreground="#2d2c41" background="#bb8987"/>
+<style name="current-line" background="#48445b"/>
+<style name="line-numbers" foreground="#d3adb0" background="#48445b"/>
+<style name="def:comment" foreground="#d3adb0"/>
+<style name="def:keyword" foreground="#bb8987"/>
+<style name="def:string" foreground="#b0c3a5"/>
+<style name="def:number" foreground="#e2bf91"/>
+<style name="def:error" foreground="#e4a0a2"/>
+</style-scheme>

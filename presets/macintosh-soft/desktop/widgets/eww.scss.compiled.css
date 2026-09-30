@@ -1,0 +1,219 @@
+* {
+  all: unset;
+  font-family: Ubuntu;
+  font-size: 11pt;
+  color: #293238;
+}
+
+window {
+  background: transparent;
+}
+
+.popup {
+  background: #EBE9E1;
+  border: 1px solid #697773;
+  border-radius: 6px;
+  padding: 16px;
+}
+
+.popup-header {
+  padding-bottom: 12px;
+  border-bottom: 1px solid #D7D9D4;
+}
+
+.heading {
+  font-size: 12pt;
+  font-weight: 600;
+}
+
+.popup-header .muted {
+  font-size: 10pt;
+}
+
+.muted, .elapsed {
+  color: #505D66;
+}
+
+.elapsed {
+  font-family: Hack;
+  font-size: 10pt;
+}
+
+.eyebrow {
+  font-size: 10pt;
+  font-weight: 600;
+  color: #356262;
+}
+
+.track-title {
+  font-size: 12pt;
+  font-weight: 600;
+}
+
+button {
+  background: #EBE9E1;
+  border: 1px solid #697773;
+  border-radius: 4px;
+  padding: 7px 10px;
+}
+
+button:hover {
+  background: #D7D9D4;
+}
+
+button:focus {
+  border-color: #356262;
+  box-shadow: inset 0 0 0 1px #356262;
+}
+
+button:active, button.selected, button.enabled {
+  background: #356262;
+  color: #FBF8F1;
+}
+
+button:active label, button.selected label, button.enabled label, button.enabled .muted {
+  color: #FBF8F1;
+}
+
+button:disabled {
+  background: #D7D9D4;
+  border-color: #D7D9D4;
+}
+
+button:disabled label {
+  color: #505D66;
+}
+
+button.close {
+  min-width: 26px;
+  min-height: 26px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  font-size: 20px;
+}
+
+button.close:hover {
+  background: #D7D9D4;
+}
+
+.album-frame {
+  padding: 4px;
+  background: #D7D9D4;
+  border: 1px solid #697773;
+  border-radius: 4px;
+}
+
+.transport button {
+  padding: 7px 5px;
+}
+
+.library-link {
+  border-color: #356262;
+}
+
+.utility-row button {
+  padding: 5px 7px;
+  border: 0;
+  background: #D7D9D4;
+}
+
+.card {
+  background: transparent;
+  padding: 0;
+}
+
+.calendar-card {
+  padding: 0;
+}
+
+calendar {
+  color: #293238;
+  padding: 8px;
+  background: #EBE9E1;
+  border-radius: 4px;
+}
+
+calendar.header {
+  color: #293238;
+  background: #D7D9D4;
+}
+
+calendar:selected {
+  color: #FBF8F1;
+  background: #356262;
+  border-radius: 3px;
+}
+
+calendar:indeterminate {
+  color: #505D66;
+}
+
+scale {
+  min-height: 18px;
+}
+
+scale trough {
+  min-height: 4px;
+  background: #D7D9D4;
+  border-radius: 2px;
+}
+
+scale highlight {
+  min-height: 4px;
+  background: #356262;
+  border-radius: 2px;
+}
+
+scale slider {
+  background: #EBE9E1;
+  min-width: 12px;
+  min-height: 12px;
+  border: 1px solid #697773;
+  border-radius: 6px;
+}
+
+progress trough {
+  min-height: 4px;
+  background: #D7D9D4;
+  border-radius: 2px;
+}
+
+progress progress {
+  min-height: 4px;
+  background: #356262;
+  border-radius: 2px;
+}
+
+.timer {
+  font-family: Hack;
+  font-size: 30pt;
+  color: #356262;
+}
+
+.notes {
+  background: #D7D9D4;
+  padding: 12px;
+  border-radius: 4px;
+}
+
+.chip {
+  padding: 7px 8px;
+}
+
+scrollbar trough {
+  background: transparent;
+}
+
+scrollbar slider {
+  background: #697773;
+  min-width: 5px;
+  border-radius: 3px;
+}
+
+tooltip {
+  background: #EBE9E1;
+  color: #293238;
+  border: 1px solid #697773;
+  padding: 6px;
+}

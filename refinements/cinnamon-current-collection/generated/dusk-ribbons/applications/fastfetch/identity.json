@@ -1,0 +1,50 @@
+{
+  "guard": "Do not replace modes.py, long.jsonc, or user-defined Fastfetch wrappers.",
+  "logo": "macklenmobile-logo-dusk-ribbons.png",
+  "long": {
+    "local_ip_format": "86.75-309",
+    "required_modules": [
+      "OS",
+      "HOST",
+      "KERNEL",
+      "SHELL",
+      "DE",
+      "WM",
+      "THEME",
+      "ICONS",
+      "TERMINAL",
+      "TERMINAL FONT",
+      "CPU",
+      "GPU",
+      "DISPLAY",
+      "MEM",
+      "SWAP",
+      "DISK",
+      "LOCAL IP"
+    ],
+    "uses_existing_mode_wrapper": true
+  },
+  "name": "Dusk Ribbons",
+  "profile": "dusk-ribbons",
+  "short": {
+    "palette": [
+      "#2d2c41",
+      "#e4a0a2",
+      "#b0c3a5",
+      "#e2bf91",
+      "#b2bbdf",
+      "#d0aedb",
+      "#a2ccd0",
+      "#f1e3df",
+      "#9e91aa",
+      "#f3b9b9",
+      "#c6d9ba",
+      "#f4d4ad",
+      "#cbd2ed",
+      "#e4c4ee",
+      "#c0e3e4",
+      "#fff3ef"
+    ],
+    "uses_existing_mode_wrapper": true
+  }
+}

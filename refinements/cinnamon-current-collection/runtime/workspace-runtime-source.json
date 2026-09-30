@@ -1,0 +1,9 @@
+{
+  "source": "/home/bertmacklen/.local/share/cinnamon/applets/workspace-switcher@cinnamon.org",
+  "scope": "Exact pre-existing host runtime copied for private host-matching acceptance; no installation performed",
+  "files": {
+    "settings-schema.json": "f2f274a45b9e623ad881149dd55efec89a4b0cef2b4d1539dddedbe56f190285",
+    "applet.js": "3c0cef31583358eaccb177c0f5bb731815b611ee9d9f221e8f79142c700d49a7",
+    "metadata.json": "64796932806f52efc072403a78442aed820693eec4855d3de563d6bac85d77ab"
+  }
+}

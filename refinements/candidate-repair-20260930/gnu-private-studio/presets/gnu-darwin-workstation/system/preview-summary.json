@@ -1,0 +1,16 @@
+{
+  "status": "staged-not-installed",
+  "system_fixture_tests": 28,
+  "system_fixture_result": "PASS",
+  "plymouth_integrity": "PASS",
+  "preview_exit": 0,
+  "planned_files": 313,
+  "missing": [],
+  "wallpaper_sha256": "8c60777fa516815d301288ae4b92ae70505864893474ec88abccc75651d01ff6",
+  "rendered_assets": 3,
+  "static_assets": 66,
+  "coverage_rows": 10,
+  "plymouthd_conf": "Absent; no active backup override. Staged future Theme=gnu-darwin-workstation.",
+  "visual_evidence": "PIL simulated GRUB and Plymouth previews inspected, not live captures",
+  "real_boot_login_verified": false
+}

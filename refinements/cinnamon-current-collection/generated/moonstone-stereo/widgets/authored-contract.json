@@ -1,0 +1,17 @@
+{
+  "launcher": "bin/eww-widgets",
+  "manifest": "bundle.json",
+  "private_launcher": "private/launch.py",
+  "schema": 1,
+  "source": "/home/bertmacklen/Documents/desktop-theme-studio/refinements/candidate-repair-20260930/applications/moonstone-stereo/bundle-version2",
+  "windows": [
+    "clock",
+    "dashboard",
+    "controls",
+    "calendar",
+    "notes",
+    "timer",
+    "audio",
+    "system"
+  ]
+}

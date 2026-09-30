@@ -1,0 +1,145 @@
+// THEME_VARIABLES_START — maintained by scripts/theme-sync.py.
+$base: #e7e1d3;
+$surface0: #f3eddd;
+$surface1: #fffaf0;
+$border: #b6ac97;
+$text: #302e29;
+$muted: #716a5d;
+$accent: #486d5c;
+$secondary: #57604a;
+$battery: #57604a;
+$tile: #cedbd0;
+$accent-hover: #526f64;
+$indeterminate: #716a5d;
+$selection-text: #e7e1d3;
+// THEME_VARIABLES_END
+* { all: unset; font-family: "Ubuntu", "DejaVu Sans"; font-size: 16px; color: $text; }
+window { background-color: transparent; }
+.card { background-color: rgba($surface0,0.97); border: 1px solid rgba($accent,0.38); border-radius: 20px; padding: 22px; }
+.popup { background-color: rgba($base,0.99); border: 1px solid $border; border-radius: 26px; padding: 24px; }
+.popup-header { padding: 2px 4px 8px; }
+.heading { font-size: 28px; font-weight: 600; }
+.eyebrow { color: $accent; font-size: 12px; font-weight: 700; letter-spacing: 2px; }
+.muted { color: $muted; font-size: 13px; }
+.subtle { color: $muted; font-size: 12px; }
+.legacy-clock-label { font-size: 66px; font-weight: 300; letter-spacing: -3px; }
+.meridiem { font-size: 18px; color: $accent; padding-bottom: 14px; }
+.date { font-size: 19px; }
+.song { font-size: 20px; font-weight: 600; }
+button { border-radius: 10px; padding: 6px 9px; transition: background-color 120ms ease; }
+button:hover { background-color: $surface1; }
+button:active { background-color: $border; }
+button:focus { box-shadow: inset 0 0 0 1px $accent; }
+.chip, .workspace { background-color: $surface1; padding: 10px 12px; font-size: 13px; }
+.selected, .play { background-color: $accent; color: $base; }
+.selected label, .play label { color: $base; }
+.selected:hover, .play:hover { background-color: $accent-hover; }
+.tile { padding: 18px 12px; background-color: $surface1; }
+.tile.enabled { background-color: $tile; box-shadow: inset 0 0 0 1px $border; }
+.tile.enabled label { color: $text; }
+.transport { min-width: 24px; font-size: 22px; padding: 5px 12px; margin-left: 5px; }
+.ring { color: $accent; background-color: $surface1; }
+.ring.memory { color: $secondary; }
+.ring.battery { color: $battery; }
+.ring-value { font-size: 19px; font-weight: 600; }
+.meter-name { font-size: 11px; letter-spacing: 1px; color: $muted; }
+scale trough, progressbar trough { background-color: $surface1; border-radius: 20px; min-height: 7px; }
+scale highlight, progressbar progress { background-color: $accent; min-height: 7px; border-radius: 20px; }
+scale slider { background-color: $text; min-width: 13px; min-height: 13px; margin: -4px 0; border-radius: 20px; }
+scale { margin: 5px 0; }
+progressbar { min-height: 7px; }
+.strip { padding: 10px 16px; border-radius: 15px; }
+.strip button { font-size: 14px; }
+.timer { font-size: 48px; color: $accent; font-weight: 300; }
+.close { font-size: 28px; color: $muted; }
+calendar { font-size: 17px; padding: 4px; }
+calendar:selected { background-color: $accent; color: $base; border-radius: 8px; }
+calendar.header { color: $accent; font-weight: 600; }
+calendar.highlight { color: $accent; }
+calendar:indeterminate { color: $indeterminate; }
+.dock { padding: 10px; }
+.dock-button { padding: 9px; }
+tooltip { background-color: $base; border: 1px solid $border; border-radius: 9px; padding: 9px; }
+
+.close label { font-size: 28px; color: $muted; }
+.transport label { font-size: 22px; }
+.chip label, .workspace label { font-size: 13px; }
+.strip button label { font-size: 14px; }
+
+
+/* MOONSTONE STEREO - original walnut and brushed-aluminum receiver */
+.receiver-case { background:linear-gradient(110deg,#35251f,#654437 25%,#4d352b 70%,#30211c); padding:10px 17px 13px; border:1px solid #2b211c; border-radius:7px; box-shadow:0 10px 28px rgba(0,0,0,.35),inset 0 1px 0 rgba(243,237,221,.28); }
+.receiver-face { background-color:#c6c9c3; background-image:url("/home/bertmacklen/Documents/desktop-theme-studio/presets/moonstone-stereo/applications/receiver/materials/aluminum.svg"),linear-gradient(#d4d6ce,#bbc1b9); background-repeat:repeat,no-repeat; border:1px solid #8e948b; border-radius:3px 3px 0 0; padding:16px 20px 17px; box-shadow:inset 0 1px 0 #fffaf0; }
+.receiver-brand-row { padding-bottom:9px; border-bottom:1px solid rgba(48,46,41,.23); }
+.power-lamp { color:#486d5c; font-size:15px; text-shadow:0 0 5px rgba(141,180,160,.8); }
+.receiver-brand { color:#302e29; font-size:17px; font-weight:700; letter-spacing:2px; }
+.receiver-model { color:#494f47; font-size:10px; letter-spacing:1.6px; }
+.receiver-screw { color:#494f47; font-size:17px; }
+.receiver-artwork { background:#222725; padding:5px; border:1px solid #7e877e; border-radius:2px; box-shadow:0 1px 0 #fffaf0,inset 0 1px 6px rgba(0,0,0,.7); }
+.receiver-display { background:linear-gradient(#181e1b,#222b25); border:1px solid #7f887d; border-radius:2px; padding:11px 13px; box-shadow:inset 0 2px 8px rgba(0,0,0,.65),0 1px 0 #f3eddd; }
+.receiver-source { color:#8db4a0; font-size:9px; letter-spacing:1.5px; }
+.receiver-title { color:#d4e4d5; font-family:"Hack"; font-size:16px; font-weight:600; }
+.receiver-artist { color:#9cbaa5; font-size:11px; }
+.receiver-seek { margin:0; padding:0; }
+.receiver-seek trough { background:#8e968e; min-height:3px; border-radius:1px; }
+.receiver-seek highlight { background:#486d5c; min-height:3px; border-radius:1px; }
+.receiver-seek slider { background:#e7e1d3; border:1px solid #716a5d; min-width:5px; min-height:11px; border-radius:1px; margin:-5px 0; }
+.receiver-elapsed { color:#302e29; font-family:"Hack"; font-size:12px; }
+.receiver-key { background:linear-gradient(#eeeee4,#aeb6ac); border:1px solid #82897f; border-radius:2px; padding:6px 10px; box-shadow:inset 0 1px 0 #fffaf0,0 2px 2px rgba(48,46,41,.15); }
+.receiver-key label { color:#302e29; font-size:14px; }
+.receiver-key:hover { background:linear-gradient(#fffaf0,#cedbd0); }
+.receiver-key:active { box-shadow:inset 0 1px 3px rgba(0,0,0,.35); }
+.receiver-play { border-bottom:3px solid #486d5c; }
+.receiver-meter-label { font-size:10px; letter-spacing:1.5px; color:#494f47; }
+.receiver-signal { color:#494f47; font-family:"Hack"; font-size:11px; letter-spacing:1.5px; }
+.receiver-clock-deck { border-left:1px solid rgba(48,46,41,.20); padding-left:18px; }
+.receiver-clock { color:#302e29; font-family:"Hack"; font-size:29px; letter-spacing:0; }
+.receiver-period { color:#494f47; font-size:11px; letter-spacing:2px; }
+.receiver-date { padding:0; }
+.receiver-date label { color:#302e29; font-family:"Hack"; font-size:12px; }
+.receiver-tuning { padding:0; border-radius:50%; }
+.receiver-tuning:hover { background:rgba(243,237,221,.24); }
+.receiver-lower-rail { background:#222725; padding:11px 17px; border:1px solid #161a17; border-top:1px solid #5c655c; border-radius:0 0 3px 3px; }
+.receiver-selector { padding:6px 10px; border:1px solid #536056; border-radius:2px; background:linear-gradient(#3b453d,#2c342e); }
+.receiver-selector label { color:#d3dccf; font-size:9px; font-weight:500; letter-spacing:1px; }
+.receiver-selector:hover { background:#486d5c; }
+.receiver-readout { color:#9cbaa5; font-family:"Hack"; font-size:9px; }
+.receiver-lower-rail .workspace { background:#343e36; border:1px solid #536056; padding:5px 7px; border-radius:2px; }
+.receiver-lower-rail .workspace label { color:#9cbaa5; font-family:"Hack"; font-size:9px; }
+.receiver-lower-rail .workspace.selected { background:#8db4a0; }
+.receiver-lower-rail .workspace.selected label { color:#222725; }
+.receiver-pop-card { background:#c6c9c3; border:6px solid #4d352b; border-radius:4px; padding:20px; }
+.receiver-popup-heading { color:#302e29; font-size:13px; font-weight:600; letter-spacing:2px; }
+
+/* Auxiliary receiver modules: no inherited rounded-card visual language. */
+.card { background-color:#c6c9c3; background-image:url("/home/bertmacklen/Documents/desktop-theme-studio/presets/moonstone-stereo/applications/receiver/materials/aluminum.svg"),linear-gradient(#d4d6ce,#bbc1b9); background-repeat:repeat,no-repeat; border:1px solid #8e948b; border-radius:3px; padding:18px; box-shadow:inset 0 1px 0 #fffaf0,0 2px 4px rgba(48,46,41,.13); }
+.popup { background-color:#c6c9c3; background-image:url("/home/bertmacklen/Documents/desktop-theme-studio/presets/moonstone-stereo/applications/receiver/materials/aluminum.svg"); border:8px solid #4d352b; border-radius:5px; padding:18px; box-shadow:0 8px 26px rgba(0,0,0,.32),inset 0 1px 0 #fffaf0; }
+.popup-header { background:linear-gradient(#181e1b,#222725); border:1px solid #6d796d; border-radius:2px; padding:13px 15px; }
+.popup-header .heading { font-size:20px; font-weight:600; letter-spacing:1px; color:#d4e4d5; }
+.popup-header .muted { font-size:11px; color:#adc5af; }
+.popup-header .close { border:1px solid #536056; border-radius:2px; padding:3px 9px; }
+.popup-header .close label { color:#d4e4d5; font-size:23px; }
+.card .eyebrow { font-size:11px; font-weight:700; color:#494f47; letter-spacing:1.5px; }
+.card .muted, .card .subtle { color:#494f47; }
+.card button, .popup > box > button { border-radius:2px; }
+.chip, .tile, .workspace { background:linear-gradient(#eeeee4,#aeb6ac); border:1px solid #82897f; border-radius:2px; box-shadow:inset 0 1px 0 #fffaf0,0 1px 2px rgba(48,46,41,.14); }
+.chip label, .tile label, .workspace label { color:#302e29; }
+.chip:hover, .tile:hover, .workspace:hover { background:linear-gradient(#fffaf0,#cedbd0); }
+.selected, .play, .tile.enabled { background:#8db4a0; border-bottom:3px solid #486d5c; box-shadow:inset 0 1px 0 rgba(255,250,240,.65); }
+.selected label, .play label, .tile.enabled label { color:#222725; }
+.tile.enabled .muted { color:#302e29; }
+.card scale trough, .card progressbar trough { background:#87927f; min-height:5px; border-radius:1px; }
+.card scale highlight, .card progressbar progress { background:#486d5c; min-height:5px; border-radius:1px; }
+.card scale slider { background:linear-gradient(#fffaf0,#b6bdb2); border:1px solid #716a5d; min-width:8px; min-height:18px; border-radius:1px; margin:-7px 0; }
+.calendar-card calendar { background:#f3eddd; border:1px solid #8e948b; border-radius:2px; padding:12px; color:#302e29; }
+.calendar-card calendar:selected { background:#486d5c; color:#fffaf0; border-radius:1px; }
+.calendar-card calendar.header { color:#302e29; font-weight:600; }
+.calendar-card calendar.highlight { color:#486d5c; }
+.notes scroll { background:#222725; border:1px solid #87927f; border-radius:2px; padding:12px; box-shadow:inset 0 2px 6px rgba(0,0,0,.45); }
+.notes scroll label { color:#d4e4d5; font-family:"Hack"; font-size:13px; }
+.focus .timer { background:#222725; border:1px solid #87927f; border-radius:2px; color:#adcbb4; font-family:"Hack"; font-size:42px; padding:10px 15px; box-shadow:inset 0 2px 6px rgba(0,0,0,.45); }
+.dock { border:5px solid #4d352b; border-radius:4px; padding:9px; }
+.dock-button { border:1px solid #82897f; background:linear-gradient(#eeeee4,#aeb6ac); border-radius:2px; padding:9px; box-shadow:inset 0 1px 0 #fffaf0; }
+.strip { border-radius:3px; border-left:6px solid #4d352b; border-right:6px solid #4d352b; }
+tooltip { background:#222725; border:1px solid #87927f; border-radius:2px; padding:9px; }
+tooltip label { color:#d4e4d5; }

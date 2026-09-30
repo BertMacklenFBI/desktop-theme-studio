@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<style-scheme id="macintosh-soft" name="Macintosh Soft" version="1.0"><author>Desktop Theme Studio</author>
+<style name="text" foreground="#293238" background="#EBE9E1"/>
+<style name="selection" foreground="#FBF8F1" background="#356262"/>
+<style name="current-line" background="#D7D9D4"/>
+<style name="line-numbers" foreground="#505D66" background="#D7D9D4"/>
+<style name="def:comment" foreground="#505D66"/>
+<style name="def:keyword" foreground="#356262"/>
+<style name="def:string" foreground="#356247"/>
+<style name="def:number" foreground="#795615"/>
+<style name="def:type" foreground="#67537D"/>
+<style name="def:error" foreground="#944338"/>
+</style-scheme>

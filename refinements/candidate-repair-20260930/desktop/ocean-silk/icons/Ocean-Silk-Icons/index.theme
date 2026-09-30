@@ -1,0 +1,17 @@
+[Icon Theme]
+Name=Ocean-Silk-Icons
+Inherits=Papirus,hicolor
+Directories=scalable/places,scalable/apps
+[scalable/places]
+Size=48
+MinSize=16
+MaxSize=256
+Type=Scalable
+Context=Places
+
+[scalable/apps]
+Size=48
+MinSize=16
+MaxSize=256
+Type=Scalable
+Context=Applications

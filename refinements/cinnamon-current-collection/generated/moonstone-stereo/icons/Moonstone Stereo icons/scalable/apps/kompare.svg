@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64"><defs><linearGradient id="tile" x2="0" y2="1"><stop stop-color="#fffaf0"/><stop offset="1" stop-color="#c6c9c3"/></linearGradient></defs><rect x="3" y="4" width="58" height="58" rx="4" fill="#222725" opacity=".3"/><rect x="3" y="2" width="58" height="58" rx="4" fill="url(#tile)" stroke="#716a5d" stroke-width="1"/><svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" version="1.1" viewBox="0 0 64 64" x="10" y="9">
+ <path style="opacity:0.2" d="m 10,56 0,2 c 0,1.662 1.338,3 3,3 l 38,0 c 1.662,0 3,-1.338 3,-3 l 0,-2 c 0,1.662 -1.338,3 -3,3 l -38,0 c -1.662,0 -3,-1.338 -3,-3 z" />
+ <path style="fill:#5fbb20" d="M 54,57 54,7 C 54,5.338 52.662,4 51,4 L 13,4 c -1.662,0 -3,1.338 -3,3 l 0,50 c 0,1.662 1.338,3 3,3 l 38,0 c 1.662,0 3,-1.338 3,-3 z" />
+ <path style="opacity:0.1;fill:#ffffff" d="M 13 4 C 11.338 4 10 5.338 10 7 L 10 8 C 10 6.338 11.338 5 13 5 L 51 5 C 52.662 5 54 6.338 54 8 L 54 7 C 54 5.338 52.662 4 51 4 L 13 4 z" />
+ <path style="fill:#209dbb" d="M 51.25,60 C 52.774,60 54,58.686 54,57.052 L 54,32 10,32 10,57.052 C 10,58.686 11.2264,60 12.75,60 Z" />
+ <path style="fill:#4c4c4c" d="m 18,12 28,0 0,2 -28,0 z" />
+ <path style="fill:#4c4c4c" d="m 18,18 28,0 0,2 -28,0 z" />
+ <path style="fill:#4c4c4c" d="m 18,24 28,0 0,2 -28,0 z" />
+ <path style="fill:#ffffff" d="m 18,38 28,0 0,2 -28,0 z" />
+ <path style="fill:#ffffff" d="m 18,44 28,0 0,2 -28,0 z" />
+ <path style="fill:#ffffff" d="m 18,50 28,0 0,2 -28,0 z" />
+</svg><path d="M25 56h14" stroke="#8db4a0" stroke-linecap="round" stroke-width="2"/></svg>

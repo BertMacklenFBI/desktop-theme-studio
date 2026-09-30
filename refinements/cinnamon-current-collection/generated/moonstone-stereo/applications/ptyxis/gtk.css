@@ -1,0 +1,46 @@
+/* Moonstone Stereo Ptyxis application chrome; load as a profile-specific append block. */
+@define-color theme_fg_color #302e29;
+@define-color theme_text_color #302e29;
+@define-color theme_bg_color #f3eddd;
+@define-color theme_base_color #e7e1d3;
+@define-color theme_selected_bg_color #cedbd0;
+@define-color theme_selected_fg_color #302e29;
+@define-color window_fg_color #302e29;
+@define-color window_bg_color #f3eddd;
+@define-color view_fg_color #302e29;
+@define-color view_bg_color #e7e1d3;
+@define-color headerbar_fg_color #302e29;
+@define-color headerbar_bg_color #fffaf0;
+@define-color headerbar_backdrop_color #f3eddd;
+@define-color headerbar_border_color #b6ac97;
+@define-color accent_color #8db4a0;
+@define-color accent_bg_color #cedbd0;
+@define-color accent_fg_color #302e29;
+:root {
+  --accent-bg-color: #cedbd0;
+  --accent-fg-color: #302e29;
+  --accent-color: #8db4a0;
+  --window-bg-color: #f3eddd;
+  --window-fg-color: #302e29;
+  --view-bg-color: #e7e1d3;
+  --view-fg-color: #302e29;
+  --headerbar-bg-color: #fffaf0;
+  --headerbar-fg-color: #302e29;
+  --headerbar-backdrop-color: #f3eddd;
+  --headerbar-border-color: #b6ac97;
+  --sidebar-bg-color: #fffaf0;
+  --sidebar-fg-color: #302e29;
+  --sidebar-backdrop-color: #f3eddd;
+  --card-bg-color: #fffaf0;
+  --card-fg-color: #302e29;
+  --dialog-bg-color: #f3eddd;
+  --dialog-fg-color: #302e29;
+  --popover-bg-color: #f3eddd;
+  --popover-fg-color: #302e29;
+}
+window { background-color: #f3eddd; color: #302e29; }
+headerbar { background-color: #fffaf0; background-image: none; color: #302e29; border-color: #b6ac97; }
+headerbar label, headerbar image, headerbar button, .titlebar label, .titlebar image, .titlebar button { color: #302e29; }
+headerbar button:checked, headerbar button:checked label, headerbar button:checked image { color: #302e29; }
+terminal, vte-terminal { background-color: #e7e1d3; color: #302e29; }
+button:checked, button:active { background-color: #cedbd0; color: #302e29; }
